@@ -1,5 +1,6 @@
 import PyPDF2
 import os
+import unidecode
 
 # Function to extract text from the PDF
 def extract_text_from_pdf(pdf_path):
@@ -28,7 +29,6 @@ def save_text_to_file(text, pdf_path):
 if __name__ == '__main__':
     pdf_path = "/Users/jingwen/Desktop/2024 Fall/AC 297/AI-enabled-Index-Investing/index-doc/MSCI_Select_ESG_Screened_Indexes_Methodology_20230519.pdf"
     text = extract_text_from_pdf(pdf_path)
-    
-    # Save the text to a file in the specified folder
+    unidecode.unidecode(text)
     saved_file_path = save_text_to_file(text, pdf_path)
     print(f"Text saved to: {saved_file_path}")
