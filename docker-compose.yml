@@ -8,7 +8,7 @@ services:
         container_name: llm-rag-cli
         volumes:
             - ../secrets:/secrets
-            - ../llm-rag:/app
+            - ../AI-enabled-Index-Investing:/app
         environment:
             GOOGLE_APPLICATION_CREDENTIALS: $GOOGLE_APPLICATION_CREDENTIALS
             GCP_PROJECT: $GCP_PROJECT

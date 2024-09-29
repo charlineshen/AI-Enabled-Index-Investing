@@ -177,7 +177,13 @@ def chunk(method="char-split"):
 		
 		elif method == "semantic-split":
 			# Init the splitter
-			text_splitter = SemanticChunker(embedding_function=generate_text_embeddings)
+			text_splitter = SemanticChunker(
+				embedding_function=generate_text_embeddings,
+				breakpoint_threshold_type="percentile",
+				breakpoint_threshold_amount=99,
+				# TODO
+				# sentence_split_regex=r""
+			)
 			# Perform the splitting
 			text_chunks = text_splitter.create_documents([input_text])
 			
@@ -309,7 +315,7 @@ def query(method="char-split"):
 
 
 def chat(method="char-split"):
-	print("chat()")
+	# print("chat()")
 
 	# Connect to chroma DB
 	client = chromadb.HttpClient(host=CHROMADB_HOST, port=CHROMADB_PORT)
@@ -318,8 +324,8 @@ def chat(method="char-split"):
 
 	query = "What are the MSCI Select ESG Screened Indexes?"
 	query_embedding = generate_query_embedding(query)
-	print("Query:", query)
-	print("Embedding values:", query_embedding)
+	# print("Query:", query)
+	# print("Embedding values:", query_embedding)
 	# Get the collection
 	collection = client.get_collection(name=collection_name)
 
@@ -328,29 +334,19 @@ def chat(method="char-split"):
 		query_embeddings=[query_embedding],
 		n_results=10
 	)
-	print("\n\nResults:", results)
+	# print("\n\nResults:", results)
 
-	print(len(results["documents"][0]))
-
-	# TODO Option 1
-	INPUT_PROMPT = f"""
-	{query}
-	{"\n ---------------------------------------------------- \n".join(results["documents"][0])}
-	"""
-
-	# TODO Option 2
-	numbered_results = [f'{i + 1}. {doc}' for i, doc in enumerate(results['documents'][0])]
-	formatted_results = "\n ---------------------------------------------------- \n".join(numbered_results)
+	# print(len(results["documents"][0]))
 
 	INPUT_PROMPT = f"""
 	{query}
-	{formatted_results}
+	{"\n".join(results["documents"][0])}
 	"""
 
-	print("INPUT_PROMPT: ",INPUT_PROMPT)
-
-
-	
+	numbered_results = [f"{i + 1}.\n{doc}" for i, doc in enumerate(results['documents'][0])]
+	formatted_results = "\n----------------------------------------------------\n".join(numbered_results)
+	print_output = f"{query}\n\n====================RETRIEVED TEXT====================\n{formatted_results}"
+	print("====================INPUT PROMPT====================\n", print_output)
 
 	response = generative_model.generate_content(
 		[INPUT_PROMPT],  # Input prompt
@@ -358,7 +354,7 @@ def chat(method="char-split"):
 		stream=False,  # Enable streaming for responses
 	)
 	generated_text = response.text
-	print("LLM Response:", generated_text)
+	print("\n====================LLM RESPONSE====================\n", generated_text)
 
 
 def get(method="char-split"):
@@ -434,7 +430,7 @@ def agent(method="char-split"):
 
 
 def main(args=None):
-	print("CLI Arguments:", args)
+	# print("CLI Arguments:", args)
 
 	if args.chunk:
 		chunk(method=args.chunk_type)
