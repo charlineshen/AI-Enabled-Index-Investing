@@ -180,9 +180,7 @@ def chunk(method="char-split"):
 			text_splitter = SemanticChunker(
 				embedding_function=generate_text_embeddings,
 				breakpoint_threshold_type="percentile",
-				breakpoint_threshold_amount=99,
-				# TODO
-				# sentence_split_regex=r""
+				breakpoint_threshold_amount=80
 			)
 			# Perform the splitting
 			text_chunks = text_splitter.create_documents([input_text])
