@@ -19,7 +19,7 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 from semantic_splitter import SemanticChunker
 import agent_tools
 
-# Setup
+# Setup TODO
 GCP_PROJECT = os.environ["GCP_PROJECT"]
 GCP_LOCATION = "us-central1"
 EMBEDDING_MODEL = "text-embedding-004"
@@ -40,29 +40,26 @@ generation_config = {
 }
 # Initialize the GenerativeModel with specific system instructions
 SYSTEM_INSTRUCTION = """
-You are an AI assistant specialized in cheese knowledge. Your responses are based solely on the information provided in the text chunks given to you. Do not use any external knowledge or make assumptions beyond what is explicitly stated in these chunks.
+You are an AI assistant specialized in ETF knowledge. Your responses are based solely on the information provided in the text chunks given to you. Do not use any external knowledge or make assumptions beyond what is explicitly stated in these chunks.
 
 When answering a query:
-1. Carefully read all the text chunks provided.
-2. Identify the most relevant information from these chunks to address the user's question.
-3. Formulate your response using only the information found in the given chunks.
-4. If the provided chunks do not contain sufficient information to answer the query, state that you don't have enough information to provide a complete answer.
-5. Always maintain a professional and knowledgeable tone, befitting a cheese expert.
-6. If there are contradictions in the provided chunks, mention this in your response and explain the different viewpoints presented.
+- Carefully read all the text chunks provided.
+- Identify the most relevant information from these chunks to address the user's question.
+- Formulate your response using only the information found in the given chunks.
+- If the provided chunks do not contain sufficient information to answer the query, state that you don't have enough information to provide a complete answer.
+- If there are contradictions in the provided chunks, mention this in your response and explain the different viewpoints presented.
 
 Remember:
-- You are an expert in cheese, but your knowledge is limited to the information in the provided chunks.
+- Your knowledge is limited to the information in the provided chunks.
 - Do not invent information or draw from knowledge outside of the given text chunks.
-- If asked about topics unrelated to cheese, politely redirect the conversation back to cheese-related subjects.
 - Be concise in your responses while ensuring you cover all relevant information from the chunks.
-
-Your goal is to provide accurate, helpful information about cheese based solely on the content of the text chunks you receive with each query.
 """
 generative_model = GenerativeModel(
 	GENERATIVE_MODEL,
 	system_instruction=[SYSTEM_INSTRUCTION]
 )
 
+# TODO　
 book_mappings = {
 	"Cheese and its economical uses in the diet": {"author":"C. F. Langworthy and Caroline Louisa Hunt", "year": 2023},
 	"Cottage Cheese Recipe Book":{"author": "Milk Industry Foundation", "year": 2021},
@@ -108,6 +105,7 @@ def load_text_embeddings(df, collection, batch_size=500):
 	metadata = {
 		"book": df["book"].tolist()[0]
 	}
+	# TODO
 	if metadata["book"] in book_mappings:
 		book_mapping = book_mappings[metadata["book"]]
 		metadata["author"] = book_mapping["author"]
@@ -334,12 +332,26 @@ def chat(method="char-split"):
 
 	print(len(results["documents"][0]))
 
+	# TODO Option 1
 	INPUT_PROMPT = f"""
 	{query}
-	{"\n".join(results["documents"][0])}
+	{"\n ---------------------------------------------------- \n".join(results["documents"][0])}
+	"""
+
+	# TODO Option 2
+	numbered_results = [f'{i + 1}. {doc}' for i, doc in enumerate(results['documents'][0])]
+	formatted_results = "\n ---------------------------------------------------- \n".join(numbered_results)
+
+	INPUT_PROMPT = f"""
+	{query}
+	{formatted_results}
 	"""
 
 	print("INPUT_PROMPT: ",INPUT_PROMPT)
+
+
+	
+
 	response = generative_model.generate_content(
 		[INPUT_PROMPT],  # Input prompt
 		generation_config=generation_config,  # Configuration settings
