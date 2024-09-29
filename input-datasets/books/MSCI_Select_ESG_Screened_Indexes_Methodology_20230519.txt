@@ -1,6 +1,6 @@
  
  
-© 202 3 MSCI Inc. All rights reserved. Please refer to the disclaimer at the end of this document.  
+(c) 202 3 MSCI Inc. All rights reserved. Please refer to the disclaimer at the end of this document.  
  INDEX METHODOLOGY  
 type  
  
@@ -21,7 +21,7 @@ May 2023
  
  
  
-MSCI.COM  | PAGE 2 OF 21 © 2023 MSCI Inc. All rights reserved. Please refer to the disclaimer at the end of this document.  
+MSCI.COM  | PAGE 2 OF 21 (c) 2023 MSCI Inc. All rights reserved. Please refer to the disclaimer at the end of this document.  
  
 MSCI SELECT ESG SCREENED INDEXES METHODOLOGY  | MAY 2023  
  
@@ -55,43 +55,43 @@ Appendix V : Changes to this Document  ................................ ........
  
  
  
-MSCI.COM  | PAGE 3 OF 21 © 2023 MSCI Inc. All rights reserved. Please refer to the disclaimer at the end of this document.  
+MSCI.COM  | PAGE 3 OF 21 (c) 2023 MSCI Inc. All rights reserved. Please refer to the disclaimer at the end of this document.  
  
 MSCI SELECT ESG SCREENED INDEXES METHODOLOGY  | MAY 2023  
  
  
 1 Introduct ion 
-The MSCI Select ESG Screened Indexes (“the Indexes”) are free float -adjusted market capitalization -
-weighted indexes that exclude companies from underlying MSCI indexes (“Parent Indexes”) based on 
+The MSCI Select ESG Screened Indexes ("the Indexes") are free float -adjusted market capitalization -
+weighted indexes that exclude companies from underlying MSCI indexes ("Parent Indexes") based on 
 Environmental, Social and Governance (ESG) criteria. The  following companies are excluded:   
-• Companies that are associated with conventional, controversial, civilian, and nuclear weapons as 
+* Companies that are associated with conventional, controversial, civilian, and nuclear weapons as 
 well as tobacco, palm oil and arctic oil & gas or  
-• Companies that are assigned an MSCI ESG Rating of ´CCC´ or  
-• Companies that derive revenues from thermal coal power and extraction of select fossil fuels  or 
-• Companies that are involved in Red Flag ESG controversies, Orange Flag Land Use and Biodiversity 
+* Companies that are assigned an MSCI ESG Rating of 'CCC' or  
+* Companies that derive revenues from thermal coal power and extraction of select fossil fuels  or 
+* Companies that are involved in Red Flag ESG controversies, Orange Flag Land Use and Biodiversity 
 controversies or Orange Flag Supply Chain Management controversies  or 
-• Compan ies that are not in compliance with the United Nations Global Compact principles  
+* Compan ies that are not in compliance with the United Nations Global Compact principles  
 In addition, the Indexes target a minimum 30% reduction in carbon emission intensity relative to the 
-underlying parent indexes (“Parent Indexes”)1. 
+underlying parent indexes ("Parent Indexes")1. 
   
  
-1 The Indexes are governed by a set of methodology and policy documents (“Methodology Set”), including the present i ndex 
-methodology document. The Methodology Set for the Indexes can be accessed from MSCI’s webpage https://www.msci.com/index -
-methodology in the section ‘Search Methodology by Index Name or Index Code’.  
-The Methodology Set includes a document ‘ESG Factors in Methodology’ that contains the list of environmental, social, and 
+1 The Indexes are governed by a set of methodology and policy documents ("Methodology Set"), including the present i ndex 
+methodology document. The Methodology Set for the Indexes can be accessed from MSCI's webpage https://www.msci.com/index -
+methodology in the section 'Search Methodology by Index Name or Index Code'.  
+The Methodology Set includes a document 'ESG Factors in Methodology' that contains the list of environmental, social, and 
 governance factors considered, and how they are applied in the methodology (e.g., selection, weighting or exclusion).   
  
  
  
-MSCI.COM  | PAGE 4 OF 21 © 2023 MSCI Inc. All rights reserved. Please refer to the disclaimer at the end of this document.  
+MSCI.COM  | PAGE 4 OF 21 (c) 2023 MSCI Inc. All rights reserved. Please refer to the disclaimer at the end of this document.  
  
 MSCI SELECT ESG SCREENED INDEXES METHODOLOGY  | MAY 2023  
  
  
 2 Constructing the MSCI Select ESG Screened Index es  
 Constructing the Indexes involves the following steps  
-• Defining the Eligible Universe  
-• Applying the Greenhouse Gas (GHG) Intensity Reduction  
+* Defining the Eligible Universe  
+* Applying the Greenhouse Gas (GHG) Intensity Reduction  
 2.1 Eligible Universe  
 The Eligible Universe for the Indexes  include s all the constituents of their respective Parent Index, as 
 shown in Appendix II.  
@@ -100,21 +100,21 @@ The Indexes use company ratings and research provided by MSCI ESG Research2 to d
 eligibility for Index inclusion . 
 ESG Ratings Eligibility   
 The Indexes use MSCI ESG Ratings to identify companies that have demonstrated an ability to manage 
-their ESG risks and opportunities. Companies with an MSCI ESG Rating of ´CCC´ are excluded from 
+their ESG risks and opportunities. Companies with an MSCI ESG Rating of 'CCC' are excluded from 
 the Indexes.  
 ESG Exclusions  
 The Indexes use MSCI ESG Business In volvement Screening Research to identify companies that are 
 involved in the following business activities. Companies that meet the business involvement criteria 
 are excluded from the Indexes . 
-• Conventional Weapons  
-• Controversial Weapons  
-• Nuclear Weapons  
-• Civilian Firearms  
-• Tobacco  
-• Fossil Fuel Extraction  
-• Thermal Coal Power  
-• Arctic Oil & Gas  
-• Palm Oil  
+* Conventional Weapons  
+* Controversial Weapons  
+* Nuclear Weapons  
+* Civilian Firearms  
+* Tobacco  
+* Fossil Fuel Extraction  
+* Thermal Coal Power  
+* Arctic Oil & Gas  
+* Palm Oil  
  
  
 2 See section 4 for further information regarding ESG and climate dat a used in the Indexes that MSCI Limited sources from MSCI ESG 
@@ -123,7 +123,7 @@ management of such data. MSCI Limited is the benchmark administrator for the MSC
  
  
  
-MSCI.COM  | PAGE 5 OF 21 © 2023 MSCI Inc. All rights reserved. Please refer to the disclaimer at the end of this document.  
+MSCI.COM  | PAGE 5 OF 21 (c) 2023 MSCI Inc. All rights reserved. Please refer to the disclaimer at the end of this document.  
  
 MSCI SELECT ESG SCREENED INDEXES METHODOLOGY  | MAY 2023  
  
@@ -131,24 +131,24 @@ MSCI SELECT ESG SCREENED INDEXES METHODOLOGY  | MAY 2023
 In addition to the above, companies are also excluded from the Indexes if they exhibit any of the 
 following characteristics:  
  
-• Companies assessed as having involv ement in ESG controversies that are classified as Red Flags 
+* Companies assessed as having involv ement in ESG controversies that are classified as Red Flags 
 (MSCI ESG Controversy Score of 0). A Red Flag indicates an ongoing Very Severe ESG controversy 
 implicating a company directly through its actions, products, or operations . 
-• Companies assessed as ha ving involvement in Land Use and Biodiversity controversies that are 
-classified as Orange Flags (MSCI ESG Controversies: Environment – Land Use and Biodiversity 
+* Companies assessed as ha ving involvement in Land Use and Biodiversity controversies that are 
+classified as Orange Flags (MSCI ESG Controversies: Environment - Land Use and Biodiversity 
 Score of 1). An Orange Flag indicates an ongoing Severe ESG controversy implicating a company 
 directly, or a Very Severe ESG controversy that is either partially resolved or indirectly attributed to 
-the company’s actions, products, or operations . 
-• Companies assessed as having involvement in Supply Chain Management controversies that are 
-classified as Orange Flags (MSCI ESG Controversies: Environment – Supply Chain Management 
+the company's actions, products, or operations . 
+* Companies assessed as having involvement in Supply Chain Management controversies that are 
+classified as Orange Flags (MSCI ESG Controversies: Environment - Supply Chain Management 
 Score of 1). An Orange Flag indicates an ongoing Severe ESG controversy implicating a company 
 directly, or a Very Severe ESG controversy that is either partially reso lved or indirectly attributed to 
-the company’s actions, products, or operations . 
-• Missing MSCI ESG Controversies Score – Companies not assessed by MSCI ESG Research on 
+the company's actions, products, or operations . 
+* Missing MSCI ESG Controversies Score - Companies not assessed by MSCI ESG Research on 
 MSCI ESG Controversies . 
-• Failure to comply with the United Nations Global Compact Principl es (UN Global Compact 
-Alignment value of “Fail”).  
-• Please refer to Appendix I for details on these criteria.  
+* Failure to comply with the United Nations Global Compact Principl es (UN Global Compact 
+Alignment value of "Fail").  
+* Please refer to Appendix I for details on these criteria.  
 2.3 Weighting  Scheme  
 The remaining securities, after the exclusions based on section 2.2, are weighted in proportion of their 
 free float -adjusted market capitalization.  
@@ -169,7 +169,7 @@ to the Parent Index, to deter mine if a 30% reduction in GHG intensity has been 
  
  
  
-MSCI.COM  | PAGE 6 OF 21 © 2023 MSCI Inc. All rights reserved. Please refer to the disclaimer at the end of this document.  
+MSCI.COM  | PAGE 6 OF 21 (c) 2023 MSCI Inc. All rights reserved. Please refer to the disclaimer at the end of this document.  
  
 MSCI SELECT ESG SCREENED INDEXES METHODOLOGY  | MAY 2023  
  
@@ -181,7 +181,7 @@ achieved .
  
  
  
-MSCI.COM  | PAGE 7 OF 21 © 2023 MSCI Inc. All rights reserved. Please refer to the disclaimer at the end of this document.  
+MSCI.COM  | PAGE 7 OF 21 (c) 2023 MSCI Inc. All rights reserved. Please refer to the disclaimer at the end of this document.  
  
 MSCI SELECT ESG SCREENED INDEXES METHODOLOGY  | MAY 2023  
  
@@ -201,7 +201,7 @@ The pro forma Indexes are in general announced nine business days before the eff
 3.2 Monthly Review of Controversies  
 Index constituents are reviewed on a monthly basis for the involvement in ESG controversies and for 
 compliance with the United  Nations Global Compact Principles. Existing constituents will be deleted 
-if they face controversies as defined as defined by MSCI ESG Controversy Score of 0 (‘Red flag’ 
+if they face controversies as defined as defined by MSCI ESG Controversy Score of 0 ('Red flag' 
 companies), or if they fail to comply with the UN Global Compact Principles.  
 MSCI uses  MSCI ESG Controversies data as of the end of the month preceding the review (e.g., end of 
 June data for the end of July monthly review). For some securities, such data may not be published 
@@ -225,7 +225,7 @@ with the UN Global Compact Principles and/or decrease in MSCI ESG Controversies 
  
  
  
-MSCI.COM  | PAGE 8 OF 21 © 2023 MSCI Inc. All rights reserved. Please refer to the disclaimer at the end of this document.  
+MSCI.COM  | PAGE 8 OF 21 (c) 2023 MSCI Inc. All rights reserved. Please refer to the disclaimer at the end of this document.  
  
 MSCI SELECT ESG SCREENED INDEXES METHODOLOGY  | MAY 2023  
  
@@ -261,7 +261,7 @@ methodology .
  
  
  
-MSCI.COM  | PAGE 9 OF 21 © 2023 MSCI Inc. All rights reserved. Please refer to the disclaimer at the end of this document.  
+MSCI.COM  | PAGE 9 OF 21 (c) 2023 MSCI Inc. All rights reserved. Please refer to the disclaimer at the end of this document.  
  
 MSCI SELECT ESG SCREENED INDEXES METHODOLOGY  | MAY 2023  
  
@@ -273,10 +273,10 @@ particular, the  Indexes use the following MSCI ESG Research products:  MSCI ESG
 ESG Business Involvement Screening Research and MSCI Clim ate Change Metrics . MSCI Indexes are 
 administered by MSCI Limited.  
 4.1 MSCI ESG Ratings  
-MSCI ESG Ratings aim to measure entities’ management of environmental, social and governance 
+MSCI ESG Ratings aim to measure entities' management of environmental, social and governance 
 risks and opportunities. MSCI ESG Ratings use a weighted average key issue calculation that is 
 normalized by industry to arrive at an industry -adjusted ESG score ( 0-10), which is then translated to 
-a seven -point scale from ‘AAA’ to ‘CCC’, indicating how an entity manages relevant key issues relative 
+a seven -point scale from 'AAA' to 'CCC', indicating how an entity manages relevant key issues relative 
 to industry peers.  
 The MSCI ESG Ratings methodology can be found at: https://www.msci.com/esg -and-climate -
 methodologies . 
@@ -286,7 +286,7 @@ environmental, social, and/or governance impact of company operations, products 
 evaluation framework used in MSCI ESG Controversies is designed to be consistent with international 
 norms represented by the UN Declaration of Human Rights, the ILO Declaration on Fundamental 
 Principles and Rights at Work, and the UN Global Compact. MSCI ESG Controversies Score falls on a 
-0-10 scale, with “0” being the  most severe controversy.  
+0-10 scale, with "0" being the  most severe controversy.  
 The MSCI ESG Controversies methodology can be found at: https://www.msci.com/esg -and-climate -
 methodologies . 
 4.3 MSCI ESG Business Involvement Screening Research  
@@ -305,20 +305,20 @@ through climate scenario analysis for both transition and physical risks.
  
  
  
-MSCI.COM  | PAGE 10 OF 21 © 2023 MSCI Inc. All rights reserved. Please refer to the disclaimer at the end of this document.  
+MSCI.COM  | PAGE 10 OF 21 (c) 2023 MSCI Inc. All rights reserved. Please refer to the disclaimer at the end of this document.  
  
 MSCI SELECT ESG SCREENED INDEXES METHODOLOGY  | MAY 2023  
  
  
 The dat aset spans across the four dimensions of a climate strategy: transition risks, green 
-opportunities, physical risks and 1.5° alignment.  
+opportunities, physical risks and 1.5deg alignment.  
 For more details on MSCI Climate Change Metrics, please refer to https://www.msci.com/climate -
 change -solutions . 
    
  
  
  
-MSCI.COM  | PAGE 11 OF 21 © 2023 MSCI Inc. All rights reserved. Please refer to the disclaimer at the end of this document.  
+MSCI.COM  | PAGE 11 OF 21 (c) 2023 MSCI Inc. All rights reserved. Please refer to the disclaimer at the end of this document.  
  
 MSCI SELECT ESG SCREENED INDEXES METHODOLOGY  | MAY 2023  
  
@@ -331,16 +331,16 @@ Each controversial activity screened by the MSCI ESG Screened Indexes ( except F
 Thermal Coal Power, Palm Oil, Arctic Oil & Gas and Global Norms ) is assigned to one of these 
 restrictiveness  levels : 
  
-“Most Restrictive” screen applied  
-• Controversial Weapons  
+"Most Restrictive" screen applied  
+* Controversial Weapons  
 - All companies with any tie to Controversial Weapons (cluster munitions, landmines, 
 depleted uranium weapons, biological/chemi cal weapons, blinding lasers, non -
 detectable fragments and incendiary weapons), as defined by the methodology of the 
 MSCI Ex -Controversial Weapons Indexes  available at 
 https://www .msci.com/i ndex/methodology/latest/XCW  
  
-“Highly Restrictive” screen applied  
-• Nuclear Weapons  
+"Highly Restrictive" screen applied  
+* Nuclear Weapons  
 - All companies that manufacture nuclear warheads and/or whole nuclear missiles.  
 - All companies that manufacture components that were developed or are significantly 
 modified for exclusive use in nuclear weapons (warheads and missiles).  
@@ -354,14 +354,14 @@ but can be used in nuclear weapons.
 developed or not significantly modified for the exclusive delivery of nuclear weapons 
 but have the capability to deliver nuclear weapons.  
 - All companies that manufacture components for nuclear -exclusi ve delivery platforms.  
-• Civilian Firearms  
-- All companies classified as “Producer” of firearms and small arms ammunitions for 
+* Civilian Firearms  
+- All companies classified as "Producer" of firearms and small arms ammunitions for 
 civilian markets. It does not include companies that cater to the military, government, 
 and law enforcement markets.   
  
  
  
-MSCI.COM  | PAGE 12 OF 21 © 2023 MSCI Inc. All rights reserved. Please refer to the disclaimer at the end of this document.  
+MSCI.COM  | PAGE 12 OF 21 (c) 2023 MSCI Inc. All rights reserved. Please refer to the disclaimer at the end of this document.  
  
 MSCI SELECT ESG SCREENED INDEXES METHODOLOGY  | MAY 2023  
  
@@ -369,44 +369,44 @@ MSCI SELECT ESG SCREENED INDEXES METHODOLOGY  | MAY 2023
 - All companies de riving 5% or more aggregate revenue from the production and 
 distribution (wholesale or retail) of firearms or small arms ammunition intended for 
 civilian use.  
-• Conventional Weapons  
+* Conventional Weapons  
 - All companies deriving 5% or more revenue from the production of conventiona l 
 weapons and components . 
 - All companies deriving 10% or more aggregate revenue from weapons systems, 
 components, and support systems and services . 
-• Tobacco  
-- All companies classified as a “Producer”.  
+* Tobacco  
+- All companies classified as a "Producer".  
 - All companies deriving 5% or more aggregate revenue from the production, 
 distribution, retail, supply and licensing of tobacco -related products.  
  
 No specific restrictiveness level applied  
-• Fossil Fuel Extraction  
-­ All companies deriving 5% or more aggregate revenue (either reported or estimated) from 
+* Fossil Fuel Extraction  
+ All companies deriving 5% or more aggregate revenue (either reported or estimated) from 
 thermal coal mining and unconventional oil and gas extraction.  
-• Thermal Coal Mining : Revenue from the mining of thermal coal (including lignite, 
+* Thermal Coal Mining : Revenue from the mining of thermal coal (including lignite, 
 bituminous, anthracite and steam coal) and its sale to external parties. It does not cover 
 revenue from metallurgical coal; coal mined for internal power generation (e.g. in the case 
 of vertically integrated power producers); intra -company sales of mined thermal coal;  and 
 revenue from coal trading  
-• Unconventional Oil & Gas Extraction:  Revenue from oil sands, oil shale (kerogen -rich 
+* Unconventional Oil & Gas Extraction:  Revenue from oil sands, oil shale (kerogen -rich 
 deposits), shale gas, shale oil, coal seam gas, and coal bed methane. It does not cover  all 
 types of conventional oil and gas production inc luding Arctic onshore/offshore, deep  
 water, shallow water and other onshore/offshore.  
-• Thermal Coal Power  
-­ All companies deriving 5% or more revenue (either reported or estimated) from thermal coal -
+* Thermal Coal Power  
+ All companies deriving 5% or more revenue (either reported or estimated) from thermal coal -
 based power generation . 
-• Arctic Oil & Gas  
-­ All companies deriv ing 5% or more revenue from arctic oil and arctic gas production. The 
+* Arctic Oil & Gas  
+ All companies deriv ing 5% or more revenue from arctic oil and arctic gas production. The 
 definition of Arctic is geographical and includes production activities north of the 66.5 latitude. 
 This includes offshore or onshore oil and gas production.  
-• Palm Oil  
-­ All companies deriv ing 5% or more aggregate revenue from the production of Palm Oil.  
-• Global Norms – United Nations Global Compact Compliance  
-­ All companies that fail to comply with the United Nations Global Compact principles .  
+* Palm Oil  
+ All companies deriv ing 5% or more aggregate revenue from the production of Palm Oil.  
+* Global Norms - United Nations Global Compact Compliance  
+ All companies that fail to comply with the United Nations Global Compact principles .  
  
  
  
-MSCI.COM  | PAGE 13 OF 21 © 2023 MSCI Inc. All rights reserved. Please refer to the disclaimer at the end of this document.  
+MSCI.COM  | PAGE 13 OF 21 (c) 2023 MSCI Inc. All rights reserved. Please refer to the disclaimer at the end of this document.  
  
 MSCI SELECT ESG SCREENED INDEXES METHODOLOGY  | MAY 2023  
  
@@ -447,7 +447,7 @@ Index  MSCI China A Inclusion
  
  
  
-MSCI.COM  | PAGE 14 OF 21 © 2023 MSCI Inc. All rights reserved. Please refer to the disclaimer at the end of this document.  
+MSCI.COM  | PAGE 14 OF 21 (c) 2023 MSCI Inc. All rights reserved. Please refer to the disclaimer at the end of this document.  
  
 MSCI SELECT ESG SCREENED INDEXES METHODOLOGY  | MAY 2023  
  
@@ -502,7 +502,7 @@ in the MSCI ACWI Select ESG Screened Index .
  
  
  
-MSCI.COM  | PAGE 15 OF 21 © 2023 MSCI Inc. All rights reserved. Please refer to the disclaimer at the end of this document.  
+MSCI.COM  | PAGE 15 OF 21 (c) 2023 MSCI Inc. All rights reserved. Please refer to the disclaimer at the end of this document.  
  
 MSCI SELECT ESG SCREENED INDEXES METHODOLOGY  | MAY 2023  
  
@@ -552,18 +552,18 @@ Index  No 1% No No
  
  
  
-MSCI.COM  | PAGE 16 OF 21 © 2023 MSCI Inc. All rights reserved. Please refer to the disclaimer at the end of this document.  
+MSCI.COM  | PAGE 16 OF 21 (c) 2023 MSCI Inc. All rights reserved. Please refer to the disclaimer at the end of this document.  
  
 MSCI SELECT ESG SCREENED INDEXES METHODOLOGY  | MAY 2023  
  
  
 Appendix IV: Calculation of GHG Intensity  
 The security level and Index level GHG intensity are calculated as per below formula:  
-𝑆𝑒𝑐𝑢𝑟𝑖𝑡𝑦  𝐿𝑒𝑣𝑒𝑙  𝐺𝐻𝐺  𝐼𝑛𝑡𝑒𝑛𝑠𝑖𝑡𝑦 =𝐶𝑎𝑟𝑏𝑜𝑛  𝐸𝑚𝑖𝑠𝑠𝑖𝑜𝑛𝑠  𝑆𝑐𝑜𝑝𝑒  1+2+3
-𝐸𝑛𝑡𝑒𝑟𝑝𝑟𝑖𝑠𝑒  𝑉𝑎𝑙𝑢𝑒 +𝐶𝑎𝑠ℎ (𝑖𝑛 𝑀$) 
-𝐼𝑛𝑑𝑒𝑥  𝐿𝑒𝑣𝑒𝑙  𝐺𝐻𝐺  𝐼𝑛𝑡𝑒𝑛𝑠𝑖𝑡𝑦
-=𝑠𝑢𝑚  𝑜𝑓 (𝐶𝑜𝑛𝑠𝑡𝑖𝑡𝑢𝑒𝑛𝑡  𝑤𝑒𝑖𝑔 ℎ𝑡∗𝑆𝑒𝑐𝑢𝑟𝑖𝑡𝑦  𝐿𝑒𝑣𝑒𝑙  𝐺𝐻𝐺  𝐼𝑛𝑡𝑒𝑛𝑠𝑖𝑡𝑦 )
-𝑠𝑢𝑚  𝑜𝑓 𝑐𝑜𝑛𝑠𝑡𝑖𝑡𝑢𝑒𝑛𝑡  𝑤𝑒𝑖𝑔 ℎ𝑡 𝑤𝑖𝑡ℎ 𝐶𝑎𝑟𝑏𝑜𝑛  𝑒𝑚𝑖𝑠𝑠𝑖𝑜𝑛𝑠  𝑎𝑛𝑑  𝐸𝑉𝐼𝐶  𝑑𝑎𝑡𝑎  𝑎𝑣𝑎𝑖𝑙𝑎𝑏𝑙𝑒 
+Security  Level  GHG  Intensity =Carbon  Emissions  Scope  1+2+3
+Enterprise  Value +Cash (in M$) 
+Index  Level  GHG  Intensity
+=sum  of (Constituent  weig ht*Security  Level  GHG  Intensity )
+sum  of constituent  weig ht with Carbon  emissions  and  EVIC  data  available 
  
 Securities with missing Carbon Emissions and/or Enterprise Value + Cash are not considered for 
 potential exclusion under section 2.4. 
@@ -571,7 +571,7 @@ potential exclusion under section 2.4.
  
  
  
-MSCI.COM  | PAGE 17 OF 21 © 2023 MSCI Inc. All rights reserved. Please refer to the disclaimer at the end of this document.  
+MSCI.COM  | PAGE 17 OF 21 (c) 2023 MSCI Inc. All rights reserved. Please refer to the disclaimer at the end of this document.  
  
 MSCI SELECT ESG SCREENED INDEXES METHODOLOGY  | MAY 2023  
  
@@ -581,105 +581,105 @@ First version reviewed and published in April 2021 .
  
 The following modifications are effective from May 2021 : 
 Section 1: Introduction  
-• Updated indexes list: MSCI ACWI Select ESG Screened I ndex added  
+* Updated indexes list: MSCI ACWI Select ESG Screened I ndex added  
 Appendix II : Eligible Universe  
-• Updated Eligible Universe table  
+* Updated Eligible Universe table  
 Appendix II I: Additional Weighting Scheme  
-• Updated Weighting Scheme table  
+* Updated Weighting Scheme table  
  
 The following modifications are effective from August 2021 : 
 Appendix I : ESG Exclusion Criteria  
-• Updated criteria for Conventional Weapons  
+* Updated criteria for Conventional Weapons  
  
 The following modifications are effective from November 2021 : 
 Section 1: Introduction  
-• Updated indexes list: MSCI EM Asia Select ESG Screened Index and MSCI Pacific ex 
+* Updated indexes list: MSCI EM Asia Select ESG Screened Index and MSCI Pacific ex 
 Japan Select ESG Screened Index added  
 Appendix  II: Eligible Universe  
-• Updated Eligible Universe table  
+* Updated Eligible Universe table  
 Appendix II I: Additional Weighting Scheme  
-• Updated Weighting Scheme table  
+* Updated Weighting Scheme table  
  
 The following modifications are effective from April 2022 : 
 Section 1: Introduction  
-• Updated indexes list: MSCI Canada Select ESG  Screened Index and MSCI China A 
+* Updated indexes list: MSCI Canada Select ESG  Screened Index and MSCI China A 
 Inclusion Select ESG Screened Index added  
 Appendix II : Eligible Universe  
-• Updated Eligible Universe table  
+* Updated Eligible Universe table  
 Appendix II I: Additional Weighting Scheme  
 Updated Weighting Scheme table  
   
  
  
  
-MSCI.COM  | PAGE 18 OF 21 © 2023 MSCI Inc. All rights reserved. Please refer to the disclaimer at the end of this document.  
+MSCI.COM  | PAGE 18 OF 21 (c) 2023 MSCI Inc. All rights reserved. Please refer to the disclaimer at the end of this document.  
  
 MSCI SELECT ESG SCREENED INDEXES METHODOLOGY  | MAY 2023  
  
  
 The following modifications are effective from May 2022 : 
 Section 3.2: ESG Exclusions  
-• Added ‘Fossil Fuel Extraction’ and ‘Thermal Coal Power’  
-• Removed ‘Thermal Coal’ and ‘Oil Sands’  
+* Added 'Fossil Fuel Extraction' and 'Thermal Coal Power'  
+* Removed 'Thermal Coal' and 'Oil Sands'  
 Section 4.2: Ongoing Event -Related Maintenance  
-• Clarified the maintenance rules  
+* Clarified the maintenance rules  
 Appendix I: ESG Exclusions Criteria  
-• Added screens for ‘Fossil Fuel Extraction’ and ‘Thermal Coal Power’  
-• Removed screens for ‘Thermal Coal’ and ‘Oil Sands’  
-• Added note on treatment for unrated securities or securities with missing coverage  
+* Added screens for 'Fossil Fuel Extraction' and 'Thermal Coal Power'  
+* Removed screens for 'Thermal Coal' and 'Oil Sands'  
+* Added note on treatment for unrated securities or securities with missing coverage  
  
 The following modifications are e ffective from August 2022 : 
 Section 1: Introduction  
-• Added exclusion criteria for MSCI ESG Controversies Score of zero  
+* Added exclusion criteria for MSCI ESG Controversies Score of zero  
 Section 3.2.2: ESG Exclusions  
 Added exclusion criteria for MSCI ESG Controversies Score of zero  
  
 The following modifications are effective from November 2022 : 
 Appendix III : Additional Weighting Scheme  
-• Updated Weighting Scheme table  
+* Updated Weighting Scheme table  
  
 The following modifications are effective from February 2023 : 
 Section 3.1: Eligible Universe  
-• Added screens for ‘Arctic Oil & Gas’ and ‘Palm Oil’  
-• Added references to ‘Environment – Land Use & Biodiversity Score’ and ‘Environment 
-– Supply Chain Management Score’  
+* Added screens for 'Arctic Oil & Gas' and 'Palm Oil'  
+* Added references to 'Environment - Land Use & Biodiversity Score' and 'Environment 
+- Supply Chain Management Score'  
 Section 3.4: GHG Intensity Reduction  
-• New Section  
+* New Section  
 Section 4.2: Monthly Review of Controversies  
-• New Section  
+* New Section  
 Appendix I: ESG Exclusions Criteria  
-• Added screens for ‘Palm Oil’ and ‘Arctic Oil & Gas’  
+* Added screens for 'Palm Oil' and 'Arctic Oil & Gas'  
 Appendix I V: Calculation of GHG Intensity   
  
  
  
-MSCI.COM  | PAGE 19 OF 21 © 2023 MSCI Inc. All rights reserved. Please refer to the disclaimer at the end of this document.  
+MSCI.COM  | PAGE 19 OF 21 (c) 2023 MSCI Inc. All rights reserved. Please refer to the disclaimer at the end of this document.  
  
 MSCI SELECT ESG SCREENED INDEXES METHODOLOGY  | MAY 2023  
  
  
-• New Appendix  
+* New Appendix  
 Methodology book was updated to reflect the transition of the MSCI Global Investable Market 
 Indexes (GIMI) to Quarterly Comprehensive Index Reviews.  
-All references to “Semi -Annual Index Reviews” and “Quarterly Index Reviews” of the MSCI GIMI were 
-replaced with “Index Reviews”.  
+All references to "Semi -Annual Index Reviews" and "Quarterly Index Reviews" of the MSCI GIMI were 
+replaced with "Index Reviews".  
  
 The following modifications are effective from June  2023 : 
 Section 1: Introduction  
-• Added footnote on Methodology Set  
+* Added footnote on Methodology Set  
 Section 2.2: Eligibility Criteria  
-• Clarified the exclusion criteria for companies involved in ESG Controversies  
+* Clarified the exclusion criteria for companies involved in ESG Controversies  
 Section 2.3: Weighting Scheme  
-• Details added to the index weighting scheme process  
+* Details added to the index weighting scheme process  
 Section 4: MSCI ESG Research  
-• Moved that section after the Section 3 (Maintaining the MSCI ESG Screened Indexes)  
-• Updated the descriptions of MSCI ESG Research products  
+* Moved that section after the Section 3 (Maintaining the MSCI ESG Screened Indexes)  
+* Updated the descriptions of MSCI ESG Research products  
  
  
  
    
  
-MSCI.COM | PAGE 20 OF 21 © 2023 MSCI Inc. All rights reserved.  
+MSCI.COM | PAGE 20 OF 21 (c) 2023 MSCI Inc. All rights reserved.  
  MSCI SELECT ESG SCREENED INDEXES METHODOLOGY  | MONTH 
 YEAR  
  
@@ -695,7 +695,7 @@ Chicago  + 1 312 675 0545
 Monterrey  + 52 81 1253 4020  
 New York  + 1 212 804 3901  
 San Francisco  + 1 415 836 8800  
-São Paulo  + 55 11 3706 1360  
+Sao Paulo  + 55 11 3706 1360  
 Toronto  + 1 416 628 1007  
  
 EUROPE, MIDDLE EAST & AFRICA  
@@ -734,21 +734,21 @@ To learn more, please visit www.msci.com .
  
 The process for submitting a formal index 
 complaint can be found on the index regulation 
-page of MSCI’s website at: 
+page of MSCI's website at: 
 https://www.msci.com/index -regulation . 
  
   
  
  
  
-MSCI.COM | PAGE 21 OF 21 © 202 3 MSCI Inc. All rights reserved.  
+MSCI.COM | PAGE 21 OF 21 (c) 202 3 MSCI Inc. All rights reserved.  
  MSCI SELECT ESG SCREENED INDEXES METHODOLOGY  | MAY 2023  
  
  
 Notice and disclaimer  
-This document and all of the information contained in it, including without limitation all text, data, graphs, charts (collectively, the “Informati on”) is the property of 
-MSCI Inc. or its subsidiaries (collectively, “MSCI”), or MSCI’s licensors, direct or indirect suppliers or any third party involved in making or compiling any Information 
-(collectively, with MSCI, the “Information Providers”) and is provided for informational purposes only.  The Information may not be modified, reverse -engineered, 
+This document and all of the information contained in it, including without limitation all text, data, graphs, charts (collectively, the "Informati on") is the property of 
+MSCI Inc. or its subsidiaries (collectively, "MSCI"), or MSCI's licensors, direct or indirect suppliers or any third party involved in making or compiling any Information 
+(collectively, with MSCI, the "Information Providers") and is provided for informational purposes only.  The Information may not be modified, reverse -engineered, 
 reproduced or redisseminated i n whole or in part without prior written permission from MSCI. All rights in the Information are reserved by MSCI and/or its Information 
 Providers.  
 The Information may not be used to create derivative works or to verify or correct other data or information .   For example (but without limitation), the Information 
@@ -773,7 +773,7 @@ strategy.
 It is not possible to invest directly in an index.  Exposure to an asset class or trading strategy or other category represented by an index is only available through third 
 party investable instruments (if any) based on that index.   MSCI does not issue, sponsor, endorse, market, offer, review or otherwise express any opi nion regarding 
 any fund, ETF, derivative or other security, investment, financial product or trading strategy that is based on, linked to or  seeks to provide an investment return related 
-to the performance of any MSCI index (collectively, “Index Linked Inv estments”). MSCI makes no assurance that any Index Linked Investments will accurately track 
+to the performance of any MSCI index (collectively, "Index Linked Inv estments"). MSCI makes no assurance that any Index Linked Investments will accurately track 
 index performance or provide positive investment returns.  MSCI Inc. is not an investment adviser or fiduciary and MSCI makes  no representation regarding the 
 advisa bility of investing in any Index Linked Investments.  
 Index returns do not represent the results of actual trading of investible assets/securities. MSCI maintains and calculates i ndexes, but does not manage actual 
@@ -787,27 +787,27 @@ methodologies. Accordingly, constituents in MSCI equity indexes may include MSCI
 index is not a recommendation by MSCI to buy, sell, or hold such security, nor is it considered to be investment advice.  
 Data and information produced by various affiliates of MSCI Inc., including MSCI ESG Research LLC and Barra LLC, may be used in calculating certain MSCI indexes.  
 More information can be found in  the relevant index methodologies on www.msci.com.  
-MSCI receives compensation in connection with licensing its indexes to third parties.  MSCI Inc.’s revenue includes fees base d on assets in Index Linked Investments. 
-Information can be found in MSCI Inc.’ s company filings on the Investor Relations section of msci.com.  
+MSCI receives compensation in connection with licensing its indexes to third parties.  MSCI Inc.'s revenue includes fees base d on assets in Index Linked Investments. 
+Information can be found in MSCI Inc.' s company filings on the Investor Relations section of msci.com.  
 MSCI ESG Research LLC is a Registered Investment Adviser under the Investment Advisers Act of 1940 and a subsidiary of MSCI I nc.  Neither MSCI nor any of its 
 products or services recommends, endorses, approves or otherwise expresses any opinion regarding any issuer, securities, financial products or instruments or 
-trading strategies and MSCI’s products or services are not a recommendation to make (or refrain from making) any kind of inve stment  decision and may not be 
+trading strategies and MSCI's products or services are not a recommendation to make (or refrain from making) any kind of inve stment  decision and may not be 
 relied on as such, provided that applicable products or services from MSCI ESG Research may constitute investment advice. MSC I ESG Research materials, including 
 materials utilized in any MSCI ESG Indexes or other products, have not  been submitted to, nor received approval from, the United States Securities and Exchange 
 Commission or any other regulatory body. MSCI ESG and climate ratings, research and data are produced by MSCI ESG Research LL C, a subsidiary of MSCI Inc. 
 MSCI ESG Ind exes, Analytics and Real Estate are products of MSCI Inc. that utilize information from MSCI ESG Research LLC. MSCI Indexes a re administered by 
 MSCI Limited (UK).  
 Please note that the issuers mentioned in MSCI ESG Research materials sometimes have commerci al relationships with MSCI ESG Research and/or MSCI Inc. 
-(collectively, “MSCI”) and that these relationships create potential conflicts of interest.  In some cases, the issuers or th eir affiliates purchase research or other 
+(collectively, "MSCI") and that these relationships create potential conflicts of interest.  In some cases, the issuers or th eir affiliates purchase research or other 
 products or services from one or  more MSCI affiliates. In other cases, MSCI ESG Research rates financial products such as mutual funds or ETFs that are manage d 
-by MSCI’s clients or their affiliates, or are based on MSCI Inc. Indexes. In addition, constituents in MSCI Inc. equity index es include companies that subscribe to 
+by MSCI's clients or their affiliates, or are based on MSCI Inc. Indexes. In addition, constituents in MSCI Inc. equity index es include companies that subscribe to 
 MSCI products or services. In some cases, MSCI clients pay fees based in whole or part on the assets they manage. MSCI ESG Re search has taken a number of 
 steps to mitigate potential conflicts of interest and safeguard th e integrity and independence of its research and ratings. More information about these conflict 
 mitigation measures is available in our Form ADV, available at https://adviserinfo.sec.gov/firm/summary/169222.   
 Any use of or access to products, services or information of MSCI requires a license from MSCI. MSCI, Barra, RiskMetrics, IPD and other MSCI brands and product 
 names are the trademarks, service marks, or registered trademarks of MSCI or its subsidiaries in the United States and other jurisdictions.  T he Global Industry 
-Classification Standard (GICS) was developed by and is the exclusive property of MSCI and S&P Global Market Intelligence.  “G lobal Industry Classification Standard 
-(GICS)” is a service mark of MSCI and S&P Global Market Intelligence.  
+Classification Standard (GICS) was developed by and is the exclusive property of MSCI and S&P Global Market Intelligence.  "G lobal Industry Classification Standard 
+(GICS)" is a service mark of MSCI and S&P Global Market Intelligence.  
 MIFID2/MIFIR notice: MSCI ESG Research LLC does not distribute or act as an intermediary for financial instruments or structured  deposits, nor does it deal on its 
 own account, provide execution services for others or manage client accounts. No MSCI ESG Resear ch product or service supports, promotes or is intended to 
 support or promote any such activity. MSCI ESG Research is an independent provider of ESG data.  
