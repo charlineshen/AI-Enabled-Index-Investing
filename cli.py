@@ -275,7 +275,7 @@ def query(method="char-split"):
 	# Get a collection object from an existing collection, by name. If it doesn't exist, create it.
 	collection_name = f"{method}-collection"
 
-	query = "How is tolminc cheese made?"
+	query = "What are the MSCI Select ESG Screened Indexes?"
 	query_embedding = generate_query_embedding(query)
 	print("Embedding values:", query_embedding)
 
@@ -291,23 +291,23 @@ def query(method="char-split"):
 	print("\n\nResults:", results)
 
 	# 2: Query based on embedding value + metadata filter
-	results = collection.query(
-		query_embeddings=[query_embedding],
-		n_results=10,
-		where={"book":"The Complete Book of Cheese"}
-	)
-	print("Query:", query)
-	print("\n\nResults:", results)
+	# results = collection.query(
+	# 	query_embeddings=[query_embedding],
+	# 	n_results=10,
+	# 	where={"book":"The Complete Book of Cheese"}
+	# )
+	# print("Query:", query)
+	# print("\n\nResults:", results)
 
 	# 3: Query based on embedding value + lexical search filter
-	search_string = "Italian"
-	results = collection.query(
-		query_embeddings=[query_embedding],
-		n_results=10,
-		where_document={"$contains": search_string}
-	)
-	print("Query:", query)
-	print("\n\nResults:", results)
+	# search_string = "Italian"
+	# results = collection.query(
+	# 	query_embeddings=[query_embedding],
+	# 	n_results=10,
+	# 	where_document={"$contains": search_string}
+	# )
+	# print("Query:", query)
+	# print("\n\nResults:", results)
 
 
 def chat(method="char-split"):
@@ -318,7 +318,7 @@ def chat(method="char-split"):
 	# Get a collection object from an existing collection, by name. If it doesn't exist, create it.
 	collection_name = f"{method}-collection"
 
-	query = "How is cheese made?"
+	query = "What are the MSCI Select ESG Screened Indexes?"
 	query_embedding = generate_query_embedding(query)
 	print("Query:", query)
 	print("Embedding values:", query_embedding)
