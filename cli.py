@@ -143,7 +143,7 @@ def load_text_embeddings(df, collection, batch_size=500):
 	print(f"Finished inserting {total_inserted} items into collection '{collection.name}'")
 
 
-def chunk(method="char-split"):
+def chunk(method="semantic-split"):
 	print("chunk()")
 
 	# Make dataset folders
@@ -209,7 +209,7 @@ def chunk(method="char-split"):
 				json_file.write(data_df.to_json(orient='records', lines=True))
 
 
-def embed(method="char-split"):
+def embed(method="semantic-split"):
 	print("embed()")
 
 	# Get the list of chunk files
@@ -240,7 +240,7 @@ def embed(method="char-split"):
 			json_file.write(data_df.to_json(orient='records', lines=True))
 
 
-def load(method="char-split"):
+def load(method="semantic-split"):
 	print("load()")
 
 	# Connect to chroma DB
@@ -277,7 +277,7 @@ def load(method="char-split"):
 		load_text_embeddings(data_df, collection)
 
 
-def query(method="char-split"):
+def query(method="semantic-split"):
 	print("load()")
 
 	# Connect to chroma DB
@@ -344,15 +344,18 @@ def generate_gpt_response(query, context_chunks):
 	return response.choices[0].message.content
 
 
-def chat(method="char-split"):
-	# print("chat()")
+def chat(method="semantic-split"):
+	query = "What are the MSCI Select ESG Screened Indexes?"
+	chat_agent(query, method)
 
+def chat_agent(query, method="semantic-split"):
+	# print("chat()")
+	print("=====================", query, method)
 	# Connect to chroma DB
 	client = chromadb.HttpClient(host=CHROMADB_HOST, port=CHROMADB_PORT)
 	# Get a collection object from an existing collection, by name. If it doesn't exist, create it.
 	collection_name = f"{method}-collection"
 
-	query = "What are the MSCI Select ESG Screened Indexes?"
 	query_embedding = generate_query_embedding(query)
 	print("Query:", query)
 	# print("Embedding values:", query_embedding)
@@ -381,9 +384,9 @@ def chat(method="char-split"):
 
 	# Print the GPT output
 	print(f"\n====================GPT RESPONSE====================\n{response_text}\n")
+	return query, context_chunks, response_text
 
-
-def get(method="char-split"):
+def get(method="semantic-split"):
 	print("get()")
 
 	# Connect to chroma DB
