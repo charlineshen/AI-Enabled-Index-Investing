@@ -16,6 +16,9 @@ langchain = "*"
 llama-index = "*"
 chromadb = "0.5.11"
 langchain-community = "*"
+torch = "*"
+transformers = "*"
+sentencepiece = "*"
 
 [requires]
 python_version = "3.12"

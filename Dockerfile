@@ -33,14 +33,13 @@ RUN set -ex; \
     chown app:app /persistent && \
     chown app:app /app
 
-
 # Switch to the new user
 USER app
 WORKDIR /app
 
 # Install python packages
 ADD --chown=app:app Pipfile Pipfile.lock /app/
-
+RUN pipenv lock
 RUN pipenv sync
 
 # Add the rest of the source code. This is done last so we don't invalidate all

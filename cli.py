@@ -6,36 +6,44 @@ import time
 import glob
 import hashlib
 import chromadb
+from openai import OpenAI
 
-# Vertex AI
-import vertexai
-from vertexai.language_models import TextEmbeddingInput, TextEmbeddingModel
-from vertexai.generative_models import GenerativeModel, GenerationConfig, Content, Part, ToolConfig
+OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
+client = OpenAI(api_key=OPENAI_API_KEY)
 
 # Langchain
 from langchain.text_splitter import CharacterTextSplitter
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 #from langchain_experimental.text_splitter import SemanticChunker
 from semantic_splitter import SemanticChunker
-import agent_tools
+# import agent_tools
+
+# Hugging face emebedding model https://huggingface.co/cointegrated/rubert-tiny2
+# # pip install transformers sentencepiece 
+import torch
+from transformers import AutoTokenizer, AutoModel
 
 # Setup TODO
 GCP_PROJECT = os.environ["GCP_PROJECT"]
 GCP_LOCATION = "us-central1"
-EMBEDDING_MODEL = "text-embedding-004"
+# EMBEDDING_MODEL = "text-embedding-004"
 EMBEDDING_DIMENSION = 256
-GENERATIVE_MODEL = "gemini-1.5-flash-001"
+# GENERATIVE_MODEL = "gemini-1.5-flash-001"
+GENERATIVE_MODEL = "gpt-3.5-turbo"  # CHANGED: Example generative model for OpenAI
 INPUT_FOLDER = "input-datasets"
 OUTPUT_FOLDER = "outputs"
 CHROMADB_HOST = "llm-rag-chromadb"
 CHROMADB_PORT = 8000
-vertexai.init(project=GCP_PROJECT, location=GCP_LOCATION)
-# https://cloud.google.com/vertex-ai/generative-ai/docs/model-reference/text-embeddings-api#python
-embedding_model = TextEmbeddingModel.from_pretrained(EMBEDDING_MODEL)
+
+# New embedding model
+tokenizer = AutoTokenizer.from_pretrained("cointegrated/rubert-tiny2")
+model = AutoModel.from_pretrained("cointegrated/rubert-tiny2")
+# model.cuda()  # uncomment it if you have a GPU
+
 # Configuration settings for the content generation
 generation_config = {
-    "max_output_tokens": 8192,  # Maximum number of tokens for output
-    "temperature": 0.25,  # Control randomness in output
+    "max_output_tokens": 4096,  # Maximum number of tokens for output
+    "temperature": 0.25,  # Control randomne ss in output
     "top_p": 0.95,  # Use nucleus sampling
 }
 # Initialize the GenerativeModel with specific system instructions
@@ -54,10 +62,6 @@ Remember:
 - Do not invent information or draw from knowledge outside of the given text chunks.
 - Be concise in your responses while ensuring you cover all relevant information from the chunks.
 """
-generative_model = GenerativeModel(
-	GENERATIVE_MODEL,
-	system_instruction=[SYSTEM_INSTRUCTION]
-)
 
 # TODO　
 book_mappings = {
@@ -74,26 +78,31 @@ book_mappings = {
 	"Tolminc Cheese": {"author": "Pavlos Protopapas", "year": 2024}
 }
 
+### embedding
+def embed_bert_cls(text, model, tokenizer):
+	t = tokenizer(text, padding=True, truncation=True, return_tensors='pt')
+	with torch.no_grad():
+		model_output = model(**{k: v.to(model.device) for k, v in t.items()})
+	embeddings = model_output.last_hidden_state[:, 0, :]
+	embeddings = torch.nn.functional.normalize(embeddings)
+	return embeddings[0].cpu().numpy()
+
 
 def generate_query_embedding(query):
-	query_embedding_inputs = [TextEmbeddingInput(task_type='RETRIEVAL_DOCUMENT', text=query)]
-	kwargs = dict(output_dimensionality=EMBEDDING_DIMENSION) if EMBEDDING_DIMENSION else {}
-	embeddings = embedding_model.get_embeddings(query_embedding_inputs, **kwargs)
-	return embeddings[0].values
+	return embed_bert_cls(query, model, tokenizer)
 
 
 def generate_text_embeddings(chunks, dimensionality: int = 256, batch_size=250):
-	# Max batch size is 250 for Vertex AI
-	all_embeddings = []
+	all_embeddings_new = []
 	for i in range(0, len(chunks), batch_size):
 		batch = chunks[i:i+batch_size]
-		inputs = [TextEmbeddingInput(text, "RETRIEVAL_DOCUMENT") for text in batch]
-		kwargs = dict(output_dimensionality=dimensionality) if dimensionality else {}
-		embeddings = embedding_model.get_embeddings(inputs, **kwargs)
-		all_embeddings.extend([embedding.values for embedding in embeddings])
-
-	return all_embeddings
-
+		embeddings = [embed_bert_cls(text, model, tokenizer) for text in batch] 
+		all_embeddings_new.extend([embedding for embedding in embeddings])
+	print("=============================== new embeddings")
+	print(len(all_embeddings_new), len(all_embeddings_new[0]))
+	print("===============================")
+	return all_embeddings_new
+### end of embedding
 
 def load_text_embeddings(df, collection, batch_size=500):
 
@@ -110,7 +119,7 @@ def load_text_embeddings(df, collection, batch_size=500):
 		book_mapping = book_mappings[metadata["book"]]
 		metadata["author"] = book_mapping["author"]
 		metadata["year"] = book_mapping["year"]
-   
+
 	# Process data in batches
 	total_inserted = 0
 	for i in range(0, df.shape[0], batch_size):
@@ -152,7 +161,7 @@ def chunk(method="char-split"):
 
 		with open(text_file) as f:
 			input_text = f.read()
-		
+
 		text_chunks = None
 		if method == "char-split":
 			chunk_size = 350
@@ -174,7 +183,7 @@ def chunk(method="char-split"):
 			text_chunks = text_splitter.create_documents([input_text])
 			text_chunks = [doc.page_content for doc in text_chunks]
 			print("Number of chunks:", len(text_chunks))
-		
+
 		elif method == "semantic-split":
 			# Init the splitter
 			text_splitter = SemanticChunker(
@@ -184,7 +193,7 @@ def chunk(method="char-split"):
 			)
 			# Perform the splitting
 			text_chunks = text_splitter.create_documents([input_text])
-			
+
 			text_chunks = [doc.page_content for doc in text_chunks]
 			print("Number of chunks:", len(text_chunks))
 
@@ -312,6 +321,29 @@ def query(method="char-split"):
 	# print("\n\nResults:", results)
 
 
+def generate_gpt_response(query, context_chunks):
+	"""
+	Generate a GPT response using OpenAI's API based on the context chunks provided.
+	"""
+	prompt = f"""
+	{SYSTEM_INSTRUCTION}
+
+	Query: {query}
+	Context:
+	{context_chunks}
+	"""
+	response = client.chat.completions.create(
+			model=GENERATIVE_MODEL,
+			messages=[
+				{"role": "system", "content": SYSTEM_INSTRUCTION},
+				{"role": "user", "content": prompt}
+			],
+			temperature=generation_config['temperature'],
+			max_tokens=generation_config['max_output_tokens'],
+			top_p=generation_config['top_p'])
+	return response.choices[0].message.content
+
+
 def chat(method="char-split"):
 	# print("chat()")
 
@@ -322,7 +354,7 @@ def chat(method="char-split"):
 
 	query = "What are the MSCI Select ESG Screened Indexes?"
 	query_embedding = generate_query_embedding(query)
-	# print("Query:", query)
+	print("Query:", query)
 	# print("Embedding values:", query_embedding)
 	# Get the collection
 	collection = client.get_collection(name=collection_name)
@@ -333,26 +365,22 @@ def chat(method="char-split"):
 		n_results=10
 	)
 	# print("\n\nResults:", results)
-
 	# print(len(results["documents"][0]))
-
-	INPUT_PROMPT = f"""
-	{query}
-	{"\n".join(results["documents"][0])}
-	"""
 
 	numbered_results = [f"{i + 1}.\n{doc}" for i, doc in enumerate(results['documents'][0])]
 	formatted_results = "\n----------------------------------------------------\n".join(numbered_results)
 	print_output = f"{query}\n\n====================RETRIEVED TEXT====================\n{formatted_results}"
 	print("====================INPUT PROMPT====================\n", print_output)
 
-	response = generative_model.generate_content(
-		[INPUT_PROMPT],  # Input prompt
-		generation_config=generation_config,  # Configuration settings
-		stream=False,  # Enable streaming for responses
-	)
-	generated_text = response.text
-	print("\n====================LLM RESPONSE====================\n", generated_text)
+	# Prepare input prompt for OpenAI GPT model
+	context_chunks = "\n".join(results["documents"][0])
+	print(f"Context chunks: {context_chunks}")
+
+	# Generate a response using OpenAI GPT
+	response_text = generate_gpt_response(query, context_chunks)
+
+	# Print the GPT output
+	print(f"\n====================GPT RESPONSE====================\n{response_text}\n")
 
 
 def get(method="char-split"):
@@ -374,59 +402,6 @@ def get(method="char-split"):
 	print("\n\nResults:", results)
 
 
-def agent(method="char-split"):
-	print("agent()")
-
-	# Connect to chroma DB
-	client = chromadb.HttpClient(host=CHROMADB_HOST, port=CHROMADB_PORT)
-	# Get a collection object from an existing collection, by name. If it doesn't exist, create it.
-	collection_name = f"{method}-collection"
-	# Get the collection
-	collection = client.get_collection(name=collection_name)
-
-	# User prompt
-	user_prompt_content = Content(
-    	role="user",
-		parts=[
-			Part.from_text("Describe where cheese making is important in Pavlos's book?"),
-		],
-	)
-	
-	# Step 1: Prompt LLM to find the tool(s) to execute to find the relevant chunks in vector db
-	print("user_prompt_content: ",user_prompt_content)
-	response = generative_model.generate_content(
-		user_prompt_content,
-		generation_config=GenerationConfig(temperature=0),  # Configuration settings
-		tools=[agent_tools.cheese_expert_tool],  # Tools available to the model
-		tool_config=ToolConfig(
-			function_calling_config=ToolConfig.FunctionCallingConfig(
-				# ANY mode forces the model to predict only function calls
-				mode=ToolConfig.FunctionCallingConfig.Mode.ANY,
-		))
-	)
-	print("LLM Response:", response)
-
-	# Step 2: Execute the function and send chunks back to LLM to answer get the final response
-	function_calls = response.candidates[0].function_calls
-	print("Function calls:")
-	function_responses = agent_tools.execute_function_calls(function_calls,collection,embed_func=generate_query_embedding)
-	if len(function_responses) == 0:
-		print("Function calls did not result in any responses...")
-	else:
-		# Call LLM with retrieved responses
-		response = generative_model.generate_content(
-			[
-				user_prompt_content,  # User prompt
-				response.candidates[0].content,  # Function call response
-				Content(
-					parts=function_responses
-				),
-			],
-			tools=[agent_tools.cheese_expert_tool],
-		)
-		print("LLM Response:", response)
-
-
 def main(args=None):
 	# print("CLI Arguments:", args)
 
@@ -441,15 +416,15 @@ def main(args=None):
 
 	if args.query:
 		query(method=args.chunk_type)
-	
+
 	if args.chat:
 		chat(method=args.chunk_type)
-	
+
 	if args.get:
 		get(method=args.chunk_type)
-	
-	if args.agent:
-		agent(method=args.chunk_type)
+
+	# if args.agent:
+	# 	agent(method=args.chunk_type)
 
 
 if __name__ == "__main__":
