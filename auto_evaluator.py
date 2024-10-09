@@ -22,6 +22,7 @@ Grading Scheme:
 - Wrong (hallucination): -1 point. The response contains untruthful or misleading facts that are not supported by the source text.
 
 Provide a brief reason for the score.
+In your evaluation response, please use format of "Score: X. Reason: Y."
 """
 
 
@@ -40,6 +41,7 @@ Evaluation Steps:
 2. Read the response and compare it to the source text. Check if all the information in the response is supported by the source text.
 3. Read the question and compare the response to both the source text and the question. Check if the response includes all the relevant information to answer the question, and if it contains irrelevant information.
 4. Assign a score according to the provided grading scheme above, and provide concise reasoning.
+5. In your evaluation response, please use format of "Score: X. Reason: Y."
 """
 
 def read_sample_qa(input_file):
@@ -95,6 +97,7 @@ def eval(prompt):
 def evaluate_wo_expected_answer(input_file='sample_q.csv', output_file='sample_q_evaluation.csv'):
     questions = read_sample_q(input_file)
     results = []
+    total_score = 0
 
     for i in range(len(questions)):
         query = questions[i]
@@ -116,6 +119,9 @@ def evaluate_wo_expected_answer(input_file='sample_q.csv', output_file='sample_q
         evaluation = eval(prompt)
         print(f"Evaluation: {evaluation}")
 
+        score = float(evaluation.split()[1][:-1])
+        total_score += score
+
         # Store results
         results.append({
             "Question": query,
@@ -129,10 +135,12 @@ def evaluate_wo_expected_answer(input_file='sample_q.csv', output_file='sample_q
     df = pd.DataFrame(results)
     df.to_csv(output_file, index=False)
     print(f"Evaluation results saved to '{output_file}'.")
+    print("Average score: ", total_score/len(questions))
 
 def evaluate_w_expected_answer(input_file='sample_qa.csv', output_file='sample_qa_evaluation.csv'):
     questions, expected_answers = read_sample_qa(input_file)
     results = []
+    total_score = 0
 
     for i in range(len(questions)):
         query = questions[i]
@@ -155,6 +163,9 @@ def evaluate_w_expected_answer(input_file='sample_qa.csv', output_file='sample_q
         evaluation = eval(prompt)
         print(f"Evaluation: {evaluation}")
 
+        score = float(evaluation.split()[1][:-1])
+        total_score += score
+
         # Store results
         results.append({
             "Question": query,
@@ -168,6 +179,7 @@ def evaluate_w_expected_answer(input_file='sample_qa.csv', output_file='sample_q
     df = pd.DataFrame(results)
     df.to_csv(output_file, index=False)
     print("Evaluation results saved to 'evaluation_results.csv'.")
+    print("Average score: ", total_score/len(questions))
 
 
 if __name__ == "__main__":
