@@ -19,6 +19,8 @@ langchain-community = "*"
 torch = "*"
 transformers = "*"
 sentencepiece = "*"
+PyPDF2 = "*"
+unidecode = "*"
 
 [requires]
 python_version = "3.12"

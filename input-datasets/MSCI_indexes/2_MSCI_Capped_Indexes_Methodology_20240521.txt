@@ -1,0 +1,358 @@
+ 1 Introduction to the MSCI Capped Indexes  
+In calculating its international equity indexes, MSCI employs market 
+capitalization weighting where each constituent in the index is weighted by its 
+free float -adjusted market capitalization. Applying free float -adjusted market 
+capitalization weighting may result in large sector, geographical or company 
+concentration  in certain cases. MSCI Capped Indexes are designed to provide an 
+alternative to purely free float -adjusted market capitalization weighted indexes by 
+constraining the maximum sector, geographical or constituent weights.1  
+In addition to the MSCI Capped Indexes, MSCI constructs and calculates th e 
+MSCI 10/40 Indexes, MSCI 25/50 Indexes , MSCI 35/65 Indexes  and MSCI 10/50 
+Indexes . These indexes are specifically intended for funds subject to regulatory 
+constraints on maximum weights.  
+  
+ 
+1 The Indexes are governed by a set of methodology and policy documents ("Methodology Set"), including the 
+present index methodology document. Please refer to Appendix IV for more details.  
+ 2 Constructing the MSCI Capped Indexes  
+The MSCI Capped Indexes are  constructed from underlying MSCI indexes (herein, 
+"Parent Indexes"). For each capped index, the following is defined:  
+# a criterion for grouping constituents of the Parent Index  
+# the maximum weight to be applied for such groups  
+Constituents of the Parent Ind ex can be grouped as follows:  
+# by country or region  
+# by sector, industry group, industry or sub -industry, based on the Global Industry 
+Classification Standard (GICS (r)2) 
+# by stock exchange or currency of price  
+# by group entity3 
+# by issuer  
+# each constituent may be considered as a single group  
+At construction and at each rebalancing, if the weight of any group in the Parent 
+Index is greater than the maximum weight, its weight will be capped at the 
+maximum weight. Within the capped group, securities are weighted in  proportion 
+to their free float -adjusted market capitalization. The weight of the securities 
+outside of the capped group will be increased in proportion to their weight prior 
+to such capping.  
+  
+ 
+2 GICS(r), the global industry classification standard jointly developed by MSCI and S&P Global  Market 
+Intelligence . For more information visit  https://www.msci.com/our -solutions/indexes/gics  
+3 for a definition and a description of the maintenance of Group Entities, please refer to the MSCI 10/40 
+methodology at https://www.msci.com/index -methodology  
+ 3 Maintaining the MSCI Capped Indexes  
+3.1 Quarterly Index Reviews  
+Coinciding with the Index Reviews of the MSCI Global Investable Market Indexes, 
+the MSCI Capped Indexes are generally rebalanced on the last business day of 
+February, May, August and November as described under Section 2 above.  The 
+MSCI Capped pro forma inde xes are generally announced nine business days 
+before the effective date, unless otherwise specified in the respective 
+methodologies.  
+Intra -quarter weights will fluctuate according to market movements.  
+3.2 Rebalancing due to non -compliance  
+A maximum intra -quarter weight may be defined. If the weight of a group 
+increases above the maximum intra -quarter weight, the index will be rebalanced 
+as described under Section 2 above.  
+3.3 Ongoing Event Related Changes  
+In general, the MSCI Capped Indexes follow the event maintenance of the MSCI 
+Global Investable Market Indexes. Changes in the Parent Index are reflected 
+simultaneously in the MSCI Capped Index.  
+3.3.1 Early inclusions of new securities to the Parent Index  
+Early inclusions of new securities to the Parent Index  outside of the Quarterly and 
+Semi -Annual Index Reviews, such as IPOs, will be added to the MSCI Capped 
+Index. The weight of the added security will be capped if required as per Section 
+2 above.  
+3.3.2 Additions and deletions due to corporate events  
+The general treatment of additions and deletions due to corporate events aims at 
+reducing turnover in the MSCI Capped Index.  
+A security added to the Parent Index following a corporate event (acquisition, 
+spinoff or merger) will also be added to the MSCI Capped  index with an 
+estimated capped weight.  
+A constituent deleted from the Parent Index following a corporate event will be 
+simultaneously deleted from the MSCI Capped Index.  
+  
+ 4 Specific Capping Methodologies  
+This section describes the specific index capping me thodologies that are 
+available as part of the MSCI Capped Indexes methodology:  
+4.1 MSCI 10/40 Indexes  
+The MSCI 10/40 Indexes constrain the weight of any single group entity at 10%, 
+and the sum of the weights of all group entities representing more than 5% 
+weight at 40%, with a buffer of 10% applied on these limits at each index 
+rebalancing. Further details of the MSCI 10/40 Indexes are available at: 
+https://www.msci.com/index -methodology . 
+4.2 MSCI 25/50 Indexes  
+The MSCI 25/50 Indexes constrain the weight of any single group entity at 25%, 
+and the sum of the weights of all group entities representing more than 5% 
+weight at 50%, with a buffer of 10% applied on these limits at eac h index 
+rebalancing. Further details of the MSCI 25/50 Indexes are available at:  
+https://www.msci.com/index -methodology . 
+4.3 MSCI 20/20 Indexes  
+The MSCI 20/20 Indexes const rain the weight of any single group entity at 20%, 
+with a buffer of 10% applied on this limit at each index rebalancing. The MSCI 
+20/20 Indexes  are rebalanced quarterly. Changes are implemented as of the 
+close of the last  business day of each February, May , August and November, to 
+coincide with the Index Reviews of their Parent Indexes . The MSCI 20/20 Indexes 
+are in general rebalanced nine business days before the effective date. The 
+changes resulting from the rebalancing are announced on the same day.  
+The MSCI 20/20 Indexes are also rebalanced on an "as needed" basis. This 
+means that a MSCI 20/20 Index is rebalanced at the end of any day on which the 
+constraints as specified above (without the buffer) are breached, so that the 
+MSCI 20/20 Index will always be within the constraints before the opening of the 
+following trading day. The other index construction and index maintenance rules 
+for the MSCI 20/20 Indexes are as described in Sections 2 and 3 respectively of 
+this document.  
+  
+  
+4.4 MSCI 20/35 Indexes  
+The MSC I 20/35 Indexes constrain the weight of the largest group entity at 35%, 
+and all other group entities at 20%, with a buffer of 10% applied on these limits at 
+each index rebalancing.  
+The MSCI 20 /35 Indexes  are rebalanced quarterly. Changes are implemented a s 
+of the close of the last business day of each February, May, August and 
+November, to coincide with the Index Reviews of their Parent Indexes . The MSCI 
+20/35 Indexes are in general rebalanced nine business days before the effective 
+date. The changes resul ting from the rebalancing are announced on the same 
+day. 
+The MSCI 20/35 Indexes are also rebalanced on an "as needed" basis. This 
+means that a MSCI 20/35 Index is rebalanced at the end of any day on which the 
+constraints as specified above (without the buf fer) are breached. The 
+rebalancing will take place as of the close of the day when the index breaches 
+the constraints, so that the MSCI 20/35 Index will always be within the 
+constraints before the opening of the following trading day. The other index 
+const ruction and index maintenance rules for the MSCI 20/35 Indexes are as 
+described in Sections 2 and 3 respectively of this document.  
+4.5 MSCI EM Beyond BIC Index  
+The MSCI EM Beyond BIC Index is a sub -set of the MSCI Emerging Markets Index 
+that excludes Brazil, I ndia and China. In addition , the weight of any country is 
+constrained at 15%. The other index construction and index maintenance rules 
+for the MSCI EM Beyond BIC Index are as described in Sections 2 and 3 
+respectively of this document.  
+4.6 MSCI 35/65 Indexes  
+The MSCI 35/65 Indexes constrain the weight of the largest security at 35%, and 
+the sum of the weights of the largest five securities at 65%, with a buffer of 5% 
+applied on these limits at each index review . The indexes are designed to take 
+into ac count the concentration limits defined by the National Commission for the 
+Pension System ("Comision Nacional del Sistema de Ahorro para el Retiro" or 
+CONSAR) in Mexico.  
+ 
+The MSCI 35/65 Indexes are rebalanced on a semi -annual basis, coinciding with 
+the May and November  l Index Reviews of  the MSCI Global Investable Market 
+ Indexes (GIMI). The MSCI 35/65 Indexes are in general rebalanced nine business 
+days before the effective date. The changes resulting from the rebalancing are 
+announced on the same day.  
+The M SCI 35/65 Indexes are also rebalanced on an "as needed" basis to 
+maintain the 35/65 constraints on any given day. This means that a MSCI 35/65 
+Index is rebalanced at the end of any day on which the constraints as specified 
+above (without the buffer) are br eached. The rebalancing will take place as of the 
+close of the day when the index breaches the constraints, so that the MSCI 35/65 
+Index will be within the constraints at the opening of any day. The other index 
+construction and index maintenance rules for the MSCI 35/65 Indexes are as 
+described in Sections 2 and 3 respectively of this document.  
+Similar to the MSCI 25/50 Indexes4, Minimizing the tracking error between the 
+MSCI 35/65 Index and the Parent Index, while keeping the index turnover to a 
+reasonabl e level, is another important objective of the current methodology. This 
+is achieved by rebalancing the MSCI 35/65 Index using an optimization process 
+that aims to minimize the constituent weight differences between the MSCI 
+35/65 Index and the Parent Inde x. 
+4.7 MSCI Adaptive Capped Indexes  
+For the MSCI Adaptive Capped Indexes, a maximum multiple ("L") of the 
+benchmark weight of the corresponding Parent Index is set. The MSCI Adaptive 
+Capped Indexes then constrain the weight of any single security to the level of a 
+"cap weight" derived using this maximum benchmark multiple L. All the 
+securities from the underlying index having weights higher than the derived cap 
+weight are constrained to the cap weight. Remaining securities are assigned a 
+weight that is equivale nt to L multiplied by the weight of the security in the 
+underlying index. The cap weight can change from one Index Review to the next. 
+Further details of the MSCI Adaptive Capped Indexes are available at:  
+https://www.msci.com/index/methodology/latest/AdptiveCapped .   
+4.8 MSCI 10/50  Indexes  
+The MSCI 10/50 Indexes constrain the weight of the largest group e ntity at 10%, 
+and the sum of the weights of all group entities representing more than 5% 
+weight at 50%, with a buffer of 10% applied on these limits at each index review.  
+The MSCI 10/50 Indexes are rebalanced quarterly. Changes are implemented as 
+of the cl ose of the last business day of each February, May, August and 
+ 
+4 https://www.msci.com/index -methodology  
+ November . The MSCI 10/50 Indexes are in general rebalanced nine business 
+days before the effective date.  
+Similar to the MSCI 25/50 Indexes, another important objective of the current 
+methodolog y is to minimiz e the tracking error between the MSCI 10/50 Index and 
+the Parent Index, while keeping the index turnover to a reasonable level. This is 
+achieved by rebalancing the MSCI 10/50 Index using an optimization process 
+that aims to minimize the cons tituent weight differences between the MSCI 
+10/50 Index and the Parent Index. However, unlike the MSCI 25/50 Indexes 
+methodology, the index does not rebalance incase the 10/50 constrain ts are 
+breached between the announcement date and the effective date.  
+ 
+ Appendix  I: Handling Infeasible Capping  
+ 
+If the index does not have enough constituents required to rebalance the index, 
+the buffers5, if applicable, would be reduced as required as a first step. If the 
+index is still unable to rebalance using the reduce d buffers6, MSCI will 
+temporarily maintain the Index for a minimum of two months before 
+discontinuation, by adding the necessary number of securities to the index. The 
+index discontinuation will follow the Index Termination Policy as per the MSCI 
+Index Po licies7 and will coincide with a scheduled index review. The securities to 
+be added to an index for temporary maintenance will be chosen based on the 
+below criteria:  
+# Securities deleted from the MSCI Capped Index that triggered the decrease in the 
+number of entities, provided they remain eligible, e.g., exhibit required liquidity, were not 
+deleted due to financial difficulties, etc.  
+# Eligible securities of relevant size not included in the Parent Index, e.g., largest small cap 
+size-segment securities if the  Parent Index is a MSCI Standard Index.  
+In the event that no securities are eligible for temporary inclusion to the MSCI 
+Capped Index, MSCI will be providing an index, as close as possible to the 
+capping constraints.  
+ 
+ 
+  
+ 
+5 A buffer of the value of each constraint is used in order to reduce the risk of noncompliance due to short term 
+market movements between two rebalancing s. 
+6 A minimum number of constituents in the Parent Index is requ ired at any point in time for an MSCI Capped 
+Index to be rebalanced using buffer rules. In the event the number of constituents drops below this minimum, 
+MSCI would reduce the buffer value. For more details , please refer to the specific capped  methodology at 
+https://www.msci.com/index -methodology  
+7 For further details, see MSCI - Index Policies at https://www.msci.com/index -methodology  
+  
+Appendix  II: Methodology for the MSCI Israel Capped 
+Index  
+The MSCI Israel Capped Index is constructed from the MSCI Israel IMI (the 
+"Parent Index"). The MSCI Israel Capped Index is constructed and maintained in 
+accordance with the MSCI 25/50 Indexes methodology described in section 4.2, 
+effective January 28, 2016.  
+Prior to January 28, 2016, the Index was constructed and maintained as per the 
+rules described in section 2 for the MSCI Capped Indexes methodology by 
+applying a capping constr aint of 24% to the constituents of the Parent Index at 
+each Quarterly Index Review.  
+ 
+ 
+ Appendix  III: Methodology for the MSCI Saudi Arabia 
+IMI Capped Index  
+ 
+The MSCI Saudi Arabia IMI Capped Index is constructed from the MSCI Saudi 
+Arabia IMI . The MSCI Saudi Arabia IMI Capped Index is constructed and 
+maintained in accordance with the MSCI 20/35 Indexes methodology described 
+in section 4.4 .   
+ Appendix I V: Methodology Set 
+The Index is governed by a set of me thodology and policy documents ("Methodology 
+Set"),  
+including the present index methodology document as mentioned below:  
+ 
+* Description of methodology set - 
+https://www.msci.com/index/methodology/latest/ReadMe  
+* MSCI Corporate Events Methodology - 
+https://www.ms ci.com/index/methodology/latest/CE  
+* MSCI Fundamental Data Methodology - 
+https://www.msci.com/index/methodology/latest/FundData  
+* MSCI Index Calculation Methodology - 
+https://www.msci.com/index/methodology/latest/IndexCalc  
+* MSCI Index Glossary of Terms - 
+https://www.msci.com/index/methodology/latest/IndexGlossary  
+* MSCI Index Policies - 
+https://www.msci.com/index/methodology/latest/IndexPolicy  
+* MSCI Global Industry Classification Standard (GICS) Methodology - 
+https://www.msci.com/index/methodology/latest/GICS  
+* MSCI Global Investable Market Indexes Methodology - 
+https://www.msci.com/ind ex/methodology/latest/GIMI  
+ 
+ 
+The Methodology Set for the Indexes can also be accessed from MSCI's 
+webpage  https://www.msci.com/index -methodology  in the section 'Search 
+Methodology by Index Name or Index Code'.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+Changes to the Methodology Book  
+THE FOLLOWING SECTIONS HAVE BEEN MODIFIED SINCE SEPTEMBER 2013:  
+Section 1: Introduction  
+# Inclusion of MSCI 35/65 Indexes  
+Section 4: Specific Capping Methodologies  
+# Addition of MSCI 35/65 index methodology  
+ 
+THE FOLLOWING SECTIONS HAVE BEEN MODIFIED SINCE MAY 2015:  
+Section 4: Specific Capping Methodologies  
+# Addition of MSCI Adaptive Capped Indexes methodology  
+ 
+THE FOLLOWING SECTIONS HAVE BEEN MODIFIED SINCE NOVEMBER 2015:  
+Appendix I: Methodology for the MSCI Israel Capped Index  
+# Addition of Appendix I  
+ 
+THE FOLLOWING SECTIONS HAVE BEEN MODIFIED SINCE JANUARY 20 16: 
+Appendix II: Methodology for the MSCI FM 15% Country Capped Index  
+# Addition of Appendix II  
+ 
+THE FOLLOWING SECTIONS HAVE BEEN MODIFIED SINCE NOVEMBER 2016:  
+Appendix III: Phasing in the Context of the Reclassification of Pakistan  
+# Addition of Appendix III  
+ 
+THE FOLLOWING SECTIONS HAVE BEEN MODIFIED SINCE AUGUST 2019:  
+Appendix II: Methodology for the MSCI FM 15% Country Capped Index  
+# Updated Appendix II  
+Appendix III: Phasing in the Context of the Reclassification of Pakistan  
+ Removed Appendix III  
+THE FOLLOWING SECTIONS HAVE BEEN MODIFIED SINCE FEBRUARY 2019:  
+Appendix II: Methodology for the MSCI FM 15% Country Capped Index  
+# Updated Appendix II  
+ 
+THE FOLLOWING SECTIONS HAVE BEEN MODIFIED SINCE FEBRUARY 2021:  
+Appendix II: Methodology for the MSCI FM 15%  Country Capped Index  
+# Updated Appendix II  
+ 
+THE FOLLOWING SECTIONS HAVE BEEN MODIFIED AS OF MAY 2022:  
+Appendix II: Methodology for the MSCI FM 15% Country Capped Index  
+# Added Pakistan to the list of Eligible Markets  
+ 
+THE FOLLOWING SECTIONS HAVE BEEN MODIFIED  AS OF  AUGUST  2023:  
+Methodology book was updated to reflect the transition of the MSCI Global 
+Investable Market Indexes (GIMI) to Quarterly Comprehensive Index Reviews.  
+All references to "Semi -Annual Index Reviews" and "Quarterly Index Reviews" of 
+the MSCI  GIMI were replaced with "Index Reviews" . 
+Clarification of  missing updates from September 2018 edition to May 2022 
+edition:  
+# Addition of MSCI 10/50 index methodology  
+# Change rebalancing notification date from 5 days to 9 days for MSCI 20/20 Indexes  and 
+MSCI 20/ 35 Indexes  
+# Addition of  APPENDIX III  
+# Addition of APPENDIX IV 
+# Section 4.5. Updated to clarify the removal of Russia from the EM Beyond BIC Index 
+effective March 10, 2022 following its market reclassification to Standalone  
+Appendix II: Methodology for the MSCI FM 15% Country Capped Index  
+# Removed footnote for Serbia  
+ 
+ THE FOLLOWING SECTIONS HAVE BEEN MODIFIED AS OF FEBRUARY  2024: 
+Appendix II: Methodology for the MSCI FM 15% Country Capped Index  
+# Remov al of  Nigeria  
+ 
+THE FOLLOWING SECTION HA S BEEN MODIFIED AS OF MAY 2024: 
+Appendix II: Methodology for the MSCI Frontier Mark ets 15% Country Capped  
+Index  
+# Removed section  as the list of eligible markets for the MSCI Frontier Markets 15% 
+Country Capped Index  is now fully aligned with its parent MSCI Frontier Market Index. 
+This is to reflect the conclusions from the Consultation on Changes to the List of Eligible 
+Markets for the MSCI Frontier Markets 100 and MSCI Frontier Markets 15% Country 
+Capped Indexes  
+ 
+Appendix IV: Methodology Set  
+# Added details on the Methodology Set for the Indexes  
+ (c) 20 24 MSCI Inc. All rights reserved.  
+ research and ratings. More information about these conflict mitigation measures is available in our Form ADV, available at 
+https://adviserinfo.sec.gov/firm/summary/169222.   
+Any use of or access to products, services or information of MSCI requires a license from MSCI. MSCI, Barra, RiskMetrics, IPD and other MSCI brands 
+and product names are the trademarks, service marks, or registered trademarks of MSCI or its subsidiaries in the United State s and other jurisdictions.  
+The Global Industry Classificati on Standard (GICS) was developed by and is the exclusive property of MSCI and S&P Global Market Intelligence.  "Global 
+Industry Classification Standard (GICS)" is a service mark of MSCI and S&P Global Market Intelligence.  
+MIFID2/MIFIR notice: MSCI ESG Rese arch LLC does not distribute or act as an intermediary for financial instruments or structured deposits, nor does it 
+deal on its own account, provide execution services for others or manage client accounts. No MSCI ESG Research product or ser vice supports,  promotes 
+or is intended to support or promote any such activity. MSCI ESG Research is an independent provider of ESG data.  
+Privacy notice: For information about how MSCI collects and uses personal data, please refer to our Privacy Notice at https://www.msci.com/privacy -
+pledge.  

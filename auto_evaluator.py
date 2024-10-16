@@ -44,6 +44,9 @@ Evaluation Steps:
 5. In your evaluation response, please use format of "Score: X. Reason: Y."
 """
 
+title = "MSCI_Select_ESG_Screened_Indexes_Methodology_20230519"
+zip_name = 'books'
+
 def read_sample_qa(input_file):
     questions = []
     expected_answers = []
@@ -103,7 +106,7 @@ def evaluate_wo_expected_answer(input_file='sample_q.csv', output_file='sample_q
         query = questions[i]
         print("================= query: ", query)
         # Get the query, chunk, and actual response from the chat agent
-        query, chunk, response = chat_agent(query)
+        query, chunk, response = chat_agent(zip_name, title, query)
         source_text, text_filename = load_source_text()
 
         # Evaluate the response using GPT
@@ -147,7 +150,7 @@ def evaluate_w_expected_answer(input_file='sample_qa.csv', output_file='sample_q
         expected_answer = expected_answers[i]
 
         # Get the query, chunk, and actual response from the chat agent
-        query, chunk, actual_response = chat_agent(query)
+        query, chunk, actual_response = chat_agent(zip_name, title, query)
         print(f"Query: {query}\nExpected Answer: {expected_answer}\nResponse: {actual_response}")
 
         # Evaluate the response using GPT

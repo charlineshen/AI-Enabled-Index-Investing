@@ -63,21 +63,6 @@ Remember:
 - Be concise in your responses while ensuring you cover all relevant information from the chunks.
 """
 
-# TODO　
-book_mappings = {
-	"Cheese and its economical uses in the diet": {"author":"C. F. Langworthy and Caroline Louisa Hunt", "year": 2023},
-	"Cottage Cheese Recipe Book":{"author": "Milk Industry Foundation", "year": 2021},
-	"Dairying exemplified, or, The business of cheese-making": {"author":"J. Twamley", "year": 2023},
-	"Hand-book on cheese making": {"author":"George E. Newell", "year": 2023},
-	"Hints on cheese-making, for the dairyman, the factoryman, and the manufacturer": {"author":"T. D. Curtis", "year": 2013},
-	"The Book of Cheese": {"author":"Charles Thom and W. W. Fisk", "year": 2012},
-	"The book of The Cheese Being traits and stories of Ye Olde Cheshire Cheese": {"author":"Thomas Wilson Reid", "year": 2023},
-	"The Complete Book of Cheese": {"author":"Bob Brown", "year": 2024},
-	"Theres Pippins and Cheese to Come": {"author":"Charles S. Brooks", "year": 2003},
-	"Womans Institute Library of Cookery. Volume 2_ Milk, Butter and Cheese Eggs Vegetables": {"author":"Woman's Institute of Domestic Arts and Sciences", "year": 2006},
-	"Tolminc Cheese": {"author": "Pavlos Protopapas", "year": 2024}
-}
-
 ### embedding
 def embed_bert_cls(text, model, tokenizer):
 	t = tokenizer(text, padding=True, truncation=True, return_tensors='pt')
@@ -105,21 +90,17 @@ def generate_text_embeddings(chunks, dimensionality: int = 256, batch_size=250):
 ### end of embedding
 
 def load_text_embeddings(df, collection, batch_size=500):
-
+	# TODO: update id definition with new metadata
 	# Generate ids
 	df["id"] = df.index.astype(str)
-	hashed_books = df["book"].apply(lambda x: hashlib.sha256(x.encode()).hexdigest()[:16])
-	df["id"] = hashed_books + "-" + df["id"]
-
+	hashed_titles = df["title"].apply(lambda x: hashlib.sha256(x.encode()).hexdigest()[:16])
+	df["id"] = hashed_titles + "-" + df["id"]
+	
 	metadata = {
-		"book": df["book"].tolist()[0]
+		"title": df["title"].tolist()[0],
+		"zip_name": df["zip_name"].tolist()[0]
 	}
-	# TODO
-	if metadata["book"] in book_mappings:
-		book_mapping = book_mappings[metadata["book"]]
-		metadata["author"] = book_mapping["author"]
-		metadata["year"] = book_mapping["year"]
-
+	
 	# Process data in batches
 	total_inserted = 0
 	for i in range(0, df.shape[0], batch_size):
@@ -128,7 +109,7 @@ def load_text_embeddings(df, collection, batch_size=500):
 
 		ids = batch["id"].tolist()
 		documents = batch["chunk"].tolist() 
-		metadatas = [metadata for item in batch["book"].tolist()]
+		metadatas = [metadata for item in batch["title"].tolist()]
 		embeddings = batch["embedding"].tolist()
 
 		collection.add(
@@ -150,14 +131,15 @@ def chunk(method="semantic-split"):
 	os.makedirs(OUTPUT_FOLDER, exist_ok=True)
 
 	# Get the list of text file
-	text_files = glob.glob(os.path.join(INPUT_FOLDER, "books", "*.txt"))
+	text_files = glob.glob(os.path.join(INPUT_FOLDER, "**", "*.txt"), recursive=True)
 	print("Number of files to process:", len(text_files))
 
 	# Process
 	for text_file in text_files:
 		print("Processing file:", text_file)
 		filename = os.path.basename(text_file)
-		book_name = filename.split(".")[0]
+		title_name = filename.split(".")[0]
+		zip_folder_name = os.path.basename(os.path.dirname(text_file))
 
 		with open(text_file) as f:
 			input_text = f.read()
@@ -200,11 +182,12 @@ def chunk(method="semantic-split"):
 		if text_chunks is not None:
 			# Save the chunks
 			data_df = pd.DataFrame(text_chunks,columns=["chunk"])
-			data_df["book"] = book_name
+			data_df["title"] = title_name
+			data_df["zip_name"] = zip_folder_name
 			print("Shape:", data_df.shape)
 			print(data_df.head())
 
-			jsonl_filename = os.path.join(OUTPUT_FOLDER, f"chunks-{method}-{book_name}.jsonl")
+			jsonl_filename = os.path.join(OUTPUT_FOLDER, f"chunks-{method}-{title_name}.jsonl")
 			with open(jsonl_filename, "w") as json_file:
 				json_file.write(data_df.to_json(orient='records', lines=True))
 
@@ -276,8 +259,7 @@ def load(method="semantic-split"):
 		# Load data
 		load_text_embeddings(data_df, collection)
 
-
-def query(method="semantic-split"):
+def query(zip_name, title, question, method="semantic-split"):
 	print("load()")
 
 	# Connect to chroma DB
@@ -286,29 +268,25 @@ def query(method="semantic-split"):
 	# Get a collection object from an existing collection, by name. If it doesn't exist, create it.
 	collection_name = f"{method}-collection"
 
-	query = "What are the MSCI Select ESG Screened Indexes?"
-	query_embedding = generate_query_embedding(query)
-	print("Embedding values:", query_embedding)
+	query_embedding = generate_query_embedding(question)
+	# print("Embedding values:", query_embedding)
 
 	# Get the collection
 	collection = client.get_collection(name=collection_name)
 
-	# 1: Query based on embedding value 
-	results = collection.query(
-		query_embeddings=[query_embedding],
-		n_results=10
-	)
-	print("Query:", query)
-	print("\n\nResults:", results)
-
-	# 2: Query based on embedding value + metadata filter
+	# # 1: Query based on embedding value 
 	# results = collection.query(
 	# 	query_embeddings=[query_embedding],
-	# 	n_results=10,
-	# 	where={"book":"The Complete Book of Cheese"}
+	# 	n_results=10
 	# )
-	# print("Query:", query)
-	# print("\n\nResults:", results)
+
+	# 2: Query based on embedding value + metadata filter
+	results = collection.query(
+		query_embeddings=[query_embedding],
+		n_results=10,
+		where={"$and": [{"title": title}, {"zip_name": zip_name}]}
+	)
+
 
 	# 3: Query based on embedding value + lexical search filter
 	# search_string = "Italian"
@@ -319,6 +297,8 @@ def query(method="semantic-split"):
 	# )
 	# print("Query:", query)
 	# print("\n\nResults:", results)
+
+	return results
 
 
 def generate_gpt_response(query, context_chunks):
@@ -344,47 +324,38 @@ def generate_gpt_response(query, context_chunks):
 	return response.choices[0].message.content
 
 
+# TODO: Add extra input -- zip folder name
 def chat(method="semantic-split"):
-	query = "What are the MSCI Select ESG Screened Indexes?"
-	chat_agent(query, method)
+	question = "What are the MSCI Select ESG Screened Indexes?"
+	# TODO: Process document linkage
+	## if to output a comparison table, call chat_agent multiple times
+	title = "1_MSCI_Global_Investable_Market_Indexes_Methodology_20240812"
+	zip_name = 'MSCI_indexes'
+	chat_agent(zip_name, title, question, method)
 
-def chat_agent(query, method="semantic-split"):
+def chat_agent(zip_name, title, question, method="semantic-split"):
 	# print("chat()")
-	print("=====================", query, method)
-	# Connect to chroma DB
-	client = chromadb.HttpClient(host=CHROMADB_HOST, port=CHROMADB_PORT)
-	# Get a collection object from an existing collection, by name. If it doesn't exist, create it.
-	collection_name = f"{method}-collection"
-
-	query_embedding = generate_query_embedding(query)
-	print("Query:", query)
-	# print("Embedding values:", query_embedding)
-	# Get the collection
-	collection = client.get_collection(name=collection_name)
-
-	# Query based on embedding value 
-	results = collection.query(
-		query_embeddings=[query_embedding],
-		n_results=10
-	)
-	# print("\n\nResults:", results)
-	# print(len(results["documents"][0]))
+	print("=====================", question, method)
+	
+	# Query relevant chunks
+	results = query(zip_name, title, question, method)
 
 	numbered_results = [f"{i + 1}.\n{doc}" for i, doc in enumerate(results['documents'][0])]
-	formatted_results = "\n----------------------------------------------------\n".join(numbered_results)
-	print_output = f"{query}\n\n====================RETRIEVED TEXT====================\n{formatted_results}"
-	print("====================INPUT PROMPT====================\n", print_output)
+	formatted_results = "\n--------------------------------------------------------------------------------------\n".join(numbered_results)
+	print_output = f"{question}\n\n============================================RETRIEVED TEXT============================================n{formatted_results}"
+	print("============================================INPUT PROMPT============================================\n", print_output)
 
 	# Prepare input prompt for OpenAI GPT model
 	context_chunks = "\n".join(results["documents"][0])
 	print(f"Context chunks: {context_chunks}")
 
 	# Generate a response using OpenAI GPT
-	response_text = generate_gpt_response(query, context_chunks)
+	response_text = generate_gpt_response(question, context_chunks)
 
 	# Print the GPT output
-	print(f"\n====================GPT RESPONSE====================\n{response_text}\n")
-	return query, context_chunks, response_text
+	print(f"\n============================================GPT RESPONSE============================================\n{response_text}\n")
+	return question, context_chunks, response_text
+
 
 def get(method="semantic-split"):
 	print("get()")
