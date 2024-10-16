@@ -60,15 +60,6 @@ def extract_text_list(pdf_bytes, common_index, common_lengths):
 
 # Returns a mega string of the entire PDF without cover, table of contents, contact us, and disclaimer
 def preprocess_text(text_list):
-    # Search for the first occurrence of the regex pattern      
-    toc_pattern = re.compile(r'\d+[^\d]+(\d+)')
-    toc_match = toc_pattern.search(text_list[1])
-    if toc_match:
-        # Extract the second numeric group as the start page
-        start_page = int(toc_match.group(1)) - 1
-    else:
-        print("No matching pattern found. The Contents page of the PDF may have an uncommon format.")
-    
     # Search for and remove the contacts page and the disclaimer page
     contacts_pattern = re.compile(r'\+ 1 \d{3} \d{3} \d{4}') # US phone number
     disclaimer_pattern = re.compile(r'This document and all of the information contained in it') # disclaimer-like content
@@ -82,6 +73,19 @@ def preprocess_text(text_list):
         text_list.remove(contacts)
     if disclaimer:
         text_list.remove(disclaimer)
+
+    # Search for the first occurrence of the regex pattern "number non-number(s) number"     
+    toc_pattern = re.compile(r'\d+[^\d]+(\d+)')
+    toc_match = toc_pattern.search(text_list[1])
+    if toc_match:
+        # Extract the second numeric group as the start page
+        start_page = int(toc_match.group(1)) - 1
+    else:
+        start_page = 1 # only remove index page
+        print("No matching pattern found. The Contents page of the PDF may have an uncommon format.")
+
+    if start_page > 10: # the match is suspiciously large
+        start_page = 1 # only remove index page
 
     # Merge list of text into long string
     text = "\n".join(text_list[start_page:])
