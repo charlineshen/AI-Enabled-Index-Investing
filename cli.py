@@ -90,7 +90,6 @@ def generate_text_embeddings(chunks, dimensionality: int = 256, batch_size=250):
 ### end of embedding
 
 def load_text_embeddings(df, collection, batch_size=500):
-	# TODO: update id definition with new metadata
 	# Generate ids
 	df["id"] = df.index.astype(str)
 	hashed_titles = df["title"].apply(lambda x: hashlib.sha256(x.encode()).hexdigest()[:16])
