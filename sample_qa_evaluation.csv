@@ -1,5 +1,7 @@
 Question,Expected Answer,Actual Response,Evaluation,Retrieved Chunks
-With what ESG rating will a company be excluded by the MSCI Select ESG Screened Indexes?,B and above (exclude CCC),"A company will be excluded by the MSCI Select ESG Screened Indexes if it has an MSCI ESG Rating of 'CCC'. This rating indicates that the company has not demonstrated an ability to manage their ESG risks and opportunities, leading to exclusion from the Indexes.","Score: 0.5. Reason: The response correctly includes some relevant information by stating that a company will be excluded with an MSCI ESG Rating of 'CCC', but it misses that the exclusion starts from the rating of 'B' and above as required by the question.","Please refer to the disclaimer at the end of this document. MSCI SELECT ESG SCREENED INDEXES METHODOLOGY  | MAY 2023  
+With what ESG rating will a company be excluded by the MSCI Select ESG Screened Indexes?,B and above (exclude CCC),"Answer: A company will be excluded by the MSCI Select ESG Screened Indexes if it has an MSCI ESG Rating of 'CCC'.
+Source Text: The Indexes use MSCI ESG Ratings to identify companies that have demonstrated an ability to manage their ESG risks and opportunities. Companies with an MSCI ESG Rating of 'CCC' are excluded from the Indexes.
+Section of Source Text: 2.2 Eligibility Criteria","Score: 0.5. Reason: The response contains some relevant information by correctly mentioning that a company with an MSCI ESG Rating of 'CCC' will be excluded from the MSCI Select ESG Screened Indexes. However, it misses the specific requirement stated in the question about the rating level for exclusion being 'B and above'.","Please refer to the disclaimer at the end of this document. MSCI SELECT ESG SCREENED INDEXES METHODOLOGY  | MAY 2023  
  
  
 2 Constructing the MSCI Select ESG Screened Index es  
@@ -180,7 +182,9 @@ Index  MSCI China A Inclusion
  
  
 MSCI.COM  | PAGE 14 OF 21 (c) 2023 MSCI Inc. All rights reserved."
-With what controversy score in what industry will a company be included by the MSCI Select ESG Screened Indexes?,"something like “1 and above, 2 and above​ for Land Use and Biodiversity Score, Supply Chain Management","A company will be included by the MSCI Select ESG Screened Indexes if it is assessed as having involvement in ESG controversies that are classified as Red Flags, which indicates an ongoing Very Severe ESG controversy implicating the company directly through its actions, products, or operations. The controversy score mentioned in the context is the MSCI ESG Controversy Score of 0 for Red Flags.","Score: 0.5. Reason: The response correctly mentions the MSCI ESG Controversy Score of 0 for Red Flags, but it does not provide the specific controversy score thresholds for industry inclusion in the MSCI Select ESG Screened Indexes as required by the question.","Please refer to the disclaimer at the end of this document. MSCI SELECT ESG SCREENED INDEXES METHODOLOGY  | MAY 2023  
+With what controversy score in what industry will a company be included by the MSCI Select ESG Screened Indexes?,"something like “1 and above, 2 and above​ for Land Use and Biodiversity Score, Supply Chain Management","Answer: A company will be included by the MSCI Select ESG Screened Indexes if it is assessed as having involvement in ESG controversies that are classified as Red Flags, which indicates an ongoing Very Severe ESG controversy implicating the company directly through its actions, products, or operations.
+Source Text: Companies are also excluded from the Indexes if they exhibit any of the following characteristics: Companies assessed as having involvement in ESG controversies that are classified as Red Flags (MSCI ESG Controversy Score of 0). A Red Flag indicates an ongoing Very Severe ESG controversy implicating a company directly through its actions, products, or operations.
+Section of Source Text: Please refer to the disclaimer at the end of this document. MSCI SELECT ESG SCREENED INDEXES METHODOLOGY | MAY 2023","Score: 0.5. Reason: The response includes some relevant information about ESG controversies and Red Flags from the source text but fails to specify the controversy score required for a company to be included by the MSCI Select ESG Screened Indexes, which is a key part of the expected answer.","Please refer to the disclaimer at the end of this document. MSCI SELECT ESG SCREENED INDEXES METHODOLOGY  | MAY 2023  
  
  
 In addition to the above, companies are also excluded from the Indexes if they exhibit any of the 
@@ -303,7 +307,9 @@ own account, provide execution services for others or manage client accounts. No
 support or promote any such activity. MSCI ESG Research is an independent provider of ESG data. Privacy notice: For information about how MSCI collects and uses personal data, please refer to our Privacy Notice at https://www.msci.com/privacy -pledge . 
 2. The security with the highest GHG intensity is excluded and the resulting Index is compared 
 to the Parent Index, to deter mine if a 30% reduction in GHG intensity has been achieved. 3 Please refer to Appendix I V for details of the calculation of GHG Intensity."
-What’s the exclusion rule of the MSCI Select ESG Screened Indexes regarding nuclear power?,none,"The exclusion rule of the MSCI Select ESG Screened Indexes regarding nuclear power is that companies associated with nuclear weapons are excluded from the Indexes based on Environmental, Social and Governance (ESG) criteria. This exclusion is part of the criteria that also exclude companies associated with conventional, controversial, civilian, and nuclear weapons, as well as other activities like tobacco, palm oil, arctic oil & gas, and companies with an MSCI ESG Rating of 'CCC'.","Score: 0.8. Reason: The response includes the correct information about the exclusion rule of the MSCI Select ESG Screened Indexes regarding nuclear power, but it also contains additional irrelevant information about the criteria for excluding companies associated with other activities and MSCI ESG Rating.","Please refer to the disclaimer at the end of this document. MSCI SELECT ESG SCREENED INDEXES METHODOLOGY  | MAY 2023  
+What’s the exclusion rule of the MSCI Select ESG Screened Indexes regarding nuclear power?,none,"Answer: The exclusion rule of the MSCI Select ESG Screened Indexes regarding nuclear power is that companies associated with nuclear weapons are excluded from the Indexes.
+Source Text: Companies that are associated with conventional, controversial, civilian, and nuclear weapons as well as tobacco, palm oil and arctic oil & gas
+Section of Source Text: Introduction","Score: 0.5. Reason: The response correctly identifies that companies associated with nuclear weapons are excluded from the MSCI Select ESG Screened Indexes, but it does not fully address the question as it does not specifically mention the exclusion rule regarding nuclear power, which is not included in the source text.","Please refer to the disclaimer at the end of this document. MSCI SELECT ESG SCREENED INDEXES METHODOLOGY  | MAY 2023  
  
  
 1 Introduct ion 
@@ -346,44 +352,6 @@ their ESG risks and opportunities. Companies with an MSCI ESG Rating of 'CCC' ar
 the Indexes. ESG Exclusions  
 The Indexes use MSCI ESG Business In volvement Screening Research to identify companies that are 
 involved in the following business activities.
-Country Active Exposure:  The Indexes weights are updated to control the country weights from 
-deviating at mos t a fixed percentage relative to the country weights of the corresponding Parent Index. Index Name  Region Neutrality  Sector Active 
-Exposure 
-Absolute Limit  Country Active 
-Exposure 
-Absolute Limit  Cap on Maximum 
-Country Weight  
-MSCI World 
-Select ESG 
-Screened Index  Yes 1% No No 
-MSCI USA Select 
-ESG Screened 
-Index  No 5% No No 
-MSCI Japan 
-Select ESG 
-Screened Index  No 1% No No 
-MSCI EM Select 
-ESG Screened 
-Index  No No 5% No 
-MSCI Europe 
-Select ESG 
-Screened Index  No 1% No No 
-MSCI EMU Select 
-ESG Screened 
-Index  No 1% No No 
-MSCI ACWI 
-Select ESG 
-Screened Index  Yes Within Developed 
-Markets (DM):  
-In North America: 
-5% Within Emerging 
-Markets (EM): 1%  
- 
-No country limit 
-is applied to No 
- 
-5 Regions currently identified are Americas, Europe & Middle East and Pacific. In addition, the Emerging Markets (EM) region is  used 
-in the MSCI ACWI Select ESG Screened Index .
 The Methodology Set for the Indexes can be accessed from MSCI's webpage https://www.msci.com/index -
 methodology in the section 'Search Methodology by Index Name or Index Code'. The Methodology Set includes a document 'ESG Factors in Methodology' that contains the list of environmental, social, and 
 governance factors considered, and how they are applied in the methodology (e.g., selection, weighting or exclusion). MSCI.COM  | PAGE 4 OF 21 (c) 2023 MSCI Inc.
@@ -451,8 +419,25 @@ there are changes in characteristics (country, sector,
 size segment, etc.) Reevaluation for cont inued 
 inclusion in the Index will occur at the subsequent 
 Index Review. Further detail and illustration regarding specific treatment of corporate events relevant to this Index 
-can be found in the MSCI Corporate Events Methodology book."
-What’s the exclusion rule of the MSCI Select ESG Screened Indexes regarding fossil fuel/nuclear energy power ,none,"The exclusion rule of the MSCI Select ESG Screened Indexes regarding fossil fuel and nuclear energy power states that companies involved in fossil fuel extraction and thermal coal power are excluded from the Indexes. Additionally, companies associated with nuclear weapons, including those that manufacture nuclear warheads and missiles, are also excluded based on the Highly Restrictive screen applied to nuclear weapons. The Indexes aim for a minimum 30% reduction in carbon emission intensity compared to their underlying parent indexes.",Score: 0.8. Reason: The response includes all the relevant information but also contains information on carbon emission intensity reduction which is not required by the question.,"Please refer to the disclaimer at the end of this document. MSCI SELECT ESG SCREENED INDEXES METHODOLOGY  | MAY 2023  
+can be found in the MSCI Corporate Events Methodology book.
+Companies that meet the business involvement criteria 
+are excluded from the Indexes . * Conventional Weapons  
+* Controversial Weapons  
+* Nuclear Weapons  
+* Civilian Firearms  
+* Tobacco  
+* Fossil Fuel Extraction  
+* Thermal Coal Power  
+* Arctic Oil & Gas  
+* Palm Oil  
+ 
+ 
+2 See section 4 for further information regarding ESG and climate dat a used in the Indexes that MSCI Limited sources from MSCI ESG 
+Research LLC, a separate subsidiary of MSCI Inc. MSCI ESG Research is solely responsible for the creation, determination and 
+management of such data."
+What’s the exclusion rule of the MSCI Select ESG Screened Indexes regarding fossil fuel/nuclear energy power ,none,"Answer: The exclusion rule of the MSCI Select ESG Screened Indexes regarding fossil fuel and nuclear energy power includes companies involved in fossil fuel extraction, thermal coal power, arctic oil & gas, and palm oil.
+Source Text: Appendix I: ESG Exclusions Criteria
+Section of Source Text: Constructing the MSCI Select ESG Screened Indexes, Appendix I: ESG Exclusions Criteria","Score: 0.5. Reason: The response correctly includes some relevant information about the exclusion rule of the MSCI Select ESG Screened Indexes regarding fossil fuel and nuclear energy power, such as companies involved in fossil fuel extraction, thermal coal power, arctic oil & gas, and palm oil. However, the response is incomplete as it does not mention that the expected answer is ""none.""","Please refer to the disclaimer at the end of this document. MSCI SELECT ESG SCREENED INDEXES METHODOLOGY  | MAY 2023  
  
  
 1 Introduct ion 
@@ -610,7 +595,9 @@ methodology in the section 'Search Methodology by Index Name or Index Code'. The
 governance factors considered, and how they are applied in the methodology (e.g., selection, weighting or exclusion). MSCI.COM  | PAGE 4 OF 21 (c) 2023 MSCI Inc.
 2. The security with the highest GHG intensity is excluded and the resulting Index is compared 
 to the Parent Index, to deter mine if a 30% reduction in GHG intensity has been achieved. 3 Please refer to Appendix I V for details of the calculation of GHG Intensity."
-What’s the exclusion rule of the MSCI Select ESG Screened Indexes regarding thermal coal mining?,all companies deriving 5% or more aggregate revenue from thermal coal mining,The exclusion rule of the MSCI Select ESG Screened Indexes regarding thermal coal mining is that companies that derive revenues from thermal coal power and extraction of select fossil fuels are excluded from the Indexes.,"Score: 0.5. Reason: The response correctly includes some relevant information about the exclusion rule of the MSCI Select ESG Screened Indexes regarding thermal coal mining, mentioning that companies deriving revenues from thermal coal power and extraction of select fossil fuels are excluded. However, it does not specify the specific percentage threshold (5% or more aggregate revenue) required for exclusion, thus missing some key information.","Please refer to the disclaimer at the end of this document. MSCI SELECT ESG SCREENED INDEXES METHODOLOGY  | MAY 2023  
+What’s the exclusion rule of the MSCI Select ESG Screened Indexes regarding thermal coal mining?,all companies deriving 5% or more aggregate revenue from thermal coal mining,"Answer: The exclusion rule of the MSCI Select ESG Screened Indexes regarding thermal coal mining is that companies that derive revenues from thermal coal power and extraction of select fossil fuels are excluded from the Indexes.
+Source Text: Companies that are excluded: ... Companies that derive revenues from thermal coal power and extraction of select fossil fuels
+Section of Source Text: Appendix I: ESG Exclusions Criteria","Score: 0.8. Reason: The response correctly includes the relevant information about companies being excluded for deriving revenues from thermal coal power and extraction of select fossil fuels, but includes the irrelevant detail about only 5% or more aggregate revenue being the threshold, which was not mentioned in the source text.","Please refer to the disclaimer at the end of this document. MSCI SELECT ESG SCREENED INDEXES METHODOLOGY  | MAY 2023  
  
  
 Appendix I: ESG Exclusions Criteria  
@@ -735,7 +722,9 @@ Score of 1). An Orange Flag indicates an ongoing Severe ESG controversy implicat
 directly, or a Very Severe ESG controversy that is either partially reso lved or indirectly attributed to 
 the company's actions, products, or operations . * Missing MSCI ESG Controversies Score - Companies not assessed by MSCI ESG Research on 
 MSCI ESG Controversies ."
-What’s the exclusion rule of the MSCI Select ESG Screened Indexes regarding thermal coal power?,all companies deriving 5% or more revenue from thermal coal-based power generation,"The exclusion rule of the MSCI Select ESG Screened Indexes regarding thermal coal power is that companies that derive revenues from thermal coal power are excluded from the Indexes. This exclusion is part of the Environmental, Social, and Governance (ESG) criteria used to determine eligibility for Index inclusion. Additionally, companies involved in fossil fuel extraction are also excluded from the Indexes. These exclusions are effective from May 2022, as per the provided information.","Score: 0.5. Reason: The response correctly includes some relevant information about companies deriving revenues from thermal coal power being excluded from the Index, but it fails to mention the specific threshold of 5% revenue required for exclusion. Additionally, while mentioning the exclusion of companies involved in fossil fuel extraction is relevant, it's not directly related to the specific question about thermal coal power.","Please refer to the disclaimer at the end of this document. MSCI SELECT ESG SCREENED INDEXES METHODOLOGY  | MAY 2023  
+What’s the exclusion rule of the MSCI Select ESG Screened Indexes regarding thermal coal power?,all companies deriving 5% or more revenue from thermal coal-based power generation,"Answer: The exclusion rule of the MSCI Select ESG Screened Indexes regarding thermal coal power is that companies that derive revenues from thermal coal power are excluded from the Indexes.
+Source Text: Companies that derive revenues from thermal coal power and extraction of select fossil fuels
+Section of Source Text: Introduction","Score: 0.8. Reason: The response correctly includes all the relevant information by mentioning that companies deriving revenues from thermal coal power are excluded, but it additionally contains irrelevant information by not specifying the 5% threshold as required by the question.","Please refer to the disclaimer at the end of this document. MSCI SELECT ESG SCREENED INDEXES METHODOLOGY  | MAY 2023  
  
  
 1 Introduct ion 
@@ -919,7 +908,9 @@ use ESG data published after the end of month, when available, for the monthly r
 the month. 3.3 Ongoing Event -Related Maintenance    
 The following section briefly describes the treatment of common corporate events within the Indexes. No new securities will be added (except where noted below) to the Indexes between Index Reviews. For cases where additions are noted  below, securities will be added to the Index only if added to the 
 Parent Index."
-What’s the exclusion rule of the MSCI Select ESG Screened Indexes regarding unconventional oil & gas extraction?,"all companies deriving 5% or more aggregate revenue from unconventional oil & gas extraction including oil sands, oil shale (kerogen-rich deposits), shale gas, shale oil, coal seam gas, and coal bed methane","The exclusion rule of the MSCI Select ESG Screened Indexes regarding unconventional oil & gas extraction includes companies involved in Arctic Oil & Gas. These companies are excluded from the Indexes based on Environmental, Social, and Governance (ESG) criteria. Additionally, companies involved in Fossil Fuel Extraction are also excluded from the Indexes. The criteria for exclusion are based on MSCI ESG Business Involvement Screening Research.","Score: 0.5. Reason: The response correctly mentions that companies involved in Fossil Fuel Extraction are excluded from the MSCI Select ESG Screened Indexes, but it fails to provide specific information regarding the exclusion rule of unconventional oil and gas extraction as required by the question. It includes some relevant information but misses key details such as the specific types of unconventional oil & gas extraction that contribute to the exclusion rule.","Please refer to the disclaimer at the end of this document. MSCI SELECT ESG SCREENED INDEXES METHODOLOGY  | MAY 2023  
+What’s the exclusion rule of the MSCI Select ESG Screened Indexes regarding unconventional oil & gas extraction?,"all companies deriving 5% or more aggregate revenue from unconventional oil & gas extraction including oil sands, oil shale (kerogen-rich deposits), shale gas, shale oil, coal seam gas, and coal bed methane","Answer: The exclusion rule of the MSCI Select ESG Screened Indexes regarding unconventional oil & gas extraction includes companies involved in Arctic Oil & Gas. These companies are excluded from the Indexes based on ESG criteria.
+Source Text: The Indexes use MSCI ESG Business Involvement Screening Research to identify companies that are involved in the following business activities: Arctic Oil & Gas
+Section of Source Text: 2 Constructing the MSCI Select ESG Screened Indexes","Score: 0.5. Reason: The response correctly includes some relevant information about the exclusion rule of the MSCI Select ESG Screened Indexes regarding unconventional oil & gas extraction, specifically mentioning Arctic Oil & Gas. However, the response misses important details such as revenue thresholds and other specific types of unconventional oil & gas extraction outlined in the expected answer.","Please refer to the disclaimer at the end of this document. MSCI SELECT ESG SCREENED INDEXES METHODOLOGY  | MAY 2023  
  
  
 1 Introduct ion 
@@ -1136,7 +1127,12 @@ Section 4: MSCI ESG Research
    
  
 MSCI.COM | PAGE 20 OF 21 (c) 2023 MSCI Inc."
-What’s the exclusion rule of the MSCI Select ESG Screened Indexes regarding conventional oil & gas extraction?,all companies deriving 5% or more revenue from arctic oil and arctic gas production,"The exclusion rule of the MSCI Select ESG Screened Indexes regarding conventional oil & gas extraction includes companies involved in Fossil Fuel Extraction, Thermal Coal Power, Arctic Oil & Gas, and Palm Oil. These companies are excluded based on the ESG criteria outlined in the methodology. Additionally, companies associated with conventional, controversial, civilian, and nuclear weapons, as well as tobacco, are also excluded from the Indexes.","Score: 0.5. Reason: The response correctly mentions companies involved in Arctic Oil & Gas are excluded, which is part of the exclusion rule for the MSCI Select ESG Screened Indexes. However, the response includes additional irrelevant information about other exclusions not related to conventional oil & gas extraction, leading to an incomplete answer.","Please refer to the disclaimer at the end of this document. MSCI SELECT ESG SCREENED INDEXES METHODOLOGY  | MAY 2023  
+What’s the exclusion rule of the MSCI Select ESG Screened Indexes regarding conventional oil & gas extraction?,all companies deriving 5% or more revenue from arctic oil and arctic gas production,"Answer: The exclusion rule of the MSCI Select ESG Screened Indexes regarding conventional oil & gas extraction includes companies involved in Fossil Fuel Extraction, Thermal Coal Power, Arctic Oil & Gas, and Palm Oil.
+Source Text: Companies that are associated with conventional, controversial, civilian, and nuclear weapons as well as tobacco, palm oil and arctic oil & gas or
+Companies that derive revenues from thermal coal power and extraction of select fossil fuels or
+Companies that are involved in Red Flag ESG controversies, Orange Flag Land Use and Biodiversity controversies or Orange Flag Supply Chain Management controversies or
+Companies that are not in compliance with the United Nations Global Compact principles
+Section of Source Text: Introduct ion",Score: 0.5. Reason: The response correctly includes some relevant information about the exclusion rule but misses the specific requirement of companies deriving 5% or more revenue from arctic oil and arctic gas production.,"Please refer to the disclaimer at the end of this document. MSCI SELECT ESG SCREENED INDEXES METHODOLOGY  | MAY 2023  
  
  
 1 Introduct ion 
@@ -1337,7 +1333,9 @@ Appendix I V: Calculation of GHG Intensity
  
  
 MSCI.COM  | PAGE 19 OF 21 (c) 2023 MSCI Inc. All rights reserved."
-What’s the exclusion rule of the MSCI Select ESG Screened Indexes regarding oil and gas services?,none,"The exclusion rule of the MSCI Select ESG Screened Indexes regarding oil and gas services includes companies associated with arctic oil & gas. These companies are excluded based on Environmental, Social, and Governance (ESG) criteria.","Score: 0.8. Reason: The response correctly includes the relevant information about the exclusion rule of the MSCI Select ESG Screened Indexes regarding oil and gas services, but contains additional irrelevant information about companies associated with arctic oil & gas.","Please refer to the disclaimer at the end of this document. MSCI SELECT ESG SCREENED INDEXES METHODOLOGY  | MAY 2023  
+What’s the exclusion rule of the MSCI Select ESG Screened Indexes regarding oil and gas services?,none,"Answer: The exclusion rule of the MSCI Select ESG Screened Indexes regarding oil and gas services includes companies associated with arctic oil & gas. 
+Source Text: Companies that are associated with conventional, controversial, civilian, and nuclear weapons as well as tobacco, palm oil and arctic oil & gas
+Section of Source Text: Introduction","Score: 1. Reason: The response correctly identifies that the source text does not include information about the exclusion rule of the MSCI Select ESG Screened Indexes regarding oil and gas services, hence the answer is ""none.""","Please refer to the disclaimer at the end of this document. MSCI SELECT ESG SCREENED INDEXES METHODOLOGY  | MAY 2023  
  
  
 1 Introduct ion 
@@ -1507,7 +1505,9 @@ Section 4: MSCI ESG Research
    
  
 MSCI.COM | PAGE 20 OF 21 (c) 2023 MSCI Inc."
-What’s the exclusion rule of the MSCI Select ESG Screened Indexes regarding oil & gas power?,none,"The exclusion rule of the MSCI Select ESG Screened Indexes regarding oil & gas power states that companies associated with arctic oil & gas are excluded from the Indexes. Additionally, companies involved in thermal coal power and extraction of select fossil fuels are also excluded. This information is based on the ESG Exclusions criteria provided in the methodology document.","Score: 0.8. Reason: The response includes all the relevant information about the exclusion rule of the MSCI Select ESG Screened Indexes regarding oil & gas power. However, it also includes irrelevant information about thermal coal power and extraction of select fossil fuels, which was not part of the question.","Please refer to the disclaimer at the end of this document. MSCI SELECT ESG SCREENED INDEXES METHODOLOGY  | MAY 2023  
+What’s the exclusion rule of the MSCI Select ESG Screened Indexes regarding oil & gas power?,none,"Answer: The exclusion rule of the MSCI Select ESG Screened Indexes regarding oil & gas power includes companies that are associated with arctic oil & gas. Companies involved in arctic oil & gas are excluded from the Indexes.
+Source Text: Companies that are associated with conventional, controversial, civilian, and nuclear weapons as well as tobacco, palm oil and arctic oil & gas
+Section of Source Text: Introduct ion","Score: 0.8. Reason: The response correctly identifies that the MSCI Select ESG Screened Indexes exclude companies associated with arctic oil & gas, which is relevant information. However, the inclusion of additional details about companies involved in arctic oil & gas being excluded can be considered as irrelevant information, leading to a partial correct score.","Please refer to the disclaimer at the end of this document. MSCI SELECT ESG SCREENED INDEXES METHODOLOGY  | MAY 2023  
  
  
 1 Introduct ion 
@@ -1686,45 +1686,10 @@ MSCI.COM  | PAGE 19 OF 21 (c) 2023 MSCI Inc. All rights reserved.
 The Methodology Set for the Indexes can be accessed from MSCI's webpage https://www.msci.com/index -
 methodology in the section 'Search Methodology by Index Name or Index Code'. The Methodology Set includes a document 'ESG Factors in Methodology' that contains the list of environmental, social, and 
 governance factors considered, and how they are applied in the methodology (e.g., selection, weighting or exclusion). MSCI.COM  | PAGE 4 OF 21 (c) 2023 MSCI Inc.
-Country Active Exposure:  The Indexes weights are updated to control the country weights from 
-deviating at mos t a fixed percentage relative to the country weights of the corresponding Parent Index. Index Name  Region Neutrality  Sector Active 
-Exposure 
-Absolute Limit  Country Active 
-Exposure 
-Absolute Limit  Cap on Maximum 
-Country Weight  
-MSCI World 
-Select ESG 
-Screened Index  Yes 1% No No 
-MSCI USA Select 
-ESG Screened 
-Index  No 5% No No 
-MSCI Japan 
-Select ESG 
-Screened Index  No 1% No No 
-MSCI EM Select 
-ESG Screened 
-Index  No No 5% No 
-MSCI Europe 
-Select ESG 
-Screened Index  No 1% No No 
-MSCI EMU Select 
-ESG Screened 
-Index  No 1% No No 
-MSCI ACWI 
-Select ESG 
-Screened Index  Yes Within Developed 
-Markets (DM):  
-In North America: 
-5% Within Emerging 
-Markets (EM): 1%  
- 
-No country limit 
-is applied to No 
- 
-5 Regions currently identified are Americas, Europe & Middle East and Pacific. In addition, the Emerging Markets (EM) region is  used 
-in the MSCI ACWI Select ESG Screened Index ."
-What’s the exclusion rule of the MSCI Select ESG Screened Indexes regarding fossil fuel reserves?,none,"The exclusion rule of the MSCI Select ESG Screened Indexes regarding fossil fuel reserves includes companies that derive revenues from thermal coal power and extraction of select fossil fuels. Additionally, companies involved in fossil fuel extraction are excluded from the Indexes.","Score: 0.5. Reason: The response correctly provides some relevant information by mentioning that companies deriving revenues from thermal coal power are excluded, but it misses that the expected answer is ""none.""","Please refer to the disclaimer at the end of this document. MSCI SELECT ESG SCREENED INDEXES METHODOLOGY  | MAY 2023  
+Securities are ranked in descending order of GHG intensity."
+What’s the exclusion rule of the MSCI Select ESG Screened Indexes regarding fossil fuel reserves?,none,"Answer: The exclusion rule of the MSCI Select ESG Screened Indexes regarding fossil fuel reserves includes companies that derive revenues from thermal coal power and extraction of select fossil fuels.
+Source Text: Companies that derive revenues from thermal coal power and extraction of select fossil fuels
+Section of Source Text: Introduction","Score: 0.5. Reason: The response correctly includes some relevant information about companies deriving revenues from thermal coal power and extraction of select fossil fuels, but it misses the crucial point that the exclusion rule of the MSCI Select ESG Screened Indexes regarding fossil fuel reserves is actually ""none.""","Please refer to the disclaimer at the end of this document. MSCI SELECT ESG SCREENED INDEXES METHODOLOGY  | MAY 2023  
  
  
 1 Introduct ion 
@@ -1849,7 +1814,9 @@ are excluded from the Indexes . * Conventional Weapons
 Research LLC, a separate subsidiary of MSCI Inc. MSCI ESG Research is solely responsible for the creation, determination and 
 management of such data.
 Securities are ranked in descending order of GHG intensity."
-What additional carbon emissions removals does the MSCI Select ESG Screened Indexes intend to have?,something like 30% reduction in GHG intensity (scope 1+2+3 emissions/EVIC) vs parent index ranked in descending order on GHG,The MSCI Select ESG Screened Indexes aim to have a minimum 30% reduction in carbon emission intensity relative to the underlying parent indexes. This reduction in carbon emission intensity is one of the key environmental criteria used to construct these indexes.,Score: 1. Reason: The response correctly includes all the relevant information about the MSCI Select ESG Screened Indexes aiming for a minimum 30% reduction in carbon emission intensity relative to the parent indexes and highlights this as a key environmental criterion for construction. No incorrect or irrelevant information was provided.,"Parent Index deletions will be reflected simultaneously. There are no deletions from the Indexes between Index Reviews on account of a security becoming 
+What additional carbon emissions removals does the MSCI Select ESG Screened Indexes intend to have?,something like 30% reduction in GHG intensity (scope 1+2+3 emissions/EVIC) vs parent index ranked in descending order on GHG,"Answer: The MSCI Select ESG Screened Indexes intend to have a minimum 30% reduction in carbon emission intensity relative to the underlying parent indexes.
+Source Text: In addition, the Indexes target a minimum 30% reduction in carbon emission intensity relative to the underlying parent indexes (""Parent Indexes"").
+Section of Source Text: 1 Introduction",Score: 1. Reason: The response correctly includes all the relevant information required by the question with no additional irrelevant information.,"Parent Index deletions will be reflected simultaneously. There are no deletions from the Indexes between Index Reviews on account of a security becoming 
 ineligible because of  a change in business involvement, MSCI ESG Rating and/or failure to comply 
 with the UN Global Compact Principles and/or decrease in MSCI ESG Controversies Score . 4 See section 4 for details of data sourced from MSCI ESG Research used in the Indexes.
 Please refer to the disclaimer at the end of this document. MSCI SELECT ESG SCREENED INDEXES METHODOLOGY  | MAY 2023  
@@ -2003,7 +1970,9 @@ Section 4: MSCI ESG Research
  
 MSCI.COM | PAGE 20 OF 21 (c) 2023 MSCI Inc."
 What’s the exclusion rule of the MSCI Select ESG Screened Indexes regarding tobacco?,"all companies classified as a “Producer”
-all companies deriving 5% or more aggregate revenue from the production, distribution, retail, supply and licensing of tobacco-related products","The exclusion rule of the MSCI Select ESG Screened Indexes regarding tobacco is that companies associated with tobacco are excluded from the Indexes based on Environmental, Social and Governance (ESG) criteria. This exclusion is part of the criteria that also exclude companies associated with conventional, controversial, civilian, and nuclear weapons, palm oil, arctic oil & gas, companies assigned an MSCI ESG Rating of 'CCC', companies deriving revenues from thermal coal power and extraction of select fossil fuels, companies involved in specific ESG controversies, and companies not in compliance with the United Nations Global Compact principles.",Score: 0.5. Reason: The actual response correctly mentions that companies associated with tobacco are excluded from the MSCI Select ESG Screened Indexes but provides additional irrelevant information about other exclusions criteria. It partially includes the relevant information about tobacco but misses the specific criteria related to tobacco as required by the question.,"Parent Index deletions will be reflected simultaneously. There are no deletions from the Indexes between Index Reviews on account of a security becoming 
+all companies deriving 5% or more aggregate revenue from the production, distribution, retail, supply and licensing of tobacco-related products","Answer: The exclusion rule of the MSCI Select ESG Screened Indexes regarding tobacco is that companies associated with tobacco are excluded from the Indexes based on Environmental, Social, and Governance (ESG) criteria.
+Source Text: The following companies are excluded: Companies that are associated with conventional, controversial, civilian, and nuclear weapons as well as tobacco, palm oil and arctic oil & gas.
+Section of Source Text: 1 Introduction","Score: 0.5. Reason: The response correctly mentions that companies associated with tobacco are excluded based on ESG criteria, but it does not provide the specific exclusion criteria regarding tobacco as required by the question.","Parent Index deletions will be reflected simultaneously. There are no deletions from the Indexes between Index Reviews on account of a security becoming 
 ineligible because of  a change in business involvement, MSCI ESG Rating and/or failure to comply 
 with the UN Global Compact Principles and/or decrease in MSCI ESG Controversies Score . 4 See section 4 for details of data sourced from MSCI ESG Research used in the Indexes.
 Please refer to the disclaimer at the end of this document. MSCI SELECT ESG SCREENED INDEXES METHODOLOGY  | MAY 2023  
@@ -2160,7 +2129,9 @@ weights for the Indexes are updated as specified below . Region Neutrality5: The
 in the corresponding Parent Index. This is done by normalizing the weights of the constituents within 
 each region to reflect the effective Parent Index region weight. Sector Active Exposure:  The Indexes weights are updated to control the sector weights from deviating 
 at most a fixed percentage relative to the sector weights of the corresponding Parent Index."
-What’s the exclusion rule of the MSCI Select ESG Screened Indexes regarding alcohol?,none,"The exclusion rule of the MSCI Select ESG Screened Indexes regarding alcohol is not explicitly mentioned in the provided text chunks. The exclusions criteria listed include companies associated with weapons, tobacco, palm oil, arctic oil & gas, thermal coal power, select fossil fuels, and specific ESG controversies. However, there is no specific mention of alcohol as an exclusion criterion in the information provided.",Score: 1. Reason: The response correctly identifies that the source text does not include information about the exclusion rule regarding alcohol in the MSCI Select ESG Screened Indexes.,"Parent Index deletions will be reflected simultaneously. There are no deletions from the Indexes between Index Reviews on account of a security becoming 
+What’s the exclusion rule of the MSCI Select ESG Screened Indexes regarding alcohol?,none,"Answer: The exclusion rule of the MSCI Select ESG Screened Indexes regarding alcohol is not explicitly mentioned in the provided text chunks.
+Source Text: N/A
+Section of Source Text: N/A","Score: 1. Reason: The response correctly identifies that the source text does not provide any information on the exclusion rule of the MSCI Select ESG Screened Indexes regarding alcohol, which aligns with the expected answer of ""none.""","Parent Index deletions will be reflected simultaneously. There are no deletions from the Indexes between Index Reviews on account of a security becoming 
 ineligible because of  a change in business involvement, MSCI ESG Rating and/or failure to comply 
 with the UN Global Compact Principles and/or decrease in MSCI ESG Controversies Score . 4 See section 4 for details of data sourced from MSCI ESG Research used in the Indexes.
 Please refer to the disclaimer at the end of this document. MSCI SELECT ESG SCREENED INDEXES METHODOLOGY  | MAY 2023  
@@ -2317,7 +2288,9 @@ size segment, etc.) Reevaluation for cont inued
 inclusion in the Index will occur at the subsequent 
 Index Review. Further detail and illustration regarding specific treatment of corporate events relevant to this Index 
 can be found in the MSCI Corporate Events Methodology book."
-What’s the exclusion rule of the MSCI Select ESG Screened Indexes regarding gambling?,none,"The exclusion rule of the MSCI Select ESG Screened Indexes regarding gambling is not explicitly mentioned in the provided text chunks. The text focuses on exclusions based on criteria such as involvement in controversial activities, specific business involvements, ESG ratings, and compliance with the United Nations Global Compact principles. Gambling is not specifically listed as a criterion for exclusion in the information provided.","Score: 1. Reason: The response correctly identifies that the source text does not include information about the exclusion rule of the MSCI Select ESG Screened Indexes regarding gambling, which aligns with the expected answer of ""none.""","Parent Index deletions will be reflected simultaneously. There are no deletions from the Indexes between Index Reviews on account of a security becoming 
+What’s the exclusion rule of the MSCI Select ESG Screened Indexes regarding gambling?,none,"Answer: The exclusion rule of the MSCI Select ESG Screened Indexes regarding gambling is not explicitly mentioned in the provided text chunks. 
+Source Text: The MSCI Select ESG Screened Indexes exclude companies based on various criteria such as involvement in controversial activities, specific business involvements, ESG ratings, and compliance with the United Nations Global Compact principles.
+Section of Source Text: 1 Introduction, ESG Exclusions Criteria, Appendix I: ESG Exclusions Criteria","Score: 1. Reason: The response correctly identifies that the exclusion rule of the MSCI Select ESG Screened Indexes regarding gambling is not explicitly mentioned in the provided text, which aligns with the expected answer of ""none.""","Parent Index deletions will be reflected simultaneously. There are no deletions from the Indexes between Index Reviews on account of a security becoming 
 ineligible because of  a change in business involvement, MSCI ESG Rating and/or failure to comply 
 with the UN Global Compact Principles and/or decrease in MSCI ESG Controversies Score . 4 See section 4 for details of data sourced from MSCI ESG Research used in the Indexes.
 Please refer to the disclaimer at the end of this document. MSCI SELECT ESG SCREENED INDEXES METHODOLOGY  | MAY 2023  
@@ -2405,44 +2378,6 @@ use ESG data published after the end of month, when available, for the monthly r
 the month. 3.3 Ongoing Event -Related Maintenance    
 The following section briefly describes the treatment of common corporate events within the Indexes. No new securities will be added (except where noted below) to the Indexes between Index Reviews. For cases where additions are noted  below, securities will be added to the Index only if added to the 
 Parent Index.
-Country Active Exposure:  The Indexes weights are updated to control the country weights from 
-deviating at mos t a fixed percentage relative to the country weights of the corresponding Parent Index. Index Name  Region Neutrality  Sector Active 
-Exposure 
-Absolute Limit  Country Active 
-Exposure 
-Absolute Limit  Cap on Maximum 
-Country Weight  
-MSCI World 
-Select ESG 
-Screened Index  Yes 1% No No 
-MSCI USA Select 
-ESG Screened 
-Index  No 5% No No 
-MSCI Japan 
-Select ESG 
-Screened Index  No 1% No No 
-MSCI EM Select 
-ESG Screened 
-Index  No No 5% No 
-MSCI Europe 
-Select ESG 
-Screened Index  No 1% No No 
-MSCI EMU Select 
-ESG Screened 
-Index  No 1% No No 
-MSCI ACWI 
-Select ESG 
-Screened Index  Yes Within Developed 
-Markets (DM):  
-In North America: 
-5% Within Emerging 
-Markets (EM): 1%  
- 
-No country limit 
-is applied to No 
- 
-5 Regions currently identified are Americas, Europe & Middle East and Pacific. In addition, the Emerging Markets (EM) region is  used 
-in the MSCI ACWI Select ESG Screened Index .
 Please refer to the disclaimer at the end of this document. MSCI SELECT ESG SCREENED INDEXES METHODOLOGY  | MAY 2023  
  
  
@@ -2465,8 +2400,19 @@ can be found in the MSCI Corporate Events Methodology book.
 The Methodology Set for the Indexes can be accessed from MSCI's webpage https://www.msci.com/index -
 methodology in the section 'Search Methodology by Index Name or Index Code'. The Methodology Set includes a document 'ESG Factors in Methodology' that contains the list of environmental, social, and 
 governance factors considered, and how they are applied in the methodology (e.g., selection, weighting or exclusion). MSCI.COM  | PAGE 4 OF 21 (c) 2023 MSCI Inc.
-Securities are ranked in descending order of GHG intensity."
-What’s the exclusion rule of the MSCI Select ESG Screened Indexes regarding adult entertainment?,none,"The exclusion rule of the MSCI Select ESG Screened Indexes regarding adult entertainment is not explicitly mentioned in the provided text chunks. The exclusions criteria specified in the text include companies associated with weapons, tobacco, certain fossil fuels, ESG controversies, and non-compliance with UN Global Compact principles. However, there is no specific mention of adult entertainment as an exclusion criterion.","Score: 1. Reason: The response correctly identifies that the source text does not mention the exclusion rule of the MSCI Select ESG Screened Indexes regarding adult entertainment, which aligns with the expected answer of ""none.""","Please refer to the disclaimer at the end of this document. MSCI SELECT ESG SCREENED INDEXES METHODOLOGY  | MAY 2023  
+Securities are ranked in descending order of GHG intensity.
+Please refer to the disclaimer at the end of this document. MSCI SELECT ESG SCREENED INDEXES METHODOLOGY  | MAY 2023  
+ 
+ 
+Appendix III: Additional Weighting Scheme  
+After the exclusions based on section 2.2 and the weighting scheme applied based on section 2.3, the 
+weights for the Indexes are updated as specified below . Region Neutrality5: The weight of each region in the Indexes i s equated with the weight of that region 
+in the corresponding Parent Index. This is done by normalizing the weights of the constituents within 
+each region to reflect the effective Parent Index region weight. Sector Active Exposure:  The Indexes weights are updated to control the sector weights from deviating 
+at most a fixed percentage relative to the sector weights of the corresponding Parent Index."
+What’s the exclusion rule of the MSCI Select ESG Screened Indexes regarding adult entertainment?,none,"Answer: The exclusion rule of the MSCI Select ESG Screened Indexes regarding adult entertainment is not explicitly mentioned in the provided text chunks. The criteria for exclusions include involvement in controversial activities such as weapons, tobacco, certain fossil fuels, and ESG controversies, but specific mention of adult entertainment exclusion is not provided.
+Source Text: The text does not contain information on the exclusion rule related to adult entertainment specifically.
+Section of Source Text: N/A","Score: 1. Reason: The response correctly identifies that the source text does not contain information on the exclusion rule related to adult entertainment, as required by the question. No irrelevant or hallucinated information is presented.","Please refer to the disclaimer at the end of this document. MSCI SELECT ESG SCREENED INDEXES METHODOLOGY  | MAY 2023  
  
  
 Appendix I: ESG Exclusions Criteria  
@@ -2664,7 +2610,9 @@ Score of 1). An Orange Flag indicates an ongoing Severe ESG controversy implicat
 directly, or a Very Severe ESG controversy that is either partially reso lved or indirectly attributed to 
 the company's actions, products, or operations . * Missing MSCI ESG Controversies Score - Companies not assessed by MSCI ESG Research on 
 MSCI ESG Controversies ."
-What’s the exclusion rule of the MSCI Select ESG Screened Indexes regarding palm oil?,all companies deriving 5% or more aggregate revenue from the production of Palm Oil,"The exclusion rule of the MSCI Select ESG Screened Indexes regarding palm oil is that companies associated with palm oil are excluded from the Indexes based on Environmental, Social, and Governance (ESG) criteria. This exclusion is part of the criteria that also exclude companies associated with conventional, controversial, civilian, and nuclear weapons, tobacco, and arctic oil & gas.","Score: 0.5. Reason: The response correctly includes some relevant information about companies associated with palm oil being excluded based on ESG criteria, but it misses the specific requirement of deriving 5% or more aggregate revenue from the production of Palm Oil as stated in the expected answer.","Please refer to the disclaimer at the end of this document. MSCI SELECT ESG SCREENED INDEXES METHODOLOGY  | MAY 2023  
+What’s the exclusion rule of the MSCI Select ESG Screened Indexes regarding palm oil?,all companies deriving 5% or more aggregate revenue from the production of Palm Oil,"Answer: The exclusion rule of the MSCI Select ESG Screened Indexes regarding palm oil is that companies associated with palm oil are excluded from the Indexes based on Environmental, Social and Governance (ESG) criteria.
+Source Text: The following companies are excluded: Companies that are associated with conventional, controversial, civilian, and nuclear weapons as well as tobacco, palm oil and arctic oil & gas
+Section of Source Text: Introduction","Score: 0.5. Reason: The response correctly mentions that companies associated with palm oil are excluded from the MSCI Select ESG Screened Indexes based on ESG criteria, but it does not provide the specific threshold of 5% or more revenue from palm oil production as required by the question.","Please refer to the disclaimer at the end of this document. MSCI SELECT ESG SCREENED INDEXES METHODOLOGY  | MAY 2023  
  
  
 1 Introduct ion 
@@ -2752,44 +2700,6 @@ use ESG data published after the end of month, when available, for the monthly r
 the month. 3.3 Ongoing Event -Related Maintenance    
 The following section briefly describes the treatment of common corporate events within the Indexes. No new securities will be added (except where noted below) to the Indexes between Index Reviews. For cases where additions are noted  below, securities will be added to the Index only if added to the 
 Parent Index.
-Country Active Exposure:  The Indexes weights are updated to control the country weights from 
-deviating at mos t a fixed percentage relative to the country weights of the corresponding Parent Index. Index Name  Region Neutrality  Sector Active 
-Exposure 
-Absolute Limit  Country Active 
-Exposure 
-Absolute Limit  Cap on Maximum 
-Country Weight  
-MSCI World 
-Select ESG 
-Screened Index  Yes 1% No No 
-MSCI USA Select 
-ESG Screened 
-Index  No 5% No No 
-MSCI Japan 
-Select ESG 
-Screened Index  No 1% No No 
-MSCI EM Select 
-ESG Screened 
-Index  No No 5% No 
-MSCI Europe 
-Select ESG 
-Screened Index  No 1% No No 
-MSCI EMU Select 
-ESG Screened 
-Index  No 1% No No 
-MSCI ACWI 
-Select ESG 
-Screened Index  Yes Within Developed 
-Markets (DM):  
-In North America: 
-5% Within Emerging 
-Markets (EM): 1%  
- 
-No country limit 
-is applied to No 
- 
-5 Regions currently identified are Americas, Europe & Middle East and Pacific. In addition, the Emerging Markets (EM) region is  used 
-in the MSCI ACWI Select ESG Screened Index .
 Please refer to the disclaimer at the end of this document. MSCI SELECT ESG SCREENED INDEXES METHODOLOGY  | MAY 2023  
  
  
@@ -2835,8 +2745,13 @@ classified as Orange Flags (MSCI ESG Controversies: Environment - Supply Chain M
 Score of 1). An Orange Flag indicates an ongoing Severe ESG controversy implicating a company 
 directly, or a Very Severe ESG controversy that is either partially reso lved or indirectly attributed to 
 the company's actions, products, or operations . * Missing MSCI ESG Controversies Score - Companies not assessed by MSCI ESG Research on 
-MSCI ESG Controversies ."
-What’s the exclusion rule of the MSCI Select ESG Screened Indexes regarding genetically modified organism?,none,"The exclusion rule of the MSCI Select ESG Screened Indexes regarding genetically modified organisms is not explicitly mentioned in the provided text chunks. The criteria for exclusion specified in the text include involvement in controversial activities related to weapons, tobacco, palm oil, arctic oil & gas, companies with an MSCI ESG Rating of 'CCC', revenue from thermal coal power and extraction of select fossil fuels, ESG controversies, and non-compliance with the United Nations Global Compact principles. However, there is no specific mention of genetically modified organisms in the exclusion criteria.","Score: 1. Reason: The response correctly identifies that the source text does not include information on the exclusion rule of the MSCI Select ESG Screened Indexes regarding genetically modified organisms. It provides accurate information on the exclusion criteria mentioned in the text related to other factors, which shows a good understanding of the content.","Parent Index deletions will be reflected simultaneously. There are no deletions from the Indexes between Index Reviews on account of a security becoming 
+MSCI ESG Controversies .
+The Methodology Set for the Indexes can be accessed from MSCI's webpage https://www.msci.com/index -
+methodology in the section 'Search Methodology by Index Name or Index Code'. The Methodology Set includes a document 'ESG Factors in Methodology' that contains the list of environmental, social, and 
+governance factors considered, and how they are applied in the methodology (e.g., selection, weighting or exclusion). MSCI.COM  | PAGE 4 OF 21 (c) 2023 MSCI Inc."
+What’s the exclusion rule of the MSCI Select ESG Screened Indexes regarding genetically modified organism?,none,"Answer: The exclusion rule of the MSCI Select ESG Screened Indexes regarding genetically modified organisms is not explicitly mentioned in the provided text chunks. 
+Source Text: N/A
+Section of Source Text: N/A","Score: 1. Reason: The response correctly identifies that the exclusion rule of the MSCI Select ESG Screened Indexes regarding genetically modified organisms is not explicitly mentioned in the provided text sections, which aligns with the expected answer of ""none"".","Parent Index deletions will be reflected simultaneously. There are no deletions from the Indexes between Index Reviews on account of a security becoming 
 ineligible because of  a change in business involvement, MSCI ESG Rating and/or failure to comply 
 with the UN Global Compact Principles and/or decrease in MSCI ESG Controversies Score . 4 See section 4 for details of data sourced from MSCI ESG Research used in the Indexes.
 Please refer to the disclaimer at the end of this document. MSCI SELECT ESG SCREENED INDEXES METHODOLOGY  | MAY 2023  
@@ -2955,46 +2870,28 @@ use ESG data published after the end of month, when available, for the monthly r
 the month. 3.3 Ongoing Event -Related Maintenance    
 The following section briefly describes the treatment of common corporate events within the Indexes. No new securities will be added (except where noted below) to the Indexes between Index Reviews. For cases where additions are noted  below, securities will be added to the Index only if added to the 
 Parent Index.
-Country Active Exposure:  The Indexes weights are updated to control the country weights from 
-deviating at mos t a fixed percentage relative to the country weights of the corresponding Parent Index. Index Name  Region Neutrality  Sector Active 
-Exposure 
-Absolute Limit  Country Active 
-Exposure 
-Absolute Limit  Cap on Maximum 
-Country Weight  
-MSCI World 
-Select ESG 
-Screened Index  Yes 1% No No 
-MSCI USA Select 
-ESG Screened 
-Index  No 5% No No 
-MSCI Japan 
-Select ESG 
-Screened Index  No 1% No No 
-MSCI EM Select 
-ESG Screened 
-Index  No No 5% No 
-MSCI Europe 
-Select ESG 
-Screened Index  No 1% No No 
-MSCI EMU Select 
-ESG Screened 
-Index  No 1% No No 
-MSCI ACWI 
-Select ESG 
-Screened Index  Yes Within Developed 
-Markets (DM):  
-In North America: 
-5% Within Emerging 
-Markets (EM): 1%  
+Please refer to the disclaimer at the end of this document. MSCI SELECT ESG SCREENED INDEXES METHODOLOGY  | MAY 2023  
  
-No country limit 
-is applied to No 
  
-5 Regions currently identified are Americas, Europe & Middle East and Pacific. In addition, the Emerging Markets (EM) region is  used 
-in the MSCI ACWI Select ESG Screened Index ."
+In addition to the above, companies are also excluded from the Indexes if they exhibit any of the 
+following characteristics:  
+ 
+* Companies assessed as having involv ement in ESG controversies that are classified as Red Flags 
+(MSCI ESG Controversy Score of 0). A Red Flag indicates an ongoing Very Severe ESG controversy 
+implicating a company directly through its actions, products, or operations . * Companies assessed as ha ving involvement in Land Use and Biodiversity controversies that are 
+classified as Orange Flags (MSCI ESG Controversies: Environment - Land Use and Biodiversity 
+Score of 1). An Orange Flag indicates an ongoing Severe ESG controversy implicating a company 
+directly, or a Very Severe ESG controversy that is either partially resolved or indirectly attributed to 
+the company's actions, products, or operations . * Companies assessed as having involvement in Supply Chain Management controversies that are 
+classified as Orange Flags (MSCI ESG Controversies: Environment - Supply Chain Management 
+Score of 1). An Orange Flag indicates an ongoing Severe ESG controversy implicating a company 
+directly, or a Very Severe ESG controversy that is either partially reso lved or indirectly attributed to 
+the company's actions, products, or operations . * Missing MSCI ESG Controversies Score - Companies not assessed by MSCI ESG Research on 
+MSCI ESG Controversies ."
 What’s the exclusion rule of the MSCI Select ESG Screened Indexes regarding conventional weapons?,"all companies deriving 5% or more revenue from the production of conventional weapons and components
-all companies deriving 10% or more aggregate revenue from weapons systems, components, and support systems and services","The exclusion rule of the MSCI Select ESG Screened Indexes regarding conventional weapons states that companies associated with conventional, controversial, civilian, and nuclear weapons are excluded from the Indexes.","Score: 0.5. Reason: The response includes some relevant information about the exclusion rule of the MSCI Select ESG Screened Indexes regarding conventional weapons by mentioning that companies associated with conventional, controversial, civilian, and nuclear weapons are excluded. However, it fails to specify the revenue thresholds required for exclusion, which is a key aspect of the expected answer.","Please refer to the disclaimer at the end of this document. MSCI SELECT ESG SCREENED INDEXES METHODOLOGY  | MAY 2023  
+all companies deriving 10% or more aggregate revenue from weapons systems, components, and support systems and services","Answer: The exclusion rule of the MSCI Select ESG Screened Indexes regarding conventional weapons is that companies associated with conventional, controversial, civilian, and nuclear weapons are excluded from the Indexes.
+Source Text: The following companies are excluded: Companies that are associated with conventional, controversial, civilian, and nuclear weapons as well as tobacco, palm oil and arctic oil & gas.
+Section of Source Text: Appendix I: ESG Exclusions Criteria","Score: 0.5. Reason: The response correctly mentions companies associated with conventional weapons being excluded, but it misses specific revenue thresholds of 5% or more from production and 10% or more aggregate revenue from weapons systems, components, and support systems as required by the question.","Please refer to the disclaimer at the end of this document. MSCI SELECT ESG SCREENED INDEXES METHODOLOGY  | MAY 2023  
  
  
 Appendix I: ESG Exclusions Criteria  
@@ -3165,7 +3062,9 @@ size segment, etc.) Reevaluation for cont inued
 inclusion in the Index will occur at the subsequent 
 Index Review. Further detail and illustration regarding specific treatment of corporate events relevant to this Index 
 can be found in the MSCI Corporate Events Methodology book."
-What’s the exclusion rule of the MSCI Select ESG Screened Indexes regarding controversial weapons?,all companies with any tie to controversial weapons,"The exclusion rule of the MSCI Select ESG Screened Indexes regarding controversial weapons includes companies associated with conventional, controversial, civilian, and nuclear weapons being excluded from the indexes. Additionally, companies assigned an MSCI ESG Rating of 'CCC' are also excluded. This exclusion criteria is part of the ESG criteria used to determine eligibility for inclusion in the Indexes.","Score: 0.8. Reason: The response correctly includes all the relevant information about the exclusion rule of the MSCI Select ESG Screened Indexes regarding controversial weapons but also includes additional irrelevant information about companies assigned an MSCI ESG Rating of 'CCC' being excluded, which was not part of the expected answer.","Please refer to the disclaimer at the end of this document. MSCI SELECT ESG SCREENED INDEXES METHODOLOGY  | MAY 2023  
+What’s the exclusion rule of the MSCI Select ESG Screened Indexes regarding controversial weapons?,all companies with any tie to controversial weapons,"Answer: The exclusion rule of the MSCI Select ESG Screened Indexes regarding controversial weapons includes companies associated with conventional, controversial, civilian, and nuclear weapons, as well as tobacco, palm oil, and arctic oil & gas.
+Source Text: The following companies are excluded: Companies that are associated with conventional, controversial, civilian, and nuclear weapons as well as tobacco, palm oil and arctic oil & gas.
+Section of Source Text: Introduction - MSCI Select ESG Screened Indexes""","Score: 0.5. Reason: The response correctly includes some relevant information about the exclusion rule of the MSCI Select ESG Screened Indexes regarding controversial weapons but misses the specific requirement of the question, which is that all companies with any tie to controversial weapons are excluded.","Please refer to the disclaimer at the end of this document. MSCI SELECT ESG SCREENED INDEXES METHODOLOGY  | MAY 2023  
  
  
 Appendix I: ESG Exclusions Criteria  
@@ -3368,7 +3267,14 @@ All companies that manufacture or assemble delivery platforms that were develope
 All companies that provide auxiliary services related to nuclear weapons.
 All companies that manufacture components that were not developed or not significantly modified for exclusive use in nuclear weapons (warheads and missiles) but can be used in nuclear weapons.
 All companies that manufacture or assemble delivery platforms that were not developed or not significantly modified for the exclusive delivery of nuclear weapons but have the capability to deliver nuclear weapons.
-All companies that manufacture components for nuclear-exclusive delivery platforms.The MSCI Select ESG Screened Indexes exclude companies involved in nuclear weapons if they:","The exclusion rule of the MSCI Select ESG Screened Indexes regarding nuclear weapons is that companies that manufacture nuclear warheads and/or whole nuclear missiles, as well as companies that manufacture components developed or significantly modified for exclusive use in nuclear weapons, are excluded based on the ""Highly Restrictive"" screen applied to nuclear weapons.","Score: 0.8. Reason: The response correctly includes relevant information about the exclusion rule of the MSCI Select ESG Screened Indexes regarding nuclear weapons, but it also includes some irrelevant information about the ""Highly Restrictive"" screen applied to nuclear weapons.","Please refer to the disclaimer at the end of this document. MSCI SELECT ESG SCREENED INDEXES METHODOLOGY  | MAY 2023  
+All companies that manufacture components for nuclear-exclusive delivery platforms.The MSCI Select ESG Screened Indexes exclude companies involved in nuclear weapons if they:","Answer: The exclusion rule of the MSCI Select ESG Screened Indexes regarding nuclear weapons is that companies that manufacture nuclear warheads and/or whole nuclear missiles, as well as companies that manufacture components developed or significantly modified for exclusive use in nuclear weapons, are excluded from the Indexes.
+Source Text: ""Highly Restrictive"" screen applied
+* Nuclear Weapons
+- All companies that manufacture nuclear warheads and/or whole nuclear missiles.
+- All companies that manufacture components that were developed or are significantly modified for exclusive use in nuclear weapons (warheads and missiles).
+Section of Source Text: Methodology book was updated to reflect the transition of the MSCI Global Investable Market Indexes (GIMI) to Quarterly Comprehensive Index Reviews. All references to ""Semi -Annual Index Reviews"" and ""Quarterly Index Reviews"" of the MSCI GIMI were replaced with ""Index Reviews"". The following modifications are effective from June 2023:
+Section 2.2: Eligibility Criteria
+* Clarified the exclusion criteria for companies involved in ESG Controversies","Score: 0.5. Reason: The response includes some relevant information by mentioning companies that manufacture nuclear warheads and/or whole nuclear missiles, as well as companies that manufacture components developed or significantly modified for exclusive use in nuclear weapons. However, it misses other important criteria mentioned in the expected answer, such as companies involved in assembly or manufacturing of delivery platforms and auxiliary services related to nuclear weapons.","Please refer to the disclaimer at the end of this document. MSCI SELECT ESG SCREENED INDEXES METHODOLOGY  | MAY 2023  
  
  
 Appendix I: ESG Exclusions Criteria  
@@ -3411,44 +3317,6 @@ their ESG risks and opportunities. Companies with an MSCI ESG Rating of 'CCC' ar
 the Indexes. ESG Exclusions  
 The Indexes use MSCI ESG Business In volvement Screening Research to identify companies that are 
 involved in the following business activities.
-Country Active Exposure:  The Indexes weights are updated to control the country weights from 
-deviating at mos t a fixed percentage relative to the country weights of the corresponding Parent Index. Index Name  Region Neutrality  Sector Active 
-Exposure 
-Absolute Limit  Country Active 
-Exposure 
-Absolute Limit  Cap on Maximum 
-Country Weight  
-MSCI World 
-Select ESG 
-Screened Index  Yes 1% No No 
-MSCI USA Select 
-ESG Screened 
-Index  No 5% No No 
-MSCI Japan 
-Select ESG 
-Screened Index  No 1% No No 
-MSCI EM Select 
-ESG Screened 
-Index  No No 5% No 
-MSCI Europe 
-Select ESG 
-Screened Index  No 1% No No 
-MSCI EMU Select 
-ESG Screened 
-Index  No 1% No No 
-MSCI ACWI 
-Select ESG 
-Screened Index  Yes Within Developed 
-Markets (DM):  
-In North America: 
-5% Within Emerging 
-Markets (EM): 1%  
- 
-No country limit 
-is applied to No 
- 
-5 Regions currently identified are Americas, Europe & Middle East and Pacific. In addition, the Emerging Markets (EM) region is  used 
-in the MSCI ACWI Select ESG Screened Index .
 Please refer to the disclaimer at the end of this document. MSCI SELECT ESG SCREENED INDEXES METHODOLOGY  | MAY 2023  
  
  
@@ -3528,9 +3396,31 @@ are excluded from the Indexes . * Conventional Weapons
  
 2 See section 4 for further information regarding ESG and climate dat a used in the Indexes that MSCI Limited sources from MSCI ESG 
 Research LLC, a separate subsidiary of MSCI Inc. MSCI ESG Research is solely responsible for the creation, determination and 
-management of such data."
+management of such data.
+Please refer to the disclaimer at the end of this document. MSCI SELECT ESG SCREENED INDEXES METHODOLOGY  | MAY 2023  
+ 
+ 
+EVENT TYPE      EVENT DETAILS    
+ 
+New additions to the Parent Index  A new security added to the Parent Index (such as IPO 
+and other early inclusions), will not be added to the 
+Index. Spin -Offs  All securities created as a result of the spin -off of an 
+existing Index constituent will not be added to the 
+Indexes  at the time of event implementation. Reevaluation for addition in the Indexes will occur at 
+the subsequent Index Review. Merger/Acquisition  If an existing Index constituent is acquired by a non -
+Index constituent, the existing constituent will be 
+deleted from the Inde x and the acquiring non -
+constituent will not be added to the Index. Changes in Security Characteristics  A security will continue to be an Index constituent if 
+there are changes in characteristics (country, sector, 
+size segment, etc.) Reevaluation for cont inued 
+inclusion in the Index will occur at the subsequent 
+Index Review. Further detail and illustration regarding specific treatment of corporate events relevant to this Index 
+can be found in the MSCI Corporate Events Methodology book."
 What’s the exclusion rule of the MSCI Select ESG Screened Indexes regarding civilian firearms?,"All companies classified as “Producer” of firearms and small arms ammunitions for civilian markets
-All companies deriving 5% or more aggregate revenue from the production and distribution (wholesale or retail) of firearms or small arms ammunition intended for civilian use.","The exclusion rule of the MSCI Select ESG Screened Indexes regarding civilian firearms is that companies associated with civilian firearms are excluded from the Indexes. This exclusion falls under the broader category of companies excluded based on Environmental, Social, and Governance (ESG) criteria, which also includes companies associated with conventional, controversial, and nuclear weapons, as well as tobacco, palm oil, and arctic oil & gas.","Score: 0.5. Reason: The response correctly includes some relevant information by mentioning the exclusion of companies associated with civilian firearms from the MSCI Select ESG Screened Indexes. However, it misses the specific details of the exclusion rule as required by the question, which should have included information about companies being classified as ""Producer"" of firearms and small arms ammunitions for civilian markets or deriving 5% or more aggregate revenue from such activities.","Please refer to the disclaimer at the end of this document. MSCI SELECT ESG SCREENED INDEXES METHODOLOGY  | MAY 2023  
+All companies deriving 5% or more aggregate revenue from the production and distribution (wholesale or retail) of firearms or small arms ammunition intended for civilian use.","Answer: The exclusion rule of the MSCI Select ESG Screened Indexes regarding civilian firearms is that companies involved in civilian firearms are excluded from the Indexes.
+Source Text: The Indexes use MSCI ESG Business Involvement Screening Research to identify companies that are involved in the following business activities.
+The following business activities are excluded from the Indexes: Conventional Weapons, Controversial Weapons, Nuclear Weapons, Civilian Firearms, Tobacco, Fossil Fuel Extraction, Thermal Coal Power, Arctic Oil & Gas, Palm Oil
+Section of Source Text: 3.3 Ongoing Event-Related Maintenance","Score: 0.5. Reason: The response correctly mentions that companies involved in civilian firearms are excluded from the Indexes, but it fails to provide the specific criteria such as all companies classified as “Producer” of firearms and small arms ammunitions for civilian markets or those deriving 5% or more aggregate revenue from such activities as required by the question.","Please refer to the disclaimer at the end of this document. MSCI SELECT ESG SCREENED INDEXES METHODOLOGY  | MAY 2023  
  
  
 Appendix I: ESG Exclusions Criteria  
@@ -3622,44 +3512,6 @@ the month. 3.3 Ongoing Event -Related Maintenance
 The following section briefly describes the treatment of common corporate events within the Indexes. No new securities will be added (except where noted below) to the Indexes between Index Reviews. For cases where additions are noted  below, securities will be added to the Index only if added to the 
 Parent Index.
 Securities are ranked in descending order of GHG intensity.
-Country Active Exposure:  The Indexes weights are updated to control the country weights from 
-deviating at mos t a fixed percentage relative to the country weights of the corresponding Parent Index. Index Name  Region Neutrality  Sector Active 
-Exposure 
-Absolute Limit  Country Active 
-Exposure 
-Absolute Limit  Cap on Maximum 
-Country Weight  
-MSCI World 
-Select ESG 
-Screened Index  Yes 1% No No 
-MSCI USA Select 
-ESG Screened 
-Index  No 5% No No 
-MSCI Japan 
-Select ESG 
-Screened Index  No 1% No No 
-MSCI EM Select 
-ESG Screened 
-Index  No No 5% No 
-MSCI Europe 
-Select ESG 
-Screened Index  No 1% No No 
-MSCI EMU Select 
-ESG Screened 
-Index  No 1% No No 
-MSCI ACWI 
-Select ESG 
-Screened Index  Yes Within Developed 
-Markets (DM):  
-In North America: 
-5% Within Emerging 
-Markets (EM): 1%  
- 
-No country limit 
-is applied to No 
- 
-5 Regions currently identified are Americas, Europe & Middle East and Pacific. In addition, the Emerging Markets (EM) region is  used 
-in the MSCI ACWI Select ESG Screened Index .
 Companies that meet the business involvement criteria 
 are excluded from the Indexes . * Conventional Weapons  
 * Controversial Weapons  
@@ -3674,8 +3526,12 @@ are excluded from the Indexes . * Conventional Weapons
  
 2 See section 4 for further information regarding ESG and climate dat a used in the Indexes that MSCI Limited sources from MSCI ESG 
 Research LLC, a separate subsidiary of MSCI Inc. MSCI ESG Research is solely responsible for the creation, determination and 
-management of such data."
-,,"I'm sorry, but the provided text chunks do not contain any information relevant to ETFs or any specific content that can be used to answer a query. If you have a question related to ETFs or any other topic, please provide additional context or details for me to assist you effectively.","Score: 1. Reason: The actual response correctly identifies that the provided text chunks do not contain any information relevant to ETFs or the specific query, as required by the question.",".....
+management of such data.
+2. The security with the highest GHG intensity is excluded and the resulting Index is compared 
+to the Parent Index, to deter mine if a 30% reduction in GHG intensity has been achieved. 3 Please refer to Appendix I V for details of the calculation of GHG Intensity."
+,,"Answer: I don't have enough information to provide a complete answer.
+Source Text: All rights reserved.
+Section of Source Text: N/A",Score: 1. Reason: The response correctly identifies that the source text does not include the information required by the question.,".....
 All rights reserved.
 All rights reserved.
 All rights reserved.

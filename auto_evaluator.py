@@ -22,7 +22,7 @@ Grading Scheme:
 - Wrong (hallucination): -1 point. The response contains untruthful or misleading facts that are not supported by the source text.
 
 Provide a brief reason for the score.
-In your evaluation response, please use format of "Score: X. Reason: Y."
+5. In your evaluation response, make sure to follow this pattern -- "Score: <X>. Reason: <Y>." with <X> as a number score !!! and <Y> as a brief reason for the score.
 """
 
 
@@ -41,7 +41,7 @@ Evaluation Steps:
 2. Read the response and compare it to the source text. Check if all the information in the response is supported by the source text.
 3. Read the question and compare the response to both the source text and the question. Check if the response includes all the relevant information to answer the question, and if it contains irrelevant information.
 4. Assign a score according to the provided grading scheme above, and provide concise reasoning.
-5. In your evaluation response, please use format of "Score: X. Reason: Y."
+5. In your evaluation response, make sure to follow this pattern -- "Score: <X>. Reason: <Y>." with <X> as a number score !!! and <Y> as a brief reason for the score.
 """
 
 title = "MSCI_Select_ESG_Screened_Indexes_Methodology_20230519"
