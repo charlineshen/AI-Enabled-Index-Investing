@@ -340,7 +340,7 @@ def read_q(input_file):
 def chat(method="semantic-split"):
 	input_question_file = "questions.csv"
 	output_file = "results.csv"
-	zip_name = 'MSCI_indexes'
+	zip_name = 'MSCI_indexes_small'
 	questions = read_q(input_question_file)
 	
 	# Save results to an Excel file
@@ -375,14 +375,16 @@ def chat_agent(zip_name, title, question, method="semantic-split"):
 	# Query relevant chunks
 	results = query(zip_name, title, question, method)
 
-	# numbered_results = [f"{i + 1}.\n{doc}" for i, doc in enumerate(results['documents'][0])]
-	# formatted_results = "\n--------------------------------------------------------------------------------------\n".join(numbered_results)
+	numbered_results = [f"{i + 1}.\n{doc}" for i, doc in enumerate(results['documents'][0])]
+	formatted_results = "\n--------------------------------------------------------------------------------------\n".join(numbered_results)
 	# print_output = f"{question}\n\n============================================RETRIEVED TEXT============================================n{formatted_results}"
 	# print("============================================INPUT PROMPT============================================\n", print_output)
 
 	# Prepare input prompt for OpenAI GPT model
-	context_chunks = "\n".join(results["documents"][0])
+	# context_chunks = "\n".join(results["documents"][0])
 	# print(f"Context chunks: {context_chunks}")
+
+	context_chunks = formatted_results
 
 	# Generate a response using OpenAI GPT
 	response_text = generate_gpt_response(question, context_chunks)
