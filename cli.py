@@ -6,6 +6,7 @@ import time
 import glob
 import hashlib
 import chromadb
+import csv
 from openai import OpenAI
 
 OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
@@ -26,10 +27,8 @@ from transformers import AutoTokenizer, AutoModel
 # Setup TODO
 GCP_PROJECT = os.environ["GCP_PROJECT"]
 GCP_LOCATION = "us-central1"
-# EMBEDDING_MODEL = "text-embedding-004"
 EMBEDDING_DIMENSION = 256
-# GENERATIVE_MODEL = "gemini-1.5-flash-001"
-GENERATIVE_MODEL = "gpt-3.5-turbo"  # CHANGED: Example generative model for OpenAI
+GENERATIVE_MODEL = "gpt-4o"
 INPUT_FOLDER = "input-datasets"
 OUTPUT_FOLDER = "outputs"
 CHROMADB_HOST = "llm-rag-chromadb"
@@ -261,7 +260,7 @@ def load(method="semantic-split"):
 		load_text_embeddings(data_df, collection)
 
 def query(zip_name, title, question, method="semantic-split"):
-	print("load()")
+	# print("query()")
 
 	# Connect to chroma DB
 	client = chromadb.HttpClient(host=CHROMADB_HOST, port=CHROMADB_PORT)
@@ -324,37 +323,72 @@ def generate_gpt_response(query, context_chunks):
 			top_p=generation_config['top_p'])
 	return response.choices[0].message.content
 
+def read_q(input_file):
+    questions = []
+    # Open and read the CSV file
+    with open(input_file, 'r', encoding='utf-8') as file:
+        csv_reader = csv.reader(file)
+        next(csv_reader)  # Skip the header row
 
-# TODO: Add extra input -- zip folder name
+        for row in csv_reader:
+            questions.append(row[2])  # Question is in the second column
+
+    # Print the number of questions and answers to verify they match
+    print(f"\nNumber of questions: {len(questions)}")
+    return questions
+
 def chat(method="semantic-split"):
-	question = "What are the MSCI Select ESG Screened Indexes?"
-	# TODO: Process document linkage
-	## if to output a comparison table, call chat_agent multiple times
-	title = "1_MSCI_Global_Investable_Market_Indexes_Methodology_20240812"
+	input_question_file = "questions.csv"
+	output_file = "results.csv"
 	zip_name = 'MSCI_indexes'
-	chat_agent(zip_name, title, question, method)
+	questions = read_q(input_question_file)
+	
+	# Save results to an Excel file
+	df = pd.DataFrame()
+	for title in os.listdir(f"{INPUT_FOLDER}/{zip_name}"):
+		print("Processing document:", title)
+		title = title.split(".")[0]
+		singledoc_results = []
+		for i in range(len(questions)):
+			query = questions[i]
+			# print("================= query: ", query)
+		
+			# Get the query, chunk, and actual response from the chat agent
+			query, chunk, response = chat_agent(zip_name, title, query)
+			# Store results
+			singledoc_results.append({
+					f'{title}-response': response,
+					f'{title}-chunks': chunk
+				})
+
+		df_singledoc = pd.DataFrame(singledoc_results)
+		df = pd.concat([df, df_singledoc], axis=1)
+		
+	df.index = pd.Index(questions)
+	df.to_csv(output_file, index=True)
+	print(f"Results saved to '{output_file}'.")
 
 def chat_agent(zip_name, title, question, method="semantic-split"):
 	# print("chat()")
-	print("=====================", question, method)
+	# print("=====================", question, method)
 	
 	# Query relevant chunks
 	results = query(zip_name, title, question, method)
 
-	numbered_results = [f"{i + 1}.\n{doc}" for i, doc in enumerate(results['documents'][0])]
-	formatted_results = "\n--------------------------------------------------------------------------------------\n".join(numbered_results)
-	print_output = f"{question}\n\n============================================RETRIEVED TEXT============================================n{formatted_results}"
-	print("============================================INPUT PROMPT============================================\n", print_output)
+	# numbered_results = [f"{i + 1}.\n{doc}" for i, doc in enumerate(results['documents'][0])]
+	# formatted_results = "\n--------------------------------------------------------------------------------------\n".join(numbered_results)
+	# print_output = f"{question}\n\n============================================RETRIEVED TEXT============================================n{formatted_results}"
+	# print("============================================INPUT PROMPT============================================\n", print_output)
 
 	# Prepare input prompt for OpenAI GPT model
 	context_chunks = "\n".join(results["documents"][0])
-	print(f"Context chunks: {context_chunks}")
+	# print(f"Context chunks: {context_chunks}")
 
 	# Generate a response using OpenAI GPT
 	response_text = generate_gpt_response(question, context_chunks)
 
 	# Print the GPT output
-	print(f"\n============================================GPT RESPONSE============================================\n{response_text}\n")
+	# print(f"\n============================================GPT RESPONSE============================================\n{response_text}\n")
 	return question, context_chunks, response_text
 
 
