@@ -81,7 +81,7 @@ def read_sample_q(input_file):
     return questions
 
 
-def load_source_text(text_file = 'input-datasets/books/MSCI_Select_ESG_Screened_Indexes_Methodology_20230519.txt'):
+def load_source_text(text_file = 'inputs/books/MSCI_Select_ESG_Screened_Indexes_Methodology_20230519.txt'):
     with open(text_file) as f:
         input_text = f.read()
     return input_text, text_file
@@ -189,15 +189,16 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Evaluate QA responses using GPT')
 
     # Define optional arguments for input and output files
-    parser.add_argument('--input_file', type=str, default='evaluator-data/sample_qa.csv', help='Path to the input CSV file containing questions and expected answers')
-    parser.add_argument('--output_file', type=str, default='evaluator-data/sample_qa_evaluation.csv', help='Path to save the evaluation results')
+    # parser.add_argument('--input_file', type=str, default='evaluator-data/sample_qa.csv', help='Path to the input CSV file containing questions and expected answers')
+    # parser.add_argument('--output_file', type=str, default='evaluator-data/sample_qa_evaluation.csv', help='Path to save the evaluation results')
     parser.add_argument('--with_expected_answer', action='store_true', help='Use this flag to evaluate with expected answers')
     
     args = parser.parse_args()
 
     if args.with_expected_answer:
         print("Evaluating responses with expected answers...")
-        evaluate_w_expected_answer(input_file=args.input_file, output_file=args.output_file)
+        evaluate_w_expected_answer()
+        # evaluate_w_expected_answer(input_file=args.input_file, output_file=args.output_file)
     else:
         print("Evaluating responses without expected answers...")
         evaluate_wo_expected_answer()

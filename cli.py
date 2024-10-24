@@ -29,7 +29,7 @@ GCP_PROJECT = os.environ["GCP_PROJECT"]
 GCP_LOCATION = "us-central1"
 EMBEDDING_DIMENSION = 256
 GENERATIVE_MODEL = "gpt-4o"
-INPUT_FOLDER = "input-datasets"
+INPUT_FOLDER = "inputs"
 OUTPUT_FOLDER = "outputs"
 CHROMADB_HOST = "llm-rag-chromadb"
 CHROMADB_PORT = 8000
@@ -337,7 +337,7 @@ def read_q(input_file):
     print(f"\nNumber of questions: {len(questions)}")
     return questions
 
-def chat(method="semantic-split"):
+def chat():
 	input_question_file = "questions.csv"
 	output_file = "results.csv"
 	zip_name = 'MSCI_indexes_small'

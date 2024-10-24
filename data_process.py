@@ -89,7 +89,7 @@ def preprocess_text(text_list):
 
 def save_text_to_file(text, zip_path, pdf_name):
     # Extract the filename without extension
-    text_dir = zip_path.replace('index-doc', 'input-datasets').replace('.zip', '/')
+    text_dir = zip_path.replace('index-doc', 'inputs').replace('.zip', '/')
     base_name = pdf_name.replace('.pdf', '.txt')
     # Construct the new path for the .txt file
     txt_path = os.path.join(text_dir, base_name)
