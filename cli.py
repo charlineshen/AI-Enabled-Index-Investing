@@ -15,12 +15,12 @@ client = OpenAI(api_key=OPENAI_API_KEY)
 # Langchain
 from langchain.text_splitter import CharacterTextSplitter
 from langchain.text_splitter import RecursiveCharacterTextSplitter
-#from langchain_experimental.text_splitter import SemanticChunker
+# from langchain_experimental.text_splitter import SemanticChunker
 from semantic_splitter import SemanticChunker
 # import agent_tools
 
 # Hugging face emebedding model https://huggingface.co/cointegrated/rubert-tiny2
-# # pip install transformers sentencepiece 
+# !pip install transformers sentencepiece 
 import torch
 from transformers import AutoTokenizer, AutoModel
 
@@ -94,7 +94,9 @@ def load_text_embeddings(df, collection, batch_size=500):
 	# Generate ids
 	df["id"] = df.index.astype(str)
 	hashed_titles = df["title"].apply(lambda x: hashlib.sha256(x.encode()).hexdigest()[:16])
+	# hashed_zips = df["zip_name"].apply(lambda x: hashlib.sha256(x.encode()).hexdigest()[:16])
 	df["id"] = hashed_titles + "-" + df["id"]
+	# df["id"] = hashed_titles+ hashed_zips  + "-" + df["id"]
 	
 	metadata = {
 		"title": df["title"].tolist()[0],
@@ -397,25 +399,6 @@ def chat_agent(zip_name, title, question, method="semantic-split"):
 	return question, context_chunks, response_text
 
 
-def get(method="semantic-split"):
-	print("get()")
-
-	# Connect to chroma DB
-	client = chromadb.HttpClient(host=CHROMADB_HOST, port=CHROMADB_PORT)
-	# Get a collection object from an existing collection, by name. If it doesn't exist, create it.
-	collection_name = f"{method}-collection"
-
-	# Get the collection
-	collection = client.get_collection(name=collection_name)
-
-	# Get documents with filters
-	results = collection.get(
-		where={"book":"The Complete Book of Cheese"},
-		limit=10
-	)
-	print("\n\nResults:", results)
-
-
 def main(args=None):
 	# print("CLI Arguments:", args)
 
@@ -433,9 +416,6 @@ def main(args=None):
 
 	if args.chat:
 		chat(method=args.chunk_type)
-
-	if args.get:
-		get(method=args.chunk_type)
 
 	# if args.agent:
 	# 	agent(method=args.chunk_type)
@@ -470,11 +450,6 @@ if __name__ == "__main__":
 		"--chat",
 		action="store_true",
 		help="Chat with LLM",
-	)
-	parser.add_argument(
-		"--get",
-		action="store_true",
-		help="Get documents from vector db",
 	)
 	parser.add_argument(
 		"--agent",
