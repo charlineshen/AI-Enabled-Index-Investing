@@ -274,6 +274,10 @@ def query(zip_name, title, question, method="semantic-split"):
 	# Get the collection
 	collection = client.get_collection(name=collection_name)
 
+	# retrieve chunks that come from the corresponding PDF
+	collection_filtered = collection.get(where={"title": title})
+	n_chunks = len(collection_filtered["documents"])
+
 	# # 1: Query based on embedding value 
 	# results = collection.query(
 	# 	query_embeddings=[query_embedding],
@@ -281,12 +285,11 @@ def query(zip_name, title, question, method="semantic-split"):
 	# )
 
 	# 2: Query based on embedding value + metadata filter
-	results = collection.query(
+	# retrieve chunks based on embedding similarity compared to query
+	results = collection_filtered.query(
 		query_embeddings=[query_embedding],
-		n_results=10,
-		where={"$and": [{"title": title}, {"zip_name": zip_name}]}
+		n_results=n_chunks**0.6 # about 10 out of 50 chunks, 24 out of 200 chunks
 	)
-
 
 	# 3: Query based on embedding value + lexical search filter
 	# search_string = "Italian"
