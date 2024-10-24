@@ -6,12 +6,10 @@ import unidecode
 import zipfile
 
 # Find the line index of header and footer
-def find_common_index(pdf_bytes):
+def find_common_index(reader):
     page_line_lengths = []
-    
-    reader = PyPDF2.PdfReader(pdf_bytes)
         
-    # Only check the first 5 pages to find common lines
+    # Only check the first 5 pages (skip cover) to find common lines
     for page_num in range(1, min(6, len(reader.pages))):
         page = reader.pages[page_num]
         text = page.extract_text()
@@ -25,12 +23,11 @@ def find_common_index(pdf_bytes):
     
     return 0, []
 
-# Return a list of strings; each string is a page's content without header and footer
-def extract_text_list(pdf_bytes, common_index, common_lengths):
+# Return a list of strings; each string is a page's content without header and footer (cover removed)
+def extract_text_list(reader, common_index, common_lengths):
     full_text = []
-    reader = PyPDF2.PdfReader(pdf_bytes)
     
-    for page_num in range(len(reader.pages)):
+    for page_num in range(1, len(reader.pages)):
         page = reader.pages[page_num]
         text = page.extract_text()
         lines = text.splitlines()
@@ -58,34 +55,33 @@ def extract_text_list(pdf_bytes, common_index, common_lengths):
     
     return full_text
 
-# Returns a mega string of the entire PDF without cover, table of contents, contact us, and disclaimer
+# Returns a mega string of the entire PDF without table of contents, contact us, and disclaimer
 def preprocess_text(text_list):
     # Search for and remove the contacts page and the disclaimer page
     contacts_pattern = re.compile(r'\+ 1 \d{3} \d{3} \d{4}') # US phone number
     disclaimer_pattern = re.compile(r'This document and all of the information contained in it') # disclaimer-like content
-    contacts, disclaimer = None, None
-    for page_text in text_list: # search for the last occurence
+    contacts, disclaimer_page = None, None
+    for page, page_text in enumerate(text_list): # search for the last occurence
         if contacts_pattern.search(page_text):
             contacts = page_text # save content instead of index to avoid indexing errors when removing two items
         if disclaimer_pattern.search(page_text):
-            disclaimer = page_text
+            disclaimer_page = page
     if contacts:
         text_list.remove(contacts)
-    if disclaimer:
-        text_list.remove(disclaimer)
+    if (disclaimer_page) and (disclaimer_page >= len(text_list) - 3):
+        text_list = text_list[:disclaimer_page]
 
-    # Search for the first occurrence of the regex pattern "number non-number(s) number"     
-    toc_pattern = re.compile(r'\d+[^\d]+(\d+)')
-    toc_match = toc_pattern.search(text_list[1])
-    if toc_match:
-        # Extract the second numeric group as the start page
-        start_page = int(toc_match.group(1)) - 1
-    else:
-        start_page = 1 # only remove index page
-        print("No matching pattern found. The Contents page of the PDF may have an uncommon format.")
+    # Search for the first occurrence of a line that ends with a number
+    page_number_pattern = re.compile(r'(\d+)\s*$')  # digits followed by trailing whitespaces, at end of line
+    start_page = 0
+    for line in text_list[0].split("\n"): # first page, split by lines
+        page_number_match = page_number_pattern.search(line)
+        if page_number_match:
+            start_page = int(page_number_match.group(1)) - 2
+            break
 
-    if start_page > 10: # the match is suspiciously large
-        start_page = 1 # only remove index page
+    if start_page > len(text_list) // 10 + 1: # the match is suspiciously large
+        start_page = 0
 
     # Merge list of text into long string
     text = "\n".join(text_list[start_page:])
@@ -115,8 +111,9 @@ if __name__ == '__main__':
                 with z.open(file_info) as pdf_file:
                     # Apply the PDF processing function
                     pdf_bytes = io.BytesIO(pdf_file.read())
-                    common_index, common_lengths = find_common_index(pdf_bytes)
-                    text_list = extract_text_list(pdf_bytes, common_index, common_lengths)
+                    reader = PyPDF2.PdfReader(pdf_bytes)
+                    common_index, common_lengths = find_common_index(reader)
+                    text_list = extract_text_list(reader, common_index, common_lengths)
                     text = preprocess_text(text_list)
                     ascii_text = unidecode.unidecode(text)
                     saved_file_path = save_text_to_file(ascii_text, zip_path, pdf_file.name)
