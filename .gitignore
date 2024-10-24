@@ -1,7 +1,3 @@
 # misc
 .DS_Store
 /docker-volumes
-/outputs
-/input-datasets
-*.zip
-*.pdf

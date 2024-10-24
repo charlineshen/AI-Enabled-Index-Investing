@@ -1,0 +1,406 @@
+MSCI INDEX GLOSSARY  
+ 
+Key term  Definition  
+Adjusted Market 
+Capitalization  Market Capitalization  of a security adjusted by the Inclusion Factor and the 
+Price Adjustment  Factor for the day, using the FX Rate as of t. 
+All Country World 
+Index (ACWI) 
+Countries  Countries  classified as either Developed  Markets or Emerging  Markets. 
+Announcement  date  Date on which results of index review are disseminated  publicly. 
+Annual Full Country 
+Float Review Once a year, detailed review of the shareholder  information  used to estimate 
+free float is carried out for all securities  in the equity universe. 
+Annual Market 
+Classification  Review Annual cycle aiming to review the classification  of Equity Markets into 
+Investment  Universes.  The results of each annual cycle are announced  in June. 
+Annualized  Traded 
+Value Ratio (ATVR) Liquidity measure used to assess liquidity of securities  in the GIMI. 
+The ATVR corresponds  to the Annualized  Traded Value of a security relative to 
+its Free Float-Adjusted Market Capitalization.  
+As of the close of date "End of day" date as of which changes are implemented  in the MSCI Indexes. 
+Base date of the index  The date where the index has its base value and against which the performance  
+of the index is measured.  
+Base value  The initial value (index level) that the index has. The value from which ongoing 
+calculations  are done and compared  to. 
+Capping  The process of limiting the maximum  weight of a security in an index, typically 
+to avoid concentration  risk. 
+Calculated  price  Price determined  by MSCI based on the terms of a corporate  event. 
+Carry forward market 
+price Market price of the previous business day used for the next business day in the 
+MSCI Index calculations.   
+Constraint  factor  Ratio of the weight of a security in a derived index and the parent index, at the 
+time of the index rebalancing.  
+Country Classification  
+(Frontier Markets) Rules within the MSCI GIMI Methodology  used to classify each Frontier Market 
+into size (Large, Small) and liquidity (Average,  Low, Very Low) categories.  
+The Country Classification  is used as a basis for the construction  and 
+maintenance  of each Frontier Market. 
+Country Classification  
+Framework  Rules used to determine  the country classification  of equity securities.  
+Country of 
+Classification  A country assigned to all eligible companies  in the equity universe based on 
+MSCI Country Classification  framework.  
+Country of Coverage   A country assigned to eligible companies  in the equity universe which cannot be 
+classified based on MSCI Country Classification  framework.  
+Country of 
+Incorporation  A country where a company is incorporated  or legally registered.  
+Cross-border event  Corporate  event involving companies  classified in two different countries.  
+Cum date  Business day prior to the ex-date. 
+Default distribution   Distribution  received if shareholders  do not elect for any option. 
+Detached  security  A dummy security added to the MSCI Indexes to offset the drop in market 
+capitalization  of the parent security, when the spunoff entity is not trading on 
+the spinoff ex-date.    
+Domestic  Inclusion 
+Factor (DIF) Free float-adjustment  factor applicable  to domestic investors.  
+Domestic  Equity 
+Indexes Equity indexes constructed  on the basis of the investment  opportunity  set 
+available for domestic institutional  investors 
+Early Inclusion  Addition of a security to the MSCI Indexes outside regular index review process. 
+Effective Date  "From the open day" date as of which changes are implemented  in the MSCI 
+Indexes. 
+Effective 
+Implementation  Date "End of day" date as of which changes are implemented  in the MSCI Indexes. 
+Efficiency  of a 
+benchmark  Level of stability and simplicity  of a benchmark,  potentially  lowering replication  
+costs  
+Equity Index 
+Methodologies  Methodology  documents  containing  construction  and maintenance  rules for the 
+MSCI Equity Indexes. Any index family is governed  by a number of documents:  
+the specific index methodology,  the MSCI Global Investable  Market Indexes 
+methodology,  the MSCI Index Calculation  methodology,  the MSCI Corporate  
+Events methodology,  the MSCI Fundamental  Data methodology  and the MSCI 
+Index Policies. 
+Equity Market  Geographical  entity used as a basis for the construction  and maintenance  of the 
+GIMI. 
+Defined by MSCI either as a country or a group of countries  (e.g. Developed  
+Markets Europe). 
+Equity Universe  Universe of eligible equity securities.  
+Example: the Developed  Markets Equity Universe consists of eligible equity 
+securities  in Developed  Markets. 
+Equity Universe 
+Minimum  Size 
+Requirement  Minimum  full company market capitalization  requirement  for inclusion of a 
+security in the Investable  Equity Universe.  
+Factor Tilt  Active Exposure to a certain factor that any strategy index might have relative 
+to its parent 
+Final Size-Segment 
+Investability  
+Requirements  Additional  investability  requirements  applied to investable  equity securities  
+assigned to the IMI Size-Segment during Index Reviews. 
+Different requirements  apply for securities  assigned to the Standard Size-
+Segment compared  to securities  assigned to the Small Cap Size-Segment.  
+Foreign Inclusion 
+Factor (FIF) Free float-adjustment  factor applicable  to foreign investors.  
+Foreign Ownership  
+Limit (FOL) Proportion  of share capital of the security that is available for purchase to 
+foreign investors.  
+Foreign Room  Proportion  of shares still available to foreign investors relative to the maximum  
+allowed. 
+Foreign Room 
+Adjustment  Factor Adjustment  factor applied to the weight of securities  in the GIMI which have 
+low level of foreign room. 
+Free Float  Proportion  of shares outstanding  that are available to investors for purchase in 
+the public equity markets. 
+Free Float-Adjusted 
+Market Capitalization  Market capitalization  of an equity security adjusted by its Foreign Inclusion 
+Factor or Domestic  Inclusion Factor. 
+Frequency  of Trading Liquidity measure used to assess liquidity of securities  in the GIMI. 
+The Frequency  of Trading corresponds  to the proportion  of trading days where 
+a security traded at least once during the day. 
+Full Market 
+Capitalization  Aggregated  market capitalization  of all listed and unlisted securities  of a 
+company.  
+GICS Structure   GICS is designed with four levels of classifications,  starting with sectors on the 
+top, branching  into industry groups, industries  and finally the sub-industries  at 
+the grass root level. 
+GICS Structure  Review Annual Review of the GICS Structure  to ensure that the GICS structure remains 
+relevant and current to the investment  community.  
+Global Industry 
+Classification  
+Standard (GICS) Standard developed  by MSCI and S&P Dow Jones Indices used to classify 
+companies  within the Global Investable  Equity Universe to an industry based on 
+its principal business activity. 
+Global Investable  
+Market Indexes 
+(GIMI) Family of MSCI indexes constructed  and maintained  based on the MSCI Global 
+Investable  Market Indexes (GIMI) Methodology.  
+Global Investable  
+Equity Universe Aggregation  of all Market Investable  Equity Universes  
+Global Minimum  Size 
+Range Full market capitalization  range around the Global Minimum  Size Reference.  
+Used as a basis for determining  the Size and Coverage  Target Area. 
+Global Minimum  Size 
+Reference  (GMSR) Minimum  full market capitalization  reference  number applicable  to a given Size-
+Segment of a particular  Investment  Universe.  
+Growth Inclusion 
+Factor Proportion  of a security's  free float-adjusted market capitalization  that is 
+allocated to the Growth Index, as part of the MSCI Global Value Growth 
+methodology.  
+Hedge Impact  Represents  the mark to market gain or loss on the forward contracts  measured  
+in terms of the home currency.  
+Historical  link  Price linkage established  between two securities  following  an M&A where a 
+newly added security in the MSCI Indexes will have the market prices and 
+volume history of the existing index constituent  being deleted from the MSCI 
+Indexes. 
+Home Currency  Local currency of investor investing in international  equity markets. 
+Impact Monitor  Company  level score ranging from 1 to 10, indicating  involvement  in 
+environment,  social and governance  (ESG) related controversies.  
+Index Continuity  Rules Rules within the MSCI GIMI Methodology  aimed at maintaining  index stability 
+by avoiding the temporary  inclusion or exclusion  of Equity Market indexes in 
+composite  indexes. 
+Index Rebase  Changes to the base date and base value of an index. 
+Initial Market 
+Capitalization   Market Capitalization  of a security adjusted by the Inclusion Factor for the day, 
+using the FX Rate as of t-1 
+Initial Security Weight The weight a security has at the beginning  of the day, comparing  its initial 
+market cap against the index initial market cap. 
+Interim constituents   Provisional  Constituents  that reflect certain corporate  events, similar to the 
+Price Adjustment  Factor. 
+International  Equity 
+Indexes Equity indexes constructed  on the basis of the opportunity  set which takes into 
+account potential investment  restrictions  applicable  to foreign investors 
+Intraday Security 
+Pricing Price movements  during the day or during the trading session. 
+Investable  Company   Company  (issuer level) with at least one class of shares included in the 
+Investable  Equity Universe.  
+Investable  Market 
+Index (IMI) Size-Segment corresponding  to the aggregation  of the Large Cap, Mid Cap and 
+Small Cap Size-Segments.  
+Investment  Universe  Universe of Equity Markets sharing similar investment  characteristics.   
+There are three investment  universes  (Developed  Markets, Emerging  Markets, 
+Frontier Markets).  
+IVA Rating  Company  level rating ranging from AAA to CCC indicating  performance  on 
+environment,  social and governance  (ESG) issues; based on the Intangible  Value 
+Assessment  methodology  
+Late announcement   Index email announcement  sent to MSCI clients in cases where MSCI decides to 
+postpone  a corporate  event implementation  in order to leave sufficient  
+advance notice to clients and respect the announcement  policy.  
+Limited Investability  
+Factor (LIF) Adjustment  factor applied to the Free Float of securities  in the GIMI in the 
+process of determining  the Foreign Inclusion Factor and Domestic  Inclusion 
+Factor. Used to reflect certain investment  limitations  in Equity Markets and 
+securities.  
+Liquidity Adjustment  
+Factor Adjustment  factor applied to the weight of large securities  in Emerging  Markets 
+and Frontier Markets which fail the liquidity requirements  for inclusion in the 
+Investable  Equity Universe.  
+Market Classification  
+Framework  Rules used to classify Equity Markets into Investment  Universes.  
+Market Coverage   Proportion  of the Investable  Equity Universe covered by a given Size-Segment.  
+Market Investable  
+Equity Universe Market universe of investable  equity securities  derived from the application  of 
+investability  requirements  to the securities  in the Equity Universe classified in 
+that market. 
+Market Size-Segment 
+Cutoff Minimum  full market capitalization  number applicable  to a given Size-Segment 
+of a particular  Equity Market. 
+Used as part of the index construction  and Index Review process, as well as for 
+ongoing index maintenance  (corporate  events). 
+Merger  Event where two merging entities cease to exist and a brand new entity is 
+created. 
+Number of Shares 
+(NOS) All shares of the company that have been issued and outstanding.  
+Parent Index  MSCI index used as the universe for the construction  of any derived index. For 
+example: MSCI World is the parent index for MSCI Minimum  Volatility Index. 
+Pre-opening  Information  that is available before the open of the trading session, as a 
+reference.  
+Price Adjustment  
+Factor (PAF) Multiplier  applied to the market price of a security on the ex-date (from the 
+opening of that day till its end) of a corporate  event to offset the price 
+movement  related to the corporate  event only. 
+Pro-Rata basis (float) Corporate  event applied proportionally  to all existing shareholders.   
+Provisional  Indexes  Indexes that are used in order to reflect future changes to current indexes, and 
+for doing so they are based on pro forma information.  
+Quarterly  Index 
+Review (QIR) Regular index maintenance  process performed  in February and August and 
+aiming to reflect significant  market driven changes. 
+Quarterly  Index 
+Review of Changes in 
+Number of Shares All securities  in the equity universe are reviewed  for the latest outstanding  
+Number of Shares (NOS) as part of each regularly scheduled  Quarterly  Index 
+Review 
+Real Time  Information  that is available instantaneously,  without delay. 
+Reinvest a negative 
+amount Cash amount reinvested  in the MSCI Net DTR Indexes corresponding  to the 
+withholding  tax applicable  on a distribution  in cases where the treatment  
+applied by MSCI used a Price Adjustment  Factor (PAF) in the MSCI Indexes. 
+Replicability  & 
+Investability  of a 
+benchmark  Level of accessibility  of index constituents  by a target investor group enabling 
+passive replication  a benchmark  
+Representativeness  of 
+a benchmark  Ability of a benchmark  to reflect an investment  process it aims to represent   
+Sector Indexes  Indexes aiming to represent  sector based subset of a given index, as defined by 
+the MSCI GICS Classification  methodology  
+Security Contribution   The fraction of performance  to the index that a security contributes  according  
+to its weight. 
+Security Index of Price It represents  the performance  of a security in the form of an index. 
+Segment Number of 
+Companies  Number of Investable  Companies  in a given Size-Segment of a particular  Equity 
+Market. 
+Semi-Annual Index 
+Review (SAIR) Regular index maintenance  process performed  on a semi-annual basis in May 
+and November  and aiming to systematically  reassess the various dimensions  of 
+the Equity Universe for all Equity Markets. 
+Share Type  A designation  applied to identify different securities  under same Share Class. 
+Size and Coverage  
+Target Area Intersection  of the GIMI size (Global Minimum  Size Range) and coverage (Target 
+Coverage  Range) objectives.  
+Used at the time of index construction  and Semi-Annual Index Reviews for the 
+purpose of updating the Segment Number of Companies.  
+Size Range Boundary  
+Proximity  Area Buffers around the lower and upper bounds of the Global Minimum  Size Range. 
+Aimed at minimizing  reverse index turnover resulting from the update of the 
+Segment Number of Companies  during Semi-Annual Index Reviews. 
+Size-Segments   Market capitalization  categories  derived from the segmentation  of the Market 
+Investable  Equity Universe (example:  Large Cap Size-Segment).  
+Size-Segments  are used as a basis for deriving Size-Segment Indexes. 
+Standalone  Index  Index for a given Equity Market that is provided on a standalone  basis only, and 
+hence not included in either the MSCI World Index, the MSCI Emerging  Markets 
+Index or the MSCI Frontier Markets Index. 
+Standard Size-
+Segment Size-Segment corresponding  to the aggregation  of the Large Cap and Mid Cap 
+Size-Segments.  
+Strategy Indexes  Indexes that are based on alternative  weighting  schemes,  and introduce  a tilt 
+towards one or more factors such as momentum,  volatility and value to aim to 
+capture additional  systematic  risk premia. 
+Style Segment  Style categories  derived from the segmentation  of the Market Investable  Equity 
+Universe.  
+Style Segments  are used as a basis for deriving Style Indexes (Value & Growth 
+Indexes). 
+Target Coverage  
+Range Target range for the Market Coverage.  
+Used as a basis for determining  the Size and Coverage  Target Area. 
+Thematic  Indexes  Indexes that seek to identify specific social, economic,  industrial,  environmental  
+or demographic  trends and their long-term secular, cyclical and structural  
+influences  on the world's economies  and markets. Thematic  indexes often cut 
+across traditional  sector and geographical  boundaries  and can provide 
+diversification  in a portfolio context. 
+Theo Cum PAF  PAF calculated  using the closing market price of the ex-date and the terms of 
+the corporate  event ex on that day. 
+Theo Ex  Calculated  price of the expected opening market price on the ex-date of a 
+corporate  event, based on the terms of this corporate  event and the market 
+price prior to the ex-date. 
+Value Inclusion Factor Proportion  of a security's  free float-adjusted market capitalization  that is 
+allocated to the Value Index, as part of MSCI Global Value Growth 
+methodology.  
+Z-score  The number of standard deviations  an observation  is away from the mean. 
+  
+ 
+AMERICAS  
+ 
+Americas  1 888 588 4567 * 
+Atlanta   + 1 404 551 3212 
+Boston   + 1 617 532 0920 
+Chicago   + 1 312 675 0545 
+Monterrey   + 52 81 1253 4020 
+New York  + 1 212 804 3901 
+San Francisco  + 1 415 836 8800 
+Sao Paulo  + 55 11 3706 1360 
+Toronto   + 1 416 628 1007 
+ 
+ 
+EUROPE, MIDDLE EAST & AFRICA 
+ 
+Cape Town  + 27 21 673 0100 
+Frankfurt   + 49 69 133 859 00 
+Geneva   + 41 22 817 9777 
+London   + 44 20 7618 2222 
+Milan   + 39 02 5849 0415 
+Paris   0800 91 59 17 * 
+ 
+ 
+ASIA PACIFIC 
+ 
+China North  10800 852 1032 * 
+China South  10800 152 1032 * 
+Hong Kong  + 852 2844 9333 
+Mumbai   + 91 22 6784 9160 
+Seoul   00798 8521 3392 * 
+Singapore   800 852 3749 * 
+Sydney   + 61 2 9033 9333 
+Taipei   008 0112 7513 * 
+Tokyo   + 81 3 5290 1555 
+ ABOUT MSCI 
+ 
+For more than 40 years, MSCI's research-
+based indexes and analytics have helped 
+the world's leading investors build and 
+manage better portfolios.   Clients rely on 
+our offerings for deeper insights into the 
+drivers of performance  and risk in their 
+portfolios,  broad asset class coverage and 
+innovative  research.   
+Our line of products and services includes 
+indexes, analytical  models, data, real estate 
+benchmarks  and ESG research.    
+MSCI serves 98 of the top 100 largest 
+money managers,  according  to the most 
+recent P&I ranking.  
+For more information,  visit us at 
+www.msci.com . 
+* =  toll free 
+ CONTACT  US
+clientservice@msci.com
+ 
+MSCI INDEX GLOSSARY  | JUNE 2014
+MSCI.COM  | PAGE 11 OF 11 (c) 2015 MSCI Inc. All rights reserved.  
+ This document  and all of the information  contained  in it, including without limitation  all text, data, graphs, charts (collectively,  the "Information")  is 
+the property of MSCI Inc. or its subsidiaries  (collectively,  "MSCI"), or MSCI's licensors,  direct or indirect suppliers or any third party involved in making 
+or compiling  any Information  (collectively,  with MSCI, the "Information  Providers")  and is provided for informational  purposes only.  The Information  
+may not be modified,  reverse-engineered,  reproduced  or redisseminated  in whole or in part without prior written permission  from MSCI.  
+The Information  may not be used to create derivative  works or to verify or correct other data or information.    For example (but without limitation),  
+the Information  may not be used to create indexes, databases,  risk models, analytics,  software,  or in connection  with the issuing, offering, 
+sponsoring,  managing  or marketing  of any securities,  portfolios,  financial products or other investment  vehicles utilizing or based on, linked to, 
+tracking or otherwise  derived from the Information  or any other MSCI data, information,  products or services.   
+The user of the Information  assumes the entire risk of any use it may make or permit to be made of the Information.   NONE OF THE INFORMATION  
+PROVIDERS  MAKES ANY EXPRESS OR IMPLIED WARRANTIES  OR REPRESENTATIONS  WITH RESPECT TO THE INFORMATION  (OR THE RESULTS TO BE 
+OBTAINED  BY THE USE THEREOF),  AND TO THE MAXIMUM  EXTENT PERMITTED  BY APPLICABLE  LAW, EACH INFORMATION  PROVIDER  EXPRESSLY  
+DISCLAIMS  ALL IMPLIED WARRANTIES  (INCLUDING,  WITHOUT  LIMITATION,  ANY IMPLIED WARRANTIES  OF ORIGINALITY,  ACCURACY,  TIMELINESS,  
+NON-INFRINGEMENT,  COMPLETENESS,  MERCHANTABILITY  AND FITNESS FOR A PARTICULAR  PURPOSE)  WITH RESPECT TO ANY OF THE 
+INFORMATION.  
+Without limiting any of the foregoing  and to the maximum  extent permitted  by applicable  law, in no event shall any Information  Provider have any 
+liability regarding  any of the Information  for any direct, indirect, special, punitive, consequential  (including  lost profits) or any other damages even if 
+notified of the possibility  of such damages.  The foregoing  shall not exclude or limit any liability that may not by applicable  law be excluded or limited, 
+including without limitation  (as applicable),  any liability for death or personal injury to the extent that such injury results from the negligence  or 
+willful default of itself, its servants, agents or sub-contractors.    
+Information  containing  any historical information,  data or analysis should not be taken as an indication  or guarantee  of any future performance,  
+analysis, forecast or prediction.   Past performance  does not guarantee  future results.   
+The Information  should not be relied on and is not a substitute  for the skill, judgment  and experience  of the user, its management,  employees,  
+advisors and/or clients when making investment  and other business decisions.   All Information  is impersonal  and not tailored to the needs of any 
+person, entity or group of persons. 
+None of the Information  constitutes  an offer to sell (or a solicitation  of an offer to buy), any security, financial product or other investment  vehicle or 
+any trading strategy.  
+It is not possible to invest directly in an index.  Exposure to an asset class or trading strategy or other category represented  by an index is only 
+available through third party investable  instruments  (if any) based on that index.   MSCI does not issue, sponsor, endorse, market, offer, review or 
+otherwise  express any opinion regarding  any fund, ETF, derivative  or other security, investment,  financial product or trading strategy that is based on, 
+linked to or seeks to provide an investment  return related to the performance  of any MSCI index (collectively,  "Index Linked Investments").  MSCI 
+makes no assurance  that any Index Linked Investments  will accurately  track index performance  or provide positive investment  returns.  MSCI Inc. is 
+not an investment  adviser or fiduciary and MSCI makes no representation  regarding  the advisability  of investing in any Index Linked Investments.  
+Index returns do not represent  the results of actual trading of investible  assets/securities.  MSCI maintains  and calculates  indexes, but does not 
+manage actual assets. Index returns do not reflect payment of any sales charges or fees an investor may pay to purchase the securities  underlying  the 
+index or Index Linked Investments.  The imposition  of these fees and charges would cause the performance  of an Index Linked Investment  to be 
+different than the MSCI index performance.  
+The Information  may contain back tested data.  Back-tested performance  is not actual performance,  but is hypothetical.   There are frequently  
+material differences  between back tested performance  results and actual results subsequently  achieved by any investment  strategy.   
+Constituents  of MSCI equity indexes are listed companies,  which are included in or excluded from the indexes according  to the application  of the 
+relevant index methodologies.  Accordingly,  constituents  in MSCI equity indexes may include MSCI Inc., clients of MSCI or suppliers to MSCI.  Inclusion 
+of a security within an MSCI index is not a recommendation  by MSCI to buy, sell, or hold such security, nor is it considered  to be investment  advice. 
+Data and information  produced  by various affiliates of MSCI Inc., including MSCI ESG Research Inc. and Barra LLC, may be used in calculating  certain 
+MSCI indexes.  More information  can be found in the relevant index methodologies  on www.msci.com.  
+MSCI receives compensation  in connection  with licensing its indexes to third parties.  MSCI Inc.'s revenue includes fees based on assets in Index 
+Linked Investments.  Information  can be found in MSCI Inc.'s company filings on the Investor Relations section of www.msci.com.  
+MSCI ESG Research Inc. is a Registered  Investment  Adviser under the Investment  Advisers Act of 1940 and a subsidiary  of MSCI Inc.  Except with 
+respect to any applicable  products or services from MSCI ESG Research,  neither MSCI nor any of its products or services recommends,  endorses,  
+approves or otherwise  expresses  any opinion regarding  any issuer, securities,  financial products or instruments  or trading strategies  and MSCI's 
+products or services are not intended to constitute  investment  advice or a recommendation  to make (or refrain from making) any kind of investment  
+decision and may not be relied on as such. Issuers mentioned  or included in any MSCI ESG Research materials  may include MSCI Inc., clients of MSCI 
+or suppliers to MSCI, and may also purchase research or other products or services from MSCI ESG Research.   MSCI ESG Research materials,  including 
+materials  utilized in any MSCI ESG Indexes or other products,  have not been submitted  to, nor received approval from, the United States Securities  
+and Exchange  Commission  or any other regulatory  body. 
+Any use of or access to products,  services or information  of MSCI requires a license from MSCI.  MSCI, Barra, RiskMetrics,  IPD, FEA, InvestorForce,  and 
+other MSCI brands and product names are the trademarks,  service marks, or registered  trademarks  of MSCI or its subsidiaries  in the United States 
+and other jurisdictions.   The Global Industry Classification  Standard (GICS) was developed  by and is the exclusive property of MSCI and Standard & 
+Poor's.  "Global Industry Classification  Standard (GICS)" is a service mark of MSCI and Standard & Poor's. NOTICE AND
+DISCLAIMER

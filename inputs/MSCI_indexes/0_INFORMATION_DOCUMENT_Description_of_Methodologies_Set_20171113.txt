@@ -1,0 +1,303 @@
+1 INTRODUCTION  
+ 
+MSCI calculates a wide variety of indexes all of which are governed by rules -based 
+methodologies.  MSCI also calculates custom indexes at clients' request. These are 
+constructed and maintained based on MSCI indexes to which a client -defined screen, 
+exclusion list or weighting is applied. Custom indexes may be governed by either standard 
+methodologies w ith modified parameters or specific custom methodologies.   
+The c onstruction and maintenance of each MSCI index can be  fully  described by a set of 
+methodology documents  as well as custom parameter sheets in the case of custom indexes.  
+The number of methodol ogies describing an index may vary depending on its complexity.  
+This document provides detailed guidance on how and in which order they should be read in 
+order to facilitate  understanding  the full set of rules governing the index.  
+ 
+ 
+ 
+ 
+ 
+2 METHODOLOGY  DOCUMENT SET: OVERVIEW  
+The methodology document set is a collection of documents that describes the complete set 
+of construction and maintenance rules of any MSCI  Index .  
+It includes  
+* Common global document set  - This includes documents common to all index es, 
+such as index policies, index calculation or treatment of corporate events.  
+* Specific Index methodology set  - This includes the index specific rules  and 
+guidelines  and may consist of one or more index methodology documents and a 
+parameter sheet in the c ase of specific c ustom indexes.  
+An MSCI I ndex may be constructed by the application of  a single  specific  methodology such 
+as the  MSCI Global Investable Markets Indexes (GIMI) methodology or through the 
+application of two or more  specific  methodologies and  thus may require referencing to 
+multiple methodology books for  a complete description.   
+MSCI's primary standard equity index methodology is the MSCI Global Investable Market 
+Index ("GIMI") methodology. Other equity indexes, including some custom indexes, are in 
+general derived and maintained by applying other , e.g. factor /ESG /thematic/capped  
+methodologies, on the universe of securities defined by the MSCI Global Investable Market 
+Indexes  (generally referred to as "Parent Index") . 
+ 
+  
+Figure  1: MSCI Index Offerings  
+ 
+For example the MSCI World Quality Index is created by applying MSCI Quality Index 
+methodology on the MSCI World Index (Parent Index) which is based on the MSCI Global 
+Investable Market Indexes  methodology .  
+Some indexes may be constructed by applying more than two layers of methodologies 
+applied sequentially. For example -  the MSCI World  Commodity Producers Sector Capped  
+Index is created by first creating the MSCI World Index using the MSCI GIMI Methodology, 
+then creating the MSCI World Commodity Producers Index by applying the MSCI Commodity 
+Produces Index methodology on the MSCI World , and finally the MSCI World Commodity 
+Producers Sector Capped Index is created by appl ying the MSCI Capped Index methodology 
+on the MSCI World Commodity Producers Index.  
+Thus, the MSCI World Quality Index can be described by two layers of index methodologies  
+(GIMI and Quality) , while the MSCI World  Commodity Prod ucers Sector Capped Index c an be 
+described by three layers of index methodologies (GIMI, Commodity Producers and Capped) . 
+In some cases, indexes are created by first creating component indexes by separately 
+applying different index methodologies on the same Parent  Index and then combining these  
+component indexes  in a specified proportion  to create the final index .  
+For instance, the MSCI World Factor Mix A -Series Index is created as an equal weighted 
+combination of the three indexes -  the MSCI World Minimum Volatility Index, MSCI World 
+Value Weighted Index  and the MSCI World Quality  Index . In such cases, the methodology 
+document set will include the GIMI methodology in the first layer, all the three component 
+methodologies in the second layer, and the MSCI Factor Mix A -Series metho dology is 
+included in the final layer.  
+Appendix  1 has a more detailed depiction of the methodology document set structure for an 
+index with multiple index methodology layers.  
+2.1 COMMON GLOBAL DOCUME NT SET  
+The g lobal common document set includes the set of d ocuments described below which 
+govern the most basic definitions, calculations, processes and policies applicable to all of 
+MSCI's indexes.  As described earlier, these methodology documents are included by default 
+in all the methodology document sets  unles s otherwise stated in the specific index 
+methodology (see section 2. 2).  
+2.1.1 MSCI INDEX POLICIES  
+This document describes  the various govern ance  policies related to the construction, 
+maintenance and termination of the MSCI index es. 
+2.1.2 MSCI INDEX CALCULATI ON METHODOLOGY  
+This document describes MSCI's general Index calculation methodology for the MSCI 
+Indexes.  
+2.1.3 MSCI  CORPORATE EVENTS MET HODOLOGY  
+This document describes the guiding principles and methodology for implementation o f 
+corporate events in the MSCI index es. 
+2.1.4 MSCI  FUNDAMENTAL DATA MET HODOLOGY  
+This document describes the fundamental data and financial ratios used in the construction 
+of various MSCI i ndexes.  
+2.2 SPECIFIC INDEX METHO DOLOGY DOCUMENTS  
+In addition to the global common document set described above, e ach index is  described by 
+a set of rules described in the relevant methodology book.  As described earlier, multiple 
+books may be needed to fully describe the index methodology.  
+In cases where the standard  methodology parameters are altered based on client requests, 
+a parameter sheet  is included to detail the specific customization of the methodology 
+relative to the standard parameters.  
+3 METHODOLOGY DOCUMENT  SET: TECHNICAL DESCRIPTION  
+The documents included  in the methodology document set correspond to the versions of 
+the documents active on the date of retrieving the set.  
+The whole set may be divided into 3 categories as below:  
+INFORMATION DOCUMENT - Description of Methodologies Set  (marked by prefix 0_) : This 
+current document  
+(0_INFORMATION_ DOCUMENT _Description_ of_Methodologies_ Set_YYYYMMDD ) 
+Global Common Document Set (marked by prefix 0_) : As described in Section 2.1 , these are 
+included by default in all the methodology document sets.  
+These include:  
+* 0_MSCI _Equity_ Index _Polic ies_YYYYMMDD  
+* 0_MSCI_ Fund amental _Data _Methodology _YYYYMMDD  
+* 0_MSCI_ Index _Calculation_Methoodology _YYYYMMDD  
+* 0_MSCI_ Corporate_ Events_Methodology _YYYYMMDD  
+* 0_MSCI_Index_Glossary_of_Terms _YYYYMMDD  
+Specific index m ethodology documents : Thes e are marked by prefix 1_, a nd if necessary 2_ 
+and so on . 
+The methodology document set inherently describe s the order of application of the 
+individual index methodologies to construct the given index. If an index is constructed by 
+applying multiple methodo logies  sequentially on top of one another , they are presented in 
+the appropriate order. The following are examples of how this is applied. For the indexes 
+described in Section 2, the methodology document set will appear as described below:  
+* For the MSCI Wor ld Quality Index , the methodolo gy document set will include  
+(along with the 6 documents listed above)  the MSCI GIMI  methodology in the first 
+layer and the MSCI Quality Index methodology in the second layer as 
+1_MSCI _Global_ Investable _Market _Indexes _Methodology _YYYYMMDD  and 
+2_MSCI _Quality _Indexes _Methodology _YYYYMMDD .  
+* For the MSCI World  Commodity Producers Sector Capped Index, the methodology 
+document set will include the MSCI GIMI Methodology in the first layer, the MSCI 
+Commodity Producers Index me thodology in the second layer, and the MSCI 
+Capped Index methodology in the third layer, as 
+1_MSCI _Global_ Investable _Market _Indexes _Methodology _YYYYMMDD , 
+2_MSCI_ Commodity _Producers _Indexes_Methodology _YYYYMMDD  and 
+3_MSCI _Capped _Indexes _Methodology _YYYYMMDD .  
+* For the MSCI World Factor Mix A -Series Index , the methodology document set will 
+include the MSCI GIMI Methodology in the first layer, the MSCI Minimum Volatility 
+Index methodology, the MSCI Value Weighted Index methodology and the MSCI 
+Quality Index methodology all in the second layer and the MSCI Factor Mix A -Series 
+Index methodology in the third layer as 
+1_MSCI _Global_ Investable _Market _Indexes _Methodology _YYYYMMDD , 
+2_MSCI _Quality_ indexes _Methodology _YYYYMMDD , 
+2_MSCI _Minimum _Volatility _Indexes _Method ology _YYYYMMDD , 
+2_MSCI _Value _Weighted _indexes _Methodology _YYYYMMDD  and 
+3_MSCI _Factor _Mix_A-Series _Indexes _Methodology _YYYYMMDD . 
+For custom indexes created by altering the standard methodology parameters based on 
+client requests, the methodology document se t will also include a parameter sheet to 
+detail the specific customization of the methodology relative to the standard 
+parameters.  
+APPENDIX I : METHODOLOGY DOCUMENT SET STRUCTURE  
+ 
+ 
+ 
+ 
+ 
+  
+ 
+Base Index Methodology -  Layer 1 (e.g. GIMI)  
+ 
+Optional Specific Index Methodologies -  Layer 2  
+Methodology 1  
+e.g. 
+Min Vol  
+Methodology N  
+e.g. 
+Quality  
+Optional Specific Index Methodologies -  Layer 3  
+ 
+Methodology 1  
+e.g. 
+ESG Leaders  
+Methodology N  
+e.g. 
+Enhanced Value  
+Optional Specific  Index Methodologies -  Layer N  
+ 
+Optional 
+Parameter Sheet  
+ 
+... 
+... 
+... 
+... 
+... 
+... 
+Common Global Document Set >>  
+Index Policy  
+Index Calculation  
+Fundamental Data  
+Corporate Events  
+Index Glossary of Terms  
+... 
+... 
+... 
+... 
+... 
+... 
+... 
+... 
+... 
+ (c) 2017  MSCI Inc. All rights reserved.  
+ * This document and all of the information contained in it, including 
+without limitation all text, data, graphs, charts (collectively, the 
+"Information") is the property of MSCI Inc. or its subsidiaries (collectively, 
+"MSCI"), or MSCI's licensors, direct o r indirect suppliers or any third party 
+involved in making or compiling any Information (collectively, with MSCI, 
+the "Information Providers") and is provided for informational purposes 
+only.  The Information may not be modified, reverse -engineered, 
+reprod uced or redisseminated in whole or in part without prior written 
+permission from MSCI.  
+* The Information may not be used to create derivative works or to verify 
+or correct other data or information.   For example (but without 
+limitation), the Information may not be used to create indexes, 
+databases, risk models, analytics, software, or in connection with the 
+issuing, offering, sponsoring, managing or marketing of any securities, 
+portfolios, financial products or other investment vehicles utilizing or 
+based  on, linked to, tracking or otherwise derived from the Information 
+or any other MSCI data, information, products or services.   
+* The user of the Information assumes the entire risk of any use it may 
+make or permit to be made of the Information.  NONE OF T HE 
+INFORMATION PROVIDERS MAKES ANY EXPRESS OR IMPLIED 
+WARRANTIES OR REPRESENTATIONS WITH RESPECT TO THE 
+INFORMATION (OR THE RESULTS TO BE OBTAINED BY THE USE THEREOF), 
+AND TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, EACH 
+INFORMATION PROVIDER EXPRESS LY DISCLAIMS ALL IMPLIED 
+WARRANTIES (INCLUDING, WITHOUT LIMITATION, ANY IMPLIED 
+WARRANTIES OF ORIGINALITY, ACCURACY, TIMELINESS, NON -
+INFRINGEMENT, COMPLETENESS, MERCHANTABILITY AND FITNESS FOR A 
+PARTICULAR PURPOSE) WITH RESPECT TO ANY OF THE INFORMATION.  
+* Without limiting any of the foregoing and to the maximum extent 
+permitted by applicable law, in no event shall any Information Provider 
+have any liability regarding any of the Information for any direct, indirect, 
+special, punitive, consequential (includi ng lost profits) or any other 
+damages even if notified of the possibility of such damages. The 
+foregoing shall not exclude or limit any liability that may not by applicable 
+law be excluded or limited, including without limitation (as applicable), 
+any liabi lity for death or personal injury to the extent that such injury 
+results from the negligence or willful default of itself, its servants, agents 
+or sub -contractors.   
+* Information containing any historical information, data or analysis 
+should not be taken as an indication or guarantee of any future 
+performance, analysis, forecast or prediction.  Past performance does not 
+guarantee future results.   
+* The Information should not be relied on and is not a substitute for the 
+skill, judgment and experience of the user, its management, employees, 
+advisors and/or clients when making investment and other business 
+decisions.  All Information is impersonal and not tailored to the needs of 
+any person, entity or group of persons.  
+* None of the Information constitutes an offer to sell (or a solicitation of 
+an offer to buy), any security, financial product or other investment 
+vehicle or any trading strategy.  
+* It is not possible to invest directly in an index.  Exposure to an asset 
+class or trading strategy or other categ ory represented by an index is only 
+available through third party investable instruments (if any) based on 
+that index.   MSCI does not issue, sponsor, endorse, market, offer, review 
+or otherwise express any opinion regarding any fund, ETF, derivative or 
+other security, investment, financial product or trading strategy that is 
+based on, linked to or seeks to provide an investment return related to 
+the performance of any MSCI index (collectively, "Index Linked 
+Investments"). MSCI makes no assurance that any I ndex Linked 
+Investments will accurately track index performance or provide positive 
+investment returns.  MSCI Inc. is not an investment adviser or fiduciary 
+and MSCI makes no representation regarding the advisability of investing 
+in any Index Linked Invest ments.  * Index returns do not represent the results of actual trading of investible 
+assets/securities. MSCI maintains and calculates indexes, but does not 
+manage actual assets. Index returns do not reflect payment of any sales 
+charges or fees an investor m ay pay to purchase the securities underlying 
+the index or Index Linked Investments. The imposition of these fees and 
+charges would cause the performance of an Index Linked Investment to 
+be different than the MSCI index performance.  
+* The Information may co ntain back tested data.  Back- tested 
+performance is not actual performance, but is hypothetical.  There are 
+frequently material differences between back tested performance results 
+and actual results subsequently achieved by any investment strategy.   
+* Con stituents of MSCI equity indexes are listed companies, which are 
+included in or excluded from the indexes according to the application of 
+the relevant index methodologies. Accordingly, constituents in MSCI 
+equity indexes may include MSCI Inc., clients of M SCI or suppliers to 
+MSCI.  Inclusion of a security within an MSCI index is not a 
+recommendation by MSCI to buy, sell, or hold such security, nor is it 
+considered to be investment advice.  
+* Data and information produced by various affiliates of MSCI Inc., 
+including MSCI ESG Research LLC and Barra LLC, may be used in 
+calculating certain MSCI indexes.  More information can be found in the 
+relevant index methodologies on www.msci.com.  
+* MSCI receives compensation in connection with licensing its indexes to 
+third parties.  MSCI Inc.'s revenue includes fees based on assets in Index 
+Linked Investments. Information can be found in MSCI Inc.'s company 
+filings on the Investor Relations section of www.msci.com.  
+* MSCI ESG Research LLC is a Registered Investment Adviser under the 
+Investment Advisers Act of 1940 and a subsidiary of MSCI Inc.  Except 
+with respect to any applicable products or services from MSCI ESG 
+Research, neither MSCI nor any of its products or services recommends, 
+endorses, approves or otherwise expresses any opinion regarding any 
+issuer, securities, financial products or instruments or trading strategies 
+and MSCI's products or services are not intended to constitute 
+investment advice or a recommendation to make (or refrain from 
+making) any kind of inv estment decision and may not be relied on as 
+such. Issuers mentioned or included in any MSCI ESG Research materials 
+may include MSCI Inc., clients of MSCI or suppliers to MSCI, and may also 
+purchase research or other products or services from MSCI ESG Rese arch.  
+MSCI ESG Research materials, including materials utilized in any MSCI 
+ESG Indexes or other products, have not been submitted to, nor received 
+approval from, the United States Securities and Exchange Commission or 
+any other regulatory body.  
+* Any use  of or access to products, services or information of MSCI 
+requires a license from MSCI.  MSCI, Barra, RiskMetrics, IPD, FEA, 
+InvestorForce, and other MSCI brands and product names are the 
+trademarks, service marks, or registered trademarks of MSCI or its 
+subsidiaries in the United States and other jurisdictions.  The Global 
+Industry Classification Standard (GICS) was developed by and is the 
+exclusive property of MSCI and Standard & Poor's.  "Global Industry 
+Classification Standard (GICS)" is a service mark  of MSCI and Standard & 
+Poor's.  
+ NOTICE AND 
+DISCLAIMER  

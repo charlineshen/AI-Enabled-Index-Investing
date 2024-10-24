@@ -97,7 +97,7 @@ def eval(prompt):
     evaluation = response.choices[0].message.content
     return evaluation  # Return the GPT-generated score and explanation
 
-def evaluate_wo_expected_answer(input_file='sample_q.csv', output_file='sample_q_evaluation.csv'):
+def evaluate_wo_expected_answer(input_file='evaluator-data/sample_q.csv', output_file='evaluator-data/sample_q_evaluation.csv'):
     questions = read_sample_q(input_file)
     results = []
     total_score = 0
@@ -140,7 +140,7 @@ def evaluate_wo_expected_answer(input_file='sample_q.csv', output_file='sample_q
     print(f"Evaluation results saved to '{output_file}'.")
     print("Average score: ", total_score/len(questions))
 
-def evaluate_w_expected_answer(input_file='sample_qa.csv', output_file='sample_qa_evaluation.csv'):
+def evaluate_w_expected_answer(input_file='evaluator-data/sample_qa.csv', output_file='evaluator-data/sample_qa_evaluation.csv'):
     questions, expected_answers = read_sample_qa(input_file)
     results = []
     total_score = 0
@@ -181,7 +181,7 @@ def evaluate_w_expected_answer(input_file='sample_qa.csv', output_file='sample_q
     # Save results to an Excel file
     df = pd.DataFrame(results)
     df.to_csv(output_file, index=False)
-    print("Evaluation results saved to 'evaluation_results.csv'.")
+    print(f"Evaluation results saved to {output_file}.")
     print("Average score: ", total_score/len(questions))
 
 
@@ -189,8 +189,8 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Evaluate QA responses using GPT')
 
     # Define optional arguments for input and output files
-    parser.add_argument('--input_file', type=str, default='sample_qa.csv', help='Path to the input CSV file containing questions and expected answers')
-    parser.add_argument('--output_file', type=str, default='sample_qa_evaluation.csv', help='Path to save the evaluation results')
+    parser.add_argument('--input_file', type=str, default='evaluator-data/sample_qa.csv', help='Path to the input CSV file containing questions and expected answers')
+    parser.add_argument('--output_file', type=str, default='evaluator-data/sample_qa_evaluation.csv', help='Path to save the evaluation results')
     parser.add_argument('--with_expected_answer', action='store_true', help='Use this flag to evaluate with expected answers')
     
     args = parser.parse_args()

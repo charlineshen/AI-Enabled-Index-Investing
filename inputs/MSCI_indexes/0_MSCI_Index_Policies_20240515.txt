@@ -1,0 +1,534 @@
+Overview  
+MSCI provides a wide variety of  indexes1  all of which are governed by rules -based 
+methodologies. MSCI's primary equity index methodology is the MSCI Global 
+Investable Market Index ("GIMI") methodology. Other equity indexes, including 
+custom indexes created at clients' requests, are in general de rived and maintained 
+based on the universe of securities used by the MSCI Global Investable Market 
+Indexes, i.e., the MSCI Global Investable Equity Universe . Exceptions to this are 
+highlighted in the respective index methodology documentation or custom index 
+specification documents.  
+Groupings of MSCI equity indexes include regional and individual country indexes 
+and related size, and sector indexes which are based on the GIMI methodology. 
+These indexes serve as the "parent" indexes for other MSCI indexes created 
+according to methodolo gies that address specific investment themes and strategies 
+such as MSCI Factor Indexes, MSCI ESG Indexes, MSCI Thematic Indexes and MSCI 
+Strategy Indexes (other than MSCI Factor Indexes).  
+MSCI also calculates certain blended indexes which, according to methodological 
+rules, combine MSCI equity indexes with indexes representing other asset classes or 
+combine indexes representing only non -equity asset classes  including digital assets .  
+Importantly, while different indexes address specific investment themes and 
+strategies, they are all managed by a single set of governance committees, 
+procedures and policies . 
+MSCI publishes the methodologies governing its indexes. MSCI m ethodology 
+documents  outline index objectives and detail the rules and guidelines followed by 
+MSCI to create and maintain  MSCI indexes in a wide set of possible circumstances, 
+including situations of market stress . MSCI's rules -based  index methodologies  are 
+designed to ensure  that indexes are determined with integrity and that discretion is 
+not used in the production of the indexes except in unusual cases not effectively 
+addressed  by the methodol ogy.   
+A particular index will be governed by a number of methodology documents, 
+including the specific index methodology book (as well as a parameter sheet if 
+required),  the MSCI Index Policies , and, in most cases, the MSCI Global Investable 
+Market Indexes Methodology (or other parent index methodology), the MSCI Index 
+Calculation Methodology, the MSCI Corporate Events Methodology, and the MSCI 
+Fundamental Data Methodology, all of which are avai lable on the MSCI's website 
+www.msci.com .  
+ 
+1   Within this document, "MSCI indexes" or "indexes" refer to MSCI's equity , blended and digital assets indexes .   
+MSCI also calculates custom indexes at clients' requests. These are constructed and 
+maintained based on parent MSCI indexes and methodologies to which, for example, 
+a client -defined screen, exclusion list or weighting is applied. These modifications 
+are do cumented in specification forms and/or parameter sheets which are used in 
+conjunction with the index methodology documents that govern the relevant parent 
+MSCI Index to construct and maintain the custom index. In cases where a custom 
+index methodology is m ore complex and would benefit from more detailed 
+explanation, a separate methodology document is prepared.  Custom index 
+methodologies and/or parameter sheets are published on MSCI's website at the 
+client's request.  
+  
+Index Design Guidelines  
+These guidelines are followed in the development and maintenance of all MSCI 
+indexes. MSCI indexes aim to accurately and objectively measure performance of a 
+market or  economic reality  as represented by the investment  opportunity set based 
+on a market , market  segment , theme , or investment strategy . This objective should 
+be clearly stated in the specific index methodology document.  
+Unless explicitly stated otherwise, new indexes should be constructed from the 
+Global Investable Equity Universe. This universe starts with the broadest set of 
+available listed securities and screens for investability including liquidity, size and 
+ownershi p restrictions. A broader or different universe used for an index 
+methodology should consider these investability factors as well, and should be 
+described in the relevant methodology book.  
+MSCI indexes should be constructed and maintained with the following prime 
+objectives in mind:  
+* Representativeness  
+* Replicability  
+* Efficiency  
+Index methodologies should be rules -based and aim to find the right balance 
+between representativeness of the underlying market or strategy and replicability of 
+the index in an actual portfolio in a cost efficient manner.  
+The rationale for adopting each specific methodology should be based on a thorough 
+review of the market and economic reality the indexes are intended to represent. For 
+new index methodologies, this review should include back -testing whenever 
+appropriate.  
+For custom indexes, the objective of the index is determined in conjunction with the 
+client and the  client -defined screen, exclusion list, weighting constraints or 
+combination of methodologies is documented in the custom index specification 
+and/or parameter sheet or a specific methodology document as agreed with the 
+client. Clients may request that the s pecific custom index parameters and 
+methodologies be posted on www.msci.com . 
+ 
+ 
+ 
+ 
+Index  and Methodology  Review  Process  
+All MSCI indexes are rebalanced regularly and methodologies governing indexes are 
+reviewed at least annually, usually contemporaneously with the index rebalancing 
+process.  
+As part of the regular index rebalancing process, MSCI Indexes  are reviewed relative 
+to the market or strategy they are designed  to reflect. This assists in the evaluation 
+of methodologies for both consistency and effectiveness and may highlight 
+situations where changes in the methodology are warranted to reflect changes in the 
+underlying market opportunity. Proposed changes are presented to the Equity Index 
+Committee ("EIC") and will trigger a consultation if t hey are material.  
+The index rebalancing frequency is typically quarterly or semi -annually, but can be 
+daily, monthly or triggered by conditions specified in the relevant methodology. 
+Timely and consistent treatment of corporate events also occurs outside regular 
+rebalancing  periods .  
+Methodologies are formally reviewed at least annually, typically by analyzing a 
+representative set of indexes, to ensure the methodology continues to reflect its 
+stated objective and complies with the current MSCI Index Policies document.   Some 
+methodologies, such as the MSCI Global Investable Market Indexes Methodology are 
+reviewed quarterly, coinciding with each index rebalancing.  In addition, all new 
+methodologies are reviewed and approved by the EIC and all rebalancing tools are 
+thorou ghly tested.  
+MSCI may trigger out -of-cycle methodology reviews based on, but not limited to, one 
+of the following:  
+* Market participant feedback  
+* Underlying market review and rebalancing  
+* Unusual corporate events and other constituent data changes  
+* Current events and news  
+Index changes resulting from index rebalancing or methodology reviews are 
+announced simultaneously to all market participants in advance of implementation.  
+In cases of significant index changes resulting from methodology changes, 
+methodology transitions or market reclassifications, MSCI may consider potential 
+overall market turnover while assessing replicability of the proposed changes. In 
+such cases MSCI may  consider implementation of changes in multiple phases to 
+reduce potential market impact and enhance replicability of a change.  
+ 
+Methodology and Index Consultation Policy  
+Markets are complex and market participants are diverse. When faced with a 
+situation that may result in a material2 change to an MSCI index methodology or its 
+implementation, in order to inform its decision process, MSCI seeks to understand 
+the differing perspectives in the investment community through its broad 
+consultation process. Public consultations provide essent ial feedback for increasing 
+transparency, providing access to information, fueling innovation and improvement , 
+and ensuring the on -going relevance of the indexes. After considering the feedback 
+from the consultation process, the decision making remains the responsibility of 
+MSCI solely, through the EIC and, if necessary, the Index Policy Committee ("IPC").  
+Consultation papers and discussions with market participants are an ideal channel to 
+share the reasoning and the motivation behind MSCI proposals.  Structured 
+dialogues enable institutional investors to share their views on existing benchmarks 
+and benchmar k practices as well as on potential innovations and required changes.  
+In addition, public consultations give institutional investors the lead time they need to 
+fully evaluate potential benchmark changes and their implications.  
+Methodology and Index Consultation Process  
+MSCI commences a public consultation when the EIC approves a proposal to make a 
+material change to a methodology as recommended by  an internal group, e.g., Index 
+Research, Corporate Events, Corporate Data  based on the internal analysis triggered 
+by an internal review or any feedback from market participants on a particular topic. 
+Such proposals may generally result from either market related developments or 
+regular methodology reviews.   
+ 
+Once the decision to open a consultation has been taken by the EIC, a consultation 
+document  is created , which describes  the consultation topic and, in some cases,  
+presents either the initial thinking on the matter or a draft  proposal.  This document 
+is approved  by the EIC before public dissemination, including the date by which 
+investors must  provide feedback to MSCI.  
+A consultation begins in general with an announcement giving the highlights of the 
+MSCI proposal(s) and indicating the location of the consultation document on 
+MSCI's website. The announcement is widely distributed through multiple channels, 
+including the MSCI website , Bloomberg, Reuters and directly to MSCI's clients. MSCI 
+ 
+2 The EIC determines if a methodology change is material. This determination is made based on the analysis of 
+the currently estimated or potential future impact of the methodology change on the index composition, 
+measured by the changes in the selection and/or weights of the index constituents. Fundamental change s in 
+the index construction principles would be generally considered as material . 
+collects feedback from market participants in a variety of formats including but not 
+limited to in person meetings, calls, mails, surveys, etc. as deemed appropriate.  
+MSCI welcomes feedback from any market participants but will also actively source 
+views from its clients or other specific stakeholders (e.g. , stock exchanges, market 
+regulators and other regulatory agencies) . It is important to MSCI that that feedback 
+is obtained from the most appropriate market participants for any consultation topic.  
+Exhibit 1 shows the types of index users that MSCI may specifically seek feedback 
+from during a consultation. For example, a  potential change in market classification 
+of an  MSCI Country Index requires information and views about feasibility, impact 
+and design from representatives of all of these types, including small, medium and 
+large benchmark users in each category.  All regions are also important in this case 
+as investor s from different regions may face different challenges in investing in the 
+assets of the country index in question. A short list of mandatory client feedback will 
+be defined by the team leading the consultation and discussed with the relevant 
+MSCI client c overage teams.  
+Exhibit 1: Sample Consultation Matrix f or a Pro posed Market Classification Change  
+Title  Asia  Europe  Americas  
+Asset Owners     
+Consultants     
+Active Asset 
+Managers     
+Indexed Asset 
+Managers     
+Broker/Dealers     
+ 
+Once MSCI has gathered all required feedback, the group in charge of the 
+consultation will analyze the views and formulate an informed recommendation that 
+will be presented to, discussed and debated at the EIC. The EIC will take the final 
+decision on the proposal or  escalate to the Index Policy Committee if required. The 
+final decision, while considering all the feedback received, may weigh the feedback 
+of some market participants, e.g., Asset Owners, Asset Managers ( indexed or active), 
+Broker/Dealers, etc., more hea vily, depending on the subject of the consultation.  
+The final decision, including the rationale that has led to it is communicated publicly 
+to all market participants at the same time . If the decision does not fully reflect the 
+view of the majority of the consultation participants, this is highlighted in the 
+communication. Most consultation participants request that their feedback remain 
+confidential. MSCI may nevertheless publicly disclose feedback if specifically 
+requested by respective market participants. In that case, the relevant feedback 
+would be published together with the final results of the consultation.  
+If the final decision is to change the methodology, MSCI will announce the changes 
+and timeframe of the implementation and will subsequently update the relevant 
+methodology books.  
+The length of a consultation and lead time provided for implementation varies 
+depending on the complexity of the topic, breadth of client impact as well as impact 
+on the index composition. The length of the consultation is clearly communicated as 
+part of t he consultation process and needs to be sufficient for market participants to 
+meaningfully review what is proposed and respond. Methodology changes are 
+generally announced at least one month prior to their implementation, unless 
+specific circumstances requ ire a faster implementation timeline as determined by 
+the EIC.  
+In case of methodology changes that are not deemed as material, MSCI may make 
+such changes without launching a public consultation. In such cases, once the 
+methodology changes are approved by the EIC, they are announced by MSCI to all 
+the market participan ts at the same time. MSCI takes into account prior feedback 
+that may have been received on such topics, as part of its ongoing engagement with 
+market participants. MSCI may also solicit views from its clients or other specific 
+stakeholders on the consultat ion topic prior to making the changes.  
+For custom indexes, changes to any client specifications are discussed directly with 
+the relevant client.  
+Note MSCI contacts  clients on a regular basis to discuss general market practices.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Index Termination Policy  
+For over 50 years, MSCI has constructed international indexes for institutional 
+investors. The MSCI indexes have evolved over time in an effort to continue to 
+appropriately reflect the investable opportunity set of equities while addressing the 
+changing and expanding investment interests of cross -border institutional investors.  
+Nonetheless, there may be certain circumstances where the methodology cannot be 
+adapted in which case terminating the index may be required. These circumstances 
+are generally not within MSCI's control and may include significant changes to the 
+structure of  underlying market, drastic changes to the market infrastructure, lack of 
+access to necessary data, geo -political events, and regulatory changes. Additionally, 
+factors such as methodology convergence or low usage may result in MSCI's 
+proposal to terminate an index.  
+In all of these cases if an index termination is proposed or required, MSCI would 
+proceed as follows:  
+* The EIC would review the impact and approve appropriateness of a 
+potential termination. EIC may also choose to escalate an index 
+termination to the IPC.  
+* MSCI may perform a consultation including a discussion of possible 
+alternatives, if any.  
+* MSCI would announce any termination of the index in advance.  
+* If practicable, MSCI would continue to calculate the index for an 
+announced period of time to give users the opportunity to transition to 
+another index or otherwise prepare for the termination of the MSCI index.  
+* In the event that  an appropriate alternative index is established, the 
+details of the methodology governing this index as well as the timing of 
+the transition would be publicly communicated in advance of 
+implementation.  
+MSCI will generally announce index terminations with at least three months' notice, 
+with the following exceptions:  
+* In the case of index terminations due to circumstances not within MSCI's 
+control, such as significant changes to the structure of underlying market, 
+drastic changes to the market infrastructure, lack of access to necessary 
+data, geo -political events, and regulatory changes, the EIC will determine 
+the appropriate termination timeframe depending on the specific 
+situation.  
+* In certain cases, provisional indexes may be created and maintained to 
+reflect future methodology changes in advance of their implementation. 
+The termination of such provisional indexes will be announced at least 
+one week prior to the termination date.  
+Indexes may also be discontinued if fewer than the required minimum number of 
+securities are eligible for inclusion when applying a given methodology to a market. 
+For example, this could happen in GIMI Large, Mid or Small Cap Indexes or indexes 
+based on the GICS(r) segmentation .  In these cases, the index can no longer be 
+calculated in accordance with the applicable methodology and the index will simply 
+stop. MSCI may resume calculation of such indexes if over time enough securities 
+become eligible.  
+The termination of a custom index is handled in consultation with the relevant client.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Corrections  Policy  
+In the case of data errors that occur in the determination or calculation of an index, if 
+the impact of the error is  "not important", no historical index restatement is made.  
+If the impact of the error on performance is "important"3 at the index level, indexes 
+are restated historically.  
+In certain circumstances, such as errors in the list of index constituents (e.g., a 
+security is unintentionally omitted ), or the error affects a large number of securities 
+(e.g., a third of the prices in a particular market are in error) MSCI may also correct 
+and restate history, even if the aggregate impact is not important.  
+MSCI applies a 12 -month correction period for index errors. Errors discovered that 
+are older than 12 months are generally not corrected.  
+Corrections related to regular index rebalancing  activities  or corporate events are 
+assessed on a case by case basis.  
+At times there may be a need to take an action that is not prescribed in the  correction 
+policy as stated above. When this is the case  senior members across the MSCI Index 
+Research and Production  teams  will develop a propos al keeping in mind the  
+following factors in determining the most appropriate corrective action: index 
+investability and replicability as well as potential reverse turnover.  All such  proposals 
+are reviewed and approved by the EIC.  
+All corrections are announced simultaneously to all market participants.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+3 Currently the threshold for corrections is 50 basis points  at the country or regional index level.  
+Index Calculation and Discretion  
+The MSCI indexes are  calculated using transacted security prices from stock  
+exchanges or published indexes. MSCI does not use any  bids, asks, or any 
+estimations as alternatives to stock prices  or substitutions for component indexes . 
+The return of the indexes  is determined in a number of currencies including USD and 
+EUR.  
+The MSCI equity indexes rely on the continued availability of transacted security 
+prices from stock exchanges. The MSCI b lended  indexes and digital assets indexes 
+rely on the continued availability of component index levels.  
+To the extent that any such  data is temporarily or permanently unavailable (whether 
+as a result of a market disruption event , permission for MSCI to use such data  in 
+determining its indexes  or otherwise), the MSCI index methodologies apply the fall 
+back measures described below.  
+In case of market closure or if a security does not trade on a specific day or a 
+specific period, MSCI carries forward the latest available closing price to calculate its 
+equity indexes. In case of market outage, MSCI will use the prices provided up to the  
+point of the outage of that market for calculation of MSCI equity indexes on that day. 
+In case of the unavailability of a component index level used in the calculation of an 
+MSCI blended index  or an MSCI digital assets index , MSCI carries forward the latest 
+available component index level to calculate its blended indexes.  
+If MSCI determines that another price or index level is more appropriate based on the 
+circumstances, an announcement would be sent to clients with the related 
+information. All such determinations are made by EIC.  
+MSCI's rules -based index methodologies, which cover index construction, 
+maintenance and calculation, provide that discretion is not used in the production of 
+the indexes except in unusual cases not effectively addressed by the methodology. 
+These include, b ut may not be limited to:  
+* Corporate events not previously encountered or usually complex in 
+nature,  
+* Structural changes to the underlying markets,  
+* Operational issues at stock exchanges,  
+* Geo-political events,  
+* Events beyond human control  
+Where there may be a need to take an action that is not prescribed in the 
+methodology, senior members across the MSCI Index Research and Production will 
+develop a proposed approach with the goal of remaining consistent with the spirit of 
+the methodology and ensuring timely calculation and distribution. These proposals 
+are reviewed by the EIC. In cases when  time permits and the cases are deemed 
+material, MSCI may consult with clients on the proposed approach. MSCI will then 
+announce the decided action to all market participants at the same time.  
+Typi cally, MS CI does not perform explicit ex -post analysis of decisions but always 
+welcomes feedback from market participants on decisions made.  
+The framework described above eliminates the exercise of discretion by an individual 
+and ensures any required exercise of discretion is managed through escal ation to 
+committees of experts.  All committees are governed to terms of reference and all 
+decisions are appropriately documented and archived.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Notice on Index  Usage  
+MSCI indexes may be used for a variety of purposes, including for research or use as 
+the basis for  index -linked  investment products. They may be used by a variety of 
+market participants, including but not limited to asset owners, portfolio managers, 
+broker -dealers, researchers. Not all uses are appropriate for all users. Market 
+participants should use their judgment when selecting an index for a particular 
+purpose.  
+Indexes and the effectiveness of index methodologies can be affected by a number 
+of factors, most of which are beyond MSCI's control. These may include structural 
+changes to the underlying market, including decreases in the size and liquidity of the 
+releva nt market segment, infrastructure changes, geo -political events, and regulatory 
+changes. These circumstances may result in a material change to the index  and 
+MSCI may elect to change the methodology as a result.  In rare cases,  these 
+circumstances may resu lt in the termination of an index. Index users should consider 
+this possibility , including the potential need to terminate or modify the terms of a 
+financial product or fund as the result of the termination of the calculation of the 
+benchmark index .  
+MSCI assumes no responsibility for any potential use of its indexes  by clients  for a 
+particular purpose , including as the basis for an index -linked financial product or 
+investment fund. The effective representation of a market or strategy is the primary 
+aim for MSCI.  
+ 
+ 
+  
+February 2018 updates : 
+Consultation Policy  
+* Clarification on the launch of methodology consultations   
+Index Termination Policy  
+* Clarification on the role of the Index Equity Committee (EIC) in index 
+termination decisions  
+ 
+May 2018 updates : 
+Consultation Policy  
+* Clarification on the publication of consultation decisions and their 
+rationale  
+ 
+February 2019 updates : 
+Index Termination Policy  
+* Clarification on escalations to the IPC  
+ 
+June 2019 updates : 
+Methodology and Index Consultation Policy  
+* Minor clarifications  
+ 
+October  2019 updates : 
+Methodology and Index Consultation Policy  
+* Update to the definition of material change  
+* Update on the treatment of non -material changes  
+* Update to the channels for gathering consultation feedback  
+ 
+May 2020 updates : 
+* Clarifications to the Corrections Policy  
+ 
+June 2022 updates : 
+Methodology and Index Consultation Policy  
+* Clarification on the notice period for methodology changes   
+ 
+January 2023 updates : 
+* Updating Notice and Disclaimer page  
+ 
+November  2023 updates : 
+Methodology and Index Consultation Policy  
+* Clarification on the notice period for methodology changes  
+* Inclusion of reference to digital assets indexes  
+ 
+ 
+ 
+ 
+ 
+  
+ (c) 202 3 MSCI Inc. All rights reserved.  
+ MSCI Index Policies  | December 2023  
+ 
+ 
+Notice and disclaimer  
+This document and all of the information contained in it, including without limitation all text, data, graphs, charts (collect ively, the "Information") is the property of MSCI Inc. or its subsidiaries 
+(collectively, "MSCI"), or MSCI's licensors, direct or i ndirect suppliers or any third party involved in making or compiling any Information (collectively, with MSCI, the "Informati on Providers") 
+and is provided for informational purposes only. The Information may not be modified, reverse -engineered, reproduced  or redisseminated in whole or in part without prior written permission 
+from MSCI. All rights in the Information are reserved by MSCI and/or its Information Providers.  
+The Information may not be used to create derivative works or to verify or correct other data or information. For example (bu t without limitation), the Information may not be used to create 
+indexes, databases, risk models, analytics, software, or in connec tion with the issuing, offering, sponsoring, managing or marketing of any securities, portfolios, financial products or other  
+investment vehicles utilizing or based on, linked to, tracking or otherwise derived from the Information or any other MSCI da ta, information, products or services.  
+The user of the Information assumes the entire risk of any use it may make or permit to be made of the Information. NONE OF T HE INFORMATION PROVIDERS MAKES ANY EXPRESS OR 
+IMPLIED WARRANTIES OR REPRESENTATIONS WITH RESPECT TO THE INFORMATION (OR THE RESULTS  TO BE OBTAINED BY THE USE THEREOF), AND TO THE MAXIMUM EXTENT 
+PERMITTED BY APPLICABLE LAW, EACH INFORMATION PROVIDER EXPRESSLY DISCLAIMS ALL IMPLIED WARRANTIES (INCLUDING, WITHOUT LIMITAT ION, ANY IMPLIED WARRANTIES 
+OF ORIGINALITY, ACCURACY, TIMELINESS, NO N-INFRINGEMENT, COMPLETENESS, MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE) WITH RESPECT TO ANY OF THE 
+INFORMATION.  
+Without limiting any of the foregoing and to the maximum extent permitted by applicable law, in no event shall any Informatio n Provider have any liability regarding any of the Information 
+for any direct, indirect, special, punitive, consequential (includin g lost profits) or any other damages even if notified of the possibility of such damages. The foregoing shall not exclude or 
+limit any liability that may not by applicable law be excluded or limited, including without limitation (as applicable), any liabil ity for death or personal injury to the extent that such injury results 
+from the negligence or willful default of itself, its servants, agents or sub -contractors.  
+Information containing any historical information, data or analysis should not be taken as an indication or guarantee of any future performance, analysis, forecast or prediction. Past 
+performance does not guarantee future results.  
+The Information may include "Signals," defined as quantitative attributes or the product of methods or formulas that describe  or are derived from calculations using historical data. Neither 
+these Signals nor any description of historical data are intended to provide investment advice or a recommendation to make (or refrain from making) any investment decision or asset 
+allocation and should not be relied upon as such. Signals are inherently backward -looking because of their use of historical data, and they a re not intended to predict the future. The relevance, 
+correlations and accuracy of Signals frequently will change materially.  
+The Information should not be relied on and is not a substitute for the skill, judgment and experience of the user, its manag ement, employees, advisors and/or clients when making investment 
+and other business decisions. All Information is impersonal and no t tailored to the needs of any person, entity or group of persons.  
+None of the Information constitutes an offer to sell (or a solicitation of an offer to buy), any security, financial product or other investment vehicle or any trading strategy.  
+It is not possible to invest directly in an index. Exposure to an asset class or trading strategy or other category represent ed by an index is only available through third party investable 
+instruments (if any) based on that index. MSCI does not issue, spon sor, endorse, market, offer, review or otherwise express any opinion regarding any fund, ETF, derivative or other security, 
+investment, financial product or trading strategy that is based on, linked to or seeks to provide an investment return relate d to th e performance of any MSCI index (collectively, "Index Linked 
+Investments"). MSCI makes no assurance that any Index Linked Investments will accurately track index performance or provide p ositive investment returns. MSCI Inc. is not an investment 
+adviser or fiduciary and MSCI makes no representation regarding the advisability of investing in any Index Linked Investments.  
+Index returns do not represent the results of actual trading of investible assets/securities. MSCI maintains and calculates i ndexes, but does not manage actual assets. The calculation of 
+indexes and index returns may deviate from the stated methodology. In dex returns do not reflect payment of any sales charges or fees an investor may pay to purchase the securities 
+underlying the index or Index Linked Investments. The imposition of these fees and charges would cause the performance of an Index Linked Investm ent to be different than the MSCI index 
+performance.  
+The Information may contain back tested data. Back -tested performance is not actual performance, but is hypothetical. There are frequently material differences between back tes ted 
+performance results and actual results subsequently achieved by any investme nt strategy.  
+Constituents of MSCI equity indexes are listed companies, which are included in or excluded from the indexes according to the  application of the relevant index methodologies. Accordingly, 
+constituents in MSCI equity indexes may include MSCI Inc., clients o f MSCI or suppliers to MSCI. Inclusion of a security within an MSCI index is not a recommendation by MSCI to buy, sell, 
+or hold such security, nor is it considered to be investment advice.  
+Data and information produced by various affiliates of MSCI Inc., including MSCI ESG Research LLC and Barra LLC, may be used in calculating certain MSCI indexes. More information can 
+be found in the relevant index methodologies on www.msci.com.  
+MSCI receives compensation in connection with licensing its indexes to third parties. MSCI Inc.'s revenue includes fees based  on assets in Index Linked Investments. Information can be 
+found in MSCI Inc.'s company filings on the Investor Relations section o f msci.com.  
+MSCI ESG Research LLC is a Registered Investment Adviser under the Investment Advisers Act of 1940 and a subsidiary of MSCI I nc. Neither MSCI nor any of its products or services 
+recommends, endorses, approves or otherwise expresses any opinion regarding an y issuer, securities, financial products or instruments or trading strategies and MSCI's products or services 
+are not a recommendation to make (or refrain from making) any kind of investment decision and may not be relied on as such, p rovided that applicab le products or services from MSCI ESG 
+Research may constitute investment advice. MSCI ESG Research materials, including materials utilized in any MSCI ESG Indexes or other products, have not been submitted to, nor received 
+approval from, the United States Securities and Exchange Commission or any other regulatory body. MSCI ESG and climate ratings, research and data are produced  by MSCI ESG Research 
+LLC, a subsidiary of MSCI Inc. MSCI ESG Indexes, Analytics and Real Estate are products of MSCI Inc. that uti lize information from MSCI ESG Research LLC. MSCI Indexes are administered 
+by MSCI Limited (UK).  
+Please note that the issuers mentioned in MSCI ESG Research materials sometimes have commercial relationships with MSCI ESG R esearch and/or MSCI Inc. (collectively, "MSCI") and that 
+these relationships create potential conflicts of interest. In some cases,  the issuers or their affiliates purchase research or other products or services from one or more MSCI affiliates. In 
+other cases, MSCI ESG Research rates financial products such as mutual funds or ETFs that are managed by MSCI's clients or th eir affiliate s, or are based on MSCI Inc. Indexes. In addition, 
+constituents in MSCI Inc. equity indexes include companies that subscribe to MSCI products or services. In some cases, MSCI c lients pay fees based in whole or part on the assets they 
+manage. MSCI ESG Resea rch has taken a number of steps to mitigate potential conflicts of interest and safeguard the integrity and independence of i ts research and ratings. More information 
+about these conflict mitigation measures is available in our Form ADV, available at https ://adviserinfo.sec.gov/firm/summary/169222.  
+Any use of or access to products, services or information of MSCI requires a license from MSCI. MSCI, Barra, RiskMetrics, IPD  and other MSCI brands and product names are the trademarks, 
+service marks, or registered trademarks of MSCI or its subsidiaries in  the United States and other jurisdictions.  
+The Global Industry Classification Standard (GICS) was developed by and is the exclusive property of MSCI and S&P Global Mark et Intelligence. "Global Industry Classification Standard 
+(GICS)" is a service mark of MSCI and S&P Global Market Intelligence.  
+MIFID2/MIFIR notice: MSCI ESG Research LLC does not distribute or act as an intermediary for financial instruments or structu red deposits, nor does it deal on its own account, provide 
+execution services for others or manage client accounts. No MSCI ESG Res earch product or service supports, promotes or is intended to support or promote any such activity. MSCI ESG 
+Research is an independent provider of ESG data. Privacy notice: For information about how MSCI collects and uses personal da ta, please refer to ou r Privacy Notice at 
+https://www.msci.com/privacy -pledge . 
+ 
+ 

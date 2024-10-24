@@ -1,0 +1,1920 @@
+ INTRODUCTION  
+MSCI began publishing annual fundamental data for developed market companies in 1969 and 
+for emerging market companies in 1988. MSCI has accumulated a large volume of historical 
+fundamental data during this period.  
+Fundamental Data  Security Level Ratios  Historical Coverage  
+Earnings per share  Price to Earnings  
+ 
+ 
+Return on Equity  
+ Since December 1969 for DM  
+Since January 1992 for EM  
+ 
+Since March 1997 for DM  
+Since December 1993 for EM  
+Cash Earnings per share  Price to Cash Earnings  Since January 1970 for  DM  
+Since January 1992 for EM  
+Sales per share  Price to Sales  Since January 1992 for EM 
+countries  
+Since January 2001 for DM 
+countries  
+Book Value per share  Price to Book Value  Since December 1974 for DM  
+Since January 1992 for EM  
+Dividends per share  Dividend Yield  Since December 1969 for DM  
+Since January 1992 for EM  
+5-years Sales, earnings, cash -
+earnings, earnings per share   Since December 1969  
+5 year SPS growth trend , 5 year 
+EPS growth trends   Since June 2003  
+Balance sheet items   Since March 1971 for  DM  
+ 
+MSCI uses these fundamental data items to define:  
+* Fundamental per share data  
+* Security ratios  
+* Index ratios  
+* Balance Sheet information  
+ In addition, MSCI uses fundamental data to calculate the variables used to assign style to 
+securities under its Value and Growth methodology. The following table summarizes the key 
+variables calculated by MSCI using fundamental data:  
+ Table #1      
+Fundamental Data Calculation Summary    
+Fundamental Per Share Data  Security Level Ratios  Index Level Ratios  
+Sales Per Share  Price to Sales    
+  Long -term Historical Sales Per 
+Share Growth Trend  Long -term Historical Sales Per 
+Share Growth Trend  
+Earnings Per Share  Price to Earnings  Price to Earnings  
+  Long -term Historical Earnings 
+Per Share Growth Trend  Long -term Historical Earnings Per 
+Share Growth Trend  
+  Return on Equity  Return on Equity  
+  Current Internal Growth Rate  Current Internal Growth Rate  
+    12 Months Trailing Index EPS  
+    Year on Year Growth Trailing EPS  
+Cash Earnings Per Share  Price to Cash Earnings  Price to Cash Earnings  
+Dividends Per Share  Dividend Yield  Dividend Yield  
+ Payout Ratio  Payout Ratio  
+Book Value Per Share  Price to Book Value  Price to Book Value  
+Forecasted Earnings Per Share   Price to Earnings Forward  
+Price to Earnings Backward  
+   Long -term Forward Earnings Per 
+Share Growth Rate  
+   Short -term Forward Earnings Per 
+Share Growth Rate  
+    12 Months Forward Index EPS  
+    Year on Year Growth Forward EPS  
+ 
+For certain corporate events MSCI may also adjust and/or restate fundamental data and related 
+ratios in order to maintain comparability between historical and future data. These adjustments 
+are made based on the timing of the event and availability of information at the time of the 
+event.  
+ Depending on the MSCI Equity Index Series or the Global Equity Model, MSCI will provide 
+different fundamental data for each product on a monthly basis. Per share data and security 
+ratios (price to sales, price to earnings, return on equity, price to cash e arnings, price to book 
+value, dividend yield) are provided for all MSCI Equity Index Series and Global Equity Models. 
+Fundamental data used for style attribution is distributed for the MSCI Value and Growth 
+Indexes and the Global Equity Models. This data i ncludes long -term historical growth trends, 
+current internal growth rate, and forecasted earnings figures.  
+MSCI strives to maintain clear and transparent rules that best reflect the accounting standards 
+of each country in a consistent manner. The information provided in this methodology book 
+relates to all equity index products distributed by MSCI that use fund amental data.  The book 
+demonstrates MSCI's use of fundamental data to calculate financial ratios and indicators at 
+both the security and index level.  Additionally, this book demonstrates how MSCI uses 
+fundamental data in connection with corporate events.  
+ 1 FUNDAMENTAL PER SHARE DATA  
+MSCI provides per share data on an annualized basis and calculates the data on a company 
+level in which all classes (listed and unlisted) of equity are aggregated. The total shares 
+outstanding for the latest period is used for per share data calculations.  
+MSCI provides two types of fundamental per share data:  
+* Historical  
+* Forecasted  
+Using historical and forecasted data, MSCI calculates security and index ratios. The following 
+section details how MSCI gathers and calculates all fundamental per share data.  
+1.1 GENERAL RULES  
+1.1.1  NUMBER OF SHARES  
+To calculate per share figures, MSCI uses the total number of shares at the company level at 
+the date of the results.  
+All of the company's share classes, listed and unlisted, are aggregated in the total number of 
+shares regardless of whether they are included in an index, as long as they exhibit 
+characteristics of equity securities and are eligible for the MSCI universe. If preferred shares 
+exhibit equity -like charact eristics, they are included in the number of shares for per share 
+calculation  
+MSCI always excludes stock options, warrants and convertible securities from the number of 
+shares outstanding. In other words, diluted number of shares is not used. In general, treasury 
+shares are systematically excluded from index level calculations and f rom number of shares 
+used for per share calculations.  
+Total number of shares at the company level at the date of the results is used to calculate per 
+share figures, except United States of America, Canada, the United Kingdom and Ireland where 
+average number of shares is used for per share calculations of earn ings, cash earnings, and 
+sales as is the standard practice in these countries.  
+For companies where MSCI tracks their Depository Receipts (ADR, GDR) or Certificates of 
+Participation (CPO), MSCI reports the fundamental per -share variables on a 'per -ADR / GDR' or 
+'per-CPO' basis.  
+1.1.2  CONSOLIDATION  
+MSCI always calculates fundamental data using consolidated information unless consolidated 
+results are unavailable or are not reported on a regular basis. However, in countries like India, 
+ owing to the disclosure procedures, there could be use of unconsolidated data for interim 
+financial results whereas the fiscal period financial results could be consolidated.  
+1.1.3  CURRENCY AND FREQUENCY  
+MSCI reports fundamental data in the currency of a company's country of classification based 
+on GIMI Method ology.  In general, MSCI follows the frequency of the company reporting.  For 
+example, if companies report quarterly results, MSCI also follows quarterly results.  
+1.1.4  ACCOUNTING STANDARDS USED  
+The primary accounting standard followed by MSCI is the local GAAP. If the company does not 
+report in local GAAP but reports in other GAAPs, such as IAS or US GAAP, then MSCI will follow 
+the latter. For a large number of European countries and some other c ountries in the Asia -
+Pacific, MSCI started following IFRS accounting in the year 2006 (please refer to Appendix I for 
+details on MSCI's treatment of some specific issues related to IFRS).  
+1.1.5  SOURCES AND UPDATES  
+MSCI sources company information from third party vendors as well as from publicly available 
+information made available by the companies. In addition, MSCI reflects publicly available 
+information once it is available in the market, provided that the inform ation is complete. We 
+commonly obtain information in the form of vendor files, press releases, interim and annual 
+reports. MSCI uses both audited and unaudited reports.  
+MSCI endeavors to ensure correctness, quality and timeliness of data loaded into its database, 
+by employing quality control procedures like updating company information only upon 
+availability of complete information, such as official filings with stock exc hanges or regulators 
+or upon dual vendor validation. Emphasis is placed on updating the results of bigger companies 
+first, but without undue delay for updating the results for all companies.   
+ 
+ 
+1.2 HISTORICAL PER SHARE DATA CALCULATIONS1 
+The following are the historical per share figures that are reported and/or used by MSCI:  
+ 
+1 MSCI will update Fundamental per share data for China A "Stock Connect" listings based on the offshore RMB exchange 
+rate (CNH). In addition, for securities listed outside China and reporting their financials in RMB, MSCI will publish fundame ntal 
+per share data based  on CNH effective March 2018 month -end.  
+ 
+ * Sales per share (SPS)  
+* Earnings per share (EPS)  
+* Cash earnings per share (CEPS)  
+* Dividends per share (DPS)  
+* Book value per share (BVPS)  
+ 
+In general, historical per share figures are calculated using the following formula:  
+Per share figure =Trailing  12-mont h figure
+Number  of shares  outstanding  at a company  level 
+Trailing 12-mont hfigure =Last  reported  fiscal  period  figure +(Current  interim  figure -
+Comparative  interim  figure )  
+ 
+For instance, if the last period for which results are reported is for an interim period of 3 months 
+ended Mar 31, 2011, the trailing 12 -month Earnings will be calculated as:  
+Trailing 12 -month earnings = Fiscal period earnings for the year ended Dec 31, 2010 + (3 month 
+earnings for the current interim period ended Mar 31, 2011 - 3 month earnings for the 
+comparative interim period ended Mar 31, 2010)  
+The following are exceptions:  
+* Dividends per share are always used on a per share basis as provided by the company for 
+all calculations.  
+* Book value per share is calculated using the latest reported book value; a trailing 12 -month 
+figure is not calculated.  
+MSCI calculates security per share and ratios if the gap between calculation date and financial 
+reporting period end date is less than 18 months. For example, per share and ratios will not be 
+calculated for a security reporting fundamental data as of perio d ended December 31, 2017 for 
+June 30, 2019 calculation date.   
+The following section defines the general rules for historical per share figures and their use.  
+1.2.1  SALES PER SHARE (SPS)  
+MSCI defines sales for all issuers as net operating revenues from all on -going lines of business 
+of the company.  
+Due to the different definitions of sales in different industries, MSCI applies cert ain exceptional 
+treatment in sales reported for some companies :  
+ * For Banks  (GICS(r) Industry Group 4010), MSCI does not publish sales.  
+* For Insurance companies  (GICS(r) Industry Group 4030), MSCI uses the net premiums 
+earned (or net premiums written, if the former is not available) as a proxy for sales.  
+* For certain companies that report higher revenues on account of notional contracts or 
+sales, MSCI may report revenues net of operating cost.  
+MSCI follows cumulative sales reported by the companies, instead of quarterly sales figures. In 
+addition, excise tax is always deducted from sales whenever this information is available.  
+MSCI uses sales for two purposes:  
+* Price/Sales , which is calculated using the trailing 12 -month sales per share figure; and  
+* Long -term Historical SPS growth trend , which is calculated using the last five years fiscal 
+year -end sales per share.  
+1.2.2  EARNINGS PER SHARE (EPS)  
+MSCI defines earnings as the net income from the continuing operations available to all equity 
+shareholders (i.e., all shareholders holding securities that exhibit equity -like characteristics), 
+excluding extraordinary items or non -recurring items, minority  interest and preferred dividends 
+(in cases where preferred shares do not exhibit equity like characteristics).  
+In cases where MSCI determines that a company has unusual gains or losses that do not reflect 
+the earnings potential of the company going forward, the item will be treated as non -recurring 
+and will be excluded from earnings on an after -tax basis.   
+Generally, MSCI will adjust profit and losses to reflect normalized earnings in instances such as 
+for profit / loss on sale of discontinued operations, restructuring charges, bankruptcy charges, 
+changes in accounting policy , impairment losses, acquisition/merger related costs, litigation 
+charges, gains or losses in disposal of assets, gains or losses in early extinguishment of debt, 
+tax benefit or expense  on account of new tax legislation , etc.    
+Additionally , for the below sectors , MSCI applies the following exceptional treatment on the 
+extraordinary / non -recurring items : 
+ 
+* Gains or losses due to revaluation of property belonging to  companies in the Real 
+Estate Sector (GICS Sector 60), which can have a large impact on earnings are 
+considered extraordinary / non -recurring item s (see Appendix I).  
+* Impairment of oil & gas properties for companies in the Oil & Gas Industry Group (GICS 
+Industry Group 1010) is considered part of normal operating expenses . Hence this is 
+not considered as an extraordinary / non -recurring item . 
+* Unrealized gains or losses on financial assets held by companies in the Insurance 
+Industry  Group  (GICS Industry 4030) or the  Banks Industry Group (Industry Group 4010) 
+ are part of normal operations.  Hence these are  not considered as extraordinary / non -
+recurring item s. 
+ 
+For all countries, the EPS is calculated using net earnings and number of shares, except in the 
+US, Canada, the UK, and Ireland where MSCI follows basic (undiluted) EPS from continuing 
+operations available to common shareholders as reported by companies.  
+MSCI uses earnings per share for four purposes:  
+* Price/Earnings , which is calculated using the trailing 12 -month earnings per share figure;  
+* Long -term Historical EPS growth trend , which is calculated using the last five years fiscal 
+year -end earnings per share;  
+* Return on Equity (RO E), which is calculated using the trailing 12 -month earnings per share 
+figure and latest book value per share; and  
+* Current Internal Growth Rate (g) , which is calculated using return on equity and the dividend 
+payout ratio.  
+1.2.3  CASH EARNINGS PER SHARE (CEPS)  
+MSCI defines cash earnings as earnings per share, as stated above, including depreciation and 
+amortization as reported by the company. In cases where amortization is not reported, then 
+only depreciation is added back to earnings in order to calculate cash earnings. In addition, 
+where a company does not report depreciation and / or amortization values in its interim 
+financial statements, the latest fiscal values will be used to compute CEPS.  
+Due to the nature of business of Banks (GICS(r) Industry Group 4010) and Insurance companies 
+(GICS(r) Industry Group 4030), MSCI does not publish cash earnings.  
+MSCI uses cash earnings per share to calculate:  
+Price/Cash Earnings , which is calculated using the trailing 12 -month cash earnings per share 
+figure.  
+1.2.4  DIVIDENDS PER SHARE (DPS)  
+MSCI defines regular cash dividends as those paid from annual operating profits and/or 
+accumulated earnings, while capital repayments or returns of capital are defined as cash 
+distributions from the company's share capital or additional paid -in capital (ca pital contribution 
+reserve). Regular capital repayments are considered as regular cash dividends.  
+To estimate the current annualized dividend, MSCI takes the sum of all the declared regular 
+cash distributions (dividends or capital repayments), including the ones not yet ex or paid, over 
+the latest 12 -month period.  
+ However, if the regular cash distribution frequency is changed, the latest 12 months of 
+distribution may not be available. An example may be when the distribution frequency is 
+changed from annual to semi -annual which yields either latest 6 months of distri butions or 
+latest 18 months of distributions. In this case, MSCI estimates the current annualized dividend 
+by using the latest 6 months of distribution if resulting in a higher amount than the previous 
+annualized dividend. If the latest 6 months of distrib ution is lower than the previous annualized 
+dividend, MSCI keeps the previous annualized dividend without taking the latest 6 months of 
+distribution into consideration.  
+In the US and Canada, however, regular cash distributions are annualized by multiplying the 
+latest cash distributions by the frequency of the regular cash distributions' payments. This is 
+done to capitalize on the regularity of the regular cash distributio ns' information in providing a 
+forward -looking approach for the US and Canada.  
+MSCI uses dividends per share for two purposes:  
+* Dividend yield , which is calculated using the annualized dividend per share figure; and  
+* Current Internal Growth Rate ("g") , which is calculated using the dividend payout ratio and 
+return on equity.  
+Dividend per share is calculated using the gross dividend of a security (i.e., before any 
+applicable withholding tax). Capital repayments are usually not subject to withholding tax. 
+Special cash dividends, unless they are paid for three consecutive years, and extraordinary 
+capital repayments are excluded from the dividend yield calculation.  
+Yields are gross, before withholding tax, and take into account special tax credits when 
+applicable.  
+1.2.5  BOOK VALUE PER SHARE (BVPS)  
+MSCI defines book value as shareholders' equity available to shareholders at the latest period 
+end date excluding minority interest, treasury shares and preferred shares that do not exhibit 
+equity like characteristics.  
+MSCI uses the book value per share for three purposes:  
+* Price/Book Value , which is calculated using the latest book value per share;  
+* Return on Equity (ROE) , which is calculated using the latest book value and the trailing 12 -
+month earnings per share figure; and  
+* Current Internal Growth Rate ("g") , which is calculated using return on equity and the 
+dividend payout ratio.  
+ 1.3 FORECASTED PER SHARE DATA  
+Forecasted variables are based on consensus earnings estimates taken from financial analysts 
+as provided by Thomson I/B/E/S for all countries except Japan. For Japan, data from Toyo 
+Keizai is used for securities that are not covered by Thomson I/B/E/S. MSC I uses forecasted 
+data along with historical data to provide a comprehensive assessment of a company's 
+performance.  
+MSCI defines two types of earnings per share based on forecasts:  
+* EPS 12F = 12 -month forward EPS estimate derived on a rolling basis from the consensus of 
+analysts' earnings estimates for the current fiscal year and the next fiscal year.  
+EPS 12F=MxEPS1+(12-M)xEPS2
+12 
+Where  
+* EPS 1 is the consensus of analysts' earnings estimates for current fiscal year.  
+* EPS 2 is the consensus of analysts' earnings estimates for the next fiscal year.  
+* M is the number of months remaining before the current fiscal year end  
+* The current fiscal year corresponds to the fiscal year following the last fiscal year for which 
+the company has made its results publicly available  
+For cases where EPS 2 is not available and M is greater than or equal to 8, EPS 1 is used as an 
+approximation of EPS 12F. 
+ 
+Example:     
+Calculating the 12 -month forward earnings as of January 10, 2010:  
+ Security A  Security B  Security C  
+Latest reported Fiscal Year  Dec 31, 2009  Mar 31, 2009  Dec 31, 2008  
+M 11  2  11  
+EPS 1 0.64  1.04  1.04  
+EPS 1 date  Dec 31, 2010  Mar 31, 2010  Dec 31, 2009  
+EPS 2 0.74  1.52  1.52  
+EPS 2 date  Dec 31, 2011  Mar 31, 2011  Dec 31, 2010  
+EPS 3   1.72  
+EPS 3 date    Dec 31, 2011  
+EPS12F  0.65  1.44  1.54  
+For Security C, the results for the fiscal year ending December 31, 2009 are not yet available. As a 
+result, the EPS 1 estimates still pertain to the fiscal year ending December 31, 2009. Therefore, in 
+order to have meaningful 12 -month forward earnings, the EPS 2 and the EPS 3 are used instead of 
+the EPS 1 and EPS 2. 
+ 
+ * EPS 12B = backward 12 -month EPS derived in a similar fashion as the EPS 12F but using the 
+EPS from the last reported fiscal year and the consensus of analysts' earnings estimates for 
+the current fiscal year.  
+EPS 12B=MxEPS0+(12-M)xEPS1
+12 
+Where  
+* EPS0 is last fiscal year end reported earnings per share  
+* EPS1 is the consensus of analysts' earnings estimates for current fiscal year.  
+ 
+EPS12F and/or EPS12B are used to calculate:  
+* Price to 12 -month forward earnings; and  
+* Short -term forward EPS growth rate  
+ 
+Example:  
+Calculating the Short -term forward EPS growth rate as of the January 10, 2010:  
+  Security A  Security B  Security C  
+Fiscal Year End  Dec 31, 2009  Nov 30, 2009  Mar 31, 2009  
+M 11  10  2  
+EPS 0 0.50  -0.30  0.89  
+EPS 1 0.64  -0.15  1.04  
+EPS 2 0.74  0.25  1.52  
+      
+EPS12 F 0.65  -0.08  1.44  
+EPS12 B 0.51  -0.28  1.02  
+      
+ST fwd EPS G  26.7%  69.7%  41.9%  
+ 
+All forecasted data is refreshed monthly.  
+In order to calculate the short -term forward EPS growth rate, if the EPS of the last reported 
+fiscal year is missing from the data vendor, then MSCI's last reported fiscal year EPS will be 
+used.  
+ 2 SECURITY RATIOS  
+Security ratios are derived using fundamental per share data as defined in the preceding 
+section and are used by MSCI to define the investment style of a security.   
+MSCI calculates two types of security ratios:  
+* Valuation Ratios  
+* Other Financial Ratios  
+This section provides details on the definitions and computations of the variables used to 
+calculate security ratios.  
+2.1 VALUATION RATIOS  
+In general, all valuation ratios are calculated using the following formula:  
+Valuation  Ratios =Current  security  price
+Trailing  12-mont h per share figure 
+This formula applies to:  
+* Price to Sales (P/S)  
+* Price to Earnings (P/E)  
+* Price to Cash Earnings (P/CE)  
+* Price to Book Value (P/BV)  
+* Price to Earnings Forward (P/E fwd)  
+* While for  
+* Dividend Yield (YIELD) we use the inverse of the above formula.  
+2.2 OTHER FINANCIAL RATIOS  
+2.2.1  LONG -TERM HISTORICAL GROWTH TRENDS  
+MSCI calculates two historical growth trends, showing the evolution of fundamental data over 
+the last five years.   
+* Long -term historical EPS growth trend (EGRO)  
+* Long -term historical SPS growth trend (SGRO)  
+ 
+ To calculate the EGRO and SGRO, first MSCI applies a regression using the ordinary least 
+square method to the last five -years' EPS and SPS, respectively.  
+EPSt=axt+b     SPSt=axt+b 
+Where:  
+* a, the slope coefficient,  
+* b, the intercept,  
+* t, the year expressed in number of cumulative months.  
+Then, we calculate an average absolute EPS or SPS:  
+EPS=|EPSi|
+nn
+i=1      SPS=|SPSi|
+nn
+i=1  
+Finally, we calculate the growth trend as follows:  
+EGRO =aEPS
+EPS     SGRO =aSPS
+SPS 
+ 
+Example #1      
+Calculating the Long -term historical EPS and SPS growth trend  
+ Fiscal Year End Date  T EPS SPS  
+Fiscal Year End 0  December 31, 2002  0 (1.11)  7.71  
+Fiscal Year End 1  December 31, 2003  12 (0.51)  8.19  
+Fiscal Year End 2  December 31, 2004  24 0.29  8.57  
+Fiscal Year End 3  December 31, 2005  36 0.92  8.87  
+Fiscal Year End 4  December 31, 2006  48 1.41  11.5  
+     
+A   0.05  0.07  
+a, annualised    0.65  0.83  
+Average Absolute    0.85  8.97  
+Growth trend    76.30%  9.20%  
+ 
+ 
+A minimum of the last four comparable EPS or SPS values is needed to compute the historical 
+growth trends. Growth trends for securities without at least four years of comparable EPS or 
+SPS data are not calculated and/or used to attribute the style of a sec urity. In order to provide 
+meaningful historical growth trends, MSCI may restate EPS and SPS to reflect the impact of 
+corporate events that may affect historical financial data  on an on -going basis. Please note that 
+the previously published financial data will not be revised.  
+ 
+For certain corporate events where there is a Large  impact on sales and earnings, MSCI will 
+determine comparability over a five year period using sales variation which is deemed to be 
+more stable as compared to earnings.  
+ * Whenever post event annual sales increase by more than 50% or decrease by less than 
+33%  and;  
+* The variation is determined not to be due to normal continuous business operations ( 
+i.e. corporate event, change in accounting standards, or business restructuring):  
+MSCI will mark the post event fiscal year reporting as non -comparable in sales  and earnings 
+against previous fiscals and drop the 5 year growth rate calculation.  
+If only the post event interim sales is published by the company, MSCI will wait for the post 
+event annual sales to determine comparability and will continue to publish the pre -event 
+fundamental data.  
+2.2.2  RETURN ON EQUITY (ROE)  
+The following formula is used to calculate return on equity:  
+ROE =Trailing  12-mont h earnings  per share
+Latest  Book  value  per share 
+The ROE, which is expressed in percentage terms, is considered meaningful and calculated only 
+if the following conditions are met:  
+* the book value is positive;  
+* the difference between the book value date and earnings date is less than 18 months;  
+* the book value date is equal to or older than the earnings date and;  
+* book value and earnings are both consolidated or both non -consolidated.  
+Otherwise, the ROE value is considered missing and left blank.  
+ 
+2.2.3  PAYOUT RATIO  
+Payout ratio is calculated using the annualized dividend per share divided by the trailing 12 -
+month earnings per share.   
+Payout =100 *(Dividend  per share
+Earnings  per share) 
+2.2.4  CURRENT INTERNAL GROWTH RATE (G)  
+The following is the formula for current internal growth rate:  
+g=ROE x(1-Dividend  Payout  Ratio ) 
+Payout ratio is calculated using the annualized dividend per share divided by the trailing 12 -
+month earnings per share.   
+ ROE is calculated using the trailing 12 -month earnings per share divided by the most recently 
+reported book value, as shown is section 2.2.2, entitled "Return on Equity."  
+If either the payout ratio or the return on equity is not available, the current internal growth rate 
+is not calculated.  
+2.2.5  SHORT -TERM FORWARD EARNINGS PER SHARE GROWTH RATE (EGRSF)  
+The EGRSF is a measure of the expected growth of a security over the next 12 months from the 
+calculation date.  
+The EGRSF is computed as follows:  
+EGRSF =EPS 12F-EPS 12B
+|EPS 12B| 
+2.2.6  LONG -TERM FORWARD EARNINGS PER SHARE GROWTH RATE (EGRLF)  
+The LT fwd EPS G is the consensus of analysts' earnings growth rate estimates typically 
+provided for the next 3 to 5 years. In cases where the LT fwd EPS G is considered an outlier 
+(greater than 50% or less than -33%) and the corresponding estimate is base d on only one 
+contributor, the variable will not be used by MSCI.  
+ 
+2.2.7  EARNINGS VARIABILITY ( EVAR)  
+MSCI calculates Earnings V ariability as the standard deviation of year -on-year Earnings per 
+Share (EPS) growth in the last five fiscal years.  
+ 
+EVAR = (EPSg i-EPSg  m )2 n
+1
+n-1  
+ 
+* Where EPSg  i = (EPS i - EPS i-1)/EPS i-1  
+* EPSg  m  = mean ( EPSg  i) 
+* n denotes number EPS growth data points i.e. 4 in case of earnings variability  
+ 
+ 
+ 
+ 
+ 
+ Calculating the Earnings Variability  
+  Fiscal Year End 
+Date  EPS EPS ( gi) 
+Fiscal Year End 0  30-Sep-12 4.04    
+Fiscal Year End 1  30-Sep-13 5.48  35.64%  
+Fiscal Year End 2  30-Sep-14 6.39  16.60%  
+Fiscal Year End 3  30-Sep-15 15.41  141.15%  
+Fiscal Year End 4  30-Sep-16 28.05  82.02%  
+EVAR =Standard  Deviation  (82.02,141 .15,16.60,35.64 )=55.48% 
+ 
+EVAR is calculated using the last 5 fiscal EPS figures , where  
+* Y-O-Y EPS growth(year(n)) = (EPS(year(n)) - EPS(year(n -1)))/(EPS(year(n -1))  If 
+EPS(year(n -1)) > 0  
+* Y-O-Y EPS growth(year(n)) = - (EPS(year(n)) - EPS(year(n -1)))/(EPS(year(n -1)) If 
+EPS(year(n -1)) < 0  
+* If EPS for year n -1 is 0, EPS growth would be Null for the period n  
+* A minimum of the l ast five comparable EPS values are  needed to compute the earnings 
+variability  
+In order to provide meaningful historical data, MSCI restates EPS to reflect the impact of 
+corporate events that may affect historical financial data.  
+ 
+2.2.8  ENTERPRISE VALUE TO CASH VALUE (EV/CFO)  
+ 
+The following formula is used to calculate the EV/CFO  
+ 
+EV CFO =Enterprise  value
+Net  cash flow  from  operations/  
+The ratio is calculated using:  
+* Enterprise value and n et cash flow from operations figures as of the Fiscal year end.  
+* The ratio is calculated currently using, only fiscal year end data.  
+ 
+Example for security A, the data as of fiscal year end September 2016 :  
+ Data point  Value ( USD Million)   
+Enterp rise v alue (EV )  6,20,842  
+Net cash flow from operations 
+(CFO )  65,824  
+ 
+EV CFO =6,20,824
+65,824=9.43 /  
+The EV/CFO ratio is not calculated if the following conditions are met:  
+* Both the enterprise value and cash flow from opera tions figures are negative (<0)  
+Data point  Details  
+Enterprise value (EV)  Market capitalization at fiscal year -end date + preferred stock + 
+minority interest + total debt - cash and cash equivalents  
+Net c ash flow from 
+operations  (CFO )  Net cash receipts and disbursements resulting from the 
+operations of the company  
+ 
+ 
+2.2.9  DEBT REDUCTION YIELD (DRY/LDRY)  
+Debt reduction y ield is calculated  using reduction in total d ebt over the last fiscal y ear and the 
+latest fiscal year e nterprise value  
+Debt  Reduction  Yield  (DRY )=Total  Debt t-1-Total  Debt t
+Enterprise  Value t  
+ 
+Long term d ebt reduction y ield is  calculated using reduction in l ong-term debt over the last 
+fiscal y ear and the latest fiscal year e nterprise value  
+ 
+Debt  Reduction  Yield  (LDRY )=Long  Term  Debt t-1-Long  Term  Debt t
+Enterprise  Value t  
+Where t denotes the latest fiscal year end.  
+ 
+The ratio is calculated using:  
+* Enterprise value, total debt and long-term debt figures  only as of the fiscal year end  
+ * The ratio is calculated currently using, only fiscal year end data.  
+Example for security A  (in USD million):  
+Data point  Sep 30 2016 (t)  Sep 30 2015 (t -1) 
+Total debt  64,462   87,032  
+Enterprise Value  620,842    
+ 
+DRY =(87,032 -64,462 )
+620 ,842  = 3.63% 
+ 
+Data point  Details  
+Total debt (TD)  Total Debt represents all interest bearing, capitalized lease and 
+operating lease obligations .  
+Long term debt (LTD)  Long -term debt represents all interest bearing financial 
+obligations, excluding amounts due within one year.  
+Enterprise v alue (EV)  Market capitalization at fiscal year -end date + preferred stock + 
+minority interest + total debt - cash and cash equivalents  
+ 
+The DRY ratio is not calculated if the following conditions are met:  
+* If the Enterprise v alue as of fiscal year end is negative (<0)  
+ 
+2.2.10  DEBT TO EQUITY (D/E)  
+Debt to equity is calculated using the total debt and book value of the s hareholders' equity  
+DE=Total  Debt  
+Shareholde r's Equity  /  
+ 
+The ratio is calculated using:  
+* Shareholder's equity and total d ebt figure s of the latest fiscal year end  
+* The ratio is calculated currently using, only fiscal year end data.  
+ 
+ 
+ Example for security A, the data as of fiscal year end : 
+Data point  Value  (USD million)  
+Total debt   64,462  
+Shareholder's equity  128,249  
+ 
+DE=64,462
+128 ,249  = 0.5026 /  
+ 
+ 
+Data point  Details  
+Total debt (TD)  Total Debt represents all interest bearing, capitalized lease and 
+operating lease obligations . 
+Shareholder's equity   Refer section 1.2.5 for details on the shareholder's equity  
+ 
+2.2.11  5 YEAR DPS GROWTH RATE (5Y DPS G)  
+For the calculat ion of the 5Y DPS g rowth, first a regression (ordinary least squares method) is 
+applied to the last 5 yearly DPS.  
+bta DPSt+=
+ 
+Where:  
+* a, the slope coefficient,  
+* b, the intercept,  
+* t, the year expressed in  number of cumulative months  
+Then, we calculate an average absolute DPS  
+
+==n
+ii
+nDPSSPD
+1~~
+ 
+ 
+ 
+Finally, we calculate the growth trend as follows:  
+ 
+SPDaG YDPSDPS~~ 5= 
+ 
+ 
+ 
+ 
+ 
+ Fiscal Year End Date  T DPS  
+Fiscal Year End 0  September 30, 2016  48 2.18  
+Fiscal Year End 1  September 30, 2015  36 1.98  
+Fiscal Year End 2  September 30, 2014  24 1.81  
+Fiscal Year End 3  September 30, 2013  12 1.62  
+Fiscal Year End 4  September 30, 2012  0 0.38  
+    
+A   -0.033  
+a, annualized    -0.396  
+Average Absolute    1.594  
+Growth trend    -24.84%  
+ 
+The ratio is calculated using:  
+* A minimum of the last five comparable DPS values is needed to compute the 5Y DPS G 
+.If 5 years of comparable data is not available , the growth rate is not calculated  
+* In order to provide meaningful historical growth trends, MSCI restates DPS to reflect the 
+impact of corporate events that may affect historical financial data.  
+ 
+Data point  Details  
+Annualized  DPS  Refer section 1.2.4 for details.  
+ 2.2.12  1 YEAR DPS GROWTH RATE (1Y DPS G)  
+The 1Y DPS growth rate is the difference between the current and previous annualized DPS.  
+ 
+1Y DPS  G=DPS t-DPS t-1
+DPS t-1 
+Where t denote the latest fiscal year end  
+ Fiscal Year End Date  T DPS  
+Fiscal Year End 0  September 30, 2016  t 2.18  
+Fiscal Year End 1  September 30, 2015  t-1 1.98  
+ 
+1Y DPS  G=2.18-1.98
+1.98=10.10% 
+ 
+Data point  Details  
+Annualized  DPS  Refer section 1.2.4 for details.  
+2.2.13  CASH ROA (CROA)  
+Cash ROA is calculated using the net c ash flow from operations and total assets of a company.  
+ 
+Cash ROA = Cash flow  from  operations  
+Total  Assets . 
+ 
+The ratio is calculated using:  
+* Net cash flow from operations and Total assets of the latest fiscal year end 
+* The ratio is calculated currently using, only fiscal year end data.  
+ 
+Example for security A, the data as of fiscal year end : 
+Data point  Value  (USD million)  
+Net c ash flow from operations   64,462  
+Total Assets  321,686  
+  
+Cash ROA = 64,462  
+321 ,686= 0.2004  
+ 
+Data point  Details  
+Net c ash flow from 
+operations  Net cash receipts and disbursements resulting from the 
+operations of the company.  
+Total assets  Total a ssets represent the sum of total current assets, long -
+term  receivables, investment in unconsolidated subsidiaries, 
+other investments, net property plant and equipment and 
+other assets.  
+ 
+2.2.14  3 YEAR AVERAGE EARNINGS  
+ 
+3 year  average  Earnings =Earnings  t+Earnings t-1+Earnings  t-2
+3 
+ 
+For example : 
+ Fiscal Year End Date  Earnings ( USD million)  
+Fiscal Year End t  September 30, 2016  45,687  
+Fiscal Year End t -1 September 30, 2015  53,394  
+Fiscal Year End t -2 September 30 , 2014  39,510  
+ 
+3Y AVG  ERN =45,687 +53,394 +39,510
+3= 46,197 
+ 
+* The average is calculated only using Fiscal year -end earnings.  
+* To compute the average, an equally weighted average of the three earnings values is 
+calculated. Only available earnings are used and missing earnings are excluded from the 
+calculation.  
+ 
+For instance If Earnings t -2 is missing:  
+ 3 year  average  Earnings =Earnings  t+Earnings t-1
+2 
+ 
+ 
+ 
+ 
+2.2.15  3 YEAR AVERAGE CASH EARNINGS  
+3 year  average  Earnings =Cash Earnings  t+Cash Earnings t-1+Cash Earnings  t-2
+3 
+ 
+For example:  
+ Fiscal Year End Date  Cash Earnings ( USD million)  
+Fiscal Year End t  September 30, 2016  65,687  
+Fiscal Year End t -1 September 30, 2015  73,394  
+Fiscal Year End t -2 September 30 , 2014  49,510  
+ 
+3Y AVG  Cash  Earnings =65,687 +73,394 +49510
+3= 62,863  
+ 
+* The average is calculated only using fiscal year -end cash earnings.  
+* To compute the average, an equally weighted average of the three cash earnings values 
+is calculated. Only available cash earnings are used and missing cash earnings are 
+excluded from the calculation.  
+ 
+For instance , If cash e arnings t -2 is missing:  
+3 year  average  Cash Earnings =Cash Earnings  t+Cash Earnings t-1
+2 
+ 
+ 
+Data point  Details  Data point  Details  
+Earnings  Refer section 1.2 2 for details  
+ Cash e arnings  Refer section 1.2.3 for details  
+2.2.16  3 YEAR AVERAGE SALES  
+3 Year  Average  Sales =Sales t+Sales  t-1+Sales  t-2
+3 
+For example:  
+ Fiscal Year End Date  Sales ( USD million)  
+Fiscal Year End t  September 30, 2016  215,639  
+Fiscal Year End t -1 September 30, 2015  233,715  
+Fiscal Year End t -2 September 30 , 2014  182,795  
+ 
+3 Year  Average  Sales =215 ,639 +233 ,715 +182 ,795
+3=210 ,716  
+ 
+* The average is calculated only using fiscal year -end s ales.  
+* To compute the average, an equally  weighted average of the three s ales values  is 
+calculated. Only available s ales are used and missing sales are excluded from the 
+calculation.  
+For instance if s ales t-2 is missing:  
+3 Year  Average  Sales =Sales  t+Sales t-1
+2 
+ 
+Data point  Details  
+Sales  Refer section 1.2 .1 for details.  
+ 
+2.2.17  CASH FLOW DIVIDEND COVERAGE R ATIO  
+* The ratio is calculated using the net operating cash flow per share as of the fiscal year end 
+and the annualized DPS  
+For example:  
+Data point  Period end  Values  (USD million)  
+ Net operating c ash flow per  share  September  2016  12.52  
+Dividend per share   2.28  
+ 
+Cashflow  Dividend  Coverage  Ratio =12.52
+2.28= 5.49 
+Fundamental variable  Details  
+Dividend per share   Refer section 1.2.4 for details.  
+Cash flow from operations  Net cash receipts and disbursements resulting from 
+the operations of the company  
+ 
+2.2.18  DIVIDEND COVERAGE RATIO  
+Dividend  Coverage  Ratio =(Trailing  12 mont hs EPS  )/(Dividend  per share) 
+For example : 
+Data point  Value  (USD million)  
+EPS 8.43  
+Annualized DPS  2.28  
+Dividend  coverage =8.43
+2.28=3.70 
+ 
+Data point  Details  
+Dividend per share  Refer section 1.2.4  
+EPS Refer section 1.2.2  
+ 
+2.2.19  CASH FLOW  BY TOTAL CAPITAL  
+ 
+Cash Flow  by Total  Capital =Net Cash Flow  from  Operations Total  Capital  /  
+ 
+Total  Capital =Total  Debt +Shareholder's Equity   
+The ratio is calculated only using fiscal year -end data for net cash flow from operations , total 
+debt and s hareholder's equity.  
+ Example for security A, the data as of fiscal year end : 
+Data point  Values  (USD million)  
+Net cash flow from operations (CFO)  16,868  
+Total Debt  40,819  
+Shareholder's equity ( book value)  11,870  
+ 
+Cash Flow  by Total  Capital =16,868
+52,689=0.32 
+The rati o is not calculated if:  
+* If total c apital ( total debt + s hareholder's equity )  <0  
+Fundamental variable  Details  
+Total debt Total Debt represents all interest bearing, capitalized lease 
+and operating lease obligations . 
+Shareholder's equity   Represents common shareholders' investment in a company.  
+Net operating cash 
+flow  Net cash receipts and disbursements resulting from the 
+operations of the company  
+ 
+2.2.20  RETURN ON ASSETS (ROA)  
+ ROA =Earnings Total  Assets  /  
+The ratio is calc ulated only using earnings and t otal assets figures as of the latest fiscal year 
+end period.  
+Example for security A, the data as of fiscal year end : 
+Data point  Values  (USD 
+million)  
+Earnings  16,868  
+Total assets  112,724  
+ 
+Return  on Assets =16,868
+112 ,724=0.1496  
+ 
+ Fundamental variable  Details  
+Total assets  Total assets represent the sum of total current assets, long -term  
+receivables, investment in unconsolidated subsidiaries, other 
+investments, net property plant and equipment and other assets.  
+Earnings  Net cash receipts and disbursements resulting from the operations 
+of the company  
+ 
+ 
+2.2.21  CAPITAL EXPENDITURE TO SALES (CAPEX/SALES)  
+Capital   Expenditure Sales/ = Capital  expendiure  
+Sales 
+The ratio is calculated using:  
+* Capital expenditure and the s ales figures of the latest fiscal year end.  
+The ratio is not calculated or published as "0 "if the following conditions are met:  
+* The difference between  the Sales period end date and c apital expenditure period end date 
+is greater than 18 months.  
+* If the company reports negative Sales.  
+* For all GICS sectors ex financials where the data is not reported , the ratio is reported as 
+"0". 
+Example for security A, the data as of December 2014:  
+Data point  Values  (USD million)  
+Capital e xpenditure  3,740  
+Sales  92,793  
+ 
+Capital  Expenditure Sales/ = 3,740  
+92,793= 4.03 % 
+ 
+ 
+ 
+ 
+ 
+ Data point  Details  
+Capital expenditure  Capital expenditure as investment by a company to acquire or 
+upgrade fixed, physical, non -consumable assets, such as 
+buildings and equipment.  
+Sales  Refer section 1.2.1  
+ 
+2.2.22  BUYBACK YIELD  
+The Buyback Yield is calculated at the issuer level using trailing 12 month (TTM) number of 
+common shares (NOS) outstanding adjusted for the corporate events and the current NOS 
+outstanding.  
+Issuer level buyback yield is calculated as market capitalization weighted average of buyback 
+yield values of all the common share class securities belonging to an issuer.  
+Preferred stocks and other share types such as units, warrants etc. are excluded from the 
+buyback yield calculation.  
+Net buyback  Yield  for an Issuer  = n     Wi*Yi  
+ 
+Where  
+* Wi is the market capitalization weight of a common share class security in an issuer 
+with n securities  
+* Yi is the buyback yield of a common share class security calculated as change in TTM 
+NOS / Current Number of shares.  
+ 
+2.2.23  TOTAL YIELD  
+The Total yield is calculated using the Buyback yield and Dividend yield for a company.  
+ 
+Total  yield  = Buyback  yield +Dividend  yield   
+ Data  variable  Details  
+Buyback Yield  Refer section 2.2.22  
+Dividend Yield  Refer section 1.2.4 and 2.1  
+ 2.2.24  REINVESTMENT RATE  
+Reinvestment rate is calculated using return on equity (ROE), dividend yield, and price to book 
+value ratio (P/BV).  
+Reinvestment  Rate = (ROE -Dividend  Yield *P/BV) 
+For example:  
+Data point  Value (USD million)  
+ROE  10.07  
+Dividend Yield  5.67  
+P/BV  0.52  
+ 
+Reinvestment  Rate = (0.1007 -0.0567 *0.52)=7.12%  
+ 
+The reinvestment rate is not calculated if one of the ratios is not available.  
+ 
+ 
+Data point  Details  
+ROE  Refer section 2.2.2  
+Dividend yield Refer section 2. 1 
+Price to book v alue 
+(P/BV)  Refer section 2.1 
+ 
+2.2.25  ACCRUALS CASH FLOW  
+Accruals Cash Flow (ACF) is calculated as the negative change in accounts receivable, 
+inventories, accounts payable, accrued taxes, and other current assets/liabilities, less 
+depreciation, standardized by total assets.  
+ 
+Accuals  Cash Flow = -(AR+ Inv + AP+ AT+ OC)-Dep TA/ 
+ 
+Where, AR is accounts receivable, Inv is inventories, AP accounts payable, AT is accrued taxes, 
+OC is other current assets/liabilities, Dep is depreciation and TA is total assets.  
+ The ratio is calculated using:  
+* All fiscal year end data points from the same fiscal year .  
+* The values for accounts receivable, accounts payable, depreciation and total assets  are 
+all available for the  same  fiscal year.  
+ 
+2.2.26  ACCRUALS BALANCE SHEET  
+Accruals Balance Sheet (ABS) is calculated as the change in current assets net of cash, less 
+current liabilities net of short term debt, and less depreciation standardized by total assets.  
+ 
+Accruals  Balance  Sheet =[(CA- Cash)-(CL- STD )-Dep ]TA/ 
+ 
+Where CA is current assets, CL is current liabilities, STD is short term debt, Dep is depreciation 
+and TA is total assets.  
+2.2.27  NET INCOME TO ISSUER MARKET CAPITALIZATION  
+Net income / Issuer MCap is calculated using the Net income and issuer market capitalization 
+for the company.  
+ 
+Net  income  Issuer  MCap =Net Income  
+Issuer  MCap/  
+ 
+Example for security A, the data as of fiscal year end:  
+Data point  Value (USD Million)   
+Net income trailing 12 month value   62,842  
+Issuer M arket Cap - month end 
+date  650,824  
+ 
+Net  Income  Trailing  12 mont h Issuer  Mcap =62,824
+650 ,824=0.097 /  
+ 
+Data point  Details  
+ Net Income  Trailing 12 -month net income of the company  
+Issuer market 
+capitalization  Issuer level market capitalization of the company as of the 
+calculation date  
+ 
+2.2.28  CASH EARNINGS TO ISSUER MARKET CAPITALIZATION  
+Cash Earnings / Issuer MCap  is calculated using the Cash earnings and issuer market 
+capitalization for the company.  
+ 
+Cash Earnings  Issuer  MCap =Cash Earnings  
+Issuer  MCap/  
+ 
+ 
+ 
+ 
+ 
+Example for security A, the data as of fiscal year end:  
+Data point  Value (USD Million)   
+Cash Earnings  trailing 12 month 
+value   80,250  
+Issuer MCap - month end date  650,824  
+ 
+Cash Earnings  Issuer  Mcap =80,250
+650 ,824=0.123 /  
+ 
+Data point  Details  
+Cash e arnings  MSCI does not publish cash earnings for GICS(r) Industry 
+Group 4010 and GICS(r) Industry Group 4030.  Refer to 
+Section  1.2.3  for more details.  
+Issuer market 
+capitalization  Issuer level market capitalization of the company as of the 
+calculation date  
+ 
+ 2.2.29  BOOK VALUE TO ISSUER MARKET CAPITALIZATION  
+Book Value / Issuer MCap is calculated u sing the shareholder's equity (book value)  and issuer 
+market capitalization for the company.  
+ 
+Book  Value  Issuer  MCap =Book  Value
+Issuer  MCap/  
+ 
+Example for security A, the data as of fiscal year end September 2016:  
+Data point  Value (USD Million)   
+Book value   59,252  
+Issuer market c ap - month end 
+date  650,824  
+ 
+Book  Value  Issuer  Mcap =59,252
+650 ,824=0.091 /  
+ 
+ 
+Data point  Details  
+Shareholder's equity 
+(Book Value)   Represents common shareholders' investment in a 
+company.  
+Issuer market 
+capitalization  Issuer level market capitalization of the company as of the 
+calculation date  
+2.2.30  RESEARCH AND DEVELOPMENT TO SALES (R&D/SALES)  
+R&D/Sales is calculated using the Research and Development Expense and Sales for the 
+company.  
+R&DSales =R&D Expense
+Sales/  
+ 
+Example for security A, the data as of fiscal year end:  
+Data point  Value ( Million)   
+R&D Expense  3,740  
+Sales  92,793  
+  
+R&D Sales =3,740
+92,793=4.03% /  
+ 
+Data point  Details  
+R&D Expense   Latest fiscal year research and development expense  
+Sales  Refer section 1.2.1  
+ 
+2.2.31  ASSET TURNOVER (ATO)  
+Asset Turnover is calculated using Sales and Total Assets for the company  as of fiscal year 
+end.  
+ATO =Sales
+Total  Assets 
+ 
+ 
+ 
+Example for security A, the data as of fiscal year end:  
+Data point  Value ( Million)   
+Sales  64,462  
+Total Assets  128,249  
+ 
+ATO =64,462
+128 ,249=0.5026  
+ 
+Data point  Details  
+Total a ssets  Total a ssets represent the sum of total current assets, long -
+term receivables, investment in unconsolidated subsidiaries, 
+other investments, net property plant and equipment and 
+other assets.  
+Sales  Refer section 1.2.1  
+ 
+ 2.2.32  GROSS PROFITABILITY  (GP)  
+Gross Profitability is calculated using the s ales, cost of g oods sold, and total a ssets  for the 
+company  as of fiscal year end . 
+GP=Sales -Cost  of Goods  Sold
+Total  Assets 
+ 
+Example for security A, the data as of fiscal year end:  
+Data point  Value ( Million)   
+Sales  87,032  
+Cost of Goods Sold  64,462  
+Total Assets  620,842  
+ 
+GP=87,032 -64,462
+620 ,842= 3.64%  
+ 
+ 
+ 
+ 
+Data point  Details  
+Sales  Refer section 1.2.1  for details.  
+Cost of g oods sold Cost of goods sold represents specific or direct cost of labor 
+and material attributed to finished goods or services of a 
+company.  
+Total a ssets   Total assets represent the sum of total current assets, long -
+term receivables, investment in unconsolidated subsidiaries, 
+other investments, net property plant and equipment and 
+other assets.  
+2.2.33  GROSS  MARGIN  (GM)  
+Gross Margin is calculated using sales and cost of goods s old for the company as of fiscal year 
+end.  
+GM =Sales -Cost  of Goods  Sold
+Sales 
+ 
+ Example for security A, the data as of fiscal year end:  
+Data point  Value ( Million)   
+Sales  87,032  
+Cost of Goods Sold  64,462  
+ 
+GM =87,032 -64,462
+87,032= 25.93% 
+ 
+Data point  Details  
+Sales  Refer section 1.2.1  for details.  
+Cost of goods s old Cost of goods sold represents specific or direct cost of labor 
+and material attributed to finished goods or services of a 
+company.  
+ 
+2.2.34  CASH EARNINGS TO EARNINGS  (CETOE)  
+Cash earnings to e arnings is calculated using earnings and c ash Earnings for the company as 
+of fiscal year end.  
+CETOE =Cash Earnings
+Earnings 
+ 
+Example for security A, the data as of fiscal year end:  
+Data point  Value ( Million)   
+Earnings  62,423  
+Cash earnings  87,542  
+ 
+CETOE =87,542
+62,423=1.402 
+ 
+Data point  Details  
+Cash Earnings  MSCI does not publish cash earnings for GICS(r) Industry 
+Group 4010 and GICS(r) Industry Group 4030. Refer to 
+Section 1.2.3 for more details.  
+ Earnings  Refer section 1.2. 2 for details.  
+ 
+2.2.35  FREE CASH FLOW TO SALES  (FCF/SALES)  
+Free cash flow to s ales is calculated using net cash flow from operations, capital expenditure 
+and s ales for the company as of fiscal year.  
+ 
+FCF  to Sales  =Net  Cash Flow  from  Operations -Capital  Expenditure
+Sales 
+ 
+Example for security A, the data as of fiscal year end:  
+Data point  Value (Million)  
+Net cash flow from o perations  852,640  
+Capita l expenditure  501,250  
+Sales  500,000  
+ 
+FCF  to Sales =852 ,640 -501 ,250
+500 ,000=0.703 
+ 
+Data point  Details  
+Capital expenditure  Capital expenditure as investment by a company to acquire 
+or upgrade fixed, physical, non -consumable assets, such as 
+buildings and equipment.  
+Net cash flow from 
+operations  (CFO)  Net cash receipts and disbursements resulting from the 
+operations of the company  
+Sales  Refer section 1.2.1  for details.  
+ 
+2.2.36  FREE CASH FLOW TO NET INCOME  (FCF/NET INCOME)  
+Free cash flow to net i ncome is calculated using net cash flow from operations, capital 
+expenditure and n et Income for the company as of fiscal year.  
+ 
+FCF  to Net Income =Net Cash Flow  from  Operations -Capital  Expenditure
+Net Income 
+  
+Example for security A, the data as of fiscal year end:  
+Data point  Value (Million)  
+Net Cash Flow from Operations  852,640  
+Capital Expenditure  501,250  
+Net Income  500,000  
+ 
+FCF  to Net Income =852 ,640 -501 ,250
+500 ,000=0.70 
+ 
+Data point  Details  
+Capital expenditure  Capital expenditure as investment by a company to acquire 
+or upgrade fixed, physical, non -consumable assets, such as 
+buildings and equipment.  
+Net cash flow from 
+operations  (CFO)  Net cash receipts and disbursements resulting from the 
+operations of the company . 
+Net Income  Net earnings of the company as of fiscal year end.  
+ 
+2.2.37  EARNINGS BEFORE INTEREST AND TAXES TO ENTERPRISE VALUE (EBIT/EV)  
+Earnings before interest and t axes to enterprise v alue is calculated using earnings b efore 
+interest and taxes and enterprise v alue for the company as of fiscal year end.  
+ 
+EBIT /EV=Earnings  Before  Interest  and  Taxes
+Enterprise  Value 
+ 
+Example for security A, the data as of fiscal year end:  
+Data point  Value (Million)  
+Earnings before interest and t axes  352,640  
+Enterprise value  1,500,010  
+ 
+EBIT /EV=352 ,640
+1,500 ,010=0.235 
+  
+Data point  Details  
+Earnings before interest 
+and t axes (EBIT)  Earnings of the company before interest expense and taxes.  
+Enterprise value (EV)  Market capitalization at fiscal year -end date + preferred 
+stock + minority interest + total debt - cash and cash 
+equivalents  
+ 
+2.2.38  EARNINGS BEFORE INTEREST AND TAXES TO TOTAL ASSETS (EBIT/TOTAL ASSETS)  
+Earnings before interest and taxes to t otal assets is calculated using earnings before i nterest 
+and taxes and total a ssets for the company as of fiscal year end.  
+ 
+EBIT /Total  Assets =Earnings  Before  Interest  and  Taxes
+Total  Assets 
+ 
+ 
+ 
+ 
+Example for security A, the data as of fiscal year end:  
+Data point  Value (Million)  
+Earnings before interest and t axes  64,462  
+Total Assets  321,686  
+ 
+EBIT /Total  Assets =64,462
+321 ,686=0.2 
+ 
+Data point  Details  
+Earnings before Interest 
+and t axes (EBIT)  Earnings of the company before interest expense and taxes.  
+Total a ssets  Total Assets represent the sum of total current assets, long -
+term receivables, investment in unconsolidated subsidiaries, 
+ other investments, net property plant and equipment and 
+other assets.  
+ 
+2.2.39  ABSOLUTE GROWTH RATES  
+MSCI calculates growth trends using absolute values, showing the evolution of fundamental 
+data over the last five years.   
+* Total Asset Growth (AGRO)  
+* Capital Expenditure Growth (CXGRO)  
+* Issuance Growth (IGRO)  
+* Total Sales Growth  
+* Total Earnings Growth  
+To calculate the absolute growth rates, MSCI applies a regression using the ordinary least 
+square method to the last years and calculate the average absolute of the respective 
+fundamental data.  A minimum of the last four comparable absolute value fundamental data is 
+needed to compute the historical growth trends.  
+Refer to Section 2.2.1 for detailed example.  
+ 
+2.2.40  WORKING CAPITAL TO TOTAL ASSETS  
+Working Capital to Total Assets is calculated using Current Asset, Current Liabilities and Total 
+Assets for the company as of fiscal year end.  
+ 
+Working  Capital  to Total  Assets =Current  Assets -Current  Liabilities
+Total  Assets 
+ 
+Example for security A, the data as of fiscal year end:  
+Data point  Value (Million)  
+Current Assets  16,868  
+Current Liabilities  3,740  
+Total Assets  215,639  
+ 
+ Working  Capital  to Total  Assets =16,868 -3,740
+215 ,639=0.06 
+ 
+Data point  Details  
+Current Assets  Refer to Section 5 for details.  
+Current Liabilities   Refer to Section 5 for details.  
+Total Assets  Total Assets represent the sum of total current assets, long -
+term receivables, investment in unconsolidated subsidiaries, 
+other investments, net property plant and equipment and 
+other assets.  
+ 
+2.2.41  ISSUER MARKET CAPITALITALIZATION TO TOTAL LIABILITIES  
+Issuer market capitalization to total l iabilities is calculated using the issuer m arket capital a s of 
+calculation month end and t otal liabilities of the latest fiscal period end.  
+ 
+Issuer  Market  Cap /Total  Liabilities =Issuer  Market  Cap  as of Calculation  mont h end
+Total  Liabilities 
+ 
+ 
+Example for security A, the data as of fiscal year end:  
+Data point  Value (Million)  
+Issuer Market Cap  - month end  2,689,300  
+Total Liabilities  215,639  
+ 
+Issuer  Market  Cap  to Total  Liabilities =2,689 ,300
+215 ,639=12.47 
+Data point  Details  
+Total Liabilities  All short and long term debt obligations of the company.  
+Issuer market 
+Capitalization  Issuer level market capitalization of the company as of the 
+calculation  month end  date  
+ 
+ 2.2.42  RETAINED EARNINGS TO TOTAL ASSETS  
+Retained e arnings to total a ssets is calculated using  retained earnings and total a ssets for the 
+company as of fiscal year end.  
+ 
+Retained  Earnings /Total  Assets =Retained  Earnings
+Total  Assets 
+ 
+Example for security A, the data as of fiscal year end:  
+Data point  Value (Million)  
+Retained earnings  5,868  
+Total a ssets  321,686  
+ 
+Retained  Earnings /Total  Assets =5,868
+321 ,686=0.018 
+ 
+Data point  Details  
+Retained earnings  Accumulated after tax earnings of a company which have 
+not been distributed to shareholders . 
+Total a ssets  Total Assets represent the sum of total current assets, long -
+term receivables, investment in unconsolidated subsidiaries, 
+other investments, net property plant and equipment and 
+other assets.  
+ 3 INDEX RATIO  
+In general, index ratios computed by MSCI result from the aggregation of the constituent using 
+the methodology that best reflects the underlying index.  
+To reflect the underlying index methodology, index ratios are calculated taking into account 
+each security's inclusion factor, which consists of the free float -adjustment and the style 
+inclusion factor.  For MSCI's international index series, the inclusion factor is the foreign 
+inclusion factor (FIF) and for the MSCI's domestic  Indexes, the inclusion factor is the domestic 
+inclusion factor (DIF). For the former, the appropriate FIF is multiplied by the value inclusion 
+factor (VIF) for the value Indexes and by the growth inclusion factor (GIF) for the growth 
+Indexes. For the latt er series (i.e. domestic Indexes), FIF is replaced by DIF.  
+MSCI calculates two types of index ratios:  
+* Valuation ratios  
+* Other Financial Ratios  
+The following section details the calculations of these ratios.  
+3.1 INDEX VALUATION RATIOS  
+MSCI calculates index valuation ratios by aggregating securities using the following formula:  
+ (Current security pricexTotal current security shares outstandingx1
+Exchange RatexInclusion Factor)n
+i=1
+ (Trailing 12 -month per share figurexTotal current security shares outstandingx1
+Exchange RatexInclusion Factor)n
+i=1  
+ 
+where n=number of companies included in the calculation  
+If the trailing 12 -month per share figure is not available for a security, that security will be 
+excluded from the calculation for that particular ratio.  
+This formula applies to:  
+* Price to Earnings (P/E)  
+* Price to Earnings Forward (P/E Fwd)  
+* Price to Earnings Backward (P/E Bwd)  
+* Price to Cash Earnings (P/CE)  
+* Price to Book Value (P/BV)  
+ 
+ while for  
+* Dividend Yield (YIELD) we use the inverse of the above formula.  
+3.2 OTHER INDEX FINANCIAL RATIOS  
+Other financial ratios calculated by MSCI include the following:  
+* Return on Equity (ROE)  
+* Payout Ratio  
+* Current Internal Growth Rate (g)  
+* Short -term Forward EPS Growth Rate (EGRSF)  
+* Long -term Growth Rates/Trends  
+* 12-month Index EPS  
+* Year on Year Growth EPS  
+* Estimated Daily Dividend Yield  
+3.2.1  RETURN ON EQUITY (ROE)  
+Return on equity at an index level, which attempts to show the average return on equity for an 
+index, is calculated using the recalculated earnings divided by the recalculated book value, as 
+defined by the following formula:  
+Index  ROE =Index  P/BV
+Index  P/E 
+3.2.2  PAYOUT RATIO  
+Payout ratio at an index level is calculated using price to earnings and the dividend yield at an 
+index level, as defined in the following formula:  
+Payout =Index  level  price  to earnings xIndex  dividend  yield  
+3.2.3  CURRENT INTERNAL GROWTH RATE (G)  
+The current internal growth rate at an index level is calculated using the return on equity and the 
+payout ratio at an index level, as defined in the following formula:  
+Index  g=Index  ROE x(1-Index  Dividend  Yield  (in %)xIndex  P/E) 
+ 3.2.4  SHORT -TERM FORWARD EPS GROWTH RATE (EGRSF)  
+The short -term forward EPS growth rate is the percentage change between the recalculated 
+earnings backward and the recalculated earnings forward. It is calculated using the following 
+formula:  
+Index   EGRSF =[Index   P/E12B
+Index   P/E12F]-1 
+* Index P/E12B=Index level Price to Earnings Backward based on EPS12B  for all securities 
+included in the index.  
+* Index P/E12F=Index level Price to Earnings Forward based on EPS12F  for all securities 
+included in the index.  
+EPS12F (12 -month forward EPS) and EPS12B (12 -month backward EPS) are as defined in 
+section 1.3.  
+Price to Earnings Backwards is calculated using the index level valuation ratio formula as 
+defined in Section 3.1.  
+3.2.5  LONG -TERM GROWTH RATES/TRENDS  
+Long -term growth rates and trends at an index level are computed by MSCI from the 
+aggregation of the constituents' security level data using the following formula:  
+ [Current  share  price xTotal  current  security shares  outstandingx Inclusion  factor
+ (Current  share  price xTotal  current  security shares  outstandingx Inclusion  factor )n
+i=1xGrowth  Rate ]n
+i=1   
+where n=number of companies included in the calculation  
+This formula applies to:  
+* Long -term Forward EPS Growth Rate (EGRLF)  
+* Long -term Historical EPS Growth Trend (EGRO)  
+* Long -term Historical SPS Growth Trend (SGRO)  
+3.2.6  12-MONTH INDEX EPS  
+MSCI calculates the 12 -month index EPS by combining an index level with its underlying price to 
+earnings ratios, thereby creating a new theoretical per share figure at an index level that reflects 
+the evolution of the EPS for an index. MSCI calculates:  
+* 12 months trailing Index EPS  
+* 12 months forward Index EPS  
+ The following formula is used to calculate these 12 -month index ratios:  
+12 Mont hs EPS =Index  Level
+P/E at Index  Level 
+3.2.7  YEAR ON YEAR GROWTH EPS  
+Using the 12 -month index EPS, as shown above, MSCI calculates an EPS growth rate for an 
+index. Year on year growth EPS relates earnings growth to the index level. Currently, MSCI 
+calculates these figures using:  
+* 12-Month Index Historical EPS  
+* 12-Month Index Forward EPS  
+The year on year growth rate is calculated using the following formula:  
+Year  on Year  Growth  EPS = 100x ( 12 Months  Index  EPS of the Current  Month -12 months  Index  EPS 12 months  before
+|12 months  Index  EPS 12 months  before |)  
+For details on index ratio calculation examples, see Appendix II, entitled "Index Ratio 
+Calculation Examples."  
+3.2.8  ESTIMATED DAILY DIVIDEND YIELD  
+In addition to calculating a monthly dividend yield, MSCI computes, every weekday, an 
+estimated daily dividend yield, that takes into account annualized dividends and regular capital 
+repayments (if applicable), and prices at previous month end where prices are adjusted by the 
+month -to-date security performance. The estimated dai ly index yield uses the current security 
+weights.  
+The estimated daily dividend yield and the monthly yield are calculated for the same Indexes.  
+Note that due to different calculation methodologies, the Estimated Daily Dividend Yield at 
+month -end date will not correspond to the Monthly Dividend Yield.  
+ EstimatedDailyIndexYiel dt= (ClosingSecurityWeig htt*EstimatedDailySecurityYiel dt)n
+s1   
+Where   
+Estimated  Daily  Security  Yiel dt=AnnualisedDividen dEOPM /FXrateDividen dEOPM
+(PricePerS hareEOPM /FXrat eEOPM )*[1+(SecurityPriceInde xt
+SecurityPriceInde xEOPM-1)]  
+and 
+ClosingSecurityWeig htt=ClosingNumberofS hare st*PricePerS haret*InclusionFacto rt
+FXrat et
+ (ClosingNumberofS hare st*PricePerS haret*1
+FXRat et*Inclusi onFacto rt)ns1  
+Where:  
+* AnnualizedDividend EOPM is the security annualized dividend as of the end of the previous 
+month.  
+* FXrateDividend EOPM is the FX rate of the annualized dividend currency of security s vs USD at 
+the end of the previous month. It is the value of 1 USD in foreign currency.  
+* PricePerShare EOPM is the price per share of the security s at the end of the previous month.  
+* FXrate EOPM is the FX rate of the price currency of security s vs USD at the end of the previous 
+month. It is the value of 1 USD in foreign currency.  
+* SecurityPriceIndex t is the security price index of security s at time t.  
+* Security PriceIndex EOPM is the security price index of security s at the end of the previous 
+month.  
+* ClosingNumberOfShares t is the number of shares of security s at time t.  
+* PricePerShare t is the price per share of security s at time t.  
+* FXrate t is the FX rate of the price currency of security s vs USD at time t. It is the value of 1 
+USD in foreign currency.  
+* InclusionFactor t is the inclusion factor (e.g. Foreign Inclusion Factor, Domestic Inclusion 
+Factor, Growth Inclusion Factor, Value Inclusion Factor) of the security s at time t . 
+ 4 FUNDAMENTAL DATA TREATMENTS FOR CORPORATE EVENTS  
+The following section details the treatment of fundamental data to account for a corporate 
+event. When a corporate event occurs, MSCI may adjust and/or restate fundamental data in 
+order to ensure comparability between the pre and post event data.  
+For the treatment of fundamental data, MSCI categorizes corporate events as the following:  
+* Nominal Changes in Capital Structure  
+* Real Changes in Capital Structure  
+* Both Nominal and Real Changes in Capital Structure  
+* Changes in Business Structure  
+For events such as share buybacks, special cash dividends, and debt -to-equity swaps, no 
+adjustment is made generally.  
+The policies and guidelines set forth apply in most corporate events. For corporate events not 
+described in this section or combinations of different types of corporate events and other 
+exceptional cases, MSCI will determine the most appropriate implementa tion method and will 
+announce it prior to the changes becoming effective in the MSCI Equity Index Series.  
+4.1 NOMINAL CHANGES IN CAPITAL STRUCTURE  
+Nominal changes in capital structure, events that have no effect on the capitalization of a 
+security, require fundamental data to be adjusted in the same way that the price of the security 
+is adjusted using the price adjustment factor (PAF).  
+For fundamental per share data, if the corporate event leads to an increase in the number of 
+shares, the adjustment factor will decrease the value of the per share data using the same 
+terms of the corporate event. If the corporate event leads to a decrease  in the number of 
+shares, the  adjustment factor will increase the value of the per share data using the same terms 
+of the corporate event.  
+Illustration:  
+Split 2:1, with a nominal value change from 50 to 25  
+The shareholder exchanges 1 share of nominal 50 against 2 shares of nominal 25.  
+The price before split is 100 and the shareholder had 1 share at a price of 100  
+Then he has 2 shares which price is : 1*100/ 2 = 50  
+The adjustment factor is (ex/cum) 50/100 = 0.50  
+Fundamental data per share figures are adjusted by this adjustment factor.  
+ In the case of the current dividend rate, if the adjustment factor is between 0.8 and 1.25, no 
+adjustment is made. MSCI assumes that any event that leads to an adjustment factor within 
+this range will typically not lead to a change in a company's dividend policy.   
+Security and index ratios will remain neutral to corporate events that result in nominal changes 
+in capital structure because fundamental per share data is adjusted in the same proportion as 
+price. Any changes that may be observed are due to price performa nce or company 
+fundamental data.  
+4.2 REAL CHANGES IN CAPITAL STRUCTURE  
+For all corporate events that involve a real change in capital structure, events that cause a 
+change in security market capitalization, a pro forma book value will be calculated in order to 
+reflect the incoming or outgoing market capitalization. All other fundamental data will not be 
+adjusted for such events including the current dividend rate, except if earnings and/or cash 
+earnings are negative.  
+Illustration:  
+Pro forma book value per share is calculated using the following formula:  
+(Latest  BVPS xLatest  number  of company  shares  outstanding )+(Number  of shares  issued xIssue  price )
+Number  of shares  after  private  placement  or public  offering  
+The number of shares at BVPS date = 1000.  
+The book value per share before the public offering is EUR 25.  
+Event : Public placement of 100 shares @ EUR 50 per share.  
+New BVPS = (1000*25)+(100*50)  
+                                 (1000 + 100)  
+New BVPS = 27.27  
+Adjustment Factor for BVPS = New BVPS/ Old BVPS = 1.09  
+If a company has multiple share classes, book value is adjusted by using the total amount of 
+capital raised in the issue.  
+Security and index ratios will change by the increase or decrease in the number of shares and 
+change in price. Price to book value, return on equity, and current internal growth rate, at a 
+security and index level, will change based on the new book value p er share.  
+ If earnings/cash earnings are negative, an adjustment factor is applied according to the change 
+in number of shares (Pre -event number of shares/ Post -event number of shares) in order to 
+avoid increasing losses artificially in P/E and P/CE calculations at i ndex level.2 
+4.3 BOTH NOMINAL AND REAL CHANGES IN CAPITAL STRUCTURE  
+All corporate events that involve a nominal and real change in capital structure require 
+fundamental data to be adjusted in the same way that the price of the security is adjusted using 
+the price adjustment factor (PAF) due to the discount the shares are o ffered at in relation to the 
+market price, except:  
+In the case of the current dividend rate, if the adjustment factor is between 0.8 and 1.25, no 
+adjustment is made. MSCI assumes that any event that leads to an adjustment factor within 
+this range will typically not lead to a change in a company's dividend policy.   
+If earnings or cash earnings are negative, an adjustment factor is applied according to the 
+change in number of shares (Pre -event number of shares/ Post -event number of shares) in 
+order to avoid increasing losses artificially in P/E and P/CE calculations a t index level.1 
+In the case of book value, a pro forma book value will be calculated in order to reflect the 
+incoming or outgoing market capitalization.  
+4.4 CHANGES IN BUSINESS STRUCTURE  
+MSCI defines changes in business structure as events that cause a company's on -going 
+business model to substantially change. Events that cause a change in business structure 
+include significant events such as significant mergers and acquisitions and early index 
+inclusions resulting from spin -offs and IPOs. MSCI uses a threshold of an increase of 50% or 
+greater or a decrease of 33% or more, relative to the company's full market capitalization before 
+the event to identify such significant events.    
+For these significant events, if the post -event entity moves from being a non -constituent to a 
+constituent of the Global Investable Market Index or moves from the Small Cap Index to the 
+Standard Index, the style characteristics of the affected securities a re reviewed. If the post -
+ 
+2 When a corporate event results in incoming market capitalization and the company reports losses, MSCI adjusts the trailing 12 -month 
+EPS. The loss per share will be recalculated using the number of shares after the corporate event to avoid a decrease in ear nings due to 
+an increase in market capitalization.  
+For certain corporate events, MSCI will use post event shares to calculate the fundamental data per share in cases of events such as 
+equity swaps, conversion of debt to equity, dilutive rights, spin off etcetera provided either of following conditions are met:  
+* An increase of 50% or greater or a decrease of 33% or more, relative to the company's full market capitalization before the 
+event or;  
+*  An increase of 50% or greater or a decrease of 33% or more, relative to the company's outstanding shares  before the event  
+ 
+ event entity moves from the Standard Index to the Small Cap Index or remains in the same Size -
+Segment Index (with the Large and Mid Cap Indexes being considered as one size index), the 
+style characteristics of the affected securities are not reviewed.  
+In cases where such a style review is performed, pro forma post -event fundamental data 
+provided by the post -event entity is used. If no pro forma post -event fundamental data is 
+provided, estimations of proforma fundamental data are performed using actual f igures 
+provided by the post -event entity.  
+MSCI will also use estimated proforma fundamental data for the acquiring company in 
+acquisitions of loss -making companies, provided the acquired loss -making companies meet the 
+following conditions:  
+* The acquired loss -making company was a constituent of the MSCI Standard Size Segment 
+before the acquisition; and  
+* The 12 -month trailing losses of the acquired loss -making company exceeded USD 1bn at 
+the end of the month previous to the ex -date of the acquisition event.  
+For the acquiring company, MSCI will use estimated proforma fundamental data arrived at by 
+use of pre -event fundamental data of both the acquiring company and the acquired company. 
+Such estimated fundamental data would be used until the time the acquiring company starts 
+reporting post -event fundamental data.  
+ 5 BALANCE SHEET INFORMATION  
+MSCI covers the following Balance Sheet items in its product files.  
+Assets   
+Fixed Assets (FA)  Net fixed assets after accumulated depreciation; may be 
+blanked.  
+Investments (INV)  Equity participation in loans to subsidiaries, affiliates and 
+associated companies. Investments of pure portfolio nature 
+are excluded from this item whenever possible; may be 
+blanked    
+  
+Other Assets (OA)  Assets that by their nature are not readily classifiable as 
+Fixed Assets,  Investments or Current Assets (such as 
+intangible assets or non -current debtors). May aggregate 
+other balance sheet items if detailed breakdown is not 
+reported by the company; may be blanked    
+  
+  
+Current Assets (CA)  Include inventories, receivables, securities, bank balances, 
+cash and equivalent. May aggregate other balance sheet 
+items if detailed breakdown is not reported by the company; 
+may be blanked . For GICS(r) Sector 40 (Financials) and 
+Sector 60 (Real Estate), MSCI does not publish Current 
+Assets.    
+  
+Total Assets (TA) = FA + INV + OA 
++ CA                
+        
+Liabilities   
+Shareholders equity / Book Value 
+(BV)  Capital and all reserves of an equity nature; may be blanked  
+Other Liabilities (OL)  Liabilities that by their nature are not readily classifiable as 
+Book Value, Long -term Debt or Current Liabilities, for 
+example minority interests, special provisions, pension 
+funds, deferred taxation, etc. May aggregate other balance 
+sheet items if detailed breakdown is not reported by the 
+company; may be blanked    
+  
+  
+  
+Long Term Debt (LD)  Debt maturing in over one year; may be 
+blanked     
+Current Liabilities (CL)  Includes all liabilities of short -term nature, i.e. payable within 
+one year. May aggregate other balance sheet items if 
+detailed breakdown is not reported by the company; may be 
+blanked . GICS(r) Sector 40 (Financials) and Sector 60 (Real 
+Estate), MSCI does not publish Current Liabilities.    
+  
+Total Liabilities (TL) = BV + OL + LD 
++ CL                
+ 
+ MSCI also covers the following Balance Sheet ratio for its Global Equity Model  
+* Market leverage (MLEV)  
+It is calculated as  MLEV =MCAP +PREF +LD
+MCAP 
+where MCAP  is the market value of common equity at previous month -end, PREF  is the most 
+recent book value of preferred equity, and  LD is the most recent book value of long -term debt.  
+* Book leverage (BLEV)  
+It is calculated as  BLEV =BV+PREF +LD
+BV 
+where BV is the most recent book value of common equity, PREF is the most recent book value 
+of preferred equity, and LD is the most recent book value of long -term debt.  
+* Debt -to-assets (DTOA)  
+It is calculated as  DTOA =LD+CL
+TA 
+where LD is the long -term debt and CL are the current liabilities, and TA is most recent book 
+value of total assets.  
+ 6 HYPERINFLATIONARY ECONOMIES - ADJUSTMENT OF 
+FUNDAMENTAL DATA  
+MSCI follows the guidelines provided under FRS (Financial Reporting Standard) 29 to adjust 
+fundamental data of companies belonging to hyperinflationary economies. The standard states 
+that:  
+Hyperinflation is indicated by characteristics of the economic environment of a country, which 
+include, but are not limited to, the following:  
+* The general population prefers to keep its wealth in non -monetary assets or in a relatively 
+stable foreign currency. Amounts of local currency held are immediately invested to 
+maintain purchasing power;  
+* The general population regards monetary amounts not in terms of the local currency but in 
+terms of a relatively stable foreign currency.  Prices may be quoted in that currency;  
+* Sales and purchases on credit take place at prices that compensate for the expected loss 
+of purchasing power during the credit period, even if the period is short;  
+* Interest rates, wages and prices are linked to a price index; and  
+* The cumulative inflation rate over three years is approaching, or exceeds, 100%.  
+Accordingly, MSCI will review the inflation rates of countries on a periodic basis to identify 
+cases that meet the above threshold.  
+If a country qualifies as a hyperinflationary economy, MSCI  may opt to publish the fundamental 
+data and all other security ratios  and growth rates  in a relatively more stable foreign currency 
+instead of the currency of the company's country of classification as mentioned in Section 1.1.3  
+in order to remove the impact of hyper inflation . 
+ APPENDIX I: MSCI'S TREATMENT OF SOME SPECIFIC ASPECTS OF 
+IFRS  
+Under the regulation adopted by the Council of the European Union, all EU listed companies are 
+required to prepare their consolidated financial statements for financial years beginning on or 
+after January 1, 2005, in accordance with IFRS. In addition, seve ral companies in other regions 
+including Norway, Switzerland, Australia, Singapore, Hong Kong and China also adopted IFRS 
+starting 2005.   EU listed companies that report using United States Generally Accepted 
+Accounting Principles ('US GAAP') were permitte d to continue doing so until 2007.   
+A transition from local GAAP to IFRS impacts the computation of historical long -term earnings 
+and sales trends because IFRS earnings and sales numbers may not be comparable with the 
+numbers reported using local GAAP. Historical earnings and historical sale s trends over a five -
+year period are important components of MSCI's index construction methodology.  
+1) MSCI's approach to the treatment of amortization of goodwill : 
+In order to make five -year earnings comparable, MSCI will adjust historical [non -IFRS] earnings 
+by adding back "amortization of goodwill" for companies where the difference between IFRS 
+earnings and non -IFRS earnings is more than or equal to 10%. For compa nies with the largest 
+percentage and absolute change in earnings due to the adoption of IFRS, the discontinuation of 
+goodwill amortization explains the bulk of the earnings change in a majority of cases. 
+'Amortization of goodwill' is also the only item for  which historical pre -IFRS earnings data can 
+be consistently adjusted to make it comparable to IFRS data. For further details, please refer to 
+MSCI's consultation document -- 'MSCI Consultation on the Treatment of Financial Results 
+under IFRS' -- released i n February 2006.  
+2) In order to make sales comparable , MSCI will make case -by-case adjustments.  
+3) MSCI's approach to the treatment of Gain / Loss due to Revaluation of property : 
+'Revaluation of property' can have a large impact on earnings of Real Estate companies. 
+Therefore, MSCI adjusts the earnings of real estate companies (i.e., companies falling under the 
+GICS Industry Group 'Real Estate' for 'Gain / Loss due to Revaluation o f Investment Property').  
+To compute the trailing EPS of a real estate company that has opted to revalue its investment 
+property, MSCI adjusts the trailing EPS for the 'Gain / Loss due to Revaluation of Investment 
+Property' for the latest trailing period updated by MSCI.  
+To compute the Long -term Historical EPS growth trend and to make the five year earnings 
+comparable, MSCI adjusts the EPS of fiscals reported by the company under IFRS (December 
+2004 onwards) for the 'Gain / Loss due to Revaluation of Investment Property'.  
+ 
+ As a reminder, MSCI calculates:  
+1) Long -term Historical EPS growth trend, by performing a regression analysis of the last five 
+years' fiscal year -end earnings per share;  
+2) Long -term Historical SPS growth trend, by performing a regression analysis of the last five 
+years' fiscal year -end sales per share.   
+ APPENDIX II: INDEX RATIO CALCULATION EXAMPLES  
+This appendix provides examples on how index ratios are calculated.  
+The ratios are calculated by dividing the market capitalization of the relevant index by the 
+aggregated relevant fundamental data for all securities included in the relevant index.  
+MSCI calculates index valuation ratios by aggregating securities using the following formula:  
+ (Current  security price xTotal  current  security shares  outstandingx1
+Exchange RatexInclusion  Factor )n
+i=1
+ (Trailing  12-month per share  figure xTotal  current  security shares  outstandingx1
+Exchange RatexInclusion  Factor )n
+i=1  
+where n=number of companies included in the calculation  
+If the trailing 12 -month per share figure is not available for a security, that security will be 
+excluded from the calculation for that particular ratio.  
+This formula applies to:  
+* Price to Earnings (P/E)  
+* Price to Earnings Forward (P/E Fwd)  
+* Price to Earnings Backward (P/E Bwd)  
+* Price to Cash Earnings (P/CE)  
+* Price to Book Value (P/BV)  
+while for  
+* Dividend Yield (D/P)  we use the inverse of the above formula  
+For Price to Earnings (P/E) and Price to Cash Earnings (P/CE) ratios, the security level per share 
+figure is the Trailing 12 -month earnings per share and the Trailing 12 -month cash earnings per 
+share respectively.  
+ Each example runs a simulation with three securities in an index.  
+Example # 1     
+Calculating price to book value for MSCI Index     
+ Security A  Security B  Security C  
+    
+Price  USD 45.21  USD 15.40  USD 25.49  
+Book Value Per Share  USD 10.90  USD    7.80  USD 13.20  
+P/BV             4.15            1.97            1.93  
+      
+Total Current Security Shares Outstanding (in millions)          50.24          40.87         12.41  
+Exchange Rate            1.0           1.0          1.0 
+Foreign Inclusion Factor (FIF)            0.9           0.8          0.95  
+Inclusion Factor            0.9           0.8          0.95  
+      
+Adjusted Market Capitalization (in millions of USD)      2044.22        503.52        300.51  
+Book Value (in millions of USD)        492.85        255.03        155.62  
+      
+Total Adjusted Market Capitalization (in millions of USD)        2848.25  
+Recalculated Total Book Value (in millions of USD)          903.5  
+Index Level Price to Book Value                3.15  
+ 
+Example # 2     
+Calculating price to book value for MSCI Index     
+ Security A  Security B  Security C  
+    
+Price  USD 45.21  USD 15.40  USD 25.49  
+Book Value Per Share  USD 10.90  USD   7.80  USD 13.20  
+P/BV            4.15            1.97             1.93  
+      
+Total Current Security Shares Outstanding (in millions)         50.24         40.87          12.41  
+Exchange Rate           1.0          1.0           1.0 
+Foreign Inclusion Factor (FIF)           0.9          0.8           0.95  
+Value Inclusion Factor (VIF)           1.0          0.5           0.65  
+Inclusion Factor           0.9          0.4           0.62  
+      
+Adjusted Market Capitalization (in millions of USD)      2044.22       251.76         195.33  
+Book Value (in millions of USD)        492.85       127.51         101.15  
+      
+Total Adjusted Market Capitalization (in millions of USD)         2491.31  
+Recalculated Total Book Value (in millions of USD)           721.52  
+Index Level Price to Book Value                 3.45  
+ 
+ 
+ Example # 3     
+Calculating price to book value for MSCI Index using companies with different exchange 
+rates  
+ Security A  Security B  Security C  
+    
+Price (in local currency)  USD 45.21  USD 15.40  EUR 25.49  
+Price exchange rate            1.00            1.00       0.83  
+Price (in US dollars)          45.21          15.40     30.71  
+      
+Book Value Per Share (in local currency)       EUR 10.90  USD  7.80  EUR 13.20  
+Fundamental Data Exchange Rate            0.80           1.00       0.80  
+Book Value Per Share (in US dollars)          13.13           7.80     15.90  
+P/BV            3.44           1.97      1.93  
+      
+Total Current Security Shares Outstanding (in millions)         50.24        40.87   12.41  
+Inclusion Factor           0.90          0.80     0.95  
+      
+Adjusted Market Capitalization (in millions of USD)     2044.22      503.52  362.06  
+Book Value (in millions of USD)       593.70      255.03  187.50  
+      
+Total Adjusted Market Capitalization (in millions of USD)    2909.79  
+Recalculated Total Book Value (in millions of USD)    1036.32  
+Index Level Price to Book Value            2.81  
+ 
+Example # 4     
+Calculating price to earnings at an index level      
+    
+ Security A  Security B  Security C  
+    
+Price  USD 45.21  USD 15.40  USD 25.49  
+Earnings Per Share  USD   0.12  USD   0.28  USD 15.21  
+P/E        376.75          55.00            1.68  
+      
+Total Current Security Shares Outstanding (in millions)          50.24        40.87         12.41  
+Exchange Rate            1.0         1.0          1.0 
+Inclusion Factor            0.9         0.8          0.95  
+      
+Adjusted Market Capitalization (in millions of USD)      2044.22      503.52        300.51  
+Earnings (in millions of USD)            5.43          9.15        179.32  
+      
+Total Adjusted Market Capitalization (in millions of USD)        2848.25  
+Recalculated Total Earnings (in millions of USD)          193.9  
+Index Level Price to Earnings              14.69  
+ Long -term growth rates and trends at an index level are computed by MSCI from the 
+aggregation of the constituents' security level data using the following formula:  
+ [Current  share  price xTotal  current  security  shares  outstanding xInclusion  factor
+ (Current  share  price xTotal  current  security  shares  outstanding xInclu sion  factor )n
+i=1xGrowt h Rate ]n
+i=1   
+where n=number of companies included in the calculation  
+Example # 5     
+Calculating long -term forward EPS growth rate at an index level   
+ Security A  Security B  Security C  
+Price (in USD)  45.21  15.40  25.49  
+EGRLF  11.45%  25.40%  8.47%  
+      
+Total Current Security Shares Outstanding (in millions)  50.24  40.87  12.41  
+Exchange Rate    1.0   1.0   1.0 
+Inclusion Factor    0.9   0.8   0.95  
+      
+Adjusted Market Capitalization (in millions of USD)  2044.22  503.52  300.51  
+      
+Total Adjusted Market Capitalization (in millions of USD)    2848.25  
+Index Level EGRLF      13.60%  
+ MSCI calculates the 12 -month index EPS by combining an index level with its underlying price to 
+earnings ratios, thereby creating a new theoretical per share figure at an index level that reflects 
+the evolution of the EPS for an index. MSCI calculates:  
+* 12 months trailing Index EPS  
+* 12 months forward Index EPS  
+The following formula is used to calculate these 12 -month index ratios:   
+ 
+12 Mont hs EPS =Index  Level
+P/E at Index  Level 
+Example # 6     
+Calculating 12 -month index EPS     
+ Security A  Security B  Security C  
+Price (in USD)  45.21  15.40  25.49  
+Earnings Per Share (in USD)    0.12    0.28  15.21  
+P/E 376.75  55.00    1.68  
+      
+Total Current Security Shares Outstanding (in millions)  50.24  40.87  12.41  
+Exchange Rate    1.0   1.0   1.0 
+Inclusion Factor    0.9   0.8   0.95  
+      
+Adjusted Market Capitalization (in millions of USD)  2044.22  503.52  300.51  
+Earnings (in millions of USD)  5.43  9.15  179.32  
+        
+Index Level Price to Earnings    14.69  
+Index Level    954.15  
+12-month Index EPS      64.96  
+ 
+ APPENDIX III: CORRECTION POLICY  
+The rule for Valuation Ratios correction  is as follows:  
+The correct valuation ratios (P/E, P/CE, P/Sales, P/BV, and Dividend Yield) are calculated at 
+security level and their yields are used to evaluate the impact of the incorrect data on the 
+security.  
+* If the incorrect security yields are within +-0.25% of the correct yields (+-0.5% for book value yield), 
+no revision is done on the country and industry index. No announcement is made by MSCI. Per 
+share figures and valuation ratios at security level are revi sed in the MSCI historical database.  
+* If the incorrect security yields are not within +-0.25% of the correct yields (+-0.5% for book value 
+yield), an announcement is made by MSCI with the revised valuation ratios at the security level.  The 
+impact of the incorrect security level data on the country index and industry group is evaluated.  
+* If the incorrect index yields at country/industry level are within +-0.1% of the correct yields (+-0.5% 
+for book value yield), no index revision is done. No announcement is made by MSCI.  
+* If the incorrect index yields are not within +-0.1 of the correct yield (+-0.5% for book value yield), new 
+valuation ratios are calculated, for all the Indexes in which the security is included. For all Indexes 
+where the incorrect yields lie outside the stated threshold, an announcement is made by MSCI with 
+the revised valuation ratios.   
+ METHODOLOGY BOOK TRACKED CHANGES  
+The following sections have been updated since July 2017 : 
+1.2 Historical Per Share Data Calculations  
+2.2.1 Long -Term Historical Growth Trends  
+4.2 Real Changes in Capital Structure   
+The following sections have been updated since Nov 2018:  
+1.1.3 Currency and Frequency  
+1.2.1 Sales per Share (SPS)  
+ 
+1.2.3 Cash Earnings per Share (CEPS)  
+ 
+5 Balance Sheet Information  
+ 
+The following sections have been updated since Mar 2021 : 
+1.2.2 Earnings Per Share (EPS)   
+ Notice and disclaimer  
+This document is research for informational purposes only and is intended for institutional professionals with the analytical  resources and tools necessary to interpret any 
+performance information. Nothing herein is intended to promote or recommend any pro duct, tool or service.  
+This document and all of the information contained in it, including without limitation all text, data, graphs, charts (collec tively, the "Information") is the property of MSCI Inc. or 
+its subsidiaries (collectively, "MSCI"), or MSCI's licensors, direct or indirect suppliers or any third party involved in making or compiling any Information (collectively, with MSCI, 
+the "Information Providers") and is provided for informational purposes only.  The Information may not be modified, reverse -engineered, reproduc ed or redisseminated in whole 
+or in part without prior written permission from MSCI. All rights in the Information are reserved by MSCI and/or its Informat ion Providers.  
+The Information may not be used to create derivative works or to verify or correct other data or information.   For example ( but without limitation), the Information may not be 
+used to create indexes, databases, risk models, analytics, software, or in conn ection with the issuing, offering, sponsoring, managing or marketing of any securities, portfolios, 
+financial products or other investment vehicles utilizing or based on, linked to, tracking or otherwise derived from the Info rmation or any other MSCI data,  information, products 
+or services.   
+The user of the Information assumes the entire risk of any use it may make or permit to be made of the Information.  NONE OF THE INFORMATION PROVIDERS MAKES ANY 
+EXPRESS OR IMPLIED WARRANTIES OR REPRESENTATIONS WITH RESPECT TO THE INFORMATION (OR THE RESULT S TO BE OBTAINED BY THE USE THEREOF), AND TO THE 
+MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, EACH INFORMATION PROVIDER EXPRESSLY DISCLAIMS ALL IMPLIED WARRANTIES (INCLUDING, WITHOUT 
+LIMITATION, ANY IMPLIED WARRANTIES OF ORIGINALITY, ACCURACY, TIMELINESS, N ON-INFRINGEMENT, COMPLETENESS, MERCHANTABILITY AND FITNESS FOR A 
+PARTICULAR PURPOSE) WITH RESPECT TO ANY OF THE INFORMATION.  
+Without limiting any of the foregoing and to the maximum extent permitted by applicable law, in no event shall any Informatio n Provider have any liability regarding any of the 
+Information for any direct, indirect, special, punitive, consequential (includin g lost profits) or any other damages even if notified of the possibility of such damages. The foregoing 
+shall not exclude or limit any liability that may not by applicable law be excluded or limited, including without limitation (as applicable), any liabil ity for death or personal injury 
+to the extent that such injury results from the negligence or willful default of itself, its servants, agents or sub -contractors.   
+Information containing any historical information, data or analysis should not be taken as an indication or guarantee of any future performance, analysis, forecast or prediction.  
+Past performance does not guarantee future results.   
+The Information may include "Signals," defined as quantitative attributes or the product of methods or formulas that describe  or are derived from calculations using historical 
+data. Neither these Signals nor any description of historical data are intended to provide investment advice or a recommendation to make (or refrain from making) any investment 
+decision or asset allocation and should not be relied upon as such. Signals are inherently backward -looking because of their use of historical data, and they a re not intended to 
+predict the future. The relevance, correlations and accuracy of Signals frequently will change materially.  
+The Information should not be relied on and is not a substitute for the skill, judgment and experience of the user, its manag ement, employees, advisors and/or clients when 
+making investment and other business decisions.  All Information is impersonal and n ot tailored to the needs of any person, entity or group of persons.  
+None of the Information constitutes an offer to sell (or a solicitation of an offer to buy), any security, financial product or other investment vehicle or any trading strategy.  
+It is not possible to invest directly in an index.  Exposure to an asset class or trading strategy or other category represen ted by an index is only available through third party 
+investable instruments (if any) based on that index.   MSCI does not issue, s ponsor, endorse, market, offer, review or otherwise express any opinion regarding any fund, ETF, 
+derivative or other security, investment, financial product or trading strategy that is based on, linked to or seeks to provi de an investment return related to  the performance of 
+any MSCI index (collectively, "Index Linked Investments"). MSCI makes no assurance that any Index Linked Investments will acc urately track index performance or provide 
+positive investment returns.  MSCI Inc. is not an investment adviser  or fiduciary and MSCI makes no representation regarding the advisability of investing in any Index Linked 
+Investments.  
+Index returns do not represent the results of actual trading of investible assets/securities. MSCI maintains and calculates i ndexes, but does not manage actual assets. The 
+calculation of indexes and index returns may deviate from the stated methodology. In dex returns do not reflect payment of any sales charges or fees an investor may pay to 
+purchase the securities underlying the index or Index Linked Investments. The imposition of these fees and charges would caus e the performance of an Index Linked Investm ent 
+to be different than the MSCI index performance.  
+The Information may contain back tested data.  Back -tested performance is not actual performance, but  is hypothetical.  There are frequently material differences between back 
+tested performance results and actual results subsequently achieved by any investment strategy.   
+Constituents of MSCI equity indexes are listed companies, which are included in or excluded from the indexes according to the  application of the relevant index methodologies. 
+Accordingly, constituents in MSCI equity indexes may include MSCI Inc., clients o f MSCI or suppliers to MSCI.  Inclusion of a security within an MSCI index is not a 
+recommendation by MSCI to buy, sell, or hold such security, nor is it considered to be investment advice.  
+Data and information produced by various affiliates of MSCI Inc., including MSCI ESG Research LLC and Barra LLC, may be used in calculating certain MSCI indexes.  More 
+information can be found in the relevant index methodologies on www.msci.com.  
+MSCI receives compensation in connection with licensing its indexes to third parties.  MSCI Inc.'s revenue includes fees base d on assets in Index Linked Investments. 
+Information can be found in MSCI Inc.'s company filings on the Investor Relations section of msci.com.  
+MSCI ESG Research LLC is a Registered Investment Adviser under the Investment Advisers Act of 1940 and a subsidiary of MSCI I nc.  Neither MSCI nor any of its products or 
+services recommends, endorses, approves or otherwise expresses any opinion regarding a ny issuer, securities, financial products or instruments or trading strategies and 
+MSCI's products or services are not a recommendation to make (or refrain from making) any kind of investment decision and may  not be relied on as such, provided that 
+applica ble products or services from MSCI ESG Research may constitute investment advice. MSCI ESG Research materials, including mate rials utilized in any MSCI ESG Indexes 
+or other products, have not been submitted to, nor received approval from, the United States  Securities and Exchange Commission or any other regulatory body. MSCI ESG and 
+climate ratings, research and data are produced by MSCI ESG Research LLC, a subsidiary of MSCI Inc. MSCI ESG Indexes, Analyti cs and Real Estate are products of MSCI Inc. 
+that ut ilize information from MSCI ESG Research LLC. MSCI Indexes are administered by MSCI Limited (UK)  and MSCI Deutschland GmbH . 
+Please note that the issuers mentioned in MSCI ESG Research materials sometimes have commercial relationships with MSCI ESG R esearch and/or MSCI Inc. (collectively, 
+"MSCI") and that these relationships create potential conflicts of interest.  In some cases , the issuers or their affiliates purchase research or other products or services from 
+one or more MSCI affiliates. In other cases, MSCI ESG Research rates financial products such as mutual funds or ETFs that are  managed by MSCI's clients or their affiliat es, or 
+are based on MSCI Inc. Indexes. In addition, constituents in MSCI Inc. equity indexes include companies that subscribe to MSC I products or services. In some cases, MSCI 
+clients pay fees based in whole or part on the assets they manage. MSCI ESG Rese arch has taken a number of steps to mitigate potential conflicts of interest and safeguard 
+the integrity and independence of its research and ratings. More information about these conflict mitigation measures is avai lable in our Form ADV, available at 
+https://adviserinfo.sec.gov/firm/summary/169222.   
+ 
+ 
+ 
