@@ -176,7 +176,7 @@ def chunk(method="semantic-split"):
 			# Perform the splitting
 			text_chunks = text_splitter.create_documents([input_text])
 
-			text_chunks = [doc.page_content for doc in text_chunks]
+			text_chunks = [doc.page_content for doc in text_chunks if doc.page_content.strip()]
 			print("Number of chunks:", len(text_chunks))
 
 		if text_chunks is not None:

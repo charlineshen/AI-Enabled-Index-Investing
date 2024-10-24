@@ -115,7 +115,7 @@ class SemanticChunker(BaseDocumentTransformer):
         breakpoint_threshold_type: BreakpointThresholdType = "percentile",
         breakpoint_threshold_amount: Optional[float] = None,
         number_of_chunks: Optional[int] = None,
-        sentence_split_regex: str = r"(?<=[.?!])\s+",
+        sentence_split_regex: str = r"  \n",
         embedding_function = None,
     ):
         self._add_start_index = add_start_index
