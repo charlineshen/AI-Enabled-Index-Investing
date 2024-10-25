@@ -96,6 +96,51 @@ BREAKPOINT_DEFAULTS: Dict[BreakpointThresholdType, float] = {
 }
 
 
+def split_large_sentences(single_sentences_list, max_words=350):
+
+    def split_on_regex(sentence):
+        # Split on the desired regex pattern
+        return re.split(r"(?<=[.?!])\s+", sentence)
+
+    def chunk_sentence(sentence):
+        words = sentence.split()
+        if len(words) <= max_words:
+            return [sentence]
+        
+        # If the sentence is too large, split it on punctuation
+        split_sentences = split_on_regex(sentence)
+        result = []
+        current_chunk = []
+
+        for split_sentence in split_sentences:
+            split_words = split_sentence.split()
+            # Check if adding this split would exceed max_words
+            if len(current_chunk) + len(split_words) > max_words:
+                # If yes, add the current chunk to result and start a new chunk
+                result.append(" ".join(current_chunk))
+                current_chunk = split_words
+            else:
+                # If not, add the words to the current chunk
+                current_chunk.extend(split_words)
+        
+        # Add the last chunk if it's not empty
+        if current_chunk:
+            result.append(" ".join(current_chunk))
+
+        return result
+
+    # Process each sentence in the list, splitting further if needed
+    final_sentences = []
+    for sentence in single_sentences_list:
+        sentence_len = len(sentence.split())
+        if sentence_len > max_words:
+            final_sentences.extend(chunk_sentence(sentence))
+        else:
+            final_sentences.append(sentence)
+    
+    return final_sentences
+
+
 class SemanticChunker(BaseDocumentTransformer):
     """Split the text based on semantic similarity.
 
@@ -199,11 +244,11 @@ class SemanticChunker(BaseDocumentTransformer):
             {"sentence": x, "index": i} for i, x in enumerate(single_sentences_list)
         ]
         sentences = combine_sentences(_sentences, self.buffer_size)
-        #print(sentences)
+        # print(sentences)
         # embeddings = self.embeddings.embed_documents(
         #     [x["combined_sentence"] for x in sentences]
         # )
-        embeddings = self.embedding_function([x["combined_sentence"] for x in sentences], batch_size=16)
+        embeddings = self.embedding_function([x["combined_sentence"] for x in sentences])
         for i, sentence in enumerate(sentences):
             sentence["combined_sentence_embedding"] = embeddings[i]
 
@@ -215,6 +260,7 @@ class SemanticChunker(BaseDocumentTransformer):
     ) -> List[str]:
         # Splitting the essay (by default on '.', '?', and '!')
         single_sentences_list = re.split(self.sentence_split_regex, text)
+        single_sentences_list = split_large_sentences(single_sentences_list, max_words=350)
 
         # having len(single_sentences_list) == 1 would cause the following
         # np.percentile to fail.

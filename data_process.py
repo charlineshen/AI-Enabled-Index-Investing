@@ -97,6 +97,7 @@ def save_text_to_file(text, zip_path, pdf_name):
     os.makedirs(text_dir, exist_ok=True)
     with open(txt_path, 'w', encoding='utf-8') as text_file:
         text_file.write(text)
+    print(f"Text saved to: {txt_path}")
     
     return txt_path
 
@@ -117,4 +118,3 @@ if __name__ == '__main__':
                     text = preprocess_text(text_list)
                     ascii_text = unidecode.unidecode(text)
                     saved_file_path = save_text_to_file(ascii_text, zip_path, pdf_file.name)
-                    # print(f"Text saved to: {saved_file_path}")

@@ -1,65 +1,3 @@
- 
- 
-(c) 202 3 MSCI Inc. All rights reserved. Please refer to the disclaimer at the end of this document.  
- INDEX METHODOLOGY  
-type  
- 
- 
- 
- 
- 
-MSCI Select ESG 
-Screened Indexes 
-Methodology  
- 
- 
- 
- 
- 
-   
-May 2023   
- 
- 
- 
-MSCI.COM  | PAGE 2 OF 21 (c) 2023 MSCI Inc. All rights reserved. Please refer to the disclaimer at the end of this document.  
- 
-MSCI SELECT ESG SCREENED INDEXES METHODOLOGY  | MAY 2023  
- 
- 
-Contents  
- 
-1 Introduction  ................................ ................................ ................................ ..........  3 
-2 Constructing the MSCI Select ESG Screened Indexes  ................................ ...........  4 
-2.1 Eligible Universe  ................................ ................................ ................................ ........  4 
-2.2 Eligibility Criteria  ................................ ................................ ................................ ........  4 
-ESG Ratings Eligibility  ................................ ................................ ................................ ...... 4 
-ESG Exclusions  ................................ ................................ ................................ ................  4 
-2.3 Weighting Scheme  ................................ ................................ ................................ .... 5 
-2.4 GHG Intensity Reduction  ................................ ................................ ...........................  5 
-3 Maintaining the MSCI Select ESG Screened Indexes  ................................ .............  7 
-3.1 Quarterly Index Reviews ................................ ................................ ............................  7 
-3.2 Monthly Review of Controversies  ................................ ................................ ............  7 
-3.3 Ongoing Event -Related Maintenance  ................................ ................................ ...... 7 
-4 MSCI ESG Research  ................................ ................................ ..............................  9 
-4.1 MSCI ESG Ratings  ................................ ................................ ................................ ..... 9 
-4.2 MSCI ESG Controversie s ................................ ................................ ..........................  9 
-4.3 MSCI ESG Business Involvement Screening Research  ................................ ..........  9 
-4.4 MSCI Climate Change Metrics  ................................ ................................ .................  9 
-Appendix I: ESG Exclusions Criteria  ................................ ................................ ...........  11 
-Appendix II: Eligible Universe  ................................ ................................ .....................  13 
-Appendix III: Additional Weighting Scheme  ................................ ................................  14 
-Appendix IV: Calculation of GHG Intensity  ................................ ................................ . 16 
-Appendix V : Changes to this Document  ................................ ................................ ..... 17 
- 
-   
- 
- 
- 
-MSCI.COM  | PAGE 3 OF 21 (c) 2023 MSCI Inc. All rights reserved. Please refer to the disclaimer at the end of this document.  
- 
-MSCI SELECT ESG SCREENED INDEXES METHODOLOGY  | MAY 2023  
- 
- 
 1 Introduct ion 
 The MSCI Select ESG Screened Indexes ("the Indexes") are free float -adjusted market capitalization -
 weighted indexes that exclude companies from underlying MSCI indexes ("Parent Indexes") based on 
@@ -79,15 +17,7 @@ underlying parent indexes ("Parent Indexes")1.
 methodology document. The Methodology Set for the Indexes can be accessed from MSCI's webpage https://www.msci.com/index -
 methodology in the section 'Search Methodology by Index Name or Index Code'.  
 The Methodology Set includes a document 'ESG Factors in Methodology' that contains the list of environmental, social, and 
-governance factors considered, and how they are applied in the methodology (e.g., selection, weighting or exclusion).   
- 
- 
- 
-MSCI.COM  | PAGE 4 OF 21 (c) 2023 MSCI Inc. All rights reserved. Please refer to the disclaimer at the end of this document.  
- 
-MSCI SELECT ESG SCREENED INDEXES METHODOLOGY  | MAY 2023  
- 
- 
+governance factors considered, and how they are applied in the methodology (e.g., selection, weighting or exclusion).  
 2 Constructing the MSCI Select ESG Screened Index es  
 Constructing the Indexes involves the following steps  
 * Defining the Eligible Universe  
@@ -119,15 +49,7 @@ are excluded from the Indexes .
  
 2 See section 4 for further information regarding ESG and climate dat a used in the Indexes that MSCI Limited sources from MSCI ESG 
 Research LLC, a separate subsidiary of MSCI Inc. MSCI ESG Research is solely responsible for the creation, determination and 
-management of such data. MSCI Limited is the benchmark administrator for the MSCI indexes.   
- 
- 
- 
-MSCI.COM  | PAGE 5 OF 21 (c) 2023 MSCI Inc. All rights reserved. Please refer to the disclaimer at the end of this document.  
- 
-MSCI SELECT ESG SCREENED INDEXES METHODOLOGY  | MAY 2023  
- 
- 
+management of such data. MSCI Limited is the benchmark administrator for the MSCI indexes.  
 In addition to the above, companies are also excluded from the Indexes if they exhibit any of the 
 following characteristics:  
  
@@ -165,27 +87,11 @@ Parent Index. The following iterative process is applied :
 2. The security with the highest GHG intensity is excluded and the resulting Index is compared 
 to the Parent Index, to deter mine if a 30% reduction in GHG intensity has been achieved.  
  
-3 Please refer to Appendix I V for details of the calculation of GHG Intensity.   
- 
- 
- 
-MSCI.COM  | PAGE 6 OF 21 (c) 2023 MSCI Inc. All rights reserved. Please refer to the disclaimer at the end of this document.  
- 
-MSCI SELECT ESG SCREENED INDEXES METHODOLOGY  | MAY 2023  
- 
- 
+3 Please refer to Appendix I V for details of the calculation of GHG Intensity.  
 3. If the reduction has been achieved, no further securities are excluded. If the reduction has not 
 been achieved, further securities are excluded as per steps 1 and 2 until the 30% reduction is 
 achieved . 
-   
- 
- 
- 
-MSCI.COM  | PAGE 7 OF 21 (c) 2023 MSCI Inc. All rights reserved. Please refer to the disclaimer at the end of this document.  
- 
-MSCI SELECT ESG SCREENED INDEXES METHODOLOGY  | MAY 2023  
- 
- 
+  
 3 Maintaining the MSCI Select ESG Screened Indexes  
 3.1 Quarterly Index Reviews  
 The Indexes are reviewed on a quarterly basis to coincide with the regular Index Reviews of the MSCI 
@@ -221,15 +127,7 @@ with the UN Global Compact Principles and/or decrease in MSCI ESG Controversies 
  
   
  
-4 See section 4 for details of data sourced from MSCI ESG Research used in the Indexes.   
- 
- 
- 
-MSCI.COM  | PAGE 8 OF 21 (c) 2023 MSCI Inc. All rights reserved. Please refer to the disclaimer at the end of this document.  
- 
-MSCI SELECT ESG SCREENED INDEXES METHODOLOGY  | MAY 2023  
- 
- 
+4 See section 4 for details of data sourced from MSCI ESG Research used in the Indexes.  
 EVENT TYPE      EVENT DETAILS    
  
 New additions to the Parent Index  A new security added to the Parent Index (such as IPO 
@@ -257,15 +155,7 @@ Further detail and illustration regarding specific treatment of corporate events
 can be found in the MSCI Corporate Events Methodology book.  
 The MSCI Corporate  Events methodology book is available at: https://www.msci.com/index -
 methodology . 
-   
- 
- 
- 
-MSCI.COM  | PAGE 9 OF 21 (c) 2023 MSCI Inc. All rights reserved. Please refer to the disclaimer at the end of this document.  
- 
-MSCI SELECT ESG SCREENED INDEXES METHODOLOGY  | MAY 2023  
- 
- 
+  
 4 MSCI ESG Research  
 The Indexes are products of MSCI Inc. that utilize information such as company ratings and researc h 
 produced and provided by MSCI ESG Research LLC (MSCI ESG Research), a subsidiary of MSCI Inc. In 
@@ -301,28 +191,12 @@ to integrate climate risk & opportunities into their investment strategy and pro
 investors seeking to achieve a range of objectives, including measuring and reporting on climate risk 
 exposure, implemen ting low carbon and fossil fuel -free strategies, alignment with temperature 
 pathways and factoring climate change research into their risk management processes, in particular 
-through climate scenario analysis for both transition and physical risks.   
- 
- 
- 
-MSCI.COM  | PAGE 10 OF 21 (c) 2023 MSCI Inc. All rights reserved. Please refer to the disclaimer at the end of this document.  
- 
-MSCI SELECT ESG SCREENED INDEXES METHODOLOGY  | MAY 2023  
- 
- 
+through climate scenario analysis for both transition and physical risks.  
 The dat aset spans across the four dimensions of a climate strategy: transition risks, green 
 opportunities, physical risks and 1.5deg alignment.  
 For more details on MSCI Climate Change Metrics, please refer to https://www.msci.com/climate -
 change -solutions . 
-   
- 
- 
- 
-MSCI.COM  | PAGE 11 OF 21 (c) 2023 MSCI Inc. All rights reserved. Please refer to the disclaimer at the end of this document.  
- 
-MSCI SELECT ESG SCREENED INDEXES METHODOLOGY  | MAY 2023  
- 
- 
+  
 Appendix I: ESG Exclusions Criteria  
 MSCI ESG Research has developed a framework designed to define significant involvement in 
 controversial activities. According to this framework, there are four level s of restrictiveness : Most 
@@ -357,15 +231,7 @@ but have the capability to deliver nuclear weapons.
 * Civilian Firearms  
 - All companies classified as "Producer" of firearms and small arms ammunitions for 
 civilian markets. It does not include companies that cater to the military, government, 
-and law enforcement markets.   
- 
- 
- 
-MSCI.COM  | PAGE 12 OF 21 (c) 2023 MSCI Inc. All rights reserved. Please refer to the disclaimer at the end of this document.  
- 
-MSCI SELECT ESG SCREENED INDEXES METHODOLOGY  | MAY 2023  
- 
- 
+and law enforcement markets.  
 - All companies de riving 5% or more aggregate revenue from the production and 
 distribution (wholesale or retail) of firearms or small arms ammunition intended for 
 civilian use.  
@@ -402,15 +268,7 @@ This includes offshore or onshore oil and gas production.
 * Palm Oil  
  All companies deriv ing 5% or more aggregate revenue from the production of Palm Oil.  
 * Global Norms - United Nations Global Compact Compliance  
- All companies that fail to comply with the United Nations Global Compact principles .  
- 
- 
- 
-MSCI.COM  | PAGE 13 OF 21 (c) 2023 MSCI Inc. All rights reserved. Please refer to the disclaimer at the end of this document.  
- 
-MSCI SELECT ESG SCREENED INDEXES METHODOLOGY  | MAY 2023  
- 
- 
+ All companies that fail to comply with the United Nations Global Compact principles . 
 Appendix II: Eligible Universe  
 The Eligible Unive rse for the Indexes includes all the constituents of their respective MSCI Parent 
 Index, as shown below . 
@@ -442,14 +300,6 @@ Index  MSCI China A Inclusion
  
  
  
- 
-  
- 
- 
- 
-MSCI.COM  | PAGE 14 OF 21 (c) 2023 MSCI Inc. All rights reserved. Please refer to the disclaimer at the end of this document.  
- 
-MSCI SELECT ESG SCREENED INDEXES METHODOLOGY  | MAY 2023  
  
  
 Appendix III: Additional Weighting Scheme  
@@ -498,15 +348,7 @@ No country limit
 is applied to No 
  
 5 Regions currently identified are Americas, Europe & Middle East and Pacific. In addition, the Emerging Markets (EM) region is  used 
-in the MSCI ACWI Select ESG Screened Index .  
- 
- 
- 
-MSCI.COM  | PAGE 15 OF 21 (c) 2023 MSCI Inc. All rights reserved. Please refer to the disclaimer at the end of this document.  
- 
-MSCI SELECT ESG SCREENED INDEXES METHODOLOGY  | MAY 2023  
- 
- 
+in the MSCI ACWI Select ESG Screened Index . 
 Index Name  Region Neutrality  Sector Active 
 Exposure 
 Absolute Limit  Country Active 
@@ -548,14 +390,6 @@ Index  No 1% No No
  
  
  
-  
- 
- 
- 
-MSCI.COM  | PAGE 16 OF 21 (c) 2023 MSCI Inc. All rights reserved. Please refer to the disclaimer at the end of this document.  
- 
-MSCI SELECT ESG SCREENED INDEXES METHODOLOGY  | MAY 2023  
- 
  
 Appendix IV: Calculation of GHG Intensity  
 The security level and Index level GHG intensity are calculated as per below formula:  
@@ -567,15 +401,7 @@ sum  of constituent  weig ht with Carbon  emissions  and  EVIC  data  available
  
 Securities with missing Carbon Emissions and/or Enterprise Value + Cash are not considered for 
 potential exclusion under section 2.4. 
-   
- 
- 
- 
-MSCI.COM  | PAGE 17 OF 21 (c) 2023 MSCI Inc. All rights reserved. Please refer to the disclaimer at the end of this document.  
- 
-MSCI SELECT ESG SCREENED INDEXES METHODOLOGY  | MAY 2023  
- 
- 
+  
 Appendix V: Changes to this Document  
 First version reviewed and published in April 2021 .  
  
@@ -608,14 +434,6 @@ Appendix II : Eligible Universe
 * Updated Eligible Universe table  
 Appendix II I: Additional Weighting Scheme  
 Updated Weighting Scheme table  
-  
- 
- 
- 
-MSCI.COM  | PAGE 18 OF 21 (c) 2023 MSCI Inc. All rights reserved. Please refer to the disclaimer at the end of this document.  
- 
-MSCI SELECT ESG SCREENED INDEXES METHODOLOGY  | MAY 2023  
- 
  
 The following modifications are effective from May 2022 : 
 Section 3.2: ESG Exclusions  
@@ -649,15 +467,7 @@ Section 4.2: Monthly Review of Controversies
 * New Section  
 Appendix I: ESG Exclusions Criteria  
 * Added screens for 'Palm Oil' and 'Arctic Oil & Gas'  
-Appendix I V: Calculation of GHG Intensity   
- 
- 
- 
-MSCI.COM  | PAGE 19 OF 21 (c) 2023 MSCI Inc. All rights reserved. Please refer to the disclaimer at the end of this document.  
- 
-MSCI SELECT ESG SCREENED INDEXES METHODOLOGY  | MAY 2023  
- 
- 
+Appendix I V: Calculation of GHG Intensity  
 * New Appendix  
 Methodology book was updated to reflect the transition of the MSCI Global Investable Market 
 Indexes (GIMI) to Quarterly Comprehensive Index Reviews.  
@@ -677,70 +487,7 @@ Section 4: MSCI ESG Research
  
  
  
-   
- 
-MSCI.COM | PAGE 20 OF 21 (c) 2023 MSCI Inc. All rights reserved.  
- MSCI SELECT ESG SCREENED INDEXES METHODOLOGY  | MONTH 
-YEAR  
- 
- 
-Contact us  
-msci.com/contact -us 
   
-AMERICAS  
-Americas  1 888 588 4567 *  
-Atlanta   + 1 404 551 3212  
-Boston   + 1 617 532 0920  
-Chicago  + 1 312 675 0545  
-Monterrey  + 52 81 1253 4020  
-New York  + 1 212 804 3901  
-San Francisco  + 1 415 836 8800  
-Sao Paulo  + 55 11 3706 1360  
-Toronto  + 1 416 628 1007  
- 
-EUROPE, MIDDLE EAST & AFRICA  
-Cape Town  + 27 21 673 0100  
-Frankfurt  + 49 69 133 859 00  
-Geneva   + 41 22 817 9777  
-London   + 44 20 7618 2222  
-Milan   + 39 02 5849 0415  
-Paris   0800 91 59 17 *  
- 
-ASIA PACIFIC  
-China North  10800 852 1032 *  
-China South  10800 152 1032 *  
-Hong Kong  + 852 2844 9333  
-Mumbai  + 91 22 6784 9160  
-Seoul   00798 8521 3392 *  
-Singapore  800 852 3749 *  
-Sydn ey  + 61 2 9033 9333  
-Taipei   008 0112 7513 *  
-Thailand  0018 0015 6207 7181 *  
-Tokyo   + 81 3 5290 1555  
- 
-* toll -free About MSCI  
-MSCI is a leading  provider of critical decision 
-support tools and services for the global 
-investment community. With over 50 years of 
-expertise in research, data and technology, we 
-power better investment decisions by enabling 
-clients to understand and analyze key drivers of risk 
-and return and confidently build more effective 
-portfolios. We create industry -leading research -
-enhanced solutions that clients use to gain insight 
-into and improve transparency across the 
-investment process.  
-To learn more, please visit www.msci.com . 
- 
-The process for submitting a formal index 
-complaint can be found on the index regulation 
-page of MSCI's website at: 
-https://www.msci.com/index -regulation . 
- 
-  
- 
- 
- 
 MSCI.COM | PAGE 21 OF 21 (c) 202 3 MSCI Inc. All rights reserved.  
  MSCI SELECT ESG SCREENED INDEXES METHODOLOGY  | MAY 2023  
  

@@ -2,15 +2,16 @@ import os
 import argparse
 import pandas as pd
 import numpy as np
-import json
-import time
 import glob
 import hashlib
 import chromadb
 import csv
 import torch
 from openai import OpenAI
+from transformers import AutoTokenizer, AutoModel
+from torch.utils.data import DataLoader
 
+# OpenAI API setup
 OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
 client = OpenAI(api_key=OPENAI_API_KEY)
 
@@ -19,7 +20,6 @@ from langchain.text_splitter import CharacterTextSplitter
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 # from langchain_experimental.text_splitter import SemanticChunker
 from semantic_splitter import SemanticChunker
-# import agent_tools
 
 # Setup TODO
 GCP_PROJECT = os.environ["GCP_PROJECT"]
@@ -30,13 +30,13 @@ OUTPUT_FOLDER = "outputs"
 CHROMADB_HOST = "llm-rag-chromadb"
 CHROMADB_PORT = 8000
 
-
 # Configuration settings for the content generation
 generation_config = {
     "max_output_tokens": 4096,  # Maximum number of tokens for output
     "temperature": 0.25,  # Control randomne ss in output
     "top_p": 0.95,  # Use nucleus sampling
 }
+
 # Initialize the GenerativeModel with specific system instructions
 # In your response, specify the source of the information you used to answer the query (e.g., the section of the text and the original text).
 SYSTEM_INSTRUCTION = """
@@ -56,17 +56,12 @@ Remember:
 - Be concise in your responses while ensuring you cover all relevant information from the chunks.
 """
 
-### embedding
-
-from transformers import BertTokenizer, BertModel
-#from transformers import LongformerTokenizer, LongformerModel
-from torch.utils.data import DataLoader
-
+### Embedding ###
 # Load pre-trained model and tokenizer
-tokenizer = BertTokenizer.from_pretrained("bert-base-uncased", cache_dir="model")
-model = BertModel.from_pretrained("bert-base-uncased", cache_dir="model")
-#tokenizer = LongformerTokenizer.from_pretrained("allenai/longformer-base-4096", cache_dir="model")
-#model = LongformerModel.from_pretrained("allenai/longformer-base-4096", cache_dir="model")
+tokenizer = AutoTokenizer.from_pretrained("albert-base-v2", cache_dir="model")
+model = AutoModel.from_pretrained("albert-base-v2", cache_dir="model")
+# tokenizer = LongformerTokenizer.from_pretrained("allenai/longformer-base-4096", cache_dir="model")
+# model = LongformerModel.from_pretrained("allenai/longformer-base-4096", cache_dir="model")
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 model.to(device)
@@ -77,28 +72,33 @@ model.eval()
 
 def get_batch_embedding(batch):
 	# Tokenize the input text and get the input IDs
-	inputs = tokenizer(batch, return_tensors="pt", padding="max_length", truncation=True).to(device)
+	inputs = tokenizer(batch, return_tensors="pt", padding=True, truncation=True).to(device)
 
 	# Forward pass through the model to get outputs
 	with torch.no_grad():
 		outputs = model(**inputs, output_hidden_states=True)
 
 	# Extract the embeddings for the CLS token
-	cls_embedding = outputs.last_hidden_state[:, 0, :] # [batch_size, embedding_dim]
+	cls_embedding = outputs.last_hidden_state[:, 0, :]  # [batch_size, embedding_dim]
 	return cls_embedding.cpu().numpy()
 
-def generate_query_embedding(query):
-	query_batch = [query]
-	return get_batch_embedding(query_batch)
-
-def generate_text_embeddings(chunks, batch_size=32):
+def generate_batch_embeddings(chunks, batch_size=32):
 	dataloader = DataLoader(chunks, batch_size=batch_size, collate_fn=lambda x: x)
 	embeddings = []
 	for chunk_batch in dataloader:
 		batch_embeddings = get_batch_embedding(chunk_batch)
 		embeddings.append(batch_embeddings)
 	return np.vstack(embeddings)  # [num_chunks, embedding_dim]
-### end of embedding
+
+def generate_query_embedding(text, model="text-embedding-3-small"):
+	return client.embeddings.create(input = [text], model=model).data[0].embedding
+
+def generate_text_embeddings(chunks):
+	embeddings = []
+	for text in chunks:
+		embeddings.append(generate_query_embedding(text))
+	return embeddings # [num_chunks, embedding_dim]
+### End of embedding ###
 
 def load_text_embeddings(df, collection, batch_size=32):
 	# Generate ids
@@ -121,7 +121,7 @@ def load_text_embeddings(df, collection, batch_size=32):
 
 		ids = batch["id"].tolist()
 		documents = batch["chunk"].tolist() 
-		metadatas = [metadata for item in batch["title"].tolist()]
+		metadatas = [metadata for _ in batch["title"].tolist()]
 		embeddings = batch["embedding"].tolist()
 
 		collection.add(
@@ -130,6 +130,7 @@ def load_text_embeddings(df, collection, batch_size=32):
 			metadatas=metadatas,
 			embeddings=embeddings
 		)
+		
 		total_inserted += len(batch)
 		print(f"Inserted {total_inserted} items...")
 
@@ -137,7 +138,7 @@ def load_text_embeddings(df, collection, batch_size=32):
 
 
 def chunk(method="semantic-split"):
-	print("chunk()")
+	print("\nchunk()")
 
 	# Make dataset folders
 	os.makedirs(OUTPUT_FOLDER, exist_ok=True)
@@ -148,7 +149,7 @@ def chunk(method="semantic-split"):
 
 	# Process
 	for text_file in text_files:
-		print("Processing file:", text_file)
+		print("\nProcessing file:", text_file)
 		filename = os.path.basename(text_file)
 		title_name = filename.split(".")[0]
 		zip_folder_name = os.path.basename(os.path.dirname(text_file))
@@ -181,7 +182,7 @@ def chunk(method="semantic-split"):
 		elif method == "semantic-split":
 			# Init the splitter
 			text_splitter = SemanticChunker(
-				embedding_function=generate_text_embeddings,
+				embedding_function=generate_batch_embeddings,
 				breakpoint_threshold_type="percentile",
 				breakpoint_threshold_amount=80
 			)
@@ -205,7 +206,7 @@ def chunk(method="semantic-split"):
 
 
 def embed(method="semantic-split"):
-	print("embed()")
+	print("\nembed()")
 
 	# Get the list of chunk files
 	jsonl_files = glob.glob(os.path.join(OUTPUT_FOLDER, f"chunks-{method}-*.jsonl"))
@@ -213,7 +214,7 @@ def embed(method="semantic-split"):
 
 	# Process
 	for jsonl_file in jsonl_files:
-		print("Processing file:", jsonl_file)
+		print("\nProcessing file:", jsonl_file)
 
 		data_df = pd.read_json(jsonl_file, lines=True)
 		print("Shape:", data_df.shape)
@@ -221,9 +222,9 @@ def embed(method="semantic-split"):
 
 		chunks = data_df["chunk"].values
 		if method == "semantic-split":
-			embeddings = generate_text_embeddings(chunks, batch_size=16)
+			embeddings = generate_text_embeddings(chunks)
 		else:
-			embeddings = generate_text_embeddings(chunks, batch_size=16)
+			embeddings = generate_text_embeddings(chunks)
 		data_df["embedding"] = embeddings
 
 		# Save 
@@ -271,9 +272,7 @@ def load(method="semantic-split"):
 		# Load data
 		load_text_embeddings(data_df, collection)
 
-def query(zip_name, title, question, method="semantic-split"):
-	# print("query()")
-
+def query(zip_name='', title='MSCI_Select_ESG_Screened_Indexes_Methodology_20230519', question='What\'s MSCI', method="semantic-split"):
 	# Connect to chroma DB
 	client = chromadb.HttpClient(host=CHROMADB_HOST, port=CHROMADB_PORT)
 
@@ -288,7 +287,7 @@ def query(zip_name, title, question, method="semantic-split"):
 
 	# retrieve chunks that come from the corresponding PDF
 	collection_filtered = collection.get(where={"title": title})
-	n_chunks = len(collection_filtered)
+	n_chunks = len(collection_filtered["ids"])
 
 	# # 1: Query based on embedding value 
 	# results = collection.query(
@@ -301,7 +300,7 @@ def query(zip_name, title, question, method="semantic-split"):
 	results = collection.query(
 		where={"title": title},
 		query_embeddings=[query_embedding],
-		n_results=int(n_chunks**0.6) # about 10 out of 50 chunks, 24 out of 200 chunks
+		n_results=min(int(n_chunks**0.4*2), 40) # about 10 out of 50 chunks, 24 out of 200 chunks
 	)
 
 	# 3: Query based on embedding value + lexical search filter

@@ -1,297 +1,3 @@
-August 2024  
-MSCI.COM | Page 1 of 207 
- (c) 2024  MSCI Inc. All rights reserved. Please refer to the disclaimer at the end of this document.  
- Index Methodology  
-MSCI Global 
-Investable Market 
-Indexes 
-Methodology  
- 
-Index Construction Objectives, Guiding Principles and 
-Methodology for  the MSCI Global Investable Market Indexes  
-. 
-August 2024  
-  
-  
-Outline of the Methodology Book  13 
-1 Introduction to the MSCI Global Investable Market Indexes
- 14 
-2 Constructing the MSCI Global Investable Market Indexes  16 
-2.1 Defining the Equity Universe  16 
-2.1.1  Identifying Eligible Equity Securities  16 
-2.1.2  Country Classification of Eligible Securities  17 
-2.2 Determining the Market Investable Equity Universes  17 
-2.2.1  Identifying Eligible Listings  18 
-2.2.2  Applying Investability Screens  19 
-2.2.3  Equity Universe Minimum Size Requirement  19 
-2.2.4  Equity Universe Minimum Float -Adjusted Market 
-Capitalization Requirement  21 
-2.2.5  DM and EM Minimum Liquidity Requirement  21 
-2.2.6  Global Minimum Foreign Inclusion Factor Requirement  24 
-2.2.7  Minimum Length of Trading Requirement  25 
-2.2.8  Minimum Foreign Room Requirement  25 
-2.2.9  Financial Reporting Requirement  26 
-2.3 Defining Market Capitalization Size -Segments for Each Market  26 
-2.3.1  Defining the Market Coverage Target Range for Each Size -
-Segment  28 
-2.3.2  Determining the Global Minimum Size Range for Each Size -
-Segment  29 
-2.3.2.1  Defining the Global Minimum Size Reference  29 
-2.3.3  Determining the Segment Number of Companies and 
-Associated Market Size -Segment Cutoffs  30 Contents  
- 2.3.4  Assigning Companies to the Size -Segments  31 
-2.3.5  Determining Market Size -Segment Cutoffs and Assigning 
-Companies to the Size -Segments: Example  32 
-2.3.6  Applying Final Size -Segment Investability Requirements  34 
-2.3.6.1  Minimum Free Float Market Capitalization Requirement  34 
-2.3.6.2  Minimum Foreign Room Requirement  35 
-2.3.6.3  Treatment of Securities that Exhibit Extreme Price Increase
- 36 
-2.4 Index Continuity Rules  37 
-2.5 Constructing and Calculating the Individual MSCI Global 
-Investable Markets Indexes  38 
-2.5.1  Market Size -Segment Indexes  38 
-2.5.2  Composite Indexes  38 
-2.5.3  GICS -Based Indexes  39 
-2.5.4  Other Indexes  39 
-2.5.5  Calculating the MSCI Global Investable Markets Indexes  39 
-3 Maintaining the MSCI Global Investable Market Indexes  40 
-3.1 Quarterly Index Reviews  40 
-3.1.1  Updating the Equity Universe  41 
-3.1.2  Updating the Market Investable Equity Universes  41 
-3.1.2.1  Eligibility of Foreign Listings  41 
-3.1.2.2  Updating the Equity Universe Minimum Size Requirement  42 
-3.1.2.3  Updating the Equity Universe Minimum Free Float -Adjusted 
-Market Capitalization  43 
-3.1.2.4  Minimum Liquidity Requirement for Existing Constituents  43 
-3.1.2.5  Global Minimum Foreign Inclusion Factor Requirement  44 
-3.1.2.6  Minimum Foreign Room Requirement  45 
- 3.1.2.7  Minimum Length of Trading REquirement  45 
-3.1.3  Recalculating the Global Minimum Size References and 
-Global Minimum Size Ranges  45 
-3.1.4  Reassessing the Segment Number of Companies and the 
-Market Size -Segment Cutoffs  46 
-3.1.4.1  Determining Initial Segment Number of Companies  46 
-3.1.4.2  Changes in the Segment Number of Companies  46 
-3.1.5  Assigning Companies to Appropriate Size -Segments  49 
-3.1.5.1  Using Buffer Zones to Manage the Migration of Companies 
-between Size -Segment Indexes  50 
-3.1.6  Assessing Conformity with Final Size -Segment Investability 
-Requirements  51 
-3.1.6.1  For New Constituents  51 
-3.1.6.2  For Existing Constituents  52 
-3.1.7  Index Review of Changes in Foreign Inclusion Factors (FIFs)
- 54 
-3.1.8  Index Review of Changes in Number of Shares (NOS)  55 
-3.1.9  Date of Data Used for Index Reviews  55 
-3.2 Ongoing Event -Related Changes  58 
-3.2.1  Determining the Interim Market Size -Segment Cutoffs for 
-Daily Maintenance  58 
-3.2.2  Updating the Segment Number of Companies  59 
-3.2.3  Corporate Events Affecting Existing Index Constituents  59 
-3.2.3.1  Changes in FIF, Number of Shares or Industry Classification 
-for Existing Constituents  59 
-3.2.3.2  Changes in Size segment, Style Segment or industry 
-Classification as a Result of a Large Corporate Event  61 
-3.2.3.3  Early Inclusions of Non -Index Constituents  63 
- 3.2.3.4  Early Deletions of Existing Constituents  64 
-3.2.4  Corporate Events Affecting Non -Index Constituents  66 
-3.2.4.1  IPOs and Other Early Inclusions  66 
-3.2.5  Corporate Events Affecting the Index Review  68 
-3.3 Announcement Policy  68 
-3.3.1  Ongoing Event -Related Changes  69 
-3.3.1.1  Client Announcements  69 
-3.3.1.2  Public Announcements  70 
-3.3.2  IPOs and Other Early Inclusions  71 
-3.3.3  Global Industry Classification Standard (GICS)  71 
-4 MSCI All Cap Indexes  72 
-4.1 Constructing the MSCI All Cap Indexes  72 
-4.1.1  Micro Cap Maximum Size Requirement  72 
-4.1.2  Micro Cap Minimum Size Requirement  73 
-4.1.3  Micro Cap Minimum Liquidity Requirement  73 
-4.1.4  Global Minimum Foreign Inclusion Factor Requirement  73 
-4.1.5  Minimum Length of Trading Requirement  73 
-4.1.6  Financial Reporting Requirement  73 
-4.2 Maintaining the MSCI All Cap Indexes  74 
-4.2.1  Quarterly Index Reviews  74 
-4.2.1.1  Updating the Micro Cap Minimum Size Requirement  74 
-4.2.1.2  Assigning Companies to the Micro Cap Size -Segment  75 
-4.2.2  Ongoing Event -Related Changes  75 
-5 MSCI Frontier Markets Indexes  76 
-5.1 Frontier Markets Definition  76 
-5.1.1  Updating MSCI Frontier Markets Index Coverage  76 
- 5.2 Methodology Used to Construct and Maintain the MSCI Frontier 
-Markets Indexes  77 
-5.2.1  Equity Universe Minimum Size Requirement  77 
-5.2.2  Global Minimum Size Reference  78 
-5.2.3  FM Minimum Liquidity Requirement  78 
-5.2.3.1  Categorization of Frontier Markets into very low, low or 
-average liquidity markets  78 
-5.2.3.2  Minimum Liquidity REquirement for Existing Constituents  79 
-5.2.4  Index Continuity Rules  80 
-5.2.5  Implementation of Corporate Events  81 
-6 MSCI Standalone Market Indexes  82 
-6.1 Creation of Standalone Market Indexes for Newly Eligible 
-Markets  82 
-6.2 Classification of Other Markets as Standalone  82 
-6.3 Maintaining Standalone Market Indexes  83 
-6.4 Inclusion of Standalone Market Indexes in the MSCI Composite 
-Indexes  83 
-6.4.1  Inclusion of Newly Eligible Markets  83 
-6.4.2  Re-inclusion of Markets in the MSCI Composite Indexes  84 
-6.5 Treatment of Discontinued Standalone Market Indexes  84 
-APPENDICES  85 
-Appendix I: Equity Markets and Universe  86 
-Eligible Markets (Developed Markets)  86 
-Eligible Markets (Emerging Markets)  87 
-Eligible Markets (Frontier Markets)  88 
-Eligible Markets (Standalone Markets)  89 
- Eligible Classes of Securities for Stock Exchanges in Emerging Markets
- 91 
-Eligible Classes of Securities for Stock Exchanges in Frontier Markets  92 
-Eligible Classes of Securities for Stock Exchanges in Standalone 
-Markets  93 
-REITs  94 
-Canadian Income Trusts  95 
-Ineligible Alert Boards  95 
-Non-Index Constituents  96 
-Deletion of Existing Index Constituents  97 
-Other Cases  97 
-Appendix II: Market Classification Framework  98 
-Markets Under Index Continuity  101 
-Appendix III: Country Classification of Securities  102  
-General Framework  102 
-Other Cases  102 
-Country Specific Cases  103 
-Change in Country Classification  105 
-Appendix IV: Foreign Listing Materiality Requirement  106  
-Appendix V: Treatment of Investment Sanctions Related to U.S. 
-Executive Order 13959  108  
-MSCI J -Series Indexes:  108 
-MSCI China A Onshore Indexes:  109 
-Appendix VI: Free Float Definition and Estimation Guidelines  110  
-Defining and Estimating Free Float  110 
-Calculation of Free Float  110 
- Assigning a Free Float -Adjustment Factor  111 
-Calculating the Free Float -Adjusted Market Capitalization  114 
-Treatment of Hong Kong Listed Securities With High Shareholding 
-Concentration Issues  117 
-Treatment of Non -Voting Depositary Receipts in Thailand  118 
-Treatment of Depository Receipts where Underlying Shares are Not 
-Available for Trading  119 
-Appendix VII: Price Source for Securities  121  
-Markets open on Saturday and/or Sunday  121 
-Appendix VIII: Market Monitoring Framework and Potential 
-Switch to a Light Rebalancing under Conditions of Market 
-Stress  122  
-MSCI Market Monitoring Framework  122 
-Potential Switch to a Light Rebalancing during Index Reviews  122 
-"Light" Rebalancing  122 
-Market Monitoring Period and Criteria  123 
-Communication Date and Policy  123 
-Index Review of the MSCI GIMI under Light Rebalancing  124 
-Size -Segment Migrations during Light Rebalancings  124 
-Addition of Companies Currently not Constituents of the Investable 
-Market Indexes during Light Rebalancings  127 
-Deletion of Companies Currently Constituents of the Investable 
-Market Indexes during Light Rebalancings  128 
-Changes in FIF and NOS during Light Rebalancings  129 
-Date of Data Used for Light Rebalancings  129 
-Index Maintenance for the Micro Cap Size -Segment during Light 
-Rebalancings  129 
- Appendix IX: Policy Regarding Trading Suspensions and Market 
-Closures during Index Reviews  130  
-Policy Regarding Trading Suspensions for Individual Securities during 
-Index Reviews  130 
-Policy Regarding Market Closures during Index Reviews  130 
-Market Closures Due to Scheduled Stock Market Holidays  131 
-Unexpected Full Trading Day Market Closures  131 
-Unexpected Market Closures of Less Than a Full Trading Day  131 
-Market Outage during the Trading Day  131 
-Appendix X: Updating the Global Minimum Size References and 
-Ranges  133  
-General Principles for Updating the Global Minimum Size References 
-and Ranges  133 
-Appendix XI: Frontier Markets Country Classification  135  
-Appendix XII: MSCI DR Indexes  136  
-Constructing the MSCI DR Indexes  136 
-Maintaining the MSCI DR Indexes  136 
-Number of Shares (NOS) and Foreign Inclusion Factors (FIF) used for 
-DRs in the MSCI DR Indexes  136 
-Quarterly Listing Reviews  136 
-Index Review of Changes in NOS and in FIF  137 
-Ongoing Event Related Changes  137 
-Additions and Deletions due to Corporate Events  137 
-IPOs  138 
-Dividend Reinvestment for DRs Indexes  138 
-Withholding tax  138 
-Dividend Fees Payable by DR Holders  138 
- Appendix XIII: MSCI Domestic Indexes  139  
-MSCI China A Onshore Indexes  139 
-Equity Universe:  139 
-Equity Universe Minimum Size:  140 
-Assigning a Free Float -Adjustment Factor:  140 
-Investment Sanctions Related to U.S. Executive Order 13959  140 
-MSCI K -Series Indexes:  140 
-Appendix XIV: MSCI China Indexes  141  
-MSCI China Indexes Offering  141 
-Appendix XV: Index Maintenance of the MSCI China Indexes  143  
-Inclusion of China A Shares in the MSCI China Indexes  143 
-Index Maintenance of the MSCI China Indexes  143 
-Integrated MSCI China Equity Universe  144 
-Calculation of Market Capitalization  145 
-Impact of the Index Inclusion Factor for the Index Construction  145 
-Investability Requirements  145 
-Calculation of the Market Size -Segment Cutoffs and Assigning 
-Companies to the Size -Segments  145 
-Foreign Ownership Limits and Foreign Room  146 
-Assessing Conformity with Final Size -Segment Investability 
-Requirements  146 
-Additions of China A Shares during Light Rebalancings  147 
-Stock Connect Daily Limit Breach  147 
-Ongoing Event Related Changes  147 
-Appendix XVI: MSCI China A Inclusion Indexes  150  
-Index Construction  150 
- Index Maintenance  150 
-Index Calculation  150 
-Appendix XVII: MSCI China A Indexes  151  
-Index Construction  151 
-Index Maintenance  151 
-Ongoing Event Related Changes  151 
-Index Calculation  152 
-Appendix XVIII: Transition to the MSCI GIMI Methodology  153  
-Provisional Indexes  153 
-Deriving the Size -Segment Indexes at Initial Construction of the 
-Provisional Indexes  154 
-Publication of Provisional Indexes  154 
-Reflecting Constituent Changes in the Standard Indexes at the 
-Transition Points  155 
-Index Reviews and Treatment of On -Going Market Events during the 
-Transition Period  156 
-Ongoing Event Related Changes  157 
-May 2007 Annual Full Country Index Review of the Standard Indexes 
-and Semi -Annual Index Review of the Small Cap Index  157 
-August 2007 Quarterly Index Review  158 
-November 2007 Semi -Annual Index Review  158 
-February 2008 Quarterly Index Review  158 
-May 2008 Semi -Annual Index Review  159 
-Transitioning Other Indexes  159 
-Global Value and Growth Indexes  159 
-Euro and Pan -Euro Indexes  159 
-Indexes Based on the Standard Indexes  160 
- GCC Countries Indexes  160 
-Summary Transition Timeline  160 
-Appendix XIX: Transition to a Quarterly Comprehensive Index 
-Review  163  
-Treatment of MSCI Derived Indexes with Different Index Review 
-Schedules compared to Parent Indexes  163 
-Appendix XX: Changes to the MSCI Frontier Markets Indexes 
-Methodology  164  
-Changes to the Methodology Book  165  
- 
- 
- 
-  
  Outline  of the Methodology Book  
 This methodology book outlines MSCI's index objectives and details the 
 methodology employed to create and maintain the MSCI Global Investable Market 
@@ -6660,18 +6366,75 @@ Appendix XI: Frontier Markets Country Classification
  
  
  
- MSCI.COM | Page 207 of 207 
+ MSCI.COM | Page 206 of 207 
  (c) 2024 MSCI Inc. All rights reserved.  
  MSCI GLOBAL INVESTABLE MARKET INDEXES METHODOLOGY  | AUGUST 2024  
-research and ratings. More information about these conflict mitigation measures is available in our Form ADV, available at 
-https://adviserinfo.sec.gov/firm/summary/169222.   
-Any use of or access to products, services or information of MSCI requires a license from MSCI. MSCI, Barra, RiskMetrics, IPD  and other MSCI brands 
-and product names are the trademarks, service marks, or registered trademarks of MSCI or its subsidiaries in  the United States and other jurisdictions.  
-The Global Industry Classification Standard (GICS) was developed by and is the exclusive property of MSCI and S&P Global Mark et Intelligence.  "Global 
-Industry Classification Standard (GICS)" is a service mark o f MSCI and S&P Global Market Intelligence.  
-MIFID2/MIFIR notice: MSCI ESG Research LLC does not distribute or act as an intermediary for financial instruments or structu red deposits, nor does it 
-deal on its own account, provide execution services for others or manage client accounts. No MSCI ESG Res earch product or service supports, promotes 
-or is intended to support or promote any such activity. MSCI ESG Research is an independent provider of ESG data.  
-Privacy notice: For information about how MSCI collects and uses personal data, please refer to our Privacy Notice at https://www.msci.com/privacy -
-pledge . 
  
+Notice and disclaimer  
+This document is research for informational purposes only and is intended for institutional professionals with the analytical  resources and tools 
+necessary to interpret any performance information. Nothing herein is intended to promote or recommend any product, tool or s ervice.  
+This document and all of the information contained in it, including without limitation all text, data, graphs, charts (collec tively, the "Information") is the 
+property of MSCI Inc. or its subsidiaries (collectively, "MSCI"), or MSCI's licensors, direct or indirect suppliers or any third party involved in making or 
+compiling any Information (collectively, with MSCI, the "Information Providers") and is provided for informational purposes o nly.  The Information may 
+not be modified, reverse -engineered, reproduc ed or redisseminated in whole or in part without prior written permission from MSCI. All rights in the 
+Information are reserved by MSCI and/or its Information Providers.  
+The Information may not be used to create derivative works or to verify or correct other data or information.   For example ( but without limitation), the 
+Information may not be used to create indexes, databases, risk models, analytics, software, or in conn ection with the issuing, offering, sponsoring, 
+managing or marketing of any securities, portfolios, financial products or other investment vehicles utilizing or based on, l inked to, tracking or otherwise 
+derived from the Information or any other MSCI data,  information, products or services.   
+The user of the Information assumes the entire risk of any use it may make or permit to be made of the Information.  NONE OF THE INFORMATION 
+PROVIDERS MAKES ANY EXPRESS OR IMPLIED WARRANTIES OR REPRESENTATIONS WITH RESPECT TO THE INFORMATION (OR THE RESULT S TO 
+BE OBTAINED BY THE USE THEREOF), AND TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, EACH INFORMATION PROVIDER EXPRESSLY 
+DISCLAIMS ALL IMPLIED WARRANTIES (INCLUDING, WITHOUT LIMITATION, ANY IMPLIED WARRANTIES OF ORIGINALITY, ACCURACY, TIMELINESS,  
+NON-INFRINGEMENT, COMPLETENESS, MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE) WITH RESPECT TO ANY OF THE 
+INFORMATION.  
+Without limiting any of the foregoing and to the maximum extent permitted by applicable law, in no event shall any Informatio n Provider have any liability 
+regarding any of the Information for any direct, indirect, special, punitive, consequential (includin g lost profits) or any other damages even if notified of 
+the possibility of such damages. The foregoing shall not exclude or limit any liability that may not by applicable law be exc luded or limited, including 
+without limitation (as applicable), any liabil ity for death or personal injury to the extent that such injury results from the negligence or willful default of 
+itself, its servants, agents or sub -contractors.   
+Information containing any historical information, data or analysis should not be taken as an indication or guarantee of any future performance, analysis, 
+forecast or prediction.  Past performance does not guarantee future results.   
+The Information may include "Signals," defined as quantitative attributes or the product of methods or formulas that describe  or are derived from 
+calculations using historical data. Neither these Signals nor any description of historical data are intended to provide investment advice or a 
+recommendation to make (or refrain from making) any investment decision or asset allocation and should not be relied upon as such. Signals are 
+inherently backward -looking because of their use of historical data, and they a re not intended to predict the future. The relevance, correlations and 
+accuracy of Signals frequently will change materially.  
+The Information should not be relied on and is not a substitute for the skill, judgment and experience of the user, its manag ement, employees, advisors 
+and/or clients when making investment and other business decisions.  All Information is impersonal and n ot tailored to the needs of any person, entity 
+or group of persons.  
+None of the Information constitutes an offer to sell (or a solicitation of an offer to buy), any security, financial product or other investment vehicle or any 
+trading strategy.  
+It is not possible to invest directly in an index.  Exposure to an asset class or trading strategy or other category represen ted by an index is only available 
+through third party investable instruments (if any) based on that index.   MSCI does not issue, s ponsor, endorse, market, offer, review or otherwise express 
+any opinion regarding any fund, ETF, derivative or other security, investment, financial product or trading strategy that is based on, linked to or seeks to 
+provide an investment return related to  the performance of any MSCI index (collectively, "Index Linked Investments"). MSCI makes no assurance that 
+any Index Linked Investments will accurately track index performance or provide positive investment returns.  MSCI Inc. is no t an investment adviser  or 
+fiduciary and MSCI makes no representation regarding the advisability of investing in any Index Linked Investments.  
+Index returns do not represent the results of actual trading of investible assets/securities. MSCI maintains and calculates i ndexes, but does not manage 
+actual assets. The calculation of indexes and index returns may deviate from the stated methodology. In dex returns do not reflect payment of any sales 
+charges or fees an investor may pay to purchase the securities underlying the index or Index Linked Investments. The impositi on of these fees and 
+charges would cause the performance of an Index Linked Investm ent to be different than the MSCI index performance.  
+The Information may contain back tested data.  Back -tested performance is not actual performance, but is hypothetical.  There are frequently material 
+differences between back tested performance results and actual results subsequently achieved by any invest ment strategy.   
+Constituents of MSCI equity indexes are listed companies, which are included in or excluded from the indexes according to the  application of the relevant 
+index methodologies. Accordingly, constituents in MSCI equity indexes may include MSCI Inc., clients o f MSCI or suppliers to MSCI.  Inclusion of a 
+security within an MSCI index is not a recommendation by MSCI to buy, sell, or hold such security, nor is it considered to be  investment advice.  
+Data and information produced by various affiliates of MSCI Inc., including MSCI ESG Research LLC and Barra LLC, may be used in calculating certain 
+MSCI indexes.  More information can be found in the relevant index methodologies on www.msci.com.  
+MSCI receives compensation in connection with licensing its indexes to third parties.  MSCI Inc.'s revenue includes fees base d on assets in Index Linked 
+Investments. Information can be found in MSCI Inc.'s company filings on the Investor Relations section of msci.com.  
+MSCI ESG Research LLC is a Registered Investment Adviser under the Investment Advisers Act of 1940 and a subsidiary of MSCI I nc.  Neither MSCI nor 
+any of its products or services recommends, endorses, approves or otherwise expresses any opinion regarding any issuer, secur ities, financial 
+products or instruments or trading strategies and MSCI's products or services are not a recommend ation to make (or refrain from making) any kind of 
+investment decision and may not be relied on as such, provided that applicable products or services from MSCI ESG Research ma y constitute 
+investment advice. MSCI ESG Research materials, including materials  utilized in any MSCI ESG Indexes or other products, have not been submitted to, 
+nor received approval from, the United States Securities and Exchange Commission or any other regulatory body. MSCI ESG and c limate ratings, 
+research and data are produced by MSCI ESG Research LLC, a subsidiary of MSCI Inc. MSCI ESG Indexes, Analytics and Real Estate are products of 
+MSCI Inc. that utilize information from MSCI ESG Research LLC. MSCI Indexes are administered by MSCI Limited (UK)  and MSCI Deutschland GmbH.  
+Please note that the issuers mentioned in MSCI ESG Research materials sometimes have commercial relationships with MSCI ESG R esearch and/or 
+MSCI Inc. (collectively, "MSCI") and that these relationships create potential conflicts of interest.  In some cases , the issuers or their affiliates purchase 
+research or other products or services from one or more MSCI affiliates. In other cases, MSCI ESG Research rates financial pr oducts such as mutual 
+funds or ETFs that are managed by MSCI's clients or their affiliat es, or are based on MSCI Inc. Indexes. In addition, constituents in MSCI Inc. equity 
+indexes include companies that subscribe to MSCI products or services. In some cases, MSCI clients pay fees based in whole or  part on the assets they 
+manage. MSCI ESG Rese arch has taken a number of steps to mitigate potential conflicts of interest and safeguard the integrity and independence of its 
