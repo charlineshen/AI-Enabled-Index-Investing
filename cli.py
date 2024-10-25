@@ -19,10 +19,8 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 from semantic_splitter import SemanticChunker
 # import agent_tools
 
-# Hugging face emebedding model https://huggingface.co/cointegrated/rubert-tiny2
-# !pip install transformers sentencepiece 
 import torch
-from transformers import AutoTokenizer, AutoModel
+from transformers import BertTokenizer, BertModel
 
 # Setup TODO
 GCP_PROJECT = os.environ["GCP_PROJECT"]
@@ -34,9 +32,6 @@ OUTPUT_FOLDER = "outputs"
 CHROMADB_HOST = "llm-rag-chromadb"
 CHROMADB_PORT = 8000
 
-# New embedding model
-tokenizer = AutoTokenizer.from_pretrained("cointegrated/rubert-tiny2")
-model = AutoModel.from_pretrained("cointegrated/rubert-tiny2")
 # model.cuda()  # uncomment it if you have a GPU
 
 # Configuration settings for the content generation
@@ -65,24 +60,33 @@ Remember:
 """
 
 ### embedding
-def embed_bert_cls(text, model, tokenizer):
-	t = tokenizer(text, padding=True, truncation=True, return_tensors='pt')
-	with torch.no_grad():
-		model_output = model(**{k: v.to(model.device) for k, v in t.items()})
-	embeddings = model_output.last_hidden_state[:, 0, :]
-	embeddings = torch.nn.functional.normalize(embeddings)
-	return embeddings[0].cpu().numpy()
+# Load pre-trained model and tokenizer
+tokenizer = BertTokenizer.from_pretrained('bert-base-uncased', cache_dir="model")
+model = BertModel.from_pretrained('bert-base-uncased', cache_dir="model")
 
+# Ensure the model is in evaluation mode
+model.eval()
+
+def embed_bert_cls(text):
+    # Tokenize the input text and get the input IDs
+    inputs = tokenizer(text, return_tensors="pt", padding=True, truncation=True)
+
+    # Forward pass through the model to get outputs
+    with torch.no_grad():
+        outputs = model(**inputs)
+    
+    # Extract the embeddings for the CLS token
+    cls_embedding = outputs.last_hidden_state[:, 0, :]
+    return cls_embedding
 
 def generate_query_embedding(query):
-	return embed_bert_cls(query, model, tokenizer)
+	return embed_bert_cls(query)
 
-
-def generate_text_embeddings(chunks, dimensionality: int = 256, batch_size=250):
+def generate_text_embeddings(chunks, batch_size=128):
 	all_embeddings_new = []
 	for i in range(0, len(chunks), batch_size):
 		batch = chunks[i:i+batch_size]
-		embeddings = [embed_bert_cls(text, model, tokenizer) for text in batch] 
+		embeddings = [embed_bert_cls(text) for text in batch] 
 		all_embeddings_new.extend([embedding for embedding in embeddings])
 	print("=============================== new embeddings")
 	print(len(all_embeddings_new), len(all_embeddings_new[0]))
@@ -90,7 +94,7 @@ def generate_text_embeddings(chunks, dimensionality: int = 256, batch_size=250):
 	return all_embeddings_new
 ### end of embedding
 
-def load_text_embeddings(df, collection, batch_size=500):
+def load_text_embeddings(df, collection, batch_size=128):
 	# Generate ids
 	df["id"] = df.index.astype(str)
 	hashed_titles = df["title"].apply(lambda x: hashlib.sha256(x.encode()).hexdigest()[:16])
@@ -211,9 +215,9 @@ def embed(method="semantic-split"):
 
 		chunks = data_df["chunk"].values
 		if method == "semantic-split":
-			embeddings = generate_text_embeddings(chunks,EMBEDDING_DIMENSION, batch_size=15)
+			embeddings = generate_text_embeddings(chunks, EMBEDDING_DIMENSION, batch_size=15)
 		else:
-			embeddings = generate_text_embeddings(chunks,EMBEDDING_DIMENSION, batch_size=100)
+			embeddings = generate_text_embeddings(chunks, EMBEDDING_DIMENSION, batch_size=100)
 		data_df["embedding"] = embeddings
 
 		# Save 
@@ -278,7 +282,7 @@ def query(zip_name, title, question, method="semantic-split"):
 
 	# retrieve chunks that come from the corresponding PDF
 	collection_filtered = collection.get(where={"title": title})
-	n_chunks = len(collection_filtered["documents"])
+	n_chunks = len(collection_filtered)
 
 	# # 1: Query based on embedding value 
 	# results = collection.query(
@@ -288,9 +292,10 @@ def query(zip_name, title, question, method="semantic-split"):
 
 	# 2: Query based on embedding value + metadata filter
 	# retrieve chunks based on embedding similarity compared to query
-	results = collection_filtered.query(
+	results = collection.query(
+		where={"title": title},
 		query_embeddings=[query_embedding],
-		n_results=n_chunks**0.6 # about 10 out of 50 chunks, 24 out of 200 chunks
+		n_results=int(n_chunks**0.6) # about 10 out of 50 chunks, 24 out of 200 chunks
 	)
 
 	# 3: Query based on embedding value + lexical search filter
@@ -456,7 +461,7 @@ if __name__ == "__main__":
 		action="store_true",
 		help="Chat with LLM Agent",
 	)
-	parser.add_argument("--chunk_type", default="char-split", help="char-split | recursive-split | semantic-split")
+	parser.add_argument("--chunk_type", default="semantic-split", help="char-split | recursive-split | semantic-split")
 
 	args = parser.parse_args()
 
