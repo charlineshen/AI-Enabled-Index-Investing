@@ -1,12 +1,14 @@
 import os
 import argparse
 import pandas as pd
+import numpy as np
 import json
 import time
 import glob
 import hashlib
 import chromadb
 import csv
+import torch
 from openai import OpenAI
 
 OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
@@ -19,20 +21,15 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 from semantic_splitter import SemanticChunker
 # import agent_tools
 
-import torch
-from transformers import BertTokenizer, BertModel
-
 # Setup TODO
 GCP_PROJECT = os.environ["GCP_PROJECT"]
 GCP_LOCATION = "us-central1"
-EMBEDDING_DIMENSION = 256
 GENERATIVE_MODEL = "gpt-4o"
 INPUT_FOLDER = "inputs"
 OUTPUT_FOLDER = "outputs"
 CHROMADB_HOST = "llm-rag-chromadb"
 CHROMADB_PORT = 8000
 
-# model.cuda()  # uncomment it if you have a GPU
 
 # Configuration settings for the content generation
 generation_config = {
@@ -60,41 +57,50 @@ Remember:
 """
 
 ### embedding
+
+from transformers import BertTokenizer, BertModel
+#from transformers import LongformerTokenizer, LongformerModel
+from torch.utils.data import DataLoader
+
 # Load pre-trained model and tokenizer
-tokenizer = BertTokenizer.from_pretrained('bert-base-uncased', cache_dir="model")
-model = BertModel.from_pretrained('bert-base-uncased', cache_dir="model")
+tokenizer = BertTokenizer.from_pretrained("bert-base-uncased", cache_dir="model")
+model = BertModel.from_pretrained("bert-base-uncased", cache_dir="model")
+#tokenizer = LongformerTokenizer.from_pretrained("allenai/longformer-base-4096", cache_dir="model")
+#model = LongformerModel.from_pretrained("allenai/longformer-base-4096", cache_dir="model")
+
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+model.to(device)
+print("Using device", device)
 
 # Ensure the model is in evaluation mode
 model.eval()
 
-def embed_bert_cls(text):
-    # Tokenize the input text and get the input IDs
-    inputs = tokenizer(text, return_tensors="pt", padding=True, truncation=True)
+def get_batch_embedding(batch):
+	# Tokenize the input text and get the input IDs
+	inputs = tokenizer(batch, return_tensors="pt", padding="max_length", truncation=True).to(device)
 
-    # Forward pass through the model to get outputs
-    with torch.no_grad():
-        outputs = model(**inputs)
-    
-    # Extract the embeddings for the CLS token
-    cls_embedding = outputs.last_hidden_state[:, 0, :]
-    return cls_embedding
+	# Forward pass through the model to get outputs
+	with torch.no_grad():
+		outputs = model(**inputs, output_hidden_states=True)
+
+	# Extract the embeddings for the CLS token
+	cls_embedding = outputs.last_hidden_state[:, 0, :] # [batch_size, embedding_dim]
+	return cls_embedding.cpu().numpy()
 
 def generate_query_embedding(query):
-	return embed_bert_cls(query)
+	query_batch = [query]
+	return get_batch_embedding(query_batch)
 
-def generate_text_embeddings(chunks, batch_size=128):
-	all_embeddings_new = []
-	for i in range(0, len(chunks), batch_size):
-		batch = chunks[i:i+batch_size]
-		embeddings = [embed_bert_cls(text) for text in batch] 
-		all_embeddings_new.extend([embedding for embedding in embeddings])
-	print("=============================== new embeddings")
-	print(len(all_embeddings_new), len(all_embeddings_new[0]))
-	print("===============================")
-	return all_embeddings_new
+def generate_text_embeddings(chunks, batch_size=32):
+	dataloader = DataLoader(chunks, batch_size=batch_size, collate_fn=lambda x: x)
+	embeddings = []
+	for chunk_batch in dataloader:
+		batch_embeddings = get_batch_embedding(chunk_batch)
+		embeddings.append(batch_embeddings)
+	return np.vstack(embeddings)  # [num_chunks, embedding_dim]
 ### end of embedding
 
-def load_text_embeddings(df, collection, batch_size=128):
+def load_text_embeddings(df, collection, batch_size=32):
 	# Generate ids
 	df["id"] = df.index.astype(str)
 	hashed_titles = df["title"].apply(lambda x: hashlib.sha256(x.encode()).hexdigest()[:16])
@@ -215,9 +221,9 @@ def embed(method="semantic-split"):
 
 		chunks = data_df["chunk"].values
 		if method == "semantic-split":
-			embeddings = generate_text_embeddings(chunks, EMBEDDING_DIMENSION, batch_size=15)
+			embeddings = generate_text_embeddings(chunks, batch_size=16)
 		else:
-			embeddings = generate_text_embeddings(chunks, EMBEDDING_DIMENSION, batch_size=100)
+			embeddings = generate_text_embeddings(chunks, batch_size=16)
 		data_df["embedding"] = embeddings
 
 		# Save 
