@@ -56,7 +56,7 @@ You will be given a query and some contexts below. When answering a query, make 
 - If the provided chunks do not contain sufficient information to answer the query, state that you don't have enough information to provide a complete answer.
 - If there are contradictions in the provided chunks, mention this in your response and explain the different viewpoints presented.
 - Keep track of the numbers of all the chunks you used to formulate your answer.
-- It is very important that you format your response using this pattern: "Answer: <X>.\nSource Chunks: <Y>.", where <Y> contains the numbers of chunks separated by commas.
+- It is very important that you format your response using this pattern: "Answer: <X>.\nSource Chunks: <Y>.", where <Y> contains the numbers of chunks separated by commas. If no chunk provides useful information, <Y> should be None.
 """
 
 
@@ -185,7 +185,7 @@ def chunk(method="semantic-split"):
 			text_splitter = SemanticChunker(
 				embedding_function=generate_batch_embeddings,
 				breakpoint_threshold_type="percentile",
-				breakpoint_threshold_amount=80
+				breakpoint_threshold_amount=85
 			)
 			# Perform the splitting
 			text_chunks = text_splitter.create_documents([input_text])
