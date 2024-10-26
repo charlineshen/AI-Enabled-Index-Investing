@@ -3,7 +3,7 @@ import os
 import argparse
 import pandas as pd
 from openai import OpenAI
-from cli import chunk, embed, load, chat_agent
+from cli import chat_agent, generation_config, GENERATIVE_MODEL
 
 OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
 client = OpenAI(api_key=OPENAI_API_KEY)
@@ -77,22 +77,53 @@ def read_sample_q(input_file):
     print(f"\nNumber of questions: {len(questions)}")
     return questions
 
-
 def load_source_text(text_file = 'inputs/books/MSCI_Select_ESG_Screened_Indexes_Methodology_20230519.txt'):
     with open(text_file) as f:
         input_text = f.read()
     return input_text, text_file
 
+
+def generate_answers(input_file='evaluator-data/sample_qa.csv', output_file='evaluator-data/sample_qa_response_only.csv'):
+    questions, expected_answers = read_sample_qa(input_file)
+    results = []
+
+    for i in range(len(questions)):
+        query = questions[i]
+        expected_answer = expected_answers[i]
+        print("================= query: ", query)
+
+        # Get the query, chunk, and actual response from the chat agent
+        query, chunk, response = chat_agent(zip_name, title, query)
+        print(f"\nQuery: {query}\nExpected Answer: {expected_answer}\nResponse: {response}")
+
+        # Store results
+        results.append({
+            "Question": query,
+            "Expected Answer": expected_answer,
+            "Actual Response": response,
+            "Retrieved Chunks": chunk
+        })
+
+    # Save results to an Excel file
+    df = pd.DataFrame(results)
+    df.to_csv(output_file, index=False)
+    print(f"Evaluation results saved to '{output_file}'.")
+
 def eval(prompt):
-    response = client.chat.completions.create(model="gpt-3.5-turbo",  # You can replace with "gpt-4" if you have access
-    messages=[
-        {"role": "system", "content": "You are an evaluator."},
-        {"role": "user", "content": prompt}
-    ])
+    response = client.chat.completions.create(
+        model=GENERATIVE_MODEL,
+        messages=[
+            {"role": "system", "content": GRADING_RUBRIC},
+            {"role": "user", "content": prompt}
+        ],
+        temperature=generation_config['temperature'],
+        max_tokens=generation_config['max_output_tokens'],
+        top_p=generation_config['top_p'])
 
     # Parse the response
     evaluation = response.choices[0].message.content
     return evaluation  # Return the GPT-generated score and explanation
+
 
 def evaluate_wo_expected_answer(input_file='evaluator-data/sample_q.csv', output_file='evaluator-data/sample_q_evaluation.csv'):
     questions = read_sample_q(input_file)
@@ -108,8 +139,6 @@ def evaluate_wo_expected_answer(input_file='evaluator-data/sample_q.csv', output
 
         # Evaluate the response using GPT
         prompt = f"""
-            {GRADING_RUBRIC}
-
             Question: {query}
             Source Text: {source_text}
             Response: {response}
@@ -188,15 +217,19 @@ if __name__ == "__main__":
     # Define optional arguments for input and output files
     # parser.add_argument('--input_file', type=str, default='evaluator-data/sample_qa.csv', help='Path to the input CSV file containing questions and expected answers')
     # parser.add_argument('--output_file', type=str, default='evaluator-data/sample_qa_evaluation.csv', help='Path to save the evaluation results')
-    parser.add_argument('--with_expected_answer', action='store_true', help='Use this flag to evaluate with expected answers')
-    
+    parser.add_argument('--eval_w_answer', action='store_true', help='Use this flag to evaluate with expected answers')
+    parser.add_argument('--eval_wo_answer', action='store_true', help='Use this flag to evaluate without answers')
+
     args = parser.parse_args()
 
-    if args.with_expected_answer:
+    if args.eval_w_answer:
         print("Evaluating responses with expected answers...")
         evaluate_w_expected_answer()
         # evaluate_w_expected_answer(input_file=args.input_file, output_file=args.output_file)
-    else:
+    elif args.eval_wo_answer:
         print("Evaluating responses without expected answers...")
         evaluate_wo_expected_answer()
         # evaluate_wo_expected_answer(input_file=args.input_file, output_file=args.output_file)
+    else:
+        print("Generating responses only...")
+        generate_answers()

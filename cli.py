@@ -33,28 +33,32 @@ CHROMADB_PORT = 8000
 # Configuration settings for the content generation
 generation_config = {
     "max_output_tokens": 4096,  # Maximum number of tokens for output
-    "temperature": 0.25,  # Control randomne ss in output
+    "temperature": 0.25,  # Control randomness in output
     "top_p": 0.95,  # Use nucleus sampling
 }
 
 # Initialize the GenerativeModel with specific system instructions
 # In your response, specify the source of the information you used to answer the query (e.g., the section of the text and the original text).
 SYSTEM_INSTRUCTION = """
-You are an AI assistant specialized in ETF knowledge. Your responses are based solely on the information provided in the text chunks given to you. Do not use any external knowledge or make assumptions beyond what is explicitly stated in these chunks.
-
-When answering a query:
-- Carefully read all the text chunks provided.
-- Identify the most relevant information from these chunks to address the user's question.
-- Formulate your response using only the information found in the given chunks.
-- If the provided chunks do not contain sufficient information to answer the query, state that you don't have enough information to provide a complete answer.
-- If there are contradictions in the provided chunks, mention this in your response and explain the different viewpoints presented.
-- In your response, follow the format of "Answer: xxx\n Source Text: xxx\n Section of Source Text: xxx"
+You are an AI assistant specialized in ETF knowledge. You will be asked an ETF-related question and be given some reference text chunks. When answering, make sure your responses are based solely on the information provided in the text chunks given to you. Do not use any external knowledge or make assumptions beyond what is explicitly stated in the provided chunks.
 
 Remember:
 - Your knowledge is limited to the information in the provided chunks.
 - Do not invent information or draw from knowledge outside of the given text chunks.
-- Be concise in your responses while ensuring you cover all relevant information from the chunks.
+- Be concise in your response while ensuring you cover all relevant information from the chunks.
 """
+
+UNIFORM_PROMPT = """
+You will be given a query and some contexts below. When answering a query, make sure you:
+- Carefully read all the numbered context chunks provided.
+- Identify the most relevant information from these numbered chunks to address the query's question.
+- Formulate your response using only the information found in the given chunks.
+- If the provided chunks do not contain sufficient information to answer the query, state that you don't have enough information to provide a complete answer.
+- If there are contradictions in the provided chunks, mention this in your response and explain the different viewpoints presented.
+- Keep track of the numbers of all the chunks you used to formulate your answer.
+- It is very important that you format your response using this pattern: "Answer: <X>.\nSource Chunks: <Y>.", where <Y> contains the numbers of chunks separated by commas.
+"""
+
 
 ### Embedding ###
 # Load pre-trained model and tokenizer
@@ -63,16 +67,12 @@ model = AutoModel.from_pretrained("albert-base-v2", cache_dir="model")
 # tokenizer = LongformerTokenizer.from_pretrained("allenai/longformer-base-4096", cache_dir="model")
 # model = LongformerModel.from_pretrained("allenai/longformer-base-4096", cache_dir="model")
 
-device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-model.to(device)
-print("Using device", device)
-
 # Ensure the model is in evaluation mode
 model.eval()
 
 def get_batch_embedding(batch):
 	# Tokenize the input text and get the input IDs
-	inputs = tokenizer(batch, return_tensors="pt", padding=True, truncation=True).to(device)
+	inputs = tokenizer(batch, return_tensors="pt", padding=True, truncation=True)
 
 	# Forward pass through the model to get outputs
 	with torch.no_grad():
@@ -99,6 +99,7 @@ def generate_text_embeddings(chunks):
 		embeddings.append(generate_query_embedding(text))
 	return embeddings # [num_chunks, embedding_dim]
 ### End of embedding ###
+
 
 def load_text_embeddings(df, collection, batch_size=32):
 	# Generate ids
@@ -272,7 +273,7 @@ def load(method="semantic-split"):
 		# Load data
 		load_text_embeddings(data_df, collection)
 
-def query(zip_name='', title='MSCI_Select_ESG_Screened_Indexes_Methodology_20230519', question='What\'s MSCI', method="semantic-split"):
+def query(zip_name, title, question, method="semantic-split"):
 	# Connect to chroma DB
 	client = chromadb.HttpClient(host=CHROMADB_HOST, port=CHROMADB_PORT)
 
@@ -321,7 +322,7 @@ def generate_gpt_response(query, context_chunks):
 	Generate a GPT response using OpenAI's API based on the context chunks provided.
 	"""
 	prompt = f"""
-	{SYSTEM_INSTRUCTION}
+	{UNIFORM_PROMPT}
 
 	Query: {query}
 	Context:
