@@ -301,7 +301,7 @@ def query(zip_name, title, question, method="semantic-split"):
 	results = collection.query(
 		where={"title": title},
 		query_embeddings=[query_embedding],
-		n_results=min(int(n_chunks**0.4*2), 40) # about 10 out of 50 chunks, 24 out of 200 chunks
+		n_results= 20 #min(int(n_chunks**0.4*2), 40) # about 10 out of 50 chunks, 24 out of 200 chunks
 	)
 
 	# 3: Query based on embedding value + lexical search filter
@@ -347,16 +347,16 @@ def read_q(input_file):
         next(csv_reader)  # Skip the header row
 
         for row in csv_reader:
-            questions.append(row[2])  # Question is in the second column
+            questions.append(row[1])  # Question is in the second column
 
     # Print the number of questions and answers to verify they match
     print(f"\nNumber of questions: {len(questions)}")
     return questions
 
 def chat():
-	input_question_file = "questions.csv"
-	output_file = "results.csv"
-	zip_name = 'MSCI_indexes_small'
+	input_question_file = "evaluator-data/sample_q.csv"
+	output_file = "results_sample_q.csv"
+	zip_name = 'books'
 	questions = read_q(input_question_file)
 	
 	# Save results to an Excel file
@@ -370,12 +370,17 @@ def chat():
 			# print("================= query: ", query)
 		
 			# Get the query, chunk, and actual response from the chat agent
-			query, chunk, response = chat_agent(zip_name, title, query)
+			query, chunk, response, source_chunks = chat_agent(zip_name, title, query)
 			# Store results
 			singledoc_results.append({
 					f'{title}-response': response,
-					f'{title}-chunks': chunk
+				    f'{title}-source_chunks': source_chunks
 				})
+			# singledoc_results.append({
+			# 		f'{title}-response': response,
+			# 	    f'{title}-source_chunks': source_chunks,
+			# 		f'{title}-chunks': chunk
+			# 	})
 
 		df_singledoc = pd.DataFrame(singledoc_results)
 		df = pd.concat([df, df_singledoc], axis=1)
@@ -405,9 +410,21 @@ def chat_agent(zip_name, title, question, method="semantic-split"):
 	# Generate a response using OpenAI GPT
 	response_text = generate_gpt_response(question, context_chunks)
 
+	# Get source chunk's number from the response text, if available, add to the response
+	try:
+		source_chunks_nums = response_text.split("Source Chunks: ")[1].split(".")[0].split(",")
+		source_chunks_nums = [int(num) for num in source_chunks_nums]
+		source_chunks = "\n--------------------------------------------------------------------------------------\n".join([results["documents"][0][i - 1] for i in source_chunks_nums])
+		# response_text = response_text.split("Source Chunks: ")[0] + f"\nSource Chunks: \n{source_chunks}"
+	except:
+		print("No source chunks found in the response. ", question)
+		source_chunks = "Source Chunks: None"
+		pass
+
+	response_text = response_text.split("Source Chunks: ")[0]
 	# Print the GPT output
 	# print(f"\n============================================GPT RESPONSE============================================\n{response_text}\n")
-	return question, context_chunks, response_text
+	return question, context_chunks, response_text, source_chunks
 
 
 def main(args=None):
@@ -426,7 +443,7 @@ def main(args=None):
 		query(method=args.chunk_type)
 
 	if args.chat:
-		chat(method=args.chunk_type)
+		chat()
 
 	# if args.agent:
 	# 	agent(method=args.chunk_type)

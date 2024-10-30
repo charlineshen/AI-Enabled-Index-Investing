@@ -104,7 +104,7 @@ def save_text_to_file(text, zip_path, pdf_name):
 
 if __name__ == '__main__':
     # Take in zip file, extract pdfs, extract text from pdfs, save text to files
-    zip_path = "index-doc/MSCI_indexes.zip"
+    zip_path = "index-doc/books.zip"
     with zipfile.ZipFile(zip_path, 'r') as z:
         # Iterate through the files in the zip
         for file_info in z.infolist():
