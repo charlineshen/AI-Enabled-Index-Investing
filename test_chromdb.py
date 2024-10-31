@@ -57,19 +57,31 @@ def query(zip_name, title, question, method="semantic-split"):
 
 
 if __name__ == "__main__": 
+    
+	# client = chromadb.HttpClient(host=CHROMADB_HOST, port=CHROMADB_PORT)
+	# collection_name = 'semantic-split-collection'
+	# collection = client.get_collection(name=collection_name)
+	# # Use the peek function to view the top 5 records
+	# top_5_records = collection.get()
 	
-    # for key, values in top_5_records.items():
-    #     if key in ['ids', 'metadatas', 'included']:
-    #         print(key)
-    #         print(f"One entry for {key}: {values[0]}")
+	# print(type(top_5_records))
+	# dict_keys(['ids', 'embeddings', 'metadatas', 'documents', 'data', 'uris', 'included'])
+	# print(top_5_records.keys())
+	# print(top_5_records)
+
 	
-    title = 'MSCI_Select_ESG_Screened_Indexes_Methodology_20230519'
-    question = "What's the exclusion rule of the MSCI Select ESG Screened Indexes regarding thermal coal power?"
-    result = query('', title, question, method="semantic-split")
+	# for key, values in top_5_records.items():
+	# 	if key in ['metadatas']:
+	# 		print(f"One entry for {key}: {value['title'] for value in values}")
+	# 		print(len(values))
 	
-    json_path = "tmp.json"
+	title = '3_MSCI_Select_ESG_Screened_Indexes_Methodology_20240209'
+	question = "What’s the exclusion rule regarding civilian firearms?"
+	result = query('', title, question, method="semantic-split")
+	
+	json_path = "tmp.json"
 
     # Save the dictionary as a JSON file
-    with open(json_path, 'w', encoding='utf-8') as json_file:
-        json.dump(result, json_file, indent=4)  # indent=4 for pretty formatting
+	with open(json_path, 'w', encoding='utf-8') as json_file:
+		json.dump(result, json_file, indent=4)  # indent=4 for pretty formatting
 	

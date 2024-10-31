@@ -54,11 +54,18 @@ You will be given a query and some contexts below. When answering a query, make 
 - Identify the most relevant information from these numbered chunks to address the query's question.
 - Formulate your response using only the information found in the given chunks.
 - If the provided chunks do not contain sufficient information to answer the query, state that you don't have enough information to provide a complete answer.
+- All questions contain a key phrase. For example, in the question "What’s the exclusion rule regarding oil and gas services?", the key phrase is oil and gas services. (1) Search all chunks for this keyword. (2) If found, generate an answer using that chunk. (3) Otherwise, respond with: "The provided chunks do not mention '<keyword>'."
 - If there are contradictions in the provided chunks, mention this in your response and explain the different viewpoints presented.
 - Keep track of the numbers of all the chunks you used to formulate your answer.
 - It is very important that you format your response using this pattern: "Answer: <X>.\nSource Chunks: <Y>.", where <Y> contains the numbers of chunks separated by commas. If no chunk provides useful information, <Y> should be None.
 """
 
+# - If the provided chunks do not contain sufficient information to answer the query, state that you don't have enough information to provide a complete answer.
+# (i.e., does not include the keyword in question)
+# (i.e., the question asked about tobacco, but all provided chunks do not contain the keyword "tobacco")
+# 2. Search for an **exact match** in the chunks.
+# 3. If found, generate an answer using that chunk.
+# 4. If no exact match, respond with: "The provided chunks do not mention '<keyword>'."
 
 ### Embedding ###
 # Load pre-trained model and tokenizer
@@ -362,6 +369,8 @@ def chat():
 	# Save results to an Excel file
 	df = pd.DataFrame()
 	for title in os.listdir(f"{INPUT_FOLDER}/{zip_name}"):
+		if not title.endswith('.txt'):
+			continue
 		print("Processing document:", title)
 		title = title.split(".")[0]
 		singledoc_results = []
@@ -417,7 +426,7 @@ def chat_agent(zip_name, title, question, method="semantic-split"):
 		source_chunks = "\n--------------------------------------------------------------------------------------\n".join([results["documents"][0][i - 1] for i in source_chunks_nums])
 		# response_text = response_text.split("Source Chunks: ")[0] + f"\nSource Chunks: \n{source_chunks}"
 	except:
-		print("No source chunks found in the response. ", question)
+		print(f"No source chunks found in the response for Q: {question}")
 		source_chunks = "Source Chunks: None"
 		pass
 
