@@ -76,7 +76,7 @@ if __name__ == "__main__":
 	# 		print(len(values))
 	
 	title = '3_MSCI_Select_ESG_Screened_Indexes_Methodology_20240209'
-	question = "What’s the exclusion rule regarding civilian firearms?"
+	question = "What's Sector Active Exposure Absolute Limit of MSCI World Select ESG Screened Index"
 	result = query('', title, question, method="semantic-split")
 	
 	json_path = "tmp.json"
