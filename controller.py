@@ -1,6 +1,7 @@
 import argparse
 import os
-from cli import chunk, embed, load, chat_with_arguments, check_duplicates
+import glob
+from cli import chunk, embed, load, chunk_with_arguments, chat_with_arguments, INPUT_FOLDER, OUTPUT_FOLDER
 from data_process import process_input_pdfs
 
 '''
@@ -25,9 +26,10 @@ Design Choices:
 
 '''
 
+OUTPUT_TABLE_FOLDER = "output_tables"
 
 if __name__ == "__main__":
-    # the first user input is the folder name containing all the pdfs, the second user input is the question file.
+    # The first user input is the folder name containing all the pdfs, the second user input is the question file.
     # Extract the argument
     parser = argparse.ArgumentParser(description='Generate index comparison table')
     parser.add_argument('input_folder_name', type=str, help='Input folder containing PDFs')
@@ -36,20 +38,31 @@ if __name__ == "__main__":
     input_folder_name = args.input_folder_name
     question_file = args.question_file
 
-    input_folder_path = 'inputs' + input_folder_name
-    output_file_path = 'output_tables/' + input_folder_name + '.csv'
+    input_folder_path = INPUT_FOLDER + '/' + input_folder_name
+    output_file_path = OUTPUT_TABLE_FOLDER + '/' + input_folder_name + '.csv'
 
+    # TODO check not too many files in the input_folder_path
+    
     # call data_process
     process_input_pdfs(input_folder_name)
 
-    # for each pdf file in the folder, call chunk, embed, and load; skip if already in chromadb
-    for file_name in os.listdir(input_folder_path):
-        if file_name.endswith('.pdf'):
-            title_name = file_name.split('.')[0]
-            if not check_duplicates(title_name):
-                chunk()
-                embed()
-                load()
+    # build RAG knowledge database for the input_folder
+    chunk_with_arguments(input_folder_name)
+    embed()
+    load()
+
+    # Get the list of embedding files
+    jsonl_files = glob.glob(os.path.join(OUTPUT_FOLDER, f"embeddings-semantic-split-*.jsonl"))
+    jsonl_files.extend(glob.glob(os.path.join(OUTPUT_FOLDER, f"chunks-semantic-split-*.jsonl")))
+    print("Number of files to remove:", len(jsonl_files))
+    # Remove files in output folder
+    for file in jsonl_files:
+        try:
+            os.remove(file)
+            print(f"COMPLETE knowlege retrival for {file}. Now Remove the file...")
+        except Exception as e:
+            print(f"COMPLETE knowlege retrival for {file}. Error in removing the file... {file}: {e}")
 
     # call chat
+    # NOTE output as csv?
     chat_with_arguments(input_folder_name, question_file, output_file_path)

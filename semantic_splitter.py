@@ -34,7 +34,7 @@ def combine_sentences(sentences: List[dict], buffer_size: int = 1) -> List[dict]
             # (to avoid index out of range like on the first one)
             if j >= 0:
                 # Add the sentence at index j to the combined_sentence string
-                combined_sentence += sentences[j]["sentence"] + " "
+                combined_sentence += sentences[j]["sentence"] + " \n\n"
 
         # Add the current sentence
         combined_sentence += sentences[i]["sentence"]
@@ -44,7 +44,7 @@ def combine_sentences(sentences: List[dict], buffer_size: int = 1) -> List[dict]
             # Check if the index j is within the range of the sentences list
             if j < len(sentences):
                 # Add the sentence at index j to the combined_sentence string
-                combined_sentence += " " + sentences[j]["sentence"]
+                combined_sentence += " \n\n" + sentences[j]["sentence"]
 
         # Then add the whole thing to your dict
         # Store the combined sentence in the current sentence dict

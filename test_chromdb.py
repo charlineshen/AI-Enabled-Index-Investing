@@ -44,6 +44,8 @@ def query(zip_name, title, question, method="semantic-split"):
 	# retrieve chunks that come from the corresponding PDF
 	collection_filtered = collection.get(where={"title": title})
 	n_chunks = len(collection_filtered["ids"])
+	unique_ids = len(set(collection_filtered["ids"]))
+	print(f'title: {title}, n_chunks: {n_chunks}, unique_ids: {unique_ids}')
 
 	# 2: Query based on embedding value + metadata filter
 	# retrieve chunks based on embedding similarity compared to query
@@ -94,11 +96,12 @@ if __name__ == "__main__":
 	############################################################### 
 	# general4: Is there a free-float market capitalization adjustment?
 	# general1: What are the criteria for a stock to be eligible for inclusion in the index?
+	# general8: What is the Weighting Methodology?
 	'''
 	Check retrieval performance
 	'''
 	title = '1_MSCI_Global_Investable_Market_Indexes_Methodology_20240812'
-	question = "Is there a free-float market capitalization adjustment?"
+	question = "What is the Weighting Methodology?"
 	result = query('', title, question, method="semantic-split")
 	print(len(result))
 	

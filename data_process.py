@@ -115,7 +115,7 @@ def process_input_pdfs(folder_name):
                 text = preprocess_text(text_list)
                 ascii_text = unidecode.unidecode(text)
                 text_dir = 'inputs/' + folder_name + '/'
-                save_text_to_file(ascii_text, text_dir, pdf_file.name)
+                save_text_to_file(ascii_text, text_dir, file_name)
 
 if __name__ == '__main__':
     # Take in zip file, extract pdfs, extract text from pdfs, save text to files

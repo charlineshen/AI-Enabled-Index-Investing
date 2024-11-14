@@ -31,8 +31,8 @@ CHROMADB_PORT = 8000
 # Configuration settings for the content generation
 generation_config = {
     "max_output_tokens": 4096,  # Maximum number of tokens for output
-    "temperature": 0.25,  # Control randomness in output
-    "top_p": 0.95,  # Use nucleus sampling
+    "temperature": 0.1,  # Control randomness in output
+    "top_p": 0.3,  # Use nucleus sampling
 }
 
 # Initialize the GenerativeModel with specific system instructions
@@ -134,6 +134,78 @@ def load_text_embeddings(df, collection, batch_size=32):
 	print(f"Finished inserting {total_inserted} items into collection '{collection.name}'")
 
 
+def chunk_with_arguments(input_folder_name, method="semantic-split"):
+	print("\nchunk()")
+
+	# Make dataset folders
+	os.makedirs(OUTPUT_FOLDER, exist_ok=True)
+
+	# Get the list of text file
+	text_files = glob.glob(os.path.join(INPUT_FOLDER, input_folder_name, "*.txt"))
+	print("Number of files to process:", len(text_files))
+
+	# Process
+	for text_file in text_files:
+		print("\nProcessing file:", text_file)
+		filename = os.path.basename(text_file)
+		title_name = filename.split(".")[0]
+		if check_duplicates(title_name):
+			print(f"File: {title_name} already exists in the database. Skipping...")
+			continue
+
+		zip_folder_name = os.path.basename(os.path.dirname(text_file))
+
+		with open(text_file) as f:
+			input_text = f.read()
+
+		text_chunks = None
+		if method == "char-split":
+			chunk_size = 350
+			chunk_overlap = 20
+			# Init the splitter
+			text_splitter = CharacterTextSplitter(chunk_size = chunk_size, chunk_overlap=chunk_overlap, separator='', strip_whitespace=False)
+
+			# Perform the splitting
+			text_chunks = text_splitter.create_documents([input_text])
+			text_chunks = [doc.page_content for doc in text_chunks]
+			print("Number of chunks:", len(text_chunks))
+
+		elif method == "recursive-split":
+			chunk_size = 350
+			# Init the splitter
+			text_splitter = RecursiveCharacterTextSplitter(chunk_size = chunk_size)
+
+			# Perform the splitting
+			text_chunks = text_splitter.create_documents([input_text])
+			text_chunks = [doc.page_content for doc in text_chunks]
+			print("Number of chunks:", len(text_chunks))
+
+		elif method == "semantic-split":
+			# Init the splitter
+			text_splitter = SemanticChunker(
+				embedding_function=generate_embeddings,
+				breakpoint_threshold_type="percentile",
+				breakpoint_threshold_amount=85
+			)
+			# Perform the splitting
+			text_chunks = text_splitter.create_documents([input_text])
+
+			text_chunks = [doc.page_content for doc in text_chunks if doc.page_content.strip()]
+			print("Number of chunks:", len(text_chunks))
+
+		if text_chunks is not None:
+			# Save the chunks
+			data_df = pd.DataFrame(text_chunks,columns=["chunk"])
+			data_df["title"] = title_name
+			data_df["zip_name"] = zip_folder_name
+			print("Shape:", data_df.shape)
+			print(data_df.head())
+
+			jsonl_filename = os.path.join(OUTPUT_FOLDER, f"chunks-{method}-{title_name}.jsonl")
+			with open(jsonl_filename, "w") as json_file:
+				json_file.write(data_df.to_json(orient='records', lines=True))
+
+
 def chunk(method="semantic-split"):
 	print("\nchunk()")
 
@@ -232,7 +304,6 @@ def embed(method="semantic-split"):
 		with open(jsonl_filename, "w") as json_file:
 			json_file.write(data_df.to_json(orient='records', lines=True))
 
-
 def load(method="semantic-split"):
 	print("load()")
 
@@ -241,17 +312,26 @@ def load(method="semantic-split"):
 
 	# Get a collection object from an existing collection, by name. If it doesn't exist, create it.
 	collection_name = f"{method}-collection"
-	print("Creating collection:", collection_name)
+	# print("Creating collection:", collection_name)
+
+	# try:
+	# 	# Clear out any existing items in the collection
+	# 	client.delete_collection(name=collection_name)
+	# 	print(f"Deleted existing collection '{collection_name}'")
+	# except Exception:
+	# 	print(f"Collection '{collection_name}' did not exist. Creating new.")
 
 	try:
-		# Clear out any existing items in the collection
-		client.delete_collection(name=collection_name)
-		print(f"Deleted existing collection '{collection_name}'")
+		# Try to retrieve the existing collection by name
+		collection = client.get_collection(name=collection_name)
+		print(f"Retrieved existing collection '{collection_name}'")
 	except Exception:
-		print(f"Collection '{collection_name}' did not exist. Creating new.")
+		# If the collection doesn't exist, create a new one
+		print(f"Collection '{collection_name}' does not exist. Creating new.")
+		collection = client.create_collection(name=collection_name, metadata={"hnsw:space": "cosine"})
+		print(f"Created new empty collection '{collection_name}'")
 
-	collection = client.create_collection(name=collection_name, metadata={"hnsw:space": "cosine"})
-	print(f"Created new empty collection '{collection_name}'")
+	# print(f"Created new empty collection '{collection_name}'")
 	print("Collection:", collection)
 
 	# Get the list of embedding files
@@ -386,9 +466,9 @@ def chat_with_arguments(input_folder_name, input_question_file, output_file):
 
 
 def chat():
-	input_question_file = "evaluator-data/question_template_general.csv"
-	output_file = "results_MSCI_SRI_general_nokeyword_prompt.csv"
-	zip_name = 'MSCI Global'
+	input_question_file = "evaluator-data/question_template_per_category.csv"
+	output_file = "results_MSCI_SRI.csv"
+	zip_name = 'MSCI Wolrd Low Carbon SRI Leaders'
 	questions = read_q(input_question_file)
 	
 	# Save results to an Excel file

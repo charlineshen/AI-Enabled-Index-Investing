@@ -1,0 +1,406 @@
+,MSCI_Select_ESG_Screened_Indexes_Methodology_20230519-response,MSCI_Select_ESG_Screened_Indexes_Methodology_20230519-source_chunks
+With what ESG rating will a company be excluded by the Indexes?,"Answer: A company will be excluded by the Indexes if it has an MSCI ESG Rating of 'CCC'.
+","The Indexes use company ratings and research provided by MSCI ESG Research2 to determine 
+eligibility for Index inclusion . 
+ESG Ratings Eligibility  The Indexes use MSCI ESG Ratings to identify companies that have demonstrated an ability to manage 
+their ESG risks and opportunities. Companies with an MSCI ESG Rating of 'CCC' are excluded from 
+the Indexes. ESG Exclusions The Indexes use MSCI ESG Business In volvement Screening Research to identify companies that are 
+involved in the following business activities. Companies that meet the business involvement criteria 
+are excluded from the Indexes . 
+* Conventional Weapons * Controversial Weapons * Nuclear Weapons * Civilian Firearms * Tobacco * Fossil Fuel Extraction * Thermal Coal Power * Arctic Oil & Gas
+--------------------------------------------------------------------------------------
+1 Introduct ion 
+The MSCI Select ESG Screened Indexes (""the Indexes"") are free float -adjusted market capitalization -
+weighted indexes that exclude companies from underlying MSCI indexes (""Parent Indexes"") based on 
+Environmental, Social and Governance (ESG) criteria. The  following companies are excluded:  * Companies that are associated with conventional, controversial, civilian, and nuclear weapons as 
+well as tobacco, palm oil and arctic oil & gas or * Companies that are assigned an MSCI ESG Rating of 'CCC' or * Companies that derive revenues from thermal coal power and extraction of select fossil fuels  or 
+* Companies that are involved in Red Flag ESG controversies, Orange Flag Land Use and Biodiversity 
+controversies or Orange Flag Supply Chain Management controversies  or 
+* Compan ies that are not in compliance with the United Nations Global Compact principles In addition, the Indexes target a minimum 30% reduction in carbon emission intensity relative to the 
+underlying parent indexes (""Parent Indexes"")1. 
+  
+1 The Indexes are governed by a set of methodology and policy documents (""Methodology Set""), including the present i ndex 
+methodology document. The Methodology Set for the Indexes can be accessed from MSCI's webpage https://www.msci.com/index -
+methodology in the section 'Search Methodology by Index Name or Index Code'."
+With what controversy score in what industry will a company be included by the Indexes?,"Answer: A company will be excluded from the Indexes if it has an MSCI ESG Controversy Score of 0, which indicates a Red Flag for an ongoing Very Severe ESG controversy. Additionally, companies involved in Land Use and Biodiversity or Supply Chain Management controversies with an Orange Flag (MSCI ESG Controversies Score of 1) are also excluded. These controversies are considered severe or very severe, either directly or indirectly implicating the company.
+
+","In addition to the above, companies are also excluded from the Indexes if they exhibit any of the 
+following characteristics:  
+* Companies assessed as having involv ement in ESG controversies that are classified as Red Flags 
+(MSCI ESG Controversy Score of 0). A Red Flag indicates an ongoing Very Severe ESG controversy 
+implicating a company directly through its actions, products, or operations . 
+* Companies assessed as ha ving involvement in Land Use and Biodiversity controversies that are 
+classified as Orange Flags (MSCI ESG Controversies: Environment - Land Use and Biodiversity 
+Score of 1). An Orange Flag indicates an ongoing Severe ESG controversy implicating a company 
+directly, or a Very Severe ESG controversy that is either partially resolved or indirectly attributed to 
+the company's actions, products, or operations . 
+* Companies assessed as having involvement in Supply Chain Management controversies that are 
+classified as Orange Flags (MSCI ESG Controversies: Environment - Supply Chain Management 
+Score of 1). An Orange Flag indicates an ongoing Severe ESG controversy implicating a company 
+directly, or a Very Severe ESG controversy that is either partially reso lved or indirectly attributed to 
+the company's actions, products, or operations . 
+* Missing MSCI ESG Controversies Score - Companies not assessed by MSCI ESG Research on 
+MSCI ESG Controversies . 
+* Failure to comply with the United Nations Global Compact Principl es (UN Global Compact 
+Alignment value of ""Fail""). * Please refer to Appendix I for details on these criteria.
+--------------------------------------------------------------------------------------
+1 Introduct ion 
+The MSCI Select ESG Screened Indexes (""the Indexes"") are free float -adjusted market capitalization -
+weighted indexes that exclude companies from underlying MSCI indexes (""Parent Indexes"") based on 
+Environmental, Social and Governance (ESG) criteria. The  following companies are excluded:  * Companies that are associated with conventional, controversial, civilian, and nuclear weapons as 
+well as tobacco, palm oil and arctic oil & gas or * Companies that are assigned an MSCI ESG Rating of 'CCC' or * Companies that derive revenues from thermal coal power and extraction of select fossil fuels  or 
+* Companies that are involved in Red Flag ESG controversies, Orange Flag Land Use and Biodiversity 
+controversies or Orange Flag Supply Chain Management controversies  or 
+* Compan ies that are not in compliance with the United Nations Global Compact principles In addition, the Indexes target a minimum 30% reduction in carbon emission intensity relative to the 
+underlying parent indexes (""Parent Indexes"")1. 
+  
+1 The Indexes are governed by a set of methodology and policy documents (""Methodology Set""), including the present i ndex 
+methodology document. The Methodology Set for the Indexes can be accessed from MSCI's webpage https://www.msci.com/index -
+methodology in the section 'Search Methodology by Index Name or Index Code'."
+What’s the exclusion rule regarding nuclear power?,"Answer: The exclusion rule regarding nuclear power specifically targets companies involved with nuclear weapons. It excludes all companies that manufacture nuclear warheads, whole nuclear missiles, components developed or significantly modified for exclusive use in nuclear weapons, and those that provide auxiliary services related to nuclear weapons. Additionally, it excludes companies that manufacture or assemble delivery platforms for nuclear weapons, whether or not they were developed or significantly modified for exclusive delivery of nuclear weapons.
+
+","* Nuclear Weapons - All companies that manufacture nuclear warheads and/or whole nuclear missiles. - All companies that manufacture components that were developed or are significantly 
+modified for exclusive use in nuclear weapons (warheads and missiles). - All companies that manufacture or assemble delivery platforms that were developed 
+or significantly modified for the exclusive delivery of nuclear weapons. - All companies that provide aux iliary services related to nuclear weapons. - All companies that manufacture components that were not developed or not 
+significantly modified for exclusive use in nuclear weapons (warheads and missiles) 
+but can be used in nuclear weapons. - All companies that manufacture or assemble delivery platforms that were not 
+developed or not significantly modified for the exclusive delivery of nuclear weapons 
+but have the capability to deliver nuclear weapons."
+What’s the exclusion rule regarding fossil fuel power generation or nuclear energy power generation？,"Answer: Companies deriving 5% or more revenue from thermal coal-based power generation are excluded. There is no specific exclusion rule mentioned for nuclear energy power generation in the provided chunks.
+
+"," All companies deriving 5% or more revenue (either reported or estimated) from thermal coal -
+based power generation . 
+* Arctic Oil & Gas  All companies deriv ing 5% or more revenue from arctic oil and arctic gas production. The 
+definition of Arctic is geographical and includes production activities north of the 66.5 latitude. 
+This includes offshore or onshore oil and gas production.
+--------------------------------------------------------------------------------------
+The Indexes use company ratings and research provided by MSCI ESG Research2 to determine 
+eligibility for Index inclusion . 
+ESG Ratings Eligibility  The Indexes use MSCI ESG Ratings to identify companies that have demonstrated an ability to manage 
+their ESG risks and opportunities. Companies with an MSCI ESG Rating of 'CCC' are excluded from 
+the Indexes. ESG Exclusions The Indexes use MSCI ESG Business In volvement Screening Research to identify companies that are 
+involved in the following business activities. Companies that meet the business involvement criteria 
+are excluded from the Indexes . 
+* Conventional Weapons * Controversial Weapons * Nuclear Weapons * Civilian Firearms * Tobacco * Fossil Fuel Extraction * Thermal Coal Power * Arctic Oil & Gas"
+What’s the exclusion rule regarding thermal coal mining?,"Answer: Companies deriving 5% or more aggregate revenue from thermal coal mining are excluded. This includes revenue from the mining of thermal coal (such as lignite, bituminous, anthracite, and steam coal) and its sale to external parties. However, it does not cover revenue from metallurgical coal, coal mined for internal power generation, intra-company sales of mined thermal coal, or revenue from coal trading.
+
+"," All companies deriving 5% or more aggregate revenue (either reported or estimated) from 
+thermal coal mining and unconventional oil and gas extraction. * Thermal Coal Mining : Revenue from the mining of thermal coal (including lignite, 
+bituminous, anthracite and steam coal) and its sale to external parties. It does not cover 
+revenue from metallurgical coal; coal mined for internal power generation (e.g. in the case 
+of vertically integrated power producers); intra -company sales of mined thermal coal;  and 
+revenue from coal trading * Unconventional Oil & Gas Extraction:  Revenue from oil sands, oil shale (kerogen -rich 
+deposits), shale gas, shale oil, coal seam gas, and coal bed methane. It does not cover  all 
+types of conventional oil and gas production inc luding Arctic onshore/offshore, deep water, shallow water and other onshore/offshore. * Thermal Coal Power"
+What’s the exclusion rule regarding thermal coal power?,"Answer: Companies deriving 5% or more revenue from thermal coal-based power generation are excluded.
+"," All companies deriving 5% or more revenue (either reported or estimated) from thermal coal -
+based power generation . 
+* Arctic Oil & Gas  All companies deriv ing 5% or more revenue from arctic oil and arctic gas production. The 
+definition of Arctic is geographical and includes production activities north of the 66.5 latitude. 
+This includes offshore or onshore oil and gas production."
+What’s the exclusion rule regarding unconventional oil and gas extraction?,"Answer: Companies deriving 5% or more aggregate revenue from unconventional oil and gas extraction are excluded. Unconventional oil and gas extraction includes revenue from oil sands, oil shale (kerogen-rich deposits), shale gas, shale oil, coal seam gas, and coal bed methane. This exclusion does not cover all types of conventional oil and gas production, including Arctic onshore/offshore, deep water, shallow water, and other onshore/offshore activities.
+
+"," All companies deriving 5% or more aggregate revenue (either reported or estimated) from 
+thermal coal mining and unconventional oil and gas extraction. * Thermal Coal Mining : Revenue from the mining of thermal coal (including lignite, 
+bituminous, anthracite and steam coal) and its sale to external parties. It does not cover 
+revenue from metallurgical coal; coal mined for internal power generation (e.g. in the case 
+of vertically integrated power producers); intra -company sales of mined thermal coal;  and 
+revenue from coal trading * Unconventional Oil & Gas Extraction:  Revenue from oil sands, oil shale (kerogen -rich 
+deposits), shale gas, shale oil, coal seam gas, and coal bed methane. It does not cover  all 
+types of conventional oil and gas production inc luding Arctic onshore/offshore, deep water, shallow water and other onshore/offshore. * Thermal Coal Power"
+What’s the exclusion rule regarding conventional oil and gas extraction?,"Answer: The exclusion rule regarding conventional oil and gas extraction specifies that it does not cover all types of conventional oil and gas production, including Arctic onshore/offshore, deep water, shallow water, and other onshore/offshore. The focus is on unconventional oil and gas extraction, which includes revenue from oil sands, oil shale, shale gas, shale oil, coal seam gas, and coal bed methane.
+
+"," All companies deriving 5% or more aggregate revenue (either reported or estimated) from 
+thermal coal mining and unconventional oil and gas extraction. * Thermal Coal Mining : Revenue from the mining of thermal coal (including lignite, 
+bituminous, anthracite and steam coal) and its sale to external parties. It does not cover 
+revenue from metallurgical coal; coal mined for internal power generation (e.g. in the case 
+of vertically integrated power producers); intra -company sales of mined thermal coal;  and 
+revenue from coal trading * Unconventional Oil & Gas Extraction:  Revenue from oil sands, oil shale (kerogen -rich 
+deposits), shale gas, shale oil, coal seam gas, and coal bed methane. It does not cover  all 
+types of conventional oil and gas production inc luding Arctic onshore/offshore, deep water, shallow water and other onshore/offshore. * Thermal Coal Power"
+What’s the exclusion rule regarding oil and gas services?,"Answer: The exclusion rule regarding oil and gas services involves excluding companies deriving 5% or more aggregate revenue from unconventional oil and gas extraction. This includes revenue from oil sands, oil shale, shale gas, shale oil, coal seam gas, and coal bed methane. However, it does not cover all types of conventional oil and gas production, including Arctic onshore/offshore, deep water, shallow water, and other onshore/offshore activities.
+
+"," All companies deriving 5% or more aggregate revenue (either reported or estimated) from 
+thermal coal mining and unconventional oil and gas extraction. * Thermal Coal Mining : Revenue from the mining of thermal coal (including lignite, 
+bituminous, anthracite and steam coal) and its sale to external parties. It does not cover 
+revenue from metallurgical coal; coal mined for internal power generation (e.g. in the case 
+of vertically integrated power producers); intra -company sales of mined thermal coal;  and 
+revenue from coal trading * Unconventional Oil & Gas Extraction:  Revenue from oil sands, oil shale (kerogen -rich 
+deposits), shale gas, shale oil, coal seam gas, and coal bed methane. It does not cover  all 
+types of conventional oil and gas production inc luding Arctic onshore/offshore, deep water, shallow water and other onshore/offshore. * Thermal Coal Power"
+What’s the exclusion rule regarding oil and gas power?,"Answer: The exclusion rule regarding oil and gas power involves excluding companies that derive 5% or more revenue from thermal coal-based power generation and Arctic oil and gas production. Additionally, companies involved in fossil fuel extraction, thermal coal power, and Arctic oil and gas are excluded from the indexes.
+
+"," All companies deriving 5% or more revenue (either reported or estimated) from thermal coal -
+based power generation . 
+* Arctic Oil & Gas  All companies deriv ing 5% or more revenue from arctic oil and arctic gas production. The 
+definition of Arctic is geographical and includes production activities north of the 66.5 latitude. 
+This includes offshore or onshore oil and gas production.
+--------------------------------------------------------------------------------------
+The Indexes use company ratings and research provided by MSCI ESG Research2 to determine 
+eligibility for Index inclusion . 
+ESG Ratings Eligibility  The Indexes use MSCI ESG Ratings to identify companies that have demonstrated an ability to manage 
+their ESG risks and opportunities. Companies with an MSCI ESG Rating of 'CCC' are excluded from 
+the Indexes. ESG Exclusions The Indexes use MSCI ESG Business In volvement Screening Research to identify companies that are 
+involved in the following business activities. Companies that meet the business involvement criteria 
+are excluded from the Indexes . 
+* Conventional Weapons * Controversial Weapons * Nuclear Weapons * Civilian Firearms * Tobacco * Fossil Fuel Extraction * Thermal Coal Power * Arctic Oil & Gas
+--------------------------------------------------------------------------------------
+1 Introduct ion 
+The MSCI Select ESG Screened Indexes (""the Indexes"") are free float -adjusted market capitalization -
+weighted indexes that exclude companies from underlying MSCI indexes (""Parent Indexes"") based on 
+Environmental, Social and Governance (ESG) criteria. The  following companies are excluded:  * Companies that are associated with conventional, controversial, civilian, and nuclear weapons as 
+well as tobacco, palm oil and arctic oil & gas or * Companies that are assigned an MSCI ESG Rating of 'CCC' or * Companies that derive revenues from thermal coal power and extraction of select fossil fuels  or 
+* Companies that are involved in Red Flag ESG controversies, Orange Flag Land Use and Biodiversity 
+controversies or Orange Flag Supply Chain Management controversies  or 
+* Compan ies that are not in compliance with the United Nations Global Compact principles In addition, the Indexes target a minimum 30% reduction in carbon emission intensity relative to the 
+underlying parent indexes (""Parent Indexes"")1. 
+  
+1 The Indexes are governed by a set of methodology and policy documents (""Methodology Set""), including the present i ndex 
+methodology document. The Methodology Set for the Indexes can be accessed from MSCI's webpage https://www.msci.com/index -
+methodology in the section 'Search Methodology by Index Name or Index Code'."
+What’s the exclusion rule regarding fossil fuel reserves?,"Answer: The exclusion rule regarding fossil fuel reserves involves excluding companies that derive 5% or more aggregate revenue from thermal coal mining and unconventional oil and gas extraction. This includes revenue from oil sands, oil shale, shale gas, shale oil, coal seam gas, and coal bed methane, but does not cover all types of conventional oil and gas production.
+
+"," All companies deriving 5% or more aggregate revenue (either reported or estimated) from 
+thermal coal mining and unconventional oil and gas extraction. * Thermal Coal Mining : Revenue from the mining of thermal coal (including lignite, 
+bituminous, anthracite and steam coal) and its sale to external parties. It does not cover 
+revenue from metallurgical coal; coal mined for internal power generation (e.g. in the case 
+of vertically integrated power producers); intra -company sales of mined thermal coal;  and 
+revenue from coal trading * Unconventional Oil & Gas Extraction:  Revenue from oil sands, oil shale (kerogen -rich 
+deposits), shale gas, shale oil, coal seam gas, and coal bed methane. It does not cover  all 
+types of conventional oil and gas production inc luding Arctic onshore/offshore, deep water, shallow water and other onshore/offshore. * Thermal Coal Power"
+What agenda does the Indexes have regarding carbon emissions?,"Answer: The Indexes have an agenda to reduce carbon emission intensity by at least 30% relative to the underlying parent indexes. This is achieved by excluding additional securities if necessary, through an iterative process, to ensure the GHG intensity is reduced by the targeted amount.
+
+","1 Introduct ion 
+The MSCI Select ESG Screened Indexes (""the Indexes"") are free float -adjusted market capitalization -
+weighted indexes that exclude companies from underlying MSCI indexes (""Parent Indexes"") based on 
+Environmental, Social and Governance (ESG) criteria. The  following companies are excluded:  * Companies that are associated with conventional, controversial, civilian, and nuclear weapons as 
+well as tobacco, palm oil and arctic oil & gas or * Companies that are assigned an MSCI ESG Rating of 'CCC' or * Companies that derive revenues from thermal coal power and extraction of select fossil fuels  or 
+* Companies that are involved in Red Flag ESG controversies, Orange Flag Land Use and Biodiversity 
+controversies or Orange Flag Supply Chain Management controversies  or 
+* Compan ies that are not in compliance with the United Nations Global Compact principles In addition, the Indexes target a minimum 30% reduction in carbon emission intensity relative to the 
+underlying parent indexes (""Parent Indexes"")1. 
+  
+1 The Indexes are governed by a set of methodology and policy documents (""Methodology Set""), including the present i ndex 
+methodology document. The Methodology Set for the Indexes can be accessed from MSCI's webpage https://www.msci.com/index -
+methodology in the section 'Search Methodology by Index Name or Index Code'.
+--------------------------------------------------------------------------------------
+2.3 Weighting  Scheme The remaining securities, after the exclusions based on section 2.2, are weighted in proportion of their 
+free float -adjusted market capitalization. Additionally, security weights are adjusted to specific requirements of neutrality and active exposure 
+relative to sector/country/region categories as detailed in Appendix III.  The applicable region 
+neutrality and active exposure co nstraints, along with the GHG -Intensity reduction described in the 
+next section (2.4) , are applied through an iterative process until all restrictions are met simultaneously. 2.4 GHG Intensity Reduction   After the weighting scheme is applied as per section 2. 3, the GHG intensity relative to the Parent Index 
+is assessed. If the GHG intensity3 is not at least 30% lower than the Parent Index , additional securities 
+are excluded from the Eligible Universe to achieve a reduction of 30% GHG intensity relative to the 
+Parent Index. The following iterative process is applied : 
+1. Securities are ranked in descending order of GHG intensity. 2. The security with the highest GHG intensity is excluded and the resulting Index is compared 
+to the Parent Index, to deter mine if a 30% reduction in GHG intensity has been achieved.  
+3 Please refer to Appendix I V for details of the calculation of GHG Intensity. 3. If the reduction has been achieved, no further securities are excluded. If the reduction has not 
+been achieved, further securities are excluded as per steps 1 and 2 until the 30% reduction is 
+achieved . 
+ 3 Maintaining the MSCI Select ESG Screened Indexes 3.1 Quarterly Index Reviews The Indexes are reviewed on a quarterly basis to coincide with the regular Index Reviews of the MSCI 
+Global Investable Market Indexes. The changes are implemented as of the close of the last business 
+day of February, May, August and November. In general, MSCI uses MSCI ESG Research data4 (including MSCI ESG Ratings, MSCI ESG 
+Controversies Scores , MSCI Business Involvement Screening Research  and MSCI Climate Change 
+Metrics ) as of the end of the month preceding the Index Reviews for the rebalancing of the I ndex. For 
+some securities, such data may not be published by MSCI ESG Research by the end of the month 
+preceding the Index Review. For such securities, MSCI will use ESG data published after the end of 
+month, when available, for the rebalancing of the Inde x. The pro forma Indexes are in general announced nine business days before the effective date. 3.2 Monthly Review of Controversies Index constituents are reviewed on a monthly basis for the involvement in ESG controversies and for 
+compliance with the United  Nations Global Compact Principles. Existing constituents will be deleted 
+if they face controversies as defined as defined by MSCI ESG Controversy Score of 0 ('Red flag' 
+companies), or if they fail to comply with the UN Global Compact Principles. MSCI uses  MSCI ESG Controversies data as of the end of the month preceding the review (e.g., end of 
+June data for the end of July monthly review). For some securities, such data may not be published 
+by MSCI ESG Research by the end of the month preceding the review.  For such securities, MSCI will 
+use ESG data published after the end of month, when available, for the monthly review of the Index."
+What’s the exclusion rule regarding tobacco?,"Answer: The exclusion rule regarding tobacco is that all companies classified as a ""Producer"" and all companies deriving 5% or more aggregate revenue from the production, distribution, retail, supply, and licensing of tobacco-related products are excluded.
+
+","- All companies de riving 5% or more aggregate revenue from the production and 
+distribution (wholesale or retail) of firearms or small arms ammunition intended for 
+civilian use. * Conventional Weapons - All companies deriving 5% or more revenue from the production of conventiona l 
+weapons and components . 
+- All companies deriving 10% or more aggregate revenue from weapons systems, 
+components, and support systems and services . 
+* Tobacco - All companies classified as a ""Producer"". - All companies deriving 5% or more aggregate revenue from the production, 
+distribution, retail, supply and licensing of tobacco -related products."
+What’s the exclusion rule regarding alcohol?,"Answer: The provided chunks do not contain any information regarding an exclusion rule specifically related to alcohol.
+
+",Source Chunks: None
+What’s the exclusion rule regarding gambling?,"Answer: The provided chunks do not contain specific information about an exclusion rule regarding gambling. Therefore, I don't have enough information to provide a complete answer.
+
+",Source Chunks: None
+What’s the exclusion rule regarding adult entertainment?,"Answer: The provided chunks do not contain specific information regarding the exclusion rule for adult entertainment. 
+",Source Chunks: None
+What’s the exclusion rule regarding palm oil?,"Answer: Companies deriving 5% or more aggregate revenue from the production of palm oil are excluded from the indexes.
+"," All companies deriv ing 5% or more aggregate revenue from the production of Palm Oil. * Global Norms - United Nations Global Compact Compliance  All companies that fail to comply with the United Nations Global Compact principles . 
+Appendix II: Eligible Universe The Eligible Unive rse for the Indexes includes all the constituents of their respective MSCI Parent 
+Index, as shown below . 
+Index Name  Parent Index MSCI World Select ESG Screened Index  MSCI World MSCI USA Select ESG Screened Index  MSCI USA MSCI Japan Select ESG Screened Index  MSCI Japan MSCI EM Select ESG Screened Index  MSCI EM MSCI Europe Select ESG Screened Index  MSCI Europe MSCI EMU Select ESG Screened Index  MSCI EMU MSCI ACWI Select ESG Screened Index  MSCI ACWI MSCI EM Asia Select ESG Screened Index  MSCI EM Asia MSCI Pacific ex Japan Select ESG Screened 
+Index  MSCI Pacific ex Japan MSCI Canada Select ESG Screened Index  MSCI Canada MSCI China A Inclusion Select ESG Screened 
+Index  MSCI China A Inclusion"
+What’s the exclusion rule regarding genetically modified organism?,"Answer: The provided chunks do not contain any information regarding an exclusion rule specifically related to genetically modified organisms (GMOs).
+
+",Source Chunks: None
+What’s the exclusion rule regarding conventional weapons?,"Answer: The exclusion rule regarding conventional weapons is that all companies deriving 5% or more revenue from the production of conventional weapons and components are excluded. Additionally, companies deriving 10% or more aggregate revenue from weapons systems, components, and support systems and services are also excluded.
+
+","- All companies de riving 5% or more aggregate revenue from the production and 
+distribution (wholesale or retail) of firearms or small arms ammunition intended for 
+civilian use. * Conventional Weapons - All companies deriving 5% or more revenue from the production of conventiona l 
+weapons and components . 
+- All companies deriving 10% or more aggregate revenue from weapons systems, 
+components, and support systems and services . 
+* Tobacco - All companies classified as a ""Producer"". - All companies deriving 5% or more aggregate revenue from the production, 
+distribution, retail, supply and licensing of tobacco -related products."
+What’s the exclusion rule regarding controversial weapons?,"Answer: The exclusion rule regarding controversial weapons involves excluding all companies with any tie to controversial weapons, which include cluster munitions, landmines, depleted uranium weapons, biological/chemical weapons, blinding lasers, non-detectable fragments, and incendiary weapons. This is defined by the methodology of the MSCI Ex-Controversial Weapons Indexes, and a ""Highly Restrictive"" screen is applied to these companies.
+
+","- All companies with any tie to Controversial Weapons (cluster munitions, landmines, 
+depleted uranium weapons, biological/chemi cal weapons, blinding lasers, non -
+detectable fragments and incendiary weapons), as defined by the methodology of the 
+MSCI Ex -Controversial Weapons Indexes  available at 
+https://www .msci.com/i ndex/methodology/latest/XCW  
+""Highly Restrictive"" screen applied"
+What’s the exclusion rule regarding nuclear weapons?,"Answer: The exclusion rule regarding nuclear weapons involves excluding all companies that are involved in the following activities: manufacturing nuclear warheads and/or whole nuclear missiles, manufacturing components developed or significantly modified for exclusive use in nuclear weapons, manufacturing or assembling delivery platforms developed or significantly modified for the exclusive delivery of nuclear weapons, providing auxiliary services related to nuclear weapons, and manufacturing components or delivery platforms that are not exclusively developed for nuclear weapons but can be used in them.
+
+","* Nuclear Weapons - All companies that manufacture nuclear warheads and/or whole nuclear missiles. - All companies that manufacture components that were developed or are significantly 
+modified for exclusive use in nuclear weapons (warheads and missiles). - All companies that manufacture or assemble delivery platforms that were developed 
+or significantly modified for the exclusive delivery of nuclear weapons. - All companies that provide aux iliary services related to nuclear weapons. - All companies that manufacture components that were not developed or not 
+significantly modified for exclusive use in nuclear weapons (warheads and missiles) 
+but can be used in nuclear weapons. - All companies that manufacture or assemble delivery platforms that were not 
+developed or not significantly modified for the exclusive delivery of nuclear weapons 
+but have the capability to deliver nuclear weapons."
+What’s the exclusion rule regarding civilian firearms?,"Answer: Companies deriving 5% or more aggregate revenue from the production and distribution (wholesale or retail) of firearms or small arms ammunition intended for civilian use are excluded.
+
+","- All companies de riving 5% or more aggregate revenue from the production and 
+distribution (wholesale or retail) of firearms or small arms ammunition intended for 
+civilian use. * Conventional Weapons - All companies deriving 5% or more revenue from the production of conventiona l 
+weapons and components . 
+- All companies deriving 10% or more aggregate revenue from weapons systems, 
+components, and support systems and services . 
+* Tobacco - All companies classified as a ""Producer"". - All companies deriving 5% or more aggregate revenue from the production, 
+distribution, retail, supply and licensing of tobacco -related products."
+"For the weighting scheme, how does MSCI address situations where achieving region neutrality could conflict with country-specific caps?","Answer: MSCI addresses situations where achieving region neutrality could conflict with country-specific caps by applying an iterative process to adjust security weights. This process ensures that the constraints of region neutrality and active exposure relative to sector/country/region categories are met simultaneously. The weights are adjusted to specific requirements of neutrality and active exposure, as detailed in Appendix III, until all restrictions are satisfied.
+
+","2.3 Weighting  Scheme The remaining securities, after the exclusions based on section 2.2, are weighted in proportion of their 
+free float -adjusted market capitalization. Additionally, security weights are adjusted to specific requirements of neutrality and active exposure 
+relative to sector/country/region categories as detailed in Appendix III.  The applicable region 
+neutrality and active exposure co nstraints, along with the GHG -Intensity reduction described in the 
+next section (2.4) , are applied through an iterative process until all restrictions are met simultaneously. 2.4 GHG Intensity Reduction   After the weighting scheme is applied as per section 2. 3, the GHG intensity relative to the Parent Index 
+is assessed. If the GHG intensity3 is not at least 30% lower than the Parent Index , additional securities 
+are excluded from the Eligible Universe to achieve a reduction of 30% GHG intensity relative to the 
+Parent Index. The following iterative process is applied : 
+1. Securities are ranked in descending order of GHG intensity. 2. The security with the highest GHG intensity is excluded and the resulting Index is compared 
+to the Parent Index, to deter mine if a 30% reduction in GHG intensity has been achieved.  
+3 Please refer to Appendix I V for details of the calculation of GHG Intensity. 3. If the reduction has been achieved, no further securities are excluded. If the reduction has not 
+been achieved, further securities are excluded as per steps 1 and 2 until the 30% reduction is 
+achieved . 
+ 3 Maintaining the MSCI Select ESG Screened Indexes 3.1 Quarterly Index Reviews The Indexes are reviewed on a quarterly basis to coincide with the regular Index Reviews of the MSCI 
+Global Investable Market Indexes. The changes are implemented as of the close of the last business 
+day of February, May, August and November. In general, MSCI uses MSCI ESG Research data4 (including MSCI ESG Ratings, MSCI ESG 
+Controversies Scores , MSCI Business Involvement Screening Research  and MSCI Climate Change 
+Metrics ) as of the end of the month preceding the Index Reviews for the rebalancing of the I ndex. For 
+some securities, such data may not be published by MSCI ESG Research by the end of the month 
+preceding the Index Review. For such securities, MSCI will use ESG data published after the end of 
+month, when available, for the rebalancing of the Inde x. The pro forma Indexes are in general announced nine business days before the effective date. 3.2 Monthly Review of Controversies Index constituents are reviewed on a monthly basis for the involvement in ESG controversies and for 
+compliance with the United  Nations Global Compact Principles. Existing constituents will be deleted 
+if they face controversies as defined as defined by MSCI ESG Controversy Score of 0 ('Red flag' 
+companies), or if they fail to comply with the UN Global Compact Principles. MSCI uses  MSCI ESG Controversies data as of the end of the month preceding the review (e.g., end of 
+June data for the end of July monthly review). For some securities, such data may not be published 
+by MSCI ESG Research by the end of the month preceding the review.  For such securities, MSCI will 
+use ESG data published after the end of month, when available, for the monthly review of the Index."
+"Under the “Monthly Review of Controversies”, how does MSCI proceed if data for certain securities is unavailable by the end of the month?","Answer: If data for certain securities is unavailable by the end of the month, MSCI will use ESG data published after the end of the month, when available, for the monthly review of the Index.
+
+","2.3 Weighting  Scheme The remaining securities, after the exclusions based on section 2.2, are weighted in proportion of their 
+free float -adjusted market capitalization. Additionally, security weights are adjusted to specific requirements of neutrality and active exposure 
+relative to sector/country/region categories as detailed in Appendix III.  The applicable region 
+neutrality and active exposure co nstraints, along with the GHG -Intensity reduction described in the 
+next section (2.4) , are applied through an iterative process until all restrictions are met simultaneously. 2.4 GHG Intensity Reduction   After the weighting scheme is applied as per section 2. 3, the GHG intensity relative to the Parent Index 
+is assessed. If the GHG intensity3 is not at least 30% lower than the Parent Index , additional securities 
+are excluded from the Eligible Universe to achieve a reduction of 30% GHG intensity relative to the 
+Parent Index. The following iterative process is applied : 
+1. Securities are ranked in descending order of GHG intensity. 2. The security with the highest GHG intensity is excluded and the resulting Index is compared 
+to the Parent Index, to deter mine if a 30% reduction in GHG intensity has been achieved.  
+3 Please refer to Appendix I V for details of the calculation of GHG Intensity. 3. If the reduction has been achieved, no further securities are excluded. If the reduction has not 
+been achieved, further securities are excluded as per steps 1 and 2 until the 30% reduction is 
+achieved . 
+ 3 Maintaining the MSCI Select ESG Screened Indexes 3.1 Quarterly Index Reviews The Indexes are reviewed on a quarterly basis to coincide with the regular Index Reviews of the MSCI 
+Global Investable Market Indexes. The changes are implemented as of the close of the last business 
+day of February, May, August and November. In general, MSCI uses MSCI ESG Research data4 (including MSCI ESG Ratings, MSCI ESG 
+Controversies Scores , MSCI Business Involvement Screening Research  and MSCI Climate Change 
+Metrics ) as of the end of the month preceding the Index Reviews for the rebalancing of the I ndex. For 
+some securities, such data may not be published by MSCI ESG Research by the end of the month 
+preceding the Index Review. For such securities, MSCI will use ESG data published after the end of 
+month, when available, for the rebalancing of the Inde x. The pro forma Indexes are in general announced nine business days before the effective date. 3.2 Monthly Review of Controversies Index constituents are reviewed on a monthly basis for the involvement in ESG controversies and for 
+compliance with the United  Nations Global Compact Principles. Existing constituents will be deleted 
+if they face controversies as defined as defined by MSCI ESG Controversy Score of 0 ('Red flag' 
+companies), or if they fail to comply with the UN Global Compact Principles. MSCI uses  MSCI ESG Controversies data as of the end of the month preceding the review (e.g., end of 
+June data for the end of July monthly review). For some securities, such data may not be published 
+by MSCI ESG Research by the end of the month preceding the review.  For such securities, MSCI will 
+use ESG data published after the end of month, when available, for the monthly review of the Index."
+"In cases of a spin-off resulting in multiple new securities,  what determines which of these securities may be reconsidered for the next Index Review?","Answer: In cases of a spin-off resulting in multiple new securities, the determination of which securities may be reconsidered for the next Index Review is based on the reevaluation of all securities created as a result of the spin-off of an existing Index constituent. These securities will not be added to the Indexes at the time of the event implementation but will be reevaluated for addition in the Indexes at the subsequent Index Review.
+
+","3.3 Ongoing Event -Related Maintenance   The following section briefly describes the treatment of common corporate events within the Indexes. No new securities will be added (except where noted below) to the Indexes between Index Reviews. 
+For cases where additions are noted  below, securities will be added to the Index only if added to the 
+Parent Index. Parent Index deletions will be reflected simultaneously. There are no deletions from the Indexes between Index Reviews on account of a security becoming 
+ineligible because of  a change in business involvement, MSCI ESG Rating and/or failure to comply 
+with the UN Global Compact Principles and/or decrease in MSCI ESG Controversies Score . 
+ 
+  
+4 See section 4 for details of data sourced from MSCI ESG Research used in the Indexes. EVENT TYPE      EVENT DETAILS    
+New additions to the Parent Index  A new security added to the Parent Index (such as IPO 
+and other early inclusions), will not be added to the 
+Index.   
+Spin -Offs  All securities created as a result of the spin -off of an 
+existing Index constituent will not be added to the 
+Indexes  at the time of event implementation. 
+Reevaluation for addition in the Indexes will occur at 
+the subsequent Index Review.  
+Merger/Acquisition  If an existing Index constituent is acquired by a non -
+Index constituent, the existing constituent will be 
+deleted from the Inde x and the acquiring non -
+constituent will not be added to the Index.  
+Changes in Security Characteristics  A security will continue to be an Index constituent if 
+there are changes in characteristics (country, sector, 
+size segment, etc.) Reevaluation for cont inued 
+inclusion in the Index will occur at the subsequent 
+Index Review.  
+Further detail and illustration regarding specific treatment of corporate events relevant to this Index 
+can be found in the MSCI Corporate Events Methodology book."
+"What specific circumstances would lead MSCI to assess a security's environmental, social,  and governance scores after an Index Review rather than during it?","Answer: MSCI assesses a security's environmental, social, and governance scores after an Index Review rather than during it when the ESG data for some securities is not published by MSCI ESG Research by the end of the month preceding the Index Review. In such cases, MSCI will use ESG data published after the end of the month, when available, for the rebalancing of the Index.
+
+","2.3 Weighting  Scheme The remaining securities, after the exclusions based on section 2.2, are weighted in proportion of their 
+free float -adjusted market capitalization. Additionally, security weights are adjusted to specific requirements of neutrality and active exposure 
+relative to sector/country/region categories as detailed in Appendix III.  The applicable region 
+neutrality and active exposure co nstraints, along with the GHG -Intensity reduction described in the 
+next section (2.4) , are applied through an iterative process until all restrictions are met simultaneously. 2.4 GHG Intensity Reduction   After the weighting scheme is applied as per section 2. 3, the GHG intensity relative to the Parent Index 
+is assessed. If the GHG intensity3 is not at least 30% lower than the Parent Index , additional securities 
+are excluded from the Eligible Universe to achieve a reduction of 30% GHG intensity relative to the 
+Parent Index. The following iterative process is applied : 
+1. Securities are ranked in descending order of GHG intensity. 2. The security with the highest GHG intensity is excluded and the resulting Index is compared 
+to the Parent Index, to deter mine if a 30% reduction in GHG intensity has been achieved.  
+3 Please refer to Appendix I V for details of the calculation of GHG Intensity. 3. If the reduction has been achieved, no further securities are excluded. If the reduction has not 
+been achieved, further securities are excluded as per steps 1 and 2 until the 30% reduction is 
+achieved . 
+ 3 Maintaining the MSCI Select ESG Screened Indexes 3.1 Quarterly Index Reviews The Indexes are reviewed on a quarterly basis to coincide with the regular Index Reviews of the MSCI 
+Global Investable Market Indexes. The changes are implemented as of the close of the last business 
+day of February, May, August and November. In general, MSCI uses MSCI ESG Research data4 (including MSCI ESG Ratings, MSCI ESG 
+Controversies Scores , MSCI Business Involvement Screening Research  and MSCI Climate Change 
+Metrics ) as of the end of the month preceding the Index Reviews for the rebalancing of the I ndex. For 
+some securities, such data may not be published by MSCI ESG Research by the end of the month 
+preceding the Index Review. For such securities, MSCI will use ESG data published after the end of 
+month, when available, for the rebalancing of the Inde x. The pro forma Indexes are in general announced nine business days before the effective date. 3.2 Monthly Review of Controversies Index constituents are reviewed on a monthly basis for the involvement in ESG controversies and for 
+compliance with the United  Nations Global Compact Principles. Existing constituents will be deleted 
+if they face controversies as defined as defined by MSCI ESG Controversy Score of 0 ('Red flag' 
+companies), or if they fail to comply with the UN Global Compact Principles. MSCI uses  MSCI ESG Controversies data as of the end of the month preceding the review (e.g., end of 
+June data for the end of July monthly review). For some securities, such data may not be published 
+by MSCI ESG Research by the end of the month preceding the review.  For such securities, MSCI will 
+use ESG data published after the end of month, when available, for the monthly review of the Index."
+"How is revenue from fossil fuel extraction categorized differently in terms of ""restrictiveness levels"" in comparison to other exclusions,  such as conventional weapons?","Answer: Revenue from fossil fuel extraction is not categorized under the ""restrictiveness levels"" framework used by MSCI ESG Research for other exclusions. While controversial activities like conventional weapons are assigned to specific restrictiveness levels (such as ""Most Restrictive"" for controversial weapons), fossil fuel extraction is explicitly excluded from this categorization. This indicates that fossil fuel extraction is treated differently and does not fall under the same restrictiveness level framework as other exclusions like conventional weapons.
+
+","MSCI ESG Research has developed a framework designed to define significant involvement in 
+controversial activities. According to this framework, there are four level s of restrictiveness : Most 
+Restrictive, Highly Restrictive, Moderately Restrictive  and Least Restrictive . 
+Each controversial activity screened by the MSCI ESG Screened Indexes ( except Fossil Fuel Extraction, 
+Thermal Coal Power, Palm Oil, Arctic Oil & Gas and Global Norms ) is assigned to one of these 
+restrictiveness  levels : 
+ 
+""Most Restrictive"" screen applied * Controversial Weapons
+--------------------------------------------------------------------------------------
+* Fossil Fuel Extraction"
