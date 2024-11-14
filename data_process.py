@@ -67,10 +67,10 @@ def preprocess_text(text_list):
         if disclaimer_pattern.search(page_text):
             disclaimer_page = page
 
-    if (disclaimer_page) and (disclaimer_page >= len(text_list) - 3):
-        text_list = text_list[:disclaimer_page]
     if contacts:
         text_list.remove(contacts)
+    if (disclaimer_page) and (disclaimer_page >= len(text_list) - 3):
+        text_list = text_list[:disclaimer_page]
 
     # Search for the first occurrence of a line that ends with a number
     page_number_pattern = re.compile(r'(\d+)\s*$')  # digits followed by trailing whitespaces, at end of line

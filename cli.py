@@ -22,8 +22,6 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 from semantic_splitter import SemanticChunker
 
 # Setup TODO
-GCP_PROJECT = os.environ["GCP_PROJECT"]
-GCP_LOCATION = "us-central1"
 GENERATIVE_MODEL = "gpt-4o"
 INPUT_FOLDER = "inputs"
 OUTPUT_FOLDER = "outputs"
@@ -68,35 +66,25 @@ You will be given a query and some contexts below. When answering a query, make 
 # - All questions contain a key phrase. For example, in the question "What’s the exclusion rule regarding oil and gas services?", the key phrase is oil and gas services. (1) Search all chunks for this keyword. (2) If found, generate an answer using that chunk. (3) Otherwise, respond with: "The provided chunks do not mention '<keyword>'."
 
 
+
 ### Embedding ###
 # Load pre-trained model and tokenizer
 tokenizer = AutoTokenizer.from_pretrained("albert-base-v2", cache_dir="model")
 model = AutoModel.from_pretrained("albert-base-v2", cache_dir="model")
-# tokenizer = LongformerTokenizer.from_pretrained("allenai/longformer-base-4096", cache_dir="model")
-# model = LongformerModel.from_pretrained("allenai/longformer-base-4096", cache_dir="model")
 
 # Ensure the model is in evaluation mode
 model.eval()
 
-def get_batch_embedding(batch):
-	# Tokenize the input text and get the input IDs
-	inputs = tokenizer(batch, return_tensors="pt", padding=True, truncation=True)
-
-	# Forward pass through the model to get outputs
-	with torch.no_grad():
-		outputs = model(**inputs, output_hidden_states=True)
-
-	# Extract the embeddings for the CLS token
-	cls_embedding = outputs.last_hidden_state[:, 0, :]  # [batch_size, embedding_dim]
-	return cls_embedding.cpu().numpy()
-
-def generate_batch_embeddings(chunks, batch_size=32):
-	dataloader = DataLoader(chunks, batch_size=batch_size, collate_fn=lambda x: x)
+def generate_embeddings(chunks):
 	embeddings = []
-	for chunk_batch in dataloader:
-		batch_embeddings = get_batch_embedding(chunk_batch)
-		embeddings.append(batch_embeddings)
-	return np.vstack(embeddings)  # [num_chunks, embedding_dim]
+	for chunk in chunks:
+		inputs = tokenizer(chunk, return_tensors="pt", padding=True, truncation=True)
+		with torch.no_grad():
+			outputs = model(**inputs, output_hidden_states=True)
+		cls_embedding = outputs.last_hidden_state[:, 0, :]
+		cls_embedding = torch.nn.functional.normalize(cls_embedding).cpu().numpy()
+		embeddings.append(cls_embedding)
+	return np.vstack(embeddings) # [num_chunks, embedding_dim]
 
 def generate_query_embedding(text, model="text-embedding-3-small"):
 	return client.embeddings.create(input = [text], model=model).data[0].embedding
@@ -191,7 +179,7 @@ def chunk(method="semantic-split"):
 		elif method == "semantic-split":
 			# Init the splitter
 			text_splitter = SemanticChunker(
-				embedding_function=generate_batch_embeddings,
+				embedding_function=generate_embeddings,
 				breakpoint_threshold_type="percentile",
 				breakpoint_threshold_amount=85
 			)
