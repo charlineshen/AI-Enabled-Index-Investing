@@ -88,9 +88,9 @@ def preprocess_text(text_list):
     text = "\n".join(text_list[start_page:])
     return text
 
-def save_text_to_file(text, zip_path, pdf_name):
+def save_text_to_file(text, text_dir, pdf_name):
     # Extract the filename without extension
-    text_dir = zip_path.replace('index-doc', 'inputs').replace('.zip', '/')
+    # text_dir = zip_path.replace('index-doc', 'inputs').replace('.zip', '/')
     base_name = pdf_name.replace('.pdf', '.txt')
     # Construct the new path for the .txt file
     txt_path = os.path.join(text_dir, base_name)
@@ -102,9 +102,24 @@ def save_text_to_file(text, zip_path, pdf_name):
     
     return txt_path
 
+# Process the PDFs in a folder to txts
+def process_input_pdfs(folder_name):
+    folder_path = 'input_pdfs/' + folder_name
+    for file_name in os.listdir(folder_path):
+        if file_name.endswith('.pdf'):
+            # Open the PDF file
+            with open(os.path.join(folder_path, file_name), 'rb') as pdf_file:
+                reader = PyPDF2.PdfReader(pdf_file)
+                common_index, common_lengths = find_common_index(reader)
+                text_list = extract_text_list(reader, common_index, common_lengths)
+                text = preprocess_text(text_list)
+                ascii_text = unidecode.unidecode(text)
+                text_dir = 'inputs/' + folder_name + '/'
+                save_text_to_file(ascii_text, text_dir, pdf_file.name)
+
 if __name__ == '__main__':
     # Take in zip file, extract pdfs, extract text from pdfs, save text to files
-    zip_path = "index-doc/books.zip"
+    zip_path = "index-doc/MSCI Wolrd Low Carbon SRI Leaders.zip"
     with zipfile.ZipFile(zip_path, 'r') as z:
         # Iterate through the files in the zip
         for file_info in z.infolist():
@@ -118,4 +133,5 @@ if __name__ == '__main__':
                     text_list = extract_text_list(reader, common_index, common_lengths)
                     text = preprocess_text(text_list)
                     ascii_text = unidecode.unidecode(text)
-                    saved_file_path = save_text_to_file(ascii_text, zip_path, pdf_file.name)
+                    text_dir = zip_path.replace('index-doc', 'inputs').replace('.zip', '/')
+                    saved_file_path = save_text_to_file(ascii_text, text_dir, pdf_file.name)

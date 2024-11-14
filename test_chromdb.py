@@ -55,6 +55,20 @@ def query(zip_name, title, question, method="semantic-split"):
 
 	return results
 
+def check_duplicates(title, method="semantic-split"):
+	client = chromadb.HttpClient(host=CHROMADB_HOST, port=CHROMADB_PORT)
+	collection_name = f"{method}-collection"
+	# Get the collection
+	collection = client.get_collection(name=collection_name)
+
+	# retrieve chunks that come from the corresponding PDF
+	collection_filtered = collection.get(where={"title": title})
+	n_chunks = len(collection_filtered["ids"])
+
+	if n_chunks == 0:
+		return False
+	return True
+
 
 if __name__ == "__main__": 
     
@@ -75,13 +89,33 @@ if __name__ == "__main__":
 	# 		print(f"One entry for {key}: {value['title'] for value in values}")
 	# 		print(len(values))
 	
-	title = '3_MSCI_Select_ESG_Screened_Indexes_Methodology_20240209'
-	question = "What's Sector Active Exposure Absolute Limit of MSCI World Select ESG Screened Index"
+
+
+	############################################################### 
+	# general4: Is there a free-float market capitalization adjustment?
+	# general1: What are the criteria for a stock to be eligible for inclusion in the index?
+	'''
+	Check retrieval performance
+	'''
+	title = '1_MSCI_Global_Investable_Market_Indexes_Methodology_20240812'
+	question = "Is there a free-float market capitalization adjustment?"
 	result = query('', title, question, method="semantic-split")
+	print(len(result))
 	
-	json_path = "tmp.json"
+	json_path = "general4.json"
 
     # Save the dictionary as a JSON file
 	with open(json_path, 'w', encoding='utf-8') as json_file:
 		json.dump(result, json_file, indent=4)  # indent=4 for pretty formatting
 	
+
+	################################################################
+	# '''
+	# Test duplicates
+	# '''
+	# title = '3_MSCI_Select_ESG_Screened_Indexes_Methodology_20240209'
+	# print(title, check_duplicates(title, method="semantic-split"))
+
+
+	# title = '3_MSCI_Low_Carbon_SRI_Leaders_Indexes_Methodology_20240219'
+	# print(title, check_duplicates(title, method="semantic-split"))

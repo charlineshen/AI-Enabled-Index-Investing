@@ -54,7 +54,6 @@ You will be given a query and some contexts below. When answering a query, make 
 - Identify the most relevant information from these numbered chunks to address the query's question.
 - Formulate your response using only the information found in the given chunks.
 - If the provided chunks do not contain sufficient information to answer the query, state that you don't have enough information to provide a complete answer.
-- All questions contain a key phrase. For example, in the question "What’s the exclusion rule regarding oil and gas services?", the key phrase is oil and gas services. (1) Search all chunks for this keyword. (2) If found, generate an answer using that chunk. (3) Otherwise, respond with: "The provided chunks do not mention '<keyword>'."
 - If there are contradictions in the provided chunks, mention this in your response and explain the different viewpoints presented.
 - Keep track of the numbers of all the chunks you used to formulate your answer.
 - It is very important that you format your response using this pattern: "Answer: <X>.\nSource Chunks: <Y>.", where <Y> contains the numbers of chunks separated by commas. If no chunk provides useful information, <Y> should be None.
@@ -66,6 +65,8 @@ You will be given a query and some contexts below. When answering a query, make 
 # 2. Search for an **exact match** in the chunks.
 # 3. If found, generate an answer using that chunk.
 # 4. If no exact match, respond with: "The provided chunks do not mention '<keyword>'."
+# - All questions contain a key phrase. For example, in the question "What’s the exclusion rule regarding oil and gas services?", the key phrase is oil and gas services. (1) Search all chunks for this keyword. (2) If found, generate an answer using that chunk. (3) Otherwise, respond with: "The provided chunks do not mention '<keyword>'."
+
 
 ### Embedding ###
 # Load pre-trained model and tokenizer
@@ -308,7 +309,7 @@ def query(zip_name, title, question, method="semantic-split"):
 	results = collection.query(
 		where={"title": title},
 		query_embeddings=[query_embedding],
-		n_results= 20 #min(int(n_chunks**0.4*2), 40) # about 10 out of 50 chunks, 24 out of 200 chunks
+		n_results= min(int(n_chunks**0.4*2), 20) #min(int(n_chunks*0.15), 20) #20 #min(int(n_chunks**0.4*2), 40) # about 10 out of 50 chunks, 24 out of 200 chunks
 	)
 
 	# 3: Query based on embedding value + lexical search filter
@@ -360,10 +361,46 @@ def read_q(input_file):
     print(f"\nNumber of questions: {len(questions)}")
     return questions
 
+def chat_with_arguments(input_folder_name, input_question_file, output_file):
+	questions = read_q(input_question_file)
+	
+	# Save results to an Excel file
+	df = pd.DataFrame()
+	for title in os.listdir(f"{INPUT_FOLDER}/{input_folder_name}"):
+		if not title.endswith('.txt'):
+			continue
+		print("Processing document:", title)
+		title = title.split(".")[0]
+		singledoc_results = []
+		for i in range(len(questions)):
+			query = questions[i]
+			# print("================= query: ", query)
+		
+			# Get the query, chunk, and actual response from the chat agent
+			query, chunk, response, source_chunks = chat_agent(input_folder_name, title, query)
+			# Store results
+			singledoc_results.append({
+					f'{title}-response': response,
+				    f'{title}-source_chunks': source_chunks
+				})
+			# singledoc_results.append({
+			# 		f'{title}-response': response,
+			# 	    f'{title}-source_chunks': source_chunks,
+			# 		f'{title}-chunks': chunk
+			# 	})
+
+		df_singledoc = pd.DataFrame(singledoc_results)
+		df = pd.concat([df, df_singledoc], axis=1)
+		
+	df.index = pd.Index(questions)
+	df.to_csv(output_file, index=True)
+	print(f"Results saved to '{output_file}'.")
+
+
 def chat():
-	input_question_file = "evaluator-data/sample_q.csv"
-	output_file = "results_sample_q.csv"
-	zip_name = 'books'
+	input_question_file = "evaluator-data/question_template_general.csv"
+	output_file = "results_MSCI_SRI_general_nokeyword_prompt.csv"
+	zip_name = 'MSCI Global'
 	questions = read_q(input_question_file)
 	
 	# Save results to an Excel file
@@ -435,6 +472,20 @@ def chat_agent(zip_name, title, question, method="semantic-split"):
 	# print(f"\n============================================GPT RESPONSE============================================\n{response_text}\n")
 	return question, context_chunks, response_text, source_chunks
 
+
+def check_duplicates(title, method="semantic-split"):
+	client = chromadb.HttpClient(host=CHROMADB_HOST, port=CHROMADB_PORT)
+	collection_name = f"{method}-collection"
+	# Get the collection
+	collection = client.get_collection(name=collection_name)
+
+	# retrieve chunks that come from the corresponding PDF
+	collection_filtered = collection.get(where={"title": title})
+	n_chunks = len(collection_filtered["ids"])
+
+	if n_chunks == 0:
+		return False
+	return True
 
 def main(args=None):
 	# print("CLI Arguments:", args)
