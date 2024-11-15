@@ -547,14 +547,17 @@ def check_duplicates(title, method="semantic-split"):
 	client = chromadb.HttpClient(host=CHROMADB_HOST, port=CHROMADB_PORT)
 	collection_name = f"{method}-collection"
 	# Get the collection
-	collection = client.get_collection(name=collection_name)
+	try:
+		collection = client.get_collection(name=collection_name)
+	except:
+		return False
 
 	# retrieve chunks that come from the corresponding PDF
 	collection_filtered = collection.get(where={"title": title})
 	n_chunks = len(collection_filtered["ids"])
 
 	if n_chunks == 0:
-		return Falsquerye
+		return False
 	return True
 
 def main(args=None):
