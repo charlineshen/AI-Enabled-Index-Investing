@@ -374,11 +374,14 @@ def query(zip_name, title, question, method="semantic-split"):
 
 	# 2: Query based on embedding value + metadata filter
 	# retrieve chunks based on embedding similarity compared to query
-	results = collection.query(
-		where={"title": title},
-		query_embeddings=[query_embedding],
-		n_results= min(int(n_chunks**0.4*2), 20) #min(int(n_chunks*0.15), 20) #20 #min(int(n_chunks**0.4*2), 40) # about 10 out of 50 chunks, 24 out of 200 chunks
-	)
+	try:
+		results = collection.query(
+			query_embeddings=[query_embedding],
+			where={"title": title},
+			n_results= min(int(n_chunks**0.4*2), 20) #min(int(n_chunks*0.15), 20) #20 #min(int(n_chunks**0.4*2), 40) # about 10 out of 50 chunks, 24 out of 200 chunks
+		)
+	except Exception as e:
+		print("error occurred:", str(e))
 
 	# 3: Query based on embedding value + lexical search filter
 	# search_string = "Italian"
@@ -509,7 +512,6 @@ def chat_agent(zip_name, title, question, method="semantic-split"):
 	
 	# Query relevant chunks
 	results = query(zip_name, title, question, method)
-
 	numbered_results = [f"{i + 1}.\n{doc}" for i, doc in enumerate(results['documents'][0])]
 	formatted_results = "\n--------------------------------------------------------------------------------------\n".join(numbered_results)
 	# print_output = f"{question}\n\n============================================RETRIEVED TEXT============================================n{formatted_results}"
@@ -552,7 +554,7 @@ def check_duplicates(title, method="semantic-split"):
 	n_chunks = len(collection_filtered["ids"])
 
 	if n_chunks == 0:
-		return False
+		return Falsquerye
 	return True
 
 def main(args=None):
