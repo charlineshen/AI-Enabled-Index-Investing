@@ -3,7 +3,6 @@ import pandas as pd
 import glob
 import hashlib
 import chromadb
-import csv
 from openai import OpenAI
 from semantic_splitter import SemanticChunker
 from tqdm import tqdm
@@ -55,7 +54,7 @@ You will be given a query and some contexts below. When answering a query, make 
 ####################
 from transformers import AutoTokenizer, AutoModel
 import torch
-import np
+import numpy as np
 
 # Load pre-trained model and tokenizer
 tokenizer = AutoTokenizer.from_pretrained("google/mobilebert-uncased", cache_dir="model")

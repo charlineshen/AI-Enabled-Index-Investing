@@ -7,8 +7,6 @@ set -e
 export BASE_DIR=$(pwd)
 export PERSISTENT_DIR=$(pwd)/../persistent-folder/
 export SECRETS_DIR=$(pwd)/../secrets/
-export GCP_PROJECT="marine-bruin-434717-k2" # CHANGE TO YOUR PROJECT ID
-export GOOGLE_APPLICATION_CREDENTIALS="/secrets/llm-service-account.json"
 export OPENAI_API_KEY=$(cat ${SECRETS_DIR}/API_KEY.txt)
 export IMAGE_NAME="llm-rag-cli"
 

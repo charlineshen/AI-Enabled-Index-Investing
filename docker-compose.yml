@@ -9,9 +9,6 @@ services:
         volumes:
             - ../secrets:/secrets
             - ../AI-enabled-Index-Investing:/app
-        environment:
-            GOOGLE_APPLICATION_CREDENTIALS: $GOOGLE_APPLICATION_CREDENTIALS
-            GCP_PROJECT: $GCP_PROJECT
         depends_on:
             - chromadb
     chromadb:
