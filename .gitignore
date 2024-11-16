@@ -1,7 +1,3 @@
 # misc
 .DS_Store
 /docker-volumes
-/inputs/*
-/input_pdfs/*
-/output_tables/*
-/outputs/*

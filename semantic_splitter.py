@@ -1,16 +1,31 @@
-"""Experimental **text splitter** based on semantic similarity."""
-
 import copy
 import re
 from typing import Any, Dict, Iterable, List, Literal, Optional, Sequence, Tuple, cast
-
 import numpy as np
-from langchain_community.utils.math import (
-    cosine_similarity,
-)
+import torch
+from langchain_community.utils.math import cosine_similarity
 from langchain_core.documents import BaseDocumentTransformer, Document
-# from langchain_core.embeddings import Embeddings
+from transformers import AutoTokenizer, AutoModel
+from tqdm import tqdm
 
+# Load pre-trained model and tokenizer
+tokenizer = AutoTokenizer.from_pretrained("albert-base-v2", cache_dir="model")
+model = AutoModel.from_pretrained("albert-base-v2", cache_dir="model")
+
+# Ensure the model is in evaluation mode
+model.eval()
+
+# Generate embeddings for the provided list of sentences using a Huggingface embedding model (MobileBERT)
+def generate_embeddings(sentences):
+	embeddings = []
+	for chunk in sentences:
+		inputs = tokenizer(chunk, return_tensors="pt", padding=True, truncation=True, max_length=512)
+		with torch.no_grad():
+			outputs = model(**inputs, output_hidden_states=True)
+		cls_embedding = outputs.last_hidden_state[:, 0, :]
+		cls_embedding = torch.nn.functional.normalize(cls_embedding).cpu().numpy()
+		embeddings.append(cls_embedding)
+	return np.vstack(embeddings) # [num_sentences, embedding_dim]
 
 def combine_sentences(sentences: List[dict], buffer_size: int = 1) -> List[dict]:
     """Combine sentences based on buffer size.
@@ -52,7 +67,6 @@ def combine_sentences(sentences: List[dict], buffer_size: int = 1) -> List[dict]
 
     return sentences
 
-
 def calculate_cosine_distances(sentences: List[dict]) -> Tuple[List[float], List[dict]]:
     """Calculate cosine distances between sentences.
 
@@ -79,25 +93,10 @@ def calculate_cosine_distances(sentences: List[dict]) -> Tuple[List[float], List
         # Store distance in the dictionary
         sentences[i]["distance_to_next"] = distance
 
-    # Optionally handle the last sentence
-    # sentences[-1]['distance_to_next'] = None  # or a default value
-
     return distances, sentences
 
 
-BreakpointThresholdType = Literal[
-    "percentile", "standard_deviation", "interquartile", "gradient"
-]
-BREAKPOINT_DEFAULTS: Dict[BreakpointThresholdType, float] = {
-    "percentile": 95,
-    "standard_deviation": 3,
-    "interquartile": 1.5,
-    "gradient": 95,
-}
-
-
 def split_large_sentences(single_sentences_list, max_words=350):
-
     def split_on_regex(sentence):
         # Split on the desired regex pattern
         return re.split(r"(?<=[.?!])\s+", sentence)
@@ -141,6 +140,17 @@ def split_large_sentences(single_sentences_list, max_words=350):
     return final_sentences
 
 
+BreakpointThresholdType = Literal[
+    "percentile", "standard_deviation", "interquartile", "gradient"
+]
+
+BREAKPOINT_DEFAULTS: Dict[BreakpointThresholdType, float] = {
+    "percentile": 95,
+    "standard_deviation": 3,
+    "interquartile": 1.5,
+    "gradient": 95,
+}
+
 class SemanticChunker(BaseDocumentTransformer):
     """Split the text based on semantic similarity.
 
@@ -160,8 +170,8 @@ class SemanticChunker(BaseDocumentTransformer):
         breakpoint_threshold_type: BreakpointThresholdType = "percentile",
         breakpoint_threshold_amount: Optional[float] = None,
         number_of_chunks: Optional[int] = None,
-        sentence_split_regex: str = r"  \n",
-        embedding_function = None,
+        sentence_split_regex: str = r"  \n", # split at paragraphs
+        embedding_function = generate_embeddings,
     ):
         self._add_start_index = add_start_index
         self.buffer_size = buffer_size
@@ -233,7 +243,6 @@ class SemanticChunker(BaseDocumentTransformer):
         y = min(max(y, 0), 100)
 
         return cast(float, np.percentile(distances, y))
-    
 
     def _calculate_sentence_distances(
         self, single_sentences_list: List[str]
@@ -244,10 +253,6 @@ class SemanticChunker(BaseDocumentTransformer):
             {"sentence": x, "index": i} for i, x in enumerate(single_sentences_list)
         ]
         sentences = combine_sentences(_sentences, self.buffer_size)
-        # print(sentences)
-        # embeddings = self.embeddings.embed_documents(
-        #     [x["combined_sentence"] for x in sentences]
-        # )
         embeddings = self.embedding_function([x["combined_sentence"] for x in sentences])
         for i, sentence in enumerate(sentences):
             sentence["combined_sentence_embedding"] = embeddings[i]
@@ -316,7 +321,7 @@ class SemanticChunker(BaseDocumentTransformer):
         """Create documents from a list of texts."""
         _metadatas = metadatas or [{}] * len(texts)
         documents = []
-        for i, text in enumerate(texts):
+        for i, text in enumerate(tqdm(texts, desc="Performing Chunking")):
             start_index = 0
             for chunk in self.split_text(text):
                 metadata = copy.deepcopy(_metadatas[i])

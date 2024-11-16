@@ -1,30 +1,8 @@
 import argparse
 import os
 import glob
-from cli import chunk, embed, load, chunk_with_arguments, chat_with_arguments, INPUT_FOLDER, OUTPUT_FOLDER
-from data_process import process_input_pdfs
-
-'''
-User need to specify: input folder with all documents, question list csv file.
-
-Design Choices:
-    a. command line for user to specify input aand output file path
-    b. json file for user to specify input and output file path, configurations
-
-1. call data_process
-    - input: folder with all documents
-    - add function in data_process.py, process all pdfs in the folder to txts
-    
-2. skip chunk and embed for files already in chromadb
-    - for each pdf file name, run check function
-    - if not in chromadb, run chunk, embed, and load
-
-3. call chat
-    - input: question list csv file, pdf names
-    - return 
-        - an output comparasion csv
-
-'''
+from cli import embed, load, chunk, chat, INPUT_FOLDER, OUTPUT_FOLDER
+from data_process import process_input_pdfs, check_num_input_pdfs
 
 OUTPUT_TABLE_FOLDER = "output_tables"
 
@@ -39,30 +17,35 @@ if __name__ == "__main__":
     question_file = args.question_file
 
     input_folder_path = INPUT_FOLDER + '/' + input_folder_name
-    output_file_path = OUTPUT_TABLE_FOLDER + '/' + input_folder_name + '.csv'
+    output_file_path = OUTPUT_TABLE_FOLDER + '/' + input_folder_name + '.xlsx'
 
-    # TODO check not too many files in the input_folder_path
-    
-    # call data_process
+    # Make sure users won't accidentally index too many files in input_folder_path
+    if not check_num_input_pdfs(input_folder_name, threshold = 20):
+        exit(1)
+
+    # Call data_process
+    print('=============STEP 1. Initial processing of input pdfs=============')
     process_input_pdfs(input_folder_name)
 
-    # build RAG knowledge database for the input_folder
-    chunk_with_arguments(input_folder_name)
+    # Build RAG knowledge database for the input_folder
+    print('\n=============STEP 2. Dividing input texts into chunks=============')
+    chunk(input_folder_name)
+    print('\n=====================STEP 3. Embedding chunks=====================')
     embed()
+    print('\n===========STEP 4. Loading embedded chunks into database==========')
     load()
 
     # Get the list of embedding files
     jsonl_files = glob.glob(os.path.join(OUTPUT_FOLDER, f"embeddings-semantic-split-*.jsonl"))
     jsonl_files.extend(glob.glob(os.path.join(OUTPUT_FOLDER, f"chunks-semantic-split-*.jsonl")))
-    print("Number of files to remove:", len(jsonl_files))
+
     # Remove files in output folder
     for file in jsonl_files:
         try:
             os.remove(file)
-            print(f"COMPLETE knowlege retrival for {file}. Now Remove the file...")
         except Exception as e:
             print(f"COMPLETE knowlege retrival for {file}. Error in removing the file... {file}: {e}")
 
-    # call chat
-    # NOTE output as csv?
-    chat_with_arguments(input_folder_name, question_file, output_file_path)
+    # Call chat
+    print('\n======================STEP 5. Initiating chat=====================')
+    chat(input_folder_name, question_file, output_file_path)

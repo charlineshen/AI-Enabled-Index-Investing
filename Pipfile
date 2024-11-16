@@ -21,6 +21,7 @@ transformers = "*"
 sentencepiece = "*"
 PyPDF2 = "*"
 unidecode = "*"
+openpyxl = "*"
 
 [requires]
 python_version = "3.12"
