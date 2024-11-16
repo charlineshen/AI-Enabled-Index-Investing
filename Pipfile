@@ -13,6 +13,7 @@ transformers = "*"
 PyPDF2 = "*"
 unidecode = "*"
 openpyxl = "*"
+openai = "*"
 
 [requires]
 python_version = "3.12"
