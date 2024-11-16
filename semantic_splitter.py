@@ -25,7 +25,7 @@ from tqdm import tqdm
 # 		cls_embedding = outputs.last_hidden_state[:, 0, :]
 # 		cls_embedding = torch.nn.functional.normalize(cls_embedding).cpu().numpy()
 # 		embeddings.append(cls_embedding)
-# 	return np.vstack(embeddings) # [num_sentences, embedding_dim]
+# 	return np.vstack(embeddings)
 
 def combine_sentences(sentences: List[dict], buffer_size: int = 1) -> List[dict]:
     """Combine sentences based on buffer size.
@@ -257,6 +257,7 @@ class SemanticChunker(BaseDocumentTransformer):
         ]
         sentences = combine_sentences(_sentences, self.buffer_size)
         embeddings = self.embedding_function([x["combined_sentence"] for x in sentences])
+        embeddings = np.vstack(embeddings)
         for i, sentence in enumerate(sentences):
             sentence["combined_sentence_embedding"] = embeddings[i]
 

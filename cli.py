@@ -68,15 +68,8 @@ def generate_one_embedding(text):
 	with torch.no_grad():
 		output = model(**inputs, output_hidden_states=True)
 		cls_embedding = output.last_hidden_state[:, 0, :]
-		cls_embedding = torch.nn.functional.normalize(cls_embedding).cpu().numpy()
+		cls_embedding = torch.nn.functional.normalize(cls_embedding).cpu().squeeze().numpy()
 	return cls_embedding
-
-def generate_all_embeddings(texts):
-	embeddings = []
-	for text in tqdm(texts):
-		cls_embedding = generate_one_embedding(text)
-		embeddings.append(cls_embedding)
-	return np.vstack(embeddings) # [num_sentences, embedding_dim]
 ####################
 
 # TODO: REPLACE with other desired embeddin
@@ -85,11 +78,11 @@ def generate_all_embeddings(texts):
 # 	return client.embeddings.create(input = [text], model=model).data[0].embedding
 
 # Generate the embeddings for many chunks using OpenAI's embedding model
-# def generate_all_embeddings(chunks):
-# 	embeddings = []
-# 	for text in tqdm(chunks, "Embedding Chunks"):
-# 		embeddings.append(generate_one_embedding(text))
-# 	return embeddings # [num_chunks, embedding_dim]
+def generate_all_embeddings(chunks):
+	embeddings = []
+	for text in tqdm(chunks, "Embedding Chunks"):
+		embeddings.append(generate_one_embedding(text))
+	return embeddings
 
 # Insert text embeddings into chromadb collection
 def load_text_embeddings(df, collection, batch_size=32):
