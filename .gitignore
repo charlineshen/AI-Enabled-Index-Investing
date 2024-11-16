@@ -3,5 +3,5 @@
 /docker-volumes
 /inputs/*
 /input_pdfs/*
-# /output_tables/*
-# /outputs/*
+/output_tables/*
+/outputs/*
