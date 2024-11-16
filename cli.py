@@ -51,31 +51,10 @@ You will be given a query and some contexts below. When answering a query, make 
 - It is very important that you format your response using this pattern: "Answer: <X>.\nSource Chunks: <Y>.", where <Y> contains the numbers of chunks separated by commas. If no chunk provides useful information, <Y> should be None.
 """
 
-####################
-from transformers import AutoTokenizer, AutoModel
-import torch
-import numpy as np
-
-# Load pre-trained model and tokenizer
-tokenizer = AutoTokenizer.from_pretrained("google/mobilebert-uncased", cache_dir="model")
-model = AutoModel.from_pretrained("google/mobilebert-uncased", cache_dir="model")
-
-# Ensure the model is in evaluation mode
-model.eval()
-
-def generate_one_embedding(text):
-	inputs = tokenizer(text, return_tensors="pt", padding=True, truncation=True, max_length=512)
-	with torch.no_grad():
-		output = model(**inputs, output_hidden_states=True)
-		cls_embedding = output.last_hidden_state[:, 0, :]
-		cls_embedding = torch.nn.functional.normalize(cls_embedding).cpu().squeeze().numpy()
-	return cls_embedding
-####################
-
 # TODO: REPLACE with other desired embeddin
 # Generate the embedding for a single piece of text using OpenAI's embedding model
-# def generate_one_embedding(text, model="text-embedding-3-small"):
-# 	return client.embeddings.create(input = [text], model=model).data[0].embedding
+def generate_one_embedding(text, model="text-embedding-3-small"):
+	return client.embeddings.create(input = [text], model=model).data[0].embedding
 
 # Generate the embeddings for many chunks using OpenAI's embedding model
 def generate_all_embeddings(chunks):
@@ -139,9 +118,6 @@ def chunk(input_folder_name):
 
 		# Initialize the splitter
 		text_splitter = SemanticChunker(
-			########
-			embedding_function=generate_all_embeddings,
-			########
 			breakpoint_threshold_type="percentile",
 			breakpoint_threshold_amount=85
 		)
