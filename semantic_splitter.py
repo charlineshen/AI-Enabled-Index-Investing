@@ -18,7 +18,8 @@ model.eval()
 # Generate embeddings for the provided list of sentences using a Huggingface embedding model (MobileBERT)
 def generate_embeddings(sentences):
 	embeddings = []
-	for chunk in sentences:
+	print("Here!!!!!!!!!!!")
+	for chunk in tqdm(sentences, "Performing Chunking"):
 		inputs = tokenizer(chunk, return_tensors="pt", padding=True, truncation=True, max_length=512)
 		with torch.no_grad():
 			outputs = model(**inputs, output_hidden_states=True)
@@ -321,7 +322,7 @@ class SemanticChunker(BaseDocumentTransformer):
         """Create documents from a list of texts."""
         _metadatas = metadatas or [{}] * len(texts)
         documents = []
-        for i, text in enumerate(tqdm(texts, desc="Performing Chunking")):
+        for i, text in enumerate(texts):
             start_index = 0
             for chunk in self.split_text(text):
                 metadata = copy.deepcopy(_metadatas[i])

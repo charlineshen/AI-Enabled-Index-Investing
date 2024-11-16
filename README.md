@@ -22,11 +22,12 @@ cd AI-Enabled-Index-Investing
     ```bash
     python controller.py <index_folder_name> <question_template_excel_name>
     ```
-   Specifically, the following steps will be performed:
+    Specifically, the following steps will be performed:
     * process the index PDFs in a given folder, preprocess them and save them as txt files, and save the processed txt files under `inputs/` folder.
     * chunk text files into smaller pieces using semantic spilt algorithm
     * generate embeddings foor each chunk and save them in a local ChromaDB instance
     * generate a comparison table, where the rows will be questions, and the columns will be answers and citations corresponding to each index document
+    * An example command is `python controller.py test test.xlsx`.
 
 ### Notes:
 1. Docker Desktop can be installed [here](https://www.docker.com/products/docker-desktop/).

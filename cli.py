@@ -6,6 +6,7 @@ import chromadb
 import csv
 from openai import OpenAI
 from semantic_splitter import SemanticChunker
+from tqdm import tqdm
 
 # OpenAI API setup 
 # TODO: REPLACE with Gemini/Copilot API
@@ -57,9 +58,9 @@ def generate_one_embedding(text, model="text-embedding-3-small"):
 	return client.embeddings.create(input = [text], model=model).data[0].embedding
 
 # Generate the embeddings for many chunks using OpenAI's embedding model
-def generate_embeddings(chunks):
+def generate_all_embeddings(chunks):
 	embeddings = []
-	for text in chunks:
+	for text in tqdm(chunks, "Embedding Chunks"):
 		embeddings.append(generate_one_embedding(text))
 	return embeddings # [num_chunks, embedding_dim]
 
@@ -118,7 +119,6 @@ def chunk(input_folder_name):
 
 		# Initialize the splitter
 		text_splitter = SemanticChunker(
-			embedding_function=generate_embeddings,
 			breakpoint_threshold_type="percentile",
 			breakpoint_threshold_amount=85
 		)
@@ -150,7 +150,7 @@ def embed():
 
 		data_df = pd.read_json(jsonl_file, lines=True)
 		chunks = data_df["chunk"].values
-		embeddings = generate_embeddings(chunks)
+		embeddings = generate_all_embeddings(chunks)
 		data_df["embedding"] = embeddings
 
 		# Save the embeddings
@@ -264,7 +264,7 @@ def chat(input_folder_name, input_question_file_name, output_file):
 		print("Processing document:", title)
 		title = title.split(".")[0]
 		singledoc_results = []
-		for i in range(len(questions)):
+		for i in tqdm(range(len(questions)), "Generating Answers"):
 			query = questions[i]
 		
 			# Get the query, chunk, and actual response from the chat agent
