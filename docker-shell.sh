@@ -12,7 +12,6 @@ export GOOGLE_APPLICATION_CREDENTIALS="/secrets/llm-service-account.json"
 export OPENAI_API_KEY=$(cat ${SECRETS_DIR}/API_KEY.txt)
 export IMAGE_NAME="llm-rag-cli"
 
-
 # Create the network if we don't have it yet
 docker network inspect llm-rag-network >/dev/null 2>&1 || docker network create llm-rag-network
 
@@ -21,20 +20,3 @@ docker build -t $IMAGE_NAME -f Dockerfile .
 
 # Run All Containers
 docker-compose run --rm --service-ports -e OPENAI_API_KEY="$OPENAI_API_KEY" $IMAGE_NAME
-
-
-
-
-
-
-# # Build the image based on the Dockerfile
-# docker build -t $IMAGE_NAME -f Dockerfile .
-
-# # Run Container
-# docker run --rm --name $IMAGE_NAME -ti \
-# -v "$BASE_DIR":/app \
-# -v "$SECRETS_DIR":/secrets \
-# -v "$PERSISTENT_DIR":/persistent \
-# -e GOOGLE_APPLICATION_CREDENTIALS=$GOOGLE_APPLICATION_CREDENTIALS \
-# -e GCP_PROJECT=$GCP_PROJECT \
-# $IMAGE_NAME
