@@ -1,7 +1,7 @@
 import argparse
 import os
 import glob
-from cli import embed, load, chunk, chat, INPUT_FOLDER, OUTPUT_FOLDER
+from cli import embed, load, chunk, chat, INPUT_FOLDER, OUTPUT_FOLDER, QUESTION_FOLDER
 from data_process import process_input_pdfs, check_num_input_pdfs
 
 OUTPUT_TABLE_FOLDER = "output_tables"
@@ -11,10 +11,10 @@ if __name__ == "__main__":
     # Extract the argument
     parser = argparse.ArgumentParser(description='Generate index comparison table')
     parser.add_argument('input_folder_name', type=str, help='Input folder containing PDFs')
-    parser.add_argument('question_file', type=str, help='CSV file containing questions')
+    parser.add_argument('question_file_name', type=str, help='CSV file containing questions')
     args = parser.parse_args()
     input_folder_name = args.input_folder_name
-    question_file = args.question_file
+    question_file_name = args.question_file_name
 
     input_folder_path = INPUT_FOLDER + '/' + input_folder_name
     output_file_path = OUTPUT_TABLE_FOLDER + '/' + input_folder_name + '.xlsx'
@@ -48,4 +48,4 @@ if __name__ == "__main__":
 
     # Call chat
     print('\n======================STEP 5. Initiating chat=====================')
-    chat(input_folder_name, question_file, output_file_path)
+    chat(input_folder_name, question_file_name, output_file_path)

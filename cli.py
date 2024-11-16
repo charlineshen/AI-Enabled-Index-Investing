@@ -20,6 +20,7 @@ CHROMADB_PORT = 8000
 # Intermediate input/output folders
 INPUT_FOLDER = "inputs" # save pdf-converted text files
 OUTPUT_FOLDER = "outputs" # save chunked and embeded json files
+QUESTION_FOLDER = 'question_templates' # folder containing question templates
 
 # LLM configuration for content generation
 generation_config = {
@@ -243,7 +244,7 @@ def read_q(input_file):
 	questions = []
 
 	# Open and read the Excel file
-	data = pd.read_excel(input_file)
+	data = pd.read_excel(QUESTION_FOLDER + '/' + input_file)
 
 	# Extract questions from the second column
 	questions = data.iloc[:, 1].tolist()  # Assuming the question is in the second column
@@ -252,8 +253,8 @@ def read_q(input_file):
 	print(f"Number of questions: {len(questions)}")
 	return questions
 
-def chat(input_folder_name, input_question_file, output_file):
-	questions = read_q(input_question_file)
+def chat(input_folder_name, input_question_file_name, output_file):
+	questions = read_q(input_question_file_name)
 	
 	# Save results to an Excel file
 	df = pd.DataFrame()
