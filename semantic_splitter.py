@@ -8,24 +8,24 @@ from langchain_core.documents import BaseDocumentTransformer, Document
 from transformers import AutoTokenizer, AutoModel
 from tqdm import tqdm
 
-# Load pre-trained model and tokenizer
-tokenizer = AutoTokenizer.from_pretrained("google/mobilebert-uncased", cache_dir="model")
-model = AutoModel.from_pretrained("google/mobilebert-uncased", cache_dir="model")
+# # Load pre-trained model and tokenizer
+# tokenizer = AutoTokenizer.from_pretrained("google/mobilebert-uncased", cache_dir="model")
+# model = AutoModel.from_pretrained("google/mobilebert-uncased", cache_dir="model")
 
-# Ensure the model is in evaluation mode
-model.eval()
+# # Ensure the model is in evaluation mode
+# model.eval()
 
-# Generate embeddings for the provided list of sentences using a Huggingface embedding model (MobileBERT)
-def generate_embeddings(sentences):
-	embeddings = []
-	for chunk in tqdm(sentences, "Performing Chunking"):
-		inputs = tokenizer(chunk, return_tensors="pt", padding=True, truncation=True, max_length=512)
-		with torch.no_grad():
-			outputs = model(**inputs, output_hidden_states=True)
-		cls_embedding = outputs.last_hidden_state[:, 0, :]
-		cls_embedding = torch.nn.functional.normalize(cls_embedding).cpu().numpy()
-		embeddings.append(cls_embedding)
-	return np.vstack(embeddings) # [num_sentences, embedding_dim]
+# # Generate embeddings for the provided list of sentences using a Huggingface embedding model (MobileBERT)
+# def generate_embeddings(sentences):
+# 	embeddings = []
+# 	for chunk in tqdm(sentences, "Performing Chunking"):
+# 		inputs = tokenizer(chunk, return_tensors="pt", padding=True, truncation=True, max_length=512)
+# 		with torch.no_grad():
+# 			outputs = model(**inputs, output_hidden_states=True)
+# 		cls_embedding = outputs.last_hidden_state[:, 0, :]
+# 		cls_embedding = torch.nn.functional.normalize(cls_embedding).cpu().numpy()
+# 		embeddings.append(cls_embedding)
+# 	return np.vstack(embeddings) # [num_sentences, embedding_dim]
 
 def combine_sentences(sentences: List[dict], buffer_size: int = 1) -> List[dict]:
     """Combine sentences based on buffer size.
@@ -165,13 +165,16 @@ class SemanticChunker(BaseDocumentTransformer):
 
     def __init__(
         self,
+        ##########
+        embedding_function,
+        ##########
         buffer_size: int = 1,
         add_start_index: bool = False,
         breakpoint_threshold_type: BreakpointThresholdType = "percentile",
         breakpoint_threshold_amount: Optional[float] = None,
         number_of_chunks: Optional[int] = None,
         sentence_split_regex: str = r"  \n", # split at paragraphs
-        embedding_function = generate_embeddings,
+        # embedding_function = generate_embeddings,
     ):
         self._add_start_index = add_start_index
         self.buffer_size = buffer_size

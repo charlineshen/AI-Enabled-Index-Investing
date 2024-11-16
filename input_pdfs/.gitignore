@@ -1,3 +1,4 @@
 *
 !.gitignore
-!test/3_MSCI_Select_ESG_Screened_Indexes_Methodology_20240209.pdf
+!test/
+!test/*
