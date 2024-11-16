@@ -9,8 +9,8 @@ from transformers import AutoTokenizer, AutoModel
 from tqdm import tqdm
 
 # Load pre-trained model and tokenizer
-tokenizer = AutoTokenizer.from_pretrained("albert-base-v2", cache_dir="model")
-model = AutoModel.from_pretrained("albert-base-v2", cache_dir="model")
+tokenizer = AutoTokenizer.from_pretrained("google/mobilebert-uncased", cache_dir="model")
+model = AutoModel.from_pretrained("google/mobilebert-uncased", cache_dir="model")
 
 # Ensure the model is in evaluation mode
 model.eval()
@@ -18,7 +18,6 @@ model.eval()
 # Generate embeddings for the provided list of sentences using a Huggingface embedding model (MobileBERT)
 def generate_embeddings(sentences):
 	embeddings = []
-	print("Here!!!!!!!!!!!")
 	for chunk in tqdm(sentences, "Performing Chunking"):
 		inputs = tokenizer(chunk, return_tensors="pt", padding=True, truncation=True, max_length=512)
 		with torch.no_grad():
