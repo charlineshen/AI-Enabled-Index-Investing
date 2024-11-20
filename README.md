@@ -2,7 +2,7 @@
 
 ![Pipeline Overview](demo.png)
 
-> Using this tool requires Git, Docker Desktop, and a terminal (Windows users need to use Ubuntu). If you don't have these dependencies already, find installation guides at the bottom of this page.
+> Using this tool requires Git and Docker Desktop. Windows users also need to have WSL and Ubuntu installed. If you don't have these dependencies already, find installation guides at the bottom of this page.
 
 Run the following commands to pull the code locally:
 ```bash
@@ -17,7 +17,7 @@ cd AI-Enabled-Index-Investing
 
 ### Instructions to Use the Tool:
 1. Launch Docker desktop.
-2. Run the following command to start the Docker container.
+2. Run the following command to start the Docker container (Windows users need to run the command in Ubuntu).
     ```bash
     sh docker-shell.sh
     ```
@@ -40,4 +40,4 @@ cd AI-Enabled-Index-Investing
 4. Reference installtion guides for dependencies:
     * Git can be installed [here](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
     * Docker Desktop can be installed [here](https://www.docker.com/products/docker-desktop/).
-    * For Windows users, commands need to be run in a Linux subsystem like [Ubuntu](https://ubuntu.com/desktop/wsl). For Mac users, commands can be run directly in the system terminal.
+    * For Windows users, Docker depends on [WSL](https://learn.microsoft.com/en-us/windows/wsl/install) and the commands need to be run in a Linux distribution like [Ubuntu](https://ubuntu.com/desktop/wsl). For Mac users, commands can be run directly in the system terminal.
