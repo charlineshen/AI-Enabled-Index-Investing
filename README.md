@@ -30,7 +30,7 @@ cd AI-Enabled-Index-Investing
     * Chunk the text files into smaller pieces using the semantic spiltting algorithm.
     * Generate embeddings for each chunk and save them in a local ChromaDB instance.
     * Generate a comparison table where the rows will be questions, and the columns will be answers and citations corresponding to each index document.
-    * An example command is `python controller.py test test_questions.xlsx`.
+    * **An example command is `python controller.py test test_questions.xlsx`.**
 4. Find the comparison table in the `output_tables` folder. The output file name will be `<index_folder_name>.xlsx`
 
 ### Notes:
