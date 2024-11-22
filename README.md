@@ -36,7 +36,7 @@ cd AI-Enabled-Index-Investing
         ```
 4. Find the comparison table in the `output_tables` folder. The output file name will be `<index_folder_name>.xlsx`
 
-### Troubleshooting Guide
+### Troubleshooting Guides
 1. If you are having trouble with ChromaDB HTTP connections, switch from `chromadb = "0.5.18"` to `chromadb = "0.5.11"` in `Pipfile`.
 2. If you are Windows user and encounter error messages including `set: Illegal option -`, run the following commands:
     ```bash
@@ -44,7 +44,7 @@ cd AI-Enabled-Index-Investing
     sed -i 's/\r$//' docker-entrypoint.sh
     ```
 
-### Notes:
+### Notes
 1. To avoid cost and duplicated effort, we will NOT process files with exact same name twice. If the content of files changed, please rename it.
 2. The llm-rag-chromadb container is designed to be a persistent and ongoing service to host the Chroma database, so it does not stop upon exit. If necessary, shut it down manually, and the saved chunks and embeddings will be cleared.
 3. Reference installtion guides for dependencies:
