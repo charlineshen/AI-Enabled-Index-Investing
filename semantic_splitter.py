@@ -264,7 +264,7 @@ class SemanticChunker(BaseDocumentTransformer):
         self,
         text: str,
     ) -> List[str]:
-        # Splitting the essay (by default on '.', '?', and '!')
+        # Splitting the text
         single_sentences_list = re.split(self.sentence_split_regex, text)
         single_sentences_list = split_large_sentences(single_sentences_list, max_words=350)
 
